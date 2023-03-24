@@ -26,10 +26,6 @@ namespace Presentation
             panel1.Controls.Clear();
             panel1.Controls.Add(IKYGenelForm);
             IKYGenelForm.Show();
-
-            MessageBox.Show("serife");
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
