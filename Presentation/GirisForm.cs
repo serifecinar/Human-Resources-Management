@@ -27,7 +27,7 @@ namespace Presentation
             panel1.Controls.Add(IKYGenelForm);
             IKYGenelForm.Show();
 
-
+            MessageBox.Show("serife");
 
 
         }
