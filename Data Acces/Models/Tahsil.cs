@@ -9,7 +9,7 @@ namespace Data_Acces.Models
     public class Tahsil
     {
         public int Id { get; set; }
-        public int PersonelId { get; set; }
+        public int? PersonelId { get; set; }
         public string TahsilAdi1 { get; set; }
         public string TahsilAdi2 { get; set; }
         public string TahsilAdi3 { get; set; }
@@ -25,10 +25,10 @@ namespace Data_Acces.Models
         public string BolumAdi3 { get; set; }
         public string BolumAdi4 { get; set; }
         public string BolumAdi5 { get; set; }
-        public DateTime MezuniyetTarihi1 { get; set; }
-        public DateTime MezuniyetTarihi2 { get; set; }
-        public DateTime MezuniyetTarihi3 { get; set; }
-        public DateTime MezuniyetTarihi4 { get; set; }
-        public DateTime MezuniyetTarihi5 { get; set; }
+        public DateTime? MezuniyetTarihi1 { get; set; }
+        public DateTime? MezuniyetTarihi2 { get; set; }
+        public DateTime? MezuniyetTarihi3 { get; set; }
+        public DateTime? MezuniyetTarihi4 { get; set; }
+        public DateTime? MezuniyetTarihi5 { get; set; }
     }
 }

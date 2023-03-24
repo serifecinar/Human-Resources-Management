@@ -1,25 +1,26 @@
-﻿namespace Business.Services
+﻿using Business.Interfaces;
+using DataAcces;
+using DataAcces.Interfaces;
+using DataAcces.Repositories;
+using System;
+using System.Linq;
+
+namespace Business.Services
 {
-    //    public class LoggerService : ILoggerService
-    //    {
-    //        //ILoggerRepository loggerRepository = new LoggerRepository();
+    public class LoggerService : IService<Log>
+    {
+        readonly IRepository<Log> loggerRepository = new LoggerRepository();
 
-    //        //public void Add(DateTime Tarih, string Yer, string Gorev)
-    //        //{
-    //        //    var nakil = new Nakil
-    //        //    {
-    //        //        Tarih = Tarih,
-    //        //        Yer = Yer,
-    //        //        Gorev = Gorev
-    //        //    };
-    //        //    loggerRepository.Add(nakil);
-    //        //}
+        public void Add(Log thing)
+        {
+            loggerRepository.Insert(thing);
+        }
 
-    //        //public Array GetAll()
-    //        //{
-    //        //    var logs = loggerRepository.GetAll();
+        public Array GetAll()
+        {
+            var logs = loggerRepository.GetAll();
 
-    //        //    return logs.ToArray();
-    //        //}
-    //    }
+            return logs.ToArray();
+        }
+    }
 }

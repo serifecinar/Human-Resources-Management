@@ -1,58 +1,43 @@
-﻿using Data_Acces.Interfaces;
-using Data_Acces.Models;
+﻿using DataAcces.Interfaces;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
-namespace Data_Acces.Repositories
+namespace DataAcces.Repositories
 {
-    //public class LoggerRepository : ILoggerRepository
-    //{
-    //    //public void Add(Nakil nakil)
-    //    //{
-    //    //    using (LoggingSystem LoggingSystem = new LoggingSystem())
-    //    //    {
-    //    //        LoggingSystem.Nakil.Add(nakil);
-    //    //        LoggingSystem.SaveChanges();
-    //    //    }
-    //    //}
+    public class LoggerRepository : IRepository<Log>
+    {
+        private readonly Context context = new Context();
 
-    //    //public void Delete(Nakil log)
-    //    {
-    //        /*using (LoggingSystem LoggingSystem = new LoggingSystem())
-    //        {
-    //            var dLog = LoggingSystem.Nakil.Find(log.TimeStamp);
+        public IEnumerable<Log> GetAll()
+        {
+            return context.Set<Log>().ToList();
+        }
 
-    //            LoggingSystem.Nakil.Remove(dLog);
-    //            LoggingSystem.SaveChanges();
-    //        }*/
-    //    }
+        public Log GetById(object id)
+        {
+            return context.Set<Log>().Find(id);
+        }
 
-    //    //public List<Nakil> GetAll()
-    //    //{
-    //    //    List<Nakil> logs = new List<Nakil>();
-    //    //    using (LoggingSystem LoggingSystem = new LoggingSystem())
-    //    //    {
-    //    //        foreach (var item in LoggingSystem.Nakil)
-    //    //        {
-    //    //            logs.Add(item);
-    //    //        }
-    //    //        return logs;
-    //    //    }
-    //    //}
+        public void Insert(Log entity)
+        {
+            context.Set<Log>().Add(entity);
+            context.SaveChanges();
+        }
 
-    //    //public void Update(Nakil log)
-    //    {
-    //        /*using (LoggingSystem LoggingSystem = new LoggingSystem())
-    //        {
-    //            var uLog = LoggingSystem.Nakil.Find(log.TimeStamp);
+        public void Update(Log entity)
+        {
+            context.Set<Log>().Attach(entity);
+            context.Entry(entity).State = EntityState.Modified;
+            context.SaveChanges();
+        }
 
-    //            uLog.TimeStamp = log.TimeStamp;
-    //            uLog.EventType = log.EventType;
-    //            uLog.Source = log.Source;
-    //            uLog.User = log.User;
-    //            uLog.Message = log.Message;
-
-    //            LoggingSystem.SaveChanges();
-    //        }*/
-    //    }
-    //}
+        public void Delete(object id)
+        {
+            var entity = context.Set<Log>().Find(id);
+            if (entity != null)
+                context.Set<Log>().Remove(entity);
+            context.SaveChanges();
+        }
+    }
 }

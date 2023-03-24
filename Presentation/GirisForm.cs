@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Business.Interfaces;
+using Business.Services;
+using Data_Acces.Models;
+using System;
+using System.Data.Entity.Infrastructure;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -7,6 +11,8 @@ namespace Presentation
     {
         //PersonelListelemeForm form2 = new PersonelListelemeForm();
         IKYGenelForm IKYGenelForm = new IKYGenelForm();
+
+        GenelService genelService = new GenelService();
         public GirisForm()
         {
             InitializeComponent();
@@ -22,10 +28,13 @@ namespace Presentation
             //form2.Show();
             //}
 
-            IKYGenelForm.TopLevel = false;
+            var genelData = genelService.GetAll();
+            dataGridView1.DataSource = genelData;
+            dataGridView1.Refresh();
+            /*IKYGenelForm.TopLevel = false;
             panel1.Controls.Clear();
             panel1.Controls.Add(IKYGenelForm);
-            IKYGenelForm.Show();
+            IKYGenelForm.Show();*/
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -9,27 +9,27 @@ namespace Data_Acces.Models
     public class Nakil
     {
         public int Id { get; set; }
-        public int PersonelId { get; set; }
-        public DateTime BaslangicTarihi1 { get; set; }
-        public DateTime BaslangicTarihi2 { get; set; }
-        public DateTime BaslangicTarihi3 { get; set; }
-        public DateTime BaslangicTarihi4 { get; set; }
-        public DateTime BaslangicTarihi5 { get; set; }
-        public DateTime BaslangicTarihi6 { get; set; }
-        public DateTime BaslangicTarihi7 { get; set; }
-        public DateTime BaslangicTarihi8 { get; set; }
-        public DateTime BaslangicTarihi9 { get; set; }
-        public DateTime BaslangicTarihi10 { get; set; }
-        public DateTime AyrilisTarihi1 { get; set; }
-        public DateTime AyrilisTarihi2 { get; set; }
-        public DateTime AyrilisTarihi3 { get; set; }
-        public DateTime AyrilisTarihi4 { get; set; }
-        public DateTime AyrilisTarihi5 { get; set; }
-        public DateTime AyrilisTarihi6 { get; set; }
-        public DateTime AyrilisTarihi7 { get; set; }
-        public DateTime AyrilisTarihi8 { get; set; }
-        public DateTime AyrilisTarihi9 { get; set; }
-        public DateTime AyrilisTarihi10 { get; set; }
+        public int? PersonelId { get; set; }
+        public DateTime? BaslangicTarihi1 { get; set; }
+        public DateTime? BaslangicTarihi2 { get; set; }
+        public DateTime? BaslangicTarihi3 { get; set; }
+        public DateTime? BaslangicTarihi4 { get; set; }
+        public DateTime? BaslangicTarihi5 { get; set; }
+        public DateTime? BaslangicTarihi6 { get; set; }
+        public DateTime? BaslangicTarihi7 { get; set; }
+        public DateTime? BaslangicTarihi8 { get; set; }
+        public DateTime? BaslangicTarihi9 { get; set; }
+        public DateTime? BaslangicTarihi10 { get; set; }
+        public DateTime? AyrilisTarihi1 { get; set; }
+        public DateTime? AyrilisTarihi2 { get; set; }
+        public DateTime? AyrilisTarihi3 { get; set; }
+        public DateTime? AyrilisTarihi4 { get; set; }
+        public DateTime? AyrilisTarihi5 { get; set; }
+        public DateTime? AyrilisTarihi6 { get; set; }
+        public DateTime? AyrilisTarihi7 { get; set; }
+        public DateTime? AyrilisTarihi8 { get; set; }
+        public DateTime? AyrilisTarihi9 { get; set; }
+        public DateTime? AyrilisTarihi10 { get; set; }
         public string Kurum1 { get; set; }
         public string Kurum2 { get; set; }
         public string Kurum3 { get; set; }
