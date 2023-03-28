@@ -22,5 +22,17 @@ namespace Business.Services
 
             return genelData.ToArray();
         }
+        public void Delete(Genel thing)
+        {
+            genelRepository.Delete(thing);
+        }
+        public void GetById(Genel thing)
+        {
+            genelRepository.GetById(thing);
+        }
+         public void Update(Genel thing)
+        {
+            genelRepository.Update(thing);
+        }
     }
 }

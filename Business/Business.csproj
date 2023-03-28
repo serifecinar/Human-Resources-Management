@@ -55,7 +55,12 @@
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenelService.cs" />
+    <Compile Include="Services\IletisimService.cs" />
     <Compile Include="Services\LoggerService.cs" />
+    <Compile Include="Services\NakilService.cs" />
+    <Compile Include="Services\NufusService.cs" />
+    <Compile Include="Services\SertifikaService.cs" />
+    <Compile Include="Services\TahsilService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
