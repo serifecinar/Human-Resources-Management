@@ -1,12 +1,10 @@
 ﻿using Data_Acces.Models;
-using DataAcces;
 using DataAcces.Interfaces;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 
-namespace Data_Acces.Repositories
+namespace DataAcces.Repositories
 {
     public class IletisimRepository : IRepository<Iletisim>
     {

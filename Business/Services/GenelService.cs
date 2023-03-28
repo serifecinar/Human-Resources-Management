@@ -30,7 +30,7 @@ namespace Business.Services
         {
             genelRepository.GetById(thing);
         }
-         public void Update(Genel thing)
+        public void Update(Genel thing)
         {
             genelRepository.Update(thing);
         }

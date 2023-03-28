@@ -1,15 +1,12 @@
 ﻿using Data_Acces.Models;
 using DataAcces.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Data_Acces.Repositories
+namespace DataAcces.Repositories
 {
-    public class TahsilRepository :IRepository<Tahsil>
+    public class TahsilRepository : IRepository<Tahsil>
     {
         private readonly Context context = new Context();
 

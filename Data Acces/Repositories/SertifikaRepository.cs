@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data_Acces.Repositories
+namespace DataAcces.Repositories
 {
     public class SertifikaRepository : IRepository<Sertifika>
     {
