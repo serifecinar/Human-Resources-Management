@@ -15,7 +15,8 @@ namespace Presentation
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //private void button1_Click(object sender, EventArgs e)
+        private void GirisButton_Click(object sender, EventArgs e)
         {
             //if (kullaniciadi.Text='');
             //{
@@ -27,9 +28,10 @@ namespace Presentation
             panel1.Controls.Clear();
             panel1.Controls.Add(IKYGenelForm);
             IKYGenelForm.Show();
+
         }
 
-        
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

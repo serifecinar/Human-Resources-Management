@@ -67,7 +67,7 @@ namespace Presentation
             MessageBox.Show(PersonelListesiListBox.Text);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void SicilKartiGosterButton_Click(object sender, EventArgs e)
         {
             form3.TopLevel = false;
             panel1.Controls.Clear();

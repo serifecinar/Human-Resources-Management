@@ -94,7 +94,7 @@
             this.SicilKartiGosterButton.TabIndex = 13;
             this.SicilKartiGosterButton.Text = "SİCİL KARTI GÖSTER";
             this.SicilKartiGosterButton.UseVisualStyleBackColor = false;
-            this.SicilKartiGosterButton.Click += new System.EventHandler(this.button1_Click_1);
+            this.SicilKartiGosterButton.Click += new System.EventHandler(this.SicilKartiGosterButton_Click);
             // 
             // menuStrip1
             // 
