@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.GirisButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -37,6 +37,7 @@
             this.sifre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kullaniciadi = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -46,25 +47,24 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // GirisButton
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkRed;
-            this.button1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.Location = new System.Drawing.Point(649, 535);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "GİRİŞ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GirisButton.BackColor = System.Drawing.Color.DarkRed;
+            this.GirisButton.Font = new System.Drawing.Font("Geometr212 BkCn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GirisButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.GirisButton.Location = new System.Drawing.Point(649, 535);
+            this.GirisButton.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.GirisButton.Name = "GirisButton";
+            this.GirisButton.Size = new System.Drawing.Size(200, 42);
+            this.GirisButton.TabIndex = 2;
+            this.GirisButton.Text = "GİRİŞ";
+            this.GirisButton.UseVisualStyleBackColor = false;
+            this.GirisButton.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -88,7 +88,7 @@
             this.tableLayoutPanel1.Controls.Add(this.sifre, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.kullaniciadi, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.GirisButton, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -173,6 +173,14 @@
             this.kullaniciadi.Size = new System.Drawing.Size(200, 26);
             this.kullaniciadi.TabIndex = 0;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 528);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(388, 150);
+            this.dataGridView1.TabIndex = 5;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkRed;
@@ -255,14 +263,6 @@
             this.panel10.TabIndex = 11;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.panel10_Paint);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 528);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(388, 150);
-            this.dataGridView1.TabIndex = 5;
-            // 
             // GirisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,7 +293,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button GirisButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

@@ -22,5 +22,18 @@ namespace Business.Services
 
             return logs.ToArray();
         }
+        public void Delete(Log thing)
+        {
+            loggerRepository.Delete(thing);
+        }
+        public void GetById(Log thing)
+        {
+            loggerRepository.GetById(thing);
+        }
+        public void Update(Log thing)
+        {
+            loggerRepository.Update(thing);
+        }
     }
 }
+

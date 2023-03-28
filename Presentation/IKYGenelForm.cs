@@ -31,5 +31,10 @@ namespace Presentation
             panel1.Controls.Add(personelListelemeForm);
             personelListelemeForm.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -67,6 +67,9 @@
     <Compile Include="Repositories\IletisimRepository.cs" />
     <Compile Include="Repositories\LoggerRepository.cs" />
     <Compile Include="Repositories\NakilRepository.cs" />
+    <Compile Include="Repositories\NufusRepository.cs" />
+    <Compile Include="Repositories\SertifikaRepository.cs" />
+    <Compile Include="Repositories\TahsilRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
