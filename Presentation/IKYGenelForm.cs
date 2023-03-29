@@ -21,11 +21,6 @@ namespace Presentation
             AnasayfaButton.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void PersonelListelemeButton_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = false;

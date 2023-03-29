@@ -32,6 +32,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.SicilKartiTabControl = new System.Windows.Forms.TabControl();
             this.GenelTabPage = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.FotografPictureBox = new System.Windows.Forms.PictureBox();
             this.PersonelSicilKartiTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.MKTextBox = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@
             this.PozisyonuTextBox = new System.Windows.Forms.TextBox();
             this.GorevYeriTextBox = new System.Windows.Forms.TextBox();
             this.UnvaniTextBox = new System.Windows.Forms.TextBox();
-            this.SeflikTextBox = new System.Windows.Forms.TextBox();
             this.IseGirisTarihiTextBox = new System.Windows.Forms.TextBox();
             this.MudurlukTextBox = new System.Windows.Forms.TextBox();
             this.SoyadiTextBox = new System.Windows.Forms.TextBox();
@@ -279,6 +279,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SeflikTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -336,6 +337,7 @@
             // 
             // GenelTabPage
             // 
+            this.GenelTabPage.Controls.Add(this.comboBox1);
             this.GenelTabPage.Controls.Add(this.FotografPictureBox);
             this.GenelTabPage.Controls.Add(this.PersonelSicilKartiTableLayoutPanel);
             this.GenelTabPage.Controls.Add(this.label7);
@@ -351,8 +353,8 @@
             this.GenelTabPage.Controls.Add(this.PozisyonuTextBox);
             this.GenelTabPage.Controls.Add(this.GorevYeriTextBox);
             this.GenelTabPage.Controls.Add(this.UnvaniTextBox);
-            this.GenelTabPage.Controls.Add(this.SeflikTextBox);
             this.GenelTabPage.Controls.Add(this.IseGirisTarihiTextBox);
+            this.GenelTabPage.Controls.Add(this.SeflikTextBox);
             this.GenelTabPage.Controls.Add(this.MudurlukTextBox);
             this.GenelTabPage.Controls.Add(this.SoyadiTextBox);
             this.GenelTabPage.Controls.Add(this.AdiTextBox);
@@ -365,6 +367,25 @@
             this.GenelTabPage.TabIndex = 0;
             this.GenelTabPage.Text = "GENEL";
             this.GenelTabPage.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.ForeColor = System.Drawing.Color.DarkRed;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "TUZLA ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
+            "PAŞAKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
+            "KADIKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
+            "KÜÇÜKSU ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
+            "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
+            this.comboBox1.Location = new System.Drawing.Point(832, 10);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(494, 28);
+            this.comboBox1.TabIndex = 23;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FotografPictureBox
             // 
@@ -598,17 +619,6 @@
             this.UnvaniTextBox.Name = "UnvaniTextBox";
             this.UnvaniTextBox.Size = new System.Drawing.Size(812, 19);
             this.UnvaniTextBox.TabIndex = 9;
-            // 
-            // SeflikTextBox
-            // 
-            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.SeflikTextBox.Location = new System.Drawing.Point(152, 235);
-            this.SeflikTextBox.Name = "SeflikTextBox";
-            this.SeflikTextBox.Size = new System.Drawing.Size(493, 19);
-            this.SeflikTextBox.TabIndex = 10;
             // 
             // IseGirisTarihiTextBox
             // 
@@ -3480,6 +3490,17 @@
             this.textBox1.Size = new System.Drawing.Size(291, 19);
             this.textBox1.TabIndex = 38;
             // 
+            // SeflikTextBox
+            // 
+            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.SeflikTextBox.Location = new System.Drawing.Point(152, 235);
+            this.SeflikTextBox.Name = "SeflikTextBox";
+            this.SeflikTextBox.Size = new System.Drawing.Size(493, 19);
+            this.SeflikTextBox.TabIndex = 10;
+            // 
             // PersonelSicilKartiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3490,6 +3511,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelSicilKartiForm";
             this.Text = "PERSONEL SİCİL KARTI";
+            this.Load += new System.EventHandler(this.PersonelSicilKartiForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.SicilKartiTabControl.ResumeLayout(false);
@@ -3546,7 +3568,6 @@
         private System.Windows.Forms.TextBox PKTextBox;
         private System.Windows.Forms.TextBox ToplamKatsayiTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox SeflikTextBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox GorevYeriTextBox;
         private System.Windows.Forms.PictureBox FotografPictureBox;
@@ -3772,5 +3793,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.TextBox IseGirisTarihiTextBox;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox SeflikTextBox;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Presentation
 {
     public partial class PersonelSicilKartiForm : Form
     {
+        GenelService genelService = new GenelService();
         public PersonelSicilKartiForm()
         {
             InitializeComponent();
@@ -50,6 +52,21 @@ namespace Presentation
         private void label81_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PersonelSicilKartiForm_Load(object sender, EventArgs e)
+        {
+            TCKimlikNoTextBox.Text = "deneme";
         }
     }
 }

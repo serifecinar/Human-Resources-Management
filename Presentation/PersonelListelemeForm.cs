@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Business.Services;
+using Data_Acces.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,12 +15,13 @@ namespace Presentation
     public partial class PersonelListelemeForm : Form
     {
         PersonelSicilKartiForm form3 = new PersonelSicilKartiForm();
-
+        GenelService genelService = new GenelService();
         public PersonelListelemeForm()
         {
             InitializeComponent();
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
             /*form3.TopLevel = false;
@@ -27,9 +30,11 @@ namespace Presentation
             form3.Show();*/
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
-
+            // TODO: Bu kod satırı '_DataAcces_ContextDataSet.Genels' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.genelsTableAdapter.Fill(this._DataAcces_ContextDataSet.Genels);
+            PersonelListesiListBox.Text = genelService.GetById(Genel 3);
         }
 
         private void tESİSŞEFİKOORDİNATÖRToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,9 +67,9 @@ namespace Presentation
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void PersonelListesiListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(PersonelListesiListBox.Text);
+            
         }
 
         private void SicilKartiGosterButton_Click(object sender, EventArgs e)
@@ -73,6 +78,8 @@ namespace Presentation
             panel1.Controls.Clear();
             panel1.Controls.Add(form3);
             form3.Show();
+
+
         }
     }
 }
