@@ -14,7 +14,7 @@ namespace Presentation
 {
     public partial class PersonelListelemeForm : Form
     {
-        PersonelSicilKartiForm form3 = new PersonelSicilKartiForm();
+        PersonelSicilKartiForm personelSicilKartiForm = new PersonelSicilKartiForm();
         GenelService genelService = new GenelService();
         public PersonelListelemeForm()
         {
@@ -24,19 +24,12 @@ namespace Presentation
         
         private void button1_Click(object sender, EventArgs e)
         {
-            /*form3.TopLevel = false;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(form3);
-            form3.Show();*/
+
         }
 
         private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
-        //var data = genelService.GetAll();
-        //    foreach (var item in data)
-        //    {
-        //        PersonelListesiDataGridView.DataSource=data;
-        //    }
+
         }
 
         private void tESİSŞEFİKOORDİNATÖRToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,19 +69,30 @@ namespace Presentation
 
         private void SicilKartiGosterButton_Click(object sender, EventArgs e)
         {
-            form3.TopLevel = false;
+            personelSicilKartiForm.TopLevel = false;
             panel1.Controls.Clear();
-            panel1.Controls.Add(form3);
-            form3.Show();
-
-
+            panel1.Controls.Add(personelSicilKartiForm);
+            personelSicilKartiForm.Show();          
         }
 
         private void AlfabetikPersonelListesiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //var genelData = genelService.GetAll();      
-            //PersonelListesiDataGridView.DataSource = genelData;
-            //PersonelListesiDataGridView.Refresh();            
+            var genelData = genelService.GetAll();
+            PersonelListesiDataGridView.DataSource = genelData;
+            PersonelListesiDataGridView.Refresh();
+            PersonelListesiDataGridView.Columns[1].Visible = false;
+            PersonelListesiDataGridView.Columns[2].Visible = false;
+            PersonelListesiDataGridView.Columns[3].Visible = false;
+
         }
+
+        private void PersonelListesiDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var s = PersonelListesiDataGridView.CurrentRow.Cells[0].Value;
+            MessageBox.Show(Convert.ToString(s));
+
+
+        }
+
     }
 }

@@ -14,6 +14,7 @@ namespace Presentation
     public partial class PersonelSicilKartiForm : Form
     {
         GenelService genelService = new GenelService();
+
         public PersonelSicilKartiForm()
         {
             InitializeComponent();
@@ -66,7 +67,7 @@ namespace Presentation
 
         private void PersonelSicilKartiForm_Load(object sender, EventArgs e)
         {
-            TCKimlikNoTextBox.Text = "deneme";
+        
         }
     }
 }

@@ -10,7 +10,8 @@ namespace Presentation
         //PersonelListelemeForm form2 = new PersonelListelemeForm();
         IKYGenelForm IKYGenelForm = new IKYGenelForm();
 
-        GenelService genelService = new GenelService();
+        //GenelService genelService = new GenelService();
+        GirisService girisService = new GirisService();
         public GirisForm()
         {
             InitializeComponent();
@@ -26,13 +27,15 @@ namespace Presentation
             //    dataGridView1.DataSource = genelData;
             //    dataGridView1.Refresh();
 
-            Genel yeniGenel = new Genel
-            {
-                TCKimlikNo = "41641021818"
-            };
+            //Genel yeniGenel = new Genel
+            //{
+            //    TCKimlikNo = "41641021818"
+            //};
 
-            genelService.Add(yeniGenel);
-            
+            //genelService.Add(yeniGenel);
+
+
+
             IKYGenelForm.TopLevel = false;
             panel1.Controls.Clear();
             panel1.Controls.Add(IKYGenelForm);

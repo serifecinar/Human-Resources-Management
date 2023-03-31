@@ -30,6 +30,7 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SicilKartiGosterButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -273,9 +274,14 @@
             // 
             // PersonelListesiDataGridView
             // 
+            this.PersonelListesiDataGridView.AllowUserToAddRows = false;
+            this.PersonelListesiDataGridView.AllowUserToDeleteRows = false;
+            this.PersonelListesiDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.PersonelListesiDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.PersonelListesiDataGridView.CausesValidation = false;
+            this.PersonelListesiDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -283,13 +289,26 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.PersonelListesiDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.PersonelListesiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PersonelListesiDataGridView.ColumnHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DarkRed;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PersonelListesiDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             this.PersonelListesiDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
-            this.PersonelListesiDataGridView.Location = new System.Drawing.Point(12, 139);
+            this.PersonelListesiDataGridView.Location = new System.Drawing.Point(0, 139);
+            this.PersonelListesiDataGridView.MultiSelect = false;
             this.PersonelListesiDataGridView.Name = "PersonelListesiDataGridView";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelListesiDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.PersonelListesiDataGridView.Size = new System.Drawing.Size(247, 444);
+            this.PersonelListesiDataGridView.ReadOnly = true;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListesiDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.PersonelListesiDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PersonelListesiDataGridView.Size = new System.Drawing.Size(267, 444);
             this.PersonelListesiDataGridView.TabIndex = 15;
+            this.PersonelListesiDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PersonelListesiDataGridView_CellContentClick);
             // 
             // PersonelListelemeForm
             // 
