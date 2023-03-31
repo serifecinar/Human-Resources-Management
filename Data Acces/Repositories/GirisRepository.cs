@@ -1,43 +1,46 @@
 ﻿using Data_Acces.Models;
 using DataAcces;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Data_Acces.Repositories
 {
-    public class GenelRepository : IRepository<Genel>
+    public class GirisRepository:IRepository<Giris>
     {
         private readonly Context context = new Context();
 
         public void Delete(object id)
         {
-            var entity = context.Set<Genel>().Find(id);
+            var entity = context.Set<Giris>().Find(id);
             if (entity != null)
-                context.Set<Genel>().Remove(entity);
+                context.Set<Giris>().Remove(entity);
             context.SaveChanges();
         }
 
-        public IEnumerable<Genel> GetAll()
+        public IEnumerable<Giris> GetAll()
         {
-            return context.Set<Genel>().ToList();
+            return context.Set<Giris>().ToList();
         }
 
-        public Genel GetById(object id)
+        public Giris GetById(object id)
         {
-            return context.Set<Genel>().Find(id);
+            return context.Set<Giris>().Find(id);
         }
 
-        public void Insert(Genel entity)
+        public void Insert(Giris entity)
         {
-            context.Set<Genel>().Add(entity);
+            context.Set<Giris>().Add(entity);
             context.SaveChanges();
         }
 
-        public void Update(Genel entity)
+        public void Update(Giris entity)
         {
-            context.Set<Genel>().Attach(entity);
+            context.Set<Giris>().Attach(entity);
             context.Entry(entity).State = EntityState.Modified;
             context.SaveChanges();
         }

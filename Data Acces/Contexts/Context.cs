@@ -12,5 +12,7 @@ namespace DataAcces
         public DbSet<Nakil> Nakil { get; set; }
         public DbSet<Genel> Genel { get; set; }
         public DbSet<Iletisim> Iletisim { get; set; }
+        public DbSet<Giris> Giris { get; set; }
+
     }
 }

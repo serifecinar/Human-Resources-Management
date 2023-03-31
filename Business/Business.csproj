@@ -55,6 +55,7 @@
     <Compile Include="Interfaces\IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\GenelService.cs" />
+    <Compile Include="Services\GirisService.cs" />
     <Compile Include="Services\IletisimService.cs" />
     <Compile Include="Services\LoggerService.cs" />
     <Compile Include="Services\NakilService.cs" />
