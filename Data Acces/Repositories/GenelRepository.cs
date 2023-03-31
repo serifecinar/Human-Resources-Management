@@ -29,6 +29,11 @@ namespace Data_Acces.Repositories
             return context.Set<Genel>().Find(id);
         }
 
+        public Genel GetByName (string Name)
+        {
+            return context.Set<Genel>().Find(Name);
+        }
+
         public void Insert(Genel entity)
         {
             context.Set<Genel>().Add(entity);

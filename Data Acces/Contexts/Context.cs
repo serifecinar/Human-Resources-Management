@@ -3,7 +3,7 @@ using System.Data.Entity;
 
 namespace DataAcces
 {
-    public class Context : DbContext
+    public class Context : DbContext    
     {
         public DbSet<Log> Log { get; set; }
         public DbSet<Nufus> Nufus { get; set; }

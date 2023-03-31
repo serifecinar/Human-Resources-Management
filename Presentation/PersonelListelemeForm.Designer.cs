@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.PersonelListesiListBox = new System.Windows.Forms.ListBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SicilKartiGosterButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -55,32 +55,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this._DataAcces_ContextDataSet = new Presentation._DataAcces_ContextDataSet();
-            this.genelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.genelsTableAdapter = new Presentation._DataAcces_ContextDataSetTableAdapters.GenelsTableAdapter();
-            this.dataAccesContextDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.genelsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.genelsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.PersonelListesiDataGridView = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._DataAcces_ContextDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAccesContextDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PersonelListesiListBox
-            // 
-            this.PersonelListesiListBox.Font = new System.Drawing.Font("Geometr212 BkCn BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelListesiListBox.FormattingEnabled = true;
-            this.PersonelListesiListBox.ItemHeight = 20;
-            this.PersonelListesiListBox.Location = new System.Drawing.Point(12, 139);
-            this.PersonelListesiListBox.Name = "PersonelListesiListBox";
-            this.PersonelListesiListBox.Size = new System.Drawing.Size(247, 444);
-            this.PersonelListesiListBox.TabIndex = 11;
-            this.PersonelListesiListBox.TabStop = false;
-            this.PersonelListesiListBox.SelectedIndexChanged += new System.EventHandler(this.PersonelListesiListBox_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -113,7 +92,7 @@
             this.UnvanBazliPersonelListesiToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(226, 63);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(610, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(730, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -125,6 +104,7 @@
             this.AlfabetikPersonelListesiToolStripMenuItem.Name = "AlfabetikPersonelListesiToolStripMenuItem";
             this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(292, 24);
             this.AlfabetikPersonelListesiToolStripMenuItem.Text = "ALFABETİK PERSONEL LİSTESİ";
+            this.AlfabetikPersonelListesiToolStripMenuItem.Click += new System.EventHandler(this.AlfabetikPersonelListesiToolStripMenuItem_Click);
             // 
             // UnvanBazliPersonelListesiToolStripMenuItem
             // 
@@ -291,34 +271,25 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "PERSONEL LİSTESİ";
             // 
-            // _DataAcces_ContextDataSet
+            // PersonelListesiDataGridView
             // 
-            this._DataAcces_ContextDataSet.DataSetName = "_DataAcces_ContextDataSet";
-            this._DataAcces_ContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // genelsBindingSource
-            // 
-            this.genelsBindingSource.DataMember = "Genels";
-            this.genelsBindingSource.DataSource = this._DataAcces_ContextDataSet;
-            // 
-            // genelsTableAdapter
-            // 
-            this.genelsTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataAccesContextDataSetBindingSource
-            // 
-            this.dataAccesContextDataSetBindingSource.DataSource = this._DataAcces_ContextDataSet;
-            this.dataAccesContextDataSetBindingSource.Position = 0;
-            // 
-            // genelsBindingSource1
-            // 
-            this.genelsBindingSource1.DataMember = "Genels";
-            this.genelsBindingSource1.DataSource = this.dataAccesContextDataSetBindingSource;
-            // 
-            // genelsBindingSource2
-            // 
-            this.genelsBindingSource2.DataMember = "Genels";
-            this.genelsBindingSource2.DataSource = this.dataAccesContextDataSetBindingSource;
+            this.PersonelListesiDataGridView.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PersonelListesiDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.PersonelListesiDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PersonelListesiDataGridView.GridColor = System.Drawing.Color.WhiteSmoke;
+            this.PersonelListesiDataGridView.Location = new System.Drawing.Point(12, 139);
+            this.PersonelListesiDataGridView.Name = "PersonelListesiDataGridView";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Geometr212 BkCn BT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListesiDataGridView.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.PersonelListesiDataGridView.Size = new System.Drawing.Size(247, 444);
+            this.PersonelListesiDataGridView.TabIndex = 15;
             // 
             // PersonelListelemeForm
             // 
@@ -326,12 +297,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1293, 696);
+            this.Controls.Add(this.PersonelListesiDataGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.SicilKartiGosterButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.PersonelListesiListBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelListelemeForm";
             this.Text = "PERSONEL LİSTELEME";
@@ -340,18 +311,13 @@
             this.menuStrip1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._DataAcces_ContextDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAccesContextDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.genelsBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox PersonelListesiListBox;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button SicilKartiGosterButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -377,11 +343,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem engelliPersonelToolStripMenuItem;
-        private _DataAcces_ContextDataSet _DataAcces_ContextDataSet;
-        private System.Windows.Forms.BindingSource genelsBindingSource;
-        private _DataAcces_ContextDataSetTableAdapters.GenelsTableAdapter genelsTableAdapter;
-        private System.Windows.Forms.BindingSource dataAccesContextDataSetBindingSource;
-        private System.Windows.Forms.BindingSource genelsBindingSource1;
-        private System.Windows.Forms.BindingSource genelsBindingSource2;
+        private System.Windows.Forms.DataGridView PersonelListesiDataGridView;
     }
 }

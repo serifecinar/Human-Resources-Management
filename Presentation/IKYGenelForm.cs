@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.Services;
+using System;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
@@ -8,6 +9,7 @@ namespace Presentation
     {
         PersonelListelemeForm personelListelemeForm = new PersonelListelemeForm();
 
+        GenelService genelService = new GenelService();
         public IKYGenelForm()
         {
             InitializeComponent();
@@ -61,6 +63,11 @@ namespace Presentation
         private void IKYGenelForm_Shown(object sender, EventArgs e)
         {
             AnasayfaButton.Visible = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

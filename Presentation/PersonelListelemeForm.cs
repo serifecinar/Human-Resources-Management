@@ -32,9 +32,11 @@ namespace Presentation
 
         private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
-            // TODO: Bu kod satırı '_DataAcces_ContextDataSet.Genels' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.genelsTableAdapter.Fill(this._DataAcces_ContextDataSet.Genels);
-            PersonelListesiListBox.Text = genelService.GetById(Genel 3);
+        //var data = genelService.GetAll();
+        //    foreach (var item in data)
+        //    {
+        //        PersonelListesiDataGridView.DataSource=data;
+        //    }
         }
 
         private void tESİSŞEFİKOORDİNATÖRToolStripMenuItem_Click(object sender, EventArgs e)
@@ -80,6 +82,13 @@ namespace Presentation
             form3.Show();
 
 
+        }
+
+        private void AlfabetikPersonelListesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //var genelData = genelService.GetAll();      
+            //PersonelListesiDataGridView.DataSource = genelData;
+            //PersonelListesiDataGridView.Refresh();            
         }
     }
 }

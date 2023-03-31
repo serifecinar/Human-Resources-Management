@@ -14,11 +14,11 @@ namespace Data_Acces.Models
         public string Ilce { get; set; }
         public string Mahalle { get; set; }
         public string Sokak { get; set; }
-        public int? KapiNo1 { get; set; }
-        public int? KapiNo2 { get; set; }
-        public int? Daire { get; set; }
-        public int? CepTelNo1 { get; set; }
-        public int? CepTelNo2 { get; set; }
+        public string KapiNo1 { get; set; }
+        public string KapiNo2 { get; set; }
+        public string Daire { get; set; }
+        public string CepTelNo1 { get; set; }
+        public string CepTelNo2 { get; set; }
         public string EMailAdresi { get; set; }
     }
 }
