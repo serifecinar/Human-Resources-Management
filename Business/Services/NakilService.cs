@@ -30,13 +30,18 @@ namespace Business.Services
         {
             nakilRepository.Delete(thing);
         }
-        public void GetById(Nakil thing)
+        public void GetById(int id)
         {
-            nakilRepository.GetById(thing);
+            nakilRepository.GetById(id);
         }
         public void Update(Nakil thing)
         {
             nakilRepository.Update(thing);
+        }
+
+        Nakil IService<Nakil>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

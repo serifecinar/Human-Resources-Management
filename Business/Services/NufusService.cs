@@ -30,13 +30,19 @@ namespace Business.Services
         {
             nufusRepository.Delete(thing);
         }
-        public void GetById(Nufus thing)
+        public Nufus GetById(int id)
         {
-            nufusRepository.GetById(thing);
+            return nufusRepository.GetById(id);
         }
+
         public void Update(Nufus thing)
         {
             nufusRepository.Update(thing);
+        }
+
+        Nufus IService<Nufus>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

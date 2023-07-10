@@ -8,6 +8,6 @@ namespace Business.Interfaces
         void Add(T thing);
         void Delete(T thing);
         void Update(T thing);
-        void GetById(T thing);
+        T GetById(int id);
     }
 }

@@ -55,6 +55,7 @@
             this.GorevYeriTextBox = new System.Windows.Forms.TextBox();
             this.UnvaniTextBox = new System.Windows.Forms.TextBox();
             this.IseGirisTarihiTextBox = new System.Windows.Forms.TextBox();
+            this.SeflikTextBox = new System.Windows.Forms.TextBox();
             this.MudurlukTextBox = new System.Windows.Forms.TextBox();
             this.SoyadiTextBox = new System.Windows.Forms.TextBox();
             this.AdiTextBox = new System.Windows.Forms.TextBox();
@@ -279,7 +280,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SeflikTextBox = new System.Windows.Forms.TextBox();
+            this.PersonelListesiButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -304,7 +305,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(-1, -7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1019, 46);
+            this.panel1.Size = new System.Drawing.Size(1296, 46);
             this.panel1.TabIndex = 5;
             // 
             // label4
@@ -312,7 +313,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Geometr212 BkCn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label4.Location = new System.Drawing.Point(391, 16);
+            this.label4.Location = new System.Drawing.Point(530, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(211, 20);
             this.label4.TabIndex = 4;
@@ -328,7 +329,7 @@
             this.SicilKartiTabControl.Controls.Add(this.PerformansTabPage);
             this.SicilKartiTabControl.Controls.Add(this.IletisimTabPage);
             this.SicilKartiTabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SicilKartiTabControl.Location = new System.Drawing.Point(12, 45);
+            this.SicilKartiTabControl.Location = new System.Drawing.Point(148, 45);
             this.SicilKartiTabControl.Name = "SicilKartiTabControl";
             this.SicilKartiTabControl.SelectedIndex = 0;
             this.SicilKartiTabControl.Size = new System.Drawing.Size(986, 507);
@@ -381,7 +382,7 @@
             "KADIKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "KÜÇÜKSU ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
-            this.comboBox1.Location = new System.Drawing.Point(832, 10);
+            this.comboBox1.Location = new System.Drawing.Point(786, 6);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(494, 28);
             this.comboBox1.TabIndex = 23;
@@ -630,6 +631,17 @@
             this.IseGirisTarihiTextBox.Name = "IseGirisTarihiTextBox";
             this.IseGirisTarihiTextBox.Size = new System.Drawing.Size(493, 19);
             this.IseGirisTarihiTextBox.TabIndex = 10;
+            // 
+            // SeflikTextBox
+            // 
+            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.SeflikTextBox.Location = new System.Drawing.Point(152, 235);
+            this.SeflikTextBox.Name = "SeflikTextBox";
+            this.SeflikTextBox.Size = new System.Drawing.Size(493, 19);
+            this.SeflikTextBox.TabIndex = 10;
             // 
             // MudurlukTextBox
             // 
@@ -3490,22 +3502,25 @@
             this.textBox1.Size = new System.Drawing.Size(291, 19);
             this.textBox1.TabIndex = 38;
             // 
-            // SeflikTextBox
+            // PersonelListesiButton
             // 
-            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.SeflikTextBox.Location = new System.Drawing.Point(152, 235);
-            this.SeflikTextBox.Name = "SeflikTextBox";
-            this.SeflikTextBox.Size = new System.Drawing.Size(493, 19);
-            this.SeflikTextBox.TabIndex = 10;
+            this.PersonelListesiButton.BackColor = System.Drawing.Color.DarkRed;
+            this.PersonelListesiButton.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListesiButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.PersonelListesiButton.Location = new System.Drawing.Point(514, 537);
+            this.PersonelListesiButton.Name = "PersonelListesiButton";
+            this.PersonelListesiButton.Size = new System.Drawing.Size(248, 47);
+            this.PersonelListesiButton.TabIndex = 14;
+            this.PersonelListesiButton.Text = "PERSONEL LİSTESİ";
+            this.PersonelListesiButton.UseVisualStyleBackColor = false;
+            this.PersonelListesiButton.Click += new System.EventHandler(this.PersonelListesiButton_Click);
             // 
             // PersonelSicilKartiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 564);
+            this.ClientSize = new System.Drawing.Size(1293, 583);
+            this.Controls.Add(this.PersonelListesiButton);
             this.Controls.Add(this.SicilKartiTabControl);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -3795,5 +3810,6 @@
         private System.Windows.Forms.TextBox IseGirisTarihiTextBox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox SeflikTextBox;
+        private System.Windows.Forms.Button PersonelListesiButton;
     }
 }

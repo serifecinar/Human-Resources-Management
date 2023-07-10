@@ -27,6 +27,7 @@ namespace Presentation
         {
             groupBox1.Visible = false;
             personelListelemeForm.TopLevel = false;
+
             panel1.Controls.Clear();
             panel1.Controls.Add(personelListelemeForm);
             personelListelemeForm.Show();
@@ -66,6 +67,11 @@ namespace Presentation
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

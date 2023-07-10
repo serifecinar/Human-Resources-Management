@@ -30,13 +30,18 @@ namespace Business.Services
         {
             tahsilRepository.Delete(thing);
         }
-        public void GetById(Tahsil thing)
+        public void GetById(int id)
         {
-            tahsilRepository.GetById(thing);
+            tahsilRepository.GetById(id);
         }
         public void Update(Tahsil thing)
         {
             tahsilRepository.Update(thing);
+        }
+
+        Tahsil IService<Tahsil>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

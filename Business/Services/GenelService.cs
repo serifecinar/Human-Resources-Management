@@ -26,9 +26,9 @@ namespace Business.Services
         {
             genelRepository.Delete(thing);
         }
-        public void GetById(Genel thing)
+        public Genel GetById(int id)
         {
-            genelRepository.GetById(thing);
+            return genelRepository.GetById(id);
         }
         public void Update(Genel thing)
         {

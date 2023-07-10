@@ -30,13 +30,18 @@ namespace Business.Services
         {
             sertifikaRepository.Delete(thing);
         }
-        public void GetById(Sertifika thing)
+        public void GetById(int id)
         {
-            sertifikaRepository.GetById(thing);
+            sertifikaRepository.GetById(id);
         }
         public void Update(Sertifika thing)
         {
             sertifikaRepository.Update(thing);
+        }
+
+        Sertifika IService<Sertifika>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

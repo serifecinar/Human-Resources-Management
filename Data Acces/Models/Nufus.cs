@@ -25,21 +25,25 @@ namespace DataAcces
         public string CocukAdi3 { get; set; }
         public string CocukAdi4 { get; set; }
         public string CocukAdi5 { get; set; }
+        public string CocukAdi6 { get; set; }
         public string CocukCinsiyeti1 { get; set; }
         public string CocukCinsiyeti2 { get; set; }
         public string CocukCinsiyeti3 { get; set; }
         public string CocukCinsiyeti4 { get; set; }
         public string CocukCinsiyeti5 { get; set; }
+        public string CocukCinsiyeti6 { get; set; }
         public DateTime? CocukDogumTarihi1 { get; set; }
         public DateTime? CocukDogumTarihi2 { get; set; }
         public DateTime? CocukDogumTarihi3 { get; set; }
         public DateTime? CocukDogumTarihi4 { get; set; }
         public DateTime? CocukDogumTarihi5 { get; set; }
+        public DateTime? CocukDogumTarihi6 { get; set; }
         public string CocukHakkinda1 { get; set; }
         public string CocukHakkinda2 { get; set; }
         public string CocukHakkinda3 { get; set; }
         public string CocukHakkinda4 { get; set; }
         public string CocukHakkinda5 { get; set; }
+        public string CocukHakkinda6 { get; set; }
 
 
 

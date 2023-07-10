@@ -16,7 +16,7 @@ namespace Data_Acces.Repositories
             var entity = context.Set<Genel>().Find(id);
             if (entity != null)
                 context.Set<Genel>().Remove(entity);
-            context.SaveChanges();
+                context.SaveChanges();
         }
 
         public IEnumerable<Genel> GetAll()

@@ -26,13 +26,18 @@ namespace Business.Services
         {
             loggerRepository.Delete(thing);
         }
-        public void GetById(Log thing)
+        public void GetById(int id)
         {
-            loggerRepository.GetById(thing);
+            loggerRepository.GetById(id);
         }
         public void Update(Log thing)
         {
             loggerRepository.Update(thing);
+        }
+
+        Log IService<Log>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

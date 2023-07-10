@@ -30,13 +30,18 @@ namespace Business.Services
         {
             iletisimRepository.Delete(thing);
         }
-        public void GetById(Iletisim thing)
+        public void GetById(int id)
         {
-            iletisimRepository.GetById(thing);
+            iletisimRepository.GetById(id);
         }
         public void Update(Iletisim thing)
         {
             iletisimRepository.Update(thing);
+        }
+
+        Iletisim IService<Iletisim>.GetById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
