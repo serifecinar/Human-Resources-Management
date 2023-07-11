@@ -63,42 +63,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IKYGenelForm.cs">
+    <Compile Include="Forms\IKYGenelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IKYGenelForm.Designer.cs">
+    <Compile Include="Forms\IKYGenelForm.Designer.cs">
       <DependentUpon>IKYGenelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GirisForm.cs">
+    <Compile Include="Forms\GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GirisForm.Designer.cs">
+    <Compile Include="Forms\GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelListelemeForm.cs">
+    <Compile Include="Forms\PersonelListelemeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelListelemeForm.Designer.cs">
+    <Compile Include="Forms\PersonelListelemeForm.Designer.cs">
       <DependentUpon>PersonelListelemeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonelSicilKartiForm.cs">
+    <Compile Include="Forms\PersonelSicilKartiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PersonelSicilKartiForm.Designer.cs">
+    <Compile Include="Forms\PersonelSicilKartiForm.Designer.cs">
       <DependentUpon>PersonelSicilKartiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="IKYGenelForm.resx">
+    <EmbeddedResource Include="Forms\IKYGenelForm.resx">
       <DependentUpon>IKYGenelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GirisForm.resx">
+    <EmbeddedResource Include="Forms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelListelemeForm.resx">
+    <EmbeddedResource Include="Forms\PersonelListelemeForm.resx">
       <DependentUpon>PersonelListelemeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PersonelSicilKartiForm.resx">
+    <EmbeddedResource Include="Forms\PersonelSicilKartiForm.resx">
       <DependentUpon>PersonelSicilKartiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -111,7 +111,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

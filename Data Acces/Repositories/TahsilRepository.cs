@@ -28,6 +28,11 @@ namespace DataAcces.Repositories
             return context.Set<Tahsil>().Find(id);
         }
 
+        public Tahsil GetByPersonelId(object personelId)
+        {
+            return context.Set<Tahsil>().Find(personelId);
+        }
+
         public void Insert(Tahsil entity)
         {
             context.Set<Tahsil>().Add(entity);

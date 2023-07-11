@@ -40,9 +40,9 @@ namespace Business.Services
             nufusRepository.Update(thing);
         }
 
-        Nufus IService<Nufus>.GetById(int id)
+         public Nufus GetByPersonelId(int personelId)
         {
-            throw new NotImplementedException();
+            return nufusRepository.GetByPersonelId(personelId);
         }
     }
 }

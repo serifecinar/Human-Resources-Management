@@ -32,6 +32,11 @@ namespace Data_Acces.Repositories
             return context.Set<Giris>().Find(id);
         }
 
+        public Giris GetByPersonelId(object personelId)
+        {
+            return context.Set<Giris>().Find(personelId);
+        }
+
         public void Insert(Giris entity)
         {
             context.Set<Giris>().Add(entity);

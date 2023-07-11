@@ -29,18 +29,18 @@ namespace Business.Services
         {
             girisRepository.Delete(thing);
         }
-        public void GetById(int id)
+        public Giris GetById(int id)
         {
-            girisRepository.GetById(id);
+           return girisRepository.GetById(id);
         }
         public void Update(Giris thing)
         {
             girisRepository.Update(thing);
         }
 
-        Giris IService<Giris>.GetById(int id)
+        public Giris GetByPersonelId(int personelId)
         {
-            throw new NotImplementedException();
+            return girisRepository.GetByPersonelId(personelId);
         }
     }
 }

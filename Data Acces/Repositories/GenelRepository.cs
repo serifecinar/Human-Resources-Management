@@ -28,7 +28,10 @@ namespace Data_Acces.Repositories
         {
             return context.Set<Genel>().Find(id);
         }
-
+        public Genel GetByPersonelId(object personelId)
+        {
+            return context.Set<Genel>().Find(personelId);
+        }
         public void Insert(Genel entity)
         {
             context.Set<Genel>().Add(entity);

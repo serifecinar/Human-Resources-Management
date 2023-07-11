@@ -28,6 +28,11 @@ namespace DataAcces.Repositories
             return context.Set<Sertifika>().Find(id);
         }
 
+        public Sertifika GetByPersonelId(object personelId)
+        {
+            return context.Set<Sertifika>().Find(personelId);
+        }
+
         public void Insert(Sertifika entity)
         {
             context.Set<Sertifika>().Add(entity);

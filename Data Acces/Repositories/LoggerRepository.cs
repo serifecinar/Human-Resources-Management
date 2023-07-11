@@ -1,4 +1,5 @@
-﻿using DataAcces.Interfaces;
+﻿using Data_Acces.Models;
+using DataAcces.Interfaces;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -38,6 +39,11 @@ namespace DataAcces.Repositories
             if (entity != null)
                 context.Set<Log>().Remove(entity);
             context.SaveChanges();
+        }
+
+        public Log GetByPersonelId(object personelId)
+        {
+            return context.Set<Log>().Find(personelId);
         }
     }
 }

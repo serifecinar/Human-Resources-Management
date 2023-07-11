@@ -34,5 +34,10 @@ namespace Business.Services
         {
             genelRepository.Update(thing);
         }
+
+        public Genel GetByPersonelId(int personelId)
+        {
+            return genelRepository.GetByPersonelId(personelId);
+        }
     }
 }

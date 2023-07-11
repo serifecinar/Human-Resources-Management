@@ -311,11 +311,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Geometr212 BkCn BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.Location = new System.Drawing.Point(530, 16);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 20);
+            this.label4.Size = new System.Drawing.Size(212, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "PERSONEL SİCİL KARTI";
             // 
@@ -384,7 +384,7 @@
             "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
             this.comboBox1.Location = new System.Drawing.Point(786, 6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(494, 28);
+            this.comboBox1.Size = new System.Drawing.Size(178, 28);
             this.comboBox1.TabIndex = 23;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -3505,7 +3505,7 @@
             // PersonelListesiButton
             // 
             this.PersonelListesiButton.BackColor = System.Drawing.Color.DarkRed;
-            this.PersonelListesiButton.Font = new System.Drawing.Font("Geometr415 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListesiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PersonelListesiButton.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.PersonelListesiButton.Location = new System.Drawing.Point(514, 537);
             this.PersonelListesiButton.Name = "PersonelListesiButton";

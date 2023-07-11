@@ -31,6 +31,11 @@ namespace DataAcces.Repositories
             return context.Set<Nakil>().Find(id);
         }
 
+        public Nakil GetByPersonelId(object personelId)
+        {
+            return context.Set<Nakil>().Find(personelId);
+        }
+
         public void Insert(Nakil entity)
         {
             context.Set<Nakil>().Add(entity);

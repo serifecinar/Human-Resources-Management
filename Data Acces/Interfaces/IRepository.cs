@@ -10,6 +10,8 @@ namespace DataAcces.Interfaces
         // Belirli bir kaydı alır.
         T GetById(object id);
 
+        T GetByPersonelId(object personelId);
+
         // Yeni bir kayıt ekler.
         void Insert(T entity);
 

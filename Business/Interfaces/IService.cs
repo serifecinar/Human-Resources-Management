@@ -9,5 +9,6 @@ namespace Business.Interfaces
         void Delete(T thing);
         void Update(T thing);
         T GetById(int id);
+        T GetByPersonelId(int personelId);
     }
 }

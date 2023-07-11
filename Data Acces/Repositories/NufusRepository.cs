@@ -32,6 +32,11 @@ namespace Data_Acces.Repositories
             return context.Set<Nufus>().Find(id);
         }
 
+        public Nufus GetByPersonelId(object personelId)
+        {
+            return context.Set<Nufus>().Find(personelId);
+        }
+
         public void Insert(Nufus entity)
         {
             context.Set<Nufus>().Add(entity);

@@ -28,6 +28,11 @@ namespace DataAcces.Repositories
             return context.Set<Iletisim>().Find(id);
         }
 
+        public Iletisim GetByPersonelId(object personelId)
+        {
+            return context.Set<Iletisim>().Find(personelId);
+        }
+
         public void Insert(Iletisim entity)
         {
             context.Set<Iletisim>().Add(entity);
