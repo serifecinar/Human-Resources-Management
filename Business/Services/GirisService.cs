@@ -19,11 +19,11 @@ namespace Business.Services
             girisRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Giris> GetAll()
         {
             var genelData = girisRepository.GetAll();
 
-            return genelData.ToArray();
+            return genelData.ToList();
         }
         public void Delete(Giris thing)
         {

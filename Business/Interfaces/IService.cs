@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Business.Interfaces
 {
     public interface IService<T> where T : class
     {
-        Array GetAll();
+        List<T> GetAll();
         void Add(T thing);
         void Delete(T thing);
         void Update(T thing);

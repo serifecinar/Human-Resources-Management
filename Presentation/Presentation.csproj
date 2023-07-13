@@ -75,6 +75,12 @@
     <Compile Include="Forms\GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Pages\AnaMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pages\AnaMenuForm.Designer.cs">
+      <DependentUpon>AnaMenuForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Pages\PersonelListelemeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,11 +95,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\DtToList.cs" />
+    <Compile Include="Utils\PageChange.cs" />
     <EmbeddedResource Include="Forms\IKYGenelForm.resx">
       <DependentUpon>IKYGenelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pages\AnaMenuForm.resx">
+      <DependentUpon>AnaMenuForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Pages\PersonelListelemeForm.resx">
       <DependentUpon>PersonelListelemeForm.cs</DependentUpon>

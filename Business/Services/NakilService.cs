@@ -20,11 +20,11 @@ namespace Business.Services
             nakilRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Nakil> GetAll()
         {
             var nakilData = nakilRepository.GetAll();
 
-            return nakilData.ToArray();
+            return nakilData.ToList();
         }
         public void Delete(Nakil thing)
         {

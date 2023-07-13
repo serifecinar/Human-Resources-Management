@@ -1,4 +1,6 @@
 ﻿using Business.Services;
+using Presentation.Forms.Pages;
+using Presentation.Utils;
 using System;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
@@ -17,43 +19,12 @@ namespace Presentation
 
         private void AnasayfaButton_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
-            personelListelemeForm.TopLevel = false;
-            panel1.Controls.Clear();
-            AnasayfaButton.Visible = false;
-        }
-
-        private void PersonelListelemeButton_Click(object sender, EventArgs e)
-        {
-            groupBox1.Visible = false;
-            personelListelemeForm.TopLevel = false;
-
-            panel1.Controls.Clear();
-            panel1.Controls.Add(personelListelemeForm);
-            personelListelemeForm.Show();
-            AnasayfaButton.Visible = true;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            PageChange.Change(PanelContent, this, new AnaMenuForm());
         }
 
         private void IKYGenelForm_Load(object sender, EventArgs e)
         {
-
-        }
-        private void NakilButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-        private void YeniKayitButton_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void GuncelleButton_Click(object sender, EventArgs e)
-        {
-
+            PageChange.Change(PanelContent, this, new AnaMenuForm());
         }
 
         private void IKYGenelForm_Activated(object sender, EventArgs e)
@@ -63,17 +34,7 @@ namespace Presentation
 
         private void IKYGenelForm_Shown(object sender, EventArgs e)
         {
-            AnasayfaButton.Visible = false;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            AnasayfaButton.Visible = true;
         }
     }
 }

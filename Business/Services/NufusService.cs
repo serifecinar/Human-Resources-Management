@@ -20,11 +20,11 @@ namespace Business.Services
             nufusRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Nufus> GetAll()
         {
             var nufusData = nufusRepository.GetAll();
 
-            return nufusData.ToArray();
+            return nufusData.ToList();
         }
         public void Delete(Nufus thing)
         {

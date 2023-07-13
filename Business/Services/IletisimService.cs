@@ -20,11 +20,11 @@ namespace Business.Services
             iletisimRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Iletisim> GetAll()
         {
             var iletisimData = iletisimRepository.GetAll();
 
-            return iletisimData.ToArray();
+            return iletisimData.ToList();
         }
         public void Delete(Iletisim thing)
         {

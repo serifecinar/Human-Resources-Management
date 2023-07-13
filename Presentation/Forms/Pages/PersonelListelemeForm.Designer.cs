@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.PersonelListesiGroupBox = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PersonelListesiAdvancedDataGridView = new Zuby.ADGV.AdvancedDataGridView();
             this.SicilKartiGosterButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -52,58 +51,54 @@
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.engelliPersonelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.PersonelListesiGroupBox.SuspendLayout();
+            this.PanelContent = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.PanelContent.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // label1
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 113);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1293, 583);
-            this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
-            // 
-            // PersonelListesiGroupBox
-            // 
-            this.PersonelListesiGroupBox.Controls.Add(this.PersonelListesiAdvancedDataGridView);
-            this.PersonelListesiGroupBox.Controls.Add(this.SicilKartiGosterButton);
-            this.PersonelListesiGroupBox.Controls.Add(this.menuStrip1);
-            this.PersonelListesiGroupBox.Location = new System.Drawing.Point(12, 52);
-            this.PersonelListesiGroupBox.Name = "PersonelListesiGroupBox";
-            this.PersonelListesiGroupBox.Size = new System.Drawing.Size(1258, 641);
-            this.PersonelListesiGroupBox.TabIndex = 16;
-            this.PersonelListesiGroupBox.TabStop = false;
-            this.PersonelListesiGroupBox.Enter += new System.EventHandler(this.PersonelListesiGroupBox_Enter);
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1287, 68);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "PERSONEL LİSTELEME";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PersonelListesiAdvancedDataGridView
             // 
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
-            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(19, 58);
+            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 98);
             this.PersonelListesiAdvancedDataGridView.MultiSelect = false;
             this.PersonelListesiAdvancedDataGridView.Name = "PersonelListesiAdvancedDataGridView";
             this.PersonelListesiAdvancedDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PersonelListesiAdvancedDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1209, 463);
+            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1287, 448);
             this.PersonelListesiAdvancedDataGridView.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.PersonelListesiAdvancedDataGridView.TabIndex = 18;
+            this.PersonelListesiAdvancedDataGridView.SortStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.SortEventArgs>(this.PersonelListesiAdvancedDataGridView_SortStringChanged);
             this.PersonelListesiAdvancedDataGridView.FilterStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.FilterEventArgs>(this.PersonelListesiAdvancedDataGridView_FilterStringChanged);
             // 
             // SicilKartiGosterButton
             // 
             this.SicilKartiGosterButton.BackColor = System.Drawing.Color.DarkRed;
+            this.SicilKartiGosterButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SicilKartiGosterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SicilKartiGosterButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SicilKartiGosterButton.Location = new System.Drawing.Point(511, 527);
+            this.SicilKartiGosterButton.Location = new System.Drawing.Point(500, 559);
+            this.SicilKartiGosterButton.Margin = new System.Windows.Forms.Padding(500, 10, 500, 10);
             this.SicilKartiGosterButton.Name = "SicilKartiGosterButton";
-            this.SicilKartiGosterButton.Size = new System.Drawing.Size(247, 82);
+            this.SicilKartiGosterButton.Size = new System.Drawing.Size(293, 50);
             this.SicilKartiGosterButton.TabIndex = 13;
             this.SicilKartiGosterButton.Text = "SİCİL KARTI GÖSTER";
             this.SicilKartiGosterButton.UseVisualStyleBackColor = false;
@@ -111,15 +106,14 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.menuStrip1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AlfabetikPersonelListesiToolStripMenuItem,
             this.UnvanBazliPersonelListesiToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(6, 27);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 68);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(555, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1293, 27);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -129,7 +123,7 @@
             this.AlfabetikPersonelListesiToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AlfabetikPersonelListesiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
             this.AlfabetikPersonelListesiToolStripMenuItem.Name = "AlfabetikPersonelListesiToolStripMenuItem";
-            this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
+            this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(264, 23);
             this.AlfabetikPersonelListesiToolStripMenuItem.Text = "ALFABETİK PERSONEL LİSTESİ";
             this.AlfabetikPersonelListesiToolStripMenuItem.Click += new System.EventHandler(this.AlfabetikPersonelListesiToolStripMenuItem_Click);
             // 
@@ -159,7 +153,7 @@
             this.UnvanBazliPersonelListesiToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.UnvanBazliPersonelListesiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
             this.UnvanBazliPersonelListesiToolStripMenuItem.Name = "UnvanBazliPersonelListesiToolStripMenuItem";
-            this.UnvanBazliPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
+            this.UnvanBazliPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(283, 23);
             this.UnvanBazliPersonelListesiToolStripMenuItem.Text = "UNVAN BAZLI PERSONEL LİSTESİ";
             // 
             // TesisSefiKoordinatorToolStripMenuItem
@@ -266,55 +260,57 @@
             this.engelliPersonelToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.engelliPersonelToolStripMenuItem.Text = "Engelli Personel";
             // 
-            // panel3
+            // PanelContent
             // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1293, 46);
-            this.panel3.TabIndex = 14;
+            this.PanelContent.Controls.Add(this.tableLayoutPanel1);
+            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContent.Location = new System.Drawing.Point(0, 0);
+            this.PanelContent.Name = "PanelContent";
+            this.PanelContent.Size = new System.Drawing.Size(1293, 619);
+            this.PanelContent.TabIndex = 17;
             // 
-            // label1
+            // tableLayoutPanel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(461, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "PERSONEL LİSTELEME";
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.SicilKartiGosterButton, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.PersonelListesiAdvancedDataGridView, 0, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 4;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.361874F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.3441F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 619);
+            this.tableLayoutPanel1.TabIndex = 19;
             // 
             // PersonelListelemeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1293, 696);
-            this.Controls.Add(this.PersonelListesiGroupBox);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel3);
+            this.ClientSize = new System.Drawing.Size(1293, 619);
+            this.Controls.Add(this.PanelContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelListelemeForm";
             this.Text = "PERSONEL LİSTELEME";
             this.Activated += new System.EventHandler(this.PersonelListelemeForm_Activated);
             this.Load += new System.EventHandler(this.PersonelListelemeForm_Load);
-            this.PersonelListesiGroupBox.ResumeLayout(false);
-            this.PersonelListesiGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.PanelContent.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button SicilKartiGosterButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AlfabetikPersonelListesiToolStripMenuItem;
@@ -335,10 +331,10 @@
         private System.Windows.Forms.ToolStripMenuItem GenelHizmetliPersoneliDuzIscilerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem engelliPersonelToolStripMenuItem;
-        private System.Windows.Forms.GroupBox PersonelListesiGroupBox;
         private Zuby.ADGV.AdvancedDataGridView PersonelListesiAdvancedDataGridView;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel PanelContent;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

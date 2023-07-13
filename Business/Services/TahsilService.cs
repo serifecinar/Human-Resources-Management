@@ -20,11 +20,11 @@ namespace Business.Services
             tahsilRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Tahsil> GetAll()
         {
             var tahsilData = tahsilRepository.GetAll();
 
-            return tahsilData.ToArray();
+            return tahsilData.ToList();
         }
         public void Delete(Tahsil thing)
         {

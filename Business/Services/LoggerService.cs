@@ -3,6 +3,7 @@ using DataAcces;
 using DataAcces.Interfaces;
 using DataAcces.Repositories;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Business.Services
@@ -16,12 +17,13 @@ namespace Business.Services
             loggerRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Log> GetAll()
         {
             var logs = loggerRepository.GetAll();
 
-            return logs.ToArray();
+            return logs.ToList();
         }
+
         public void Delete(Log thing)
         {
             loggerRepository.Delete(thing);

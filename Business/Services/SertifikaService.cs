@@ -20,11 +20,11 @@ namespace Business.Services
             sertifikaRepository.Insert(thing);
         }
 
-        public Array GetAll()
+        public List<Sertifika> GetAll()
         {
             var sertifikaData = sertifikaRepository.GetAll();
 
-            return sertifikaData.ToArray();
+            return sertifikaData.ToList();
         }
         public void Delete(Sertifika thing)
         {
