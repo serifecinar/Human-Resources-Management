@@ -33,7 +33,11 @@
             this.SicilKartiGosterButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AlfabetikPersonelListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Tumu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adanZyeSıralamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zdenAyaSıralamaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UnvanBazliPersonelListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Tumu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TesisSefiKoordinatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ISGSorumlusuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +79,7 @@
             // 
             // PersonelListesiAdvancedDataGridView
             // 
+            this.PersonelListesiAdvancedDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
@@ -120,12 +125,36 @@
             // AlfabetikPersonelListesiToolStripMenuItem
             // 
             this.AlfabetikPersonelListesiToolStripMenuItem.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AlfabetikPersonelListesiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Tumu1ToolStripMenuItem,
+            this.adanZyeSıralamaToolStripMenuItem,
+            this.zdenAyaSıralamaToolStripMenuItem});
             this.AlfabetikPersonelListesiToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AlfabetikPersonelListesiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
             this.AlfabetikPersonelListesiToolStripMenuItem.Name = "AlfabetikPersonelListesiToolStripMenuItem";
             this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(264, 23);
             this.AlfabetikPersonelListesiToolStripMenuItem.Text = "ALFABETİK PERSONEL LİSTESİ";
-            this.AlfabetikPersonelListesiToolStripMenuItem.Click += new System.EventHandler(this.AlfabetikPersonelListesiToolStripMenuItem_Click);
+            // 
+            // Tumu1ToolStripMenuItem
+            // 
+            this.Tumu1ToolStripMenuItem.Name = "Tumu1ToolStripMenuItem";
+            this.Tumu1ToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
+            this.Tumu1ToolStripMenuItem.Text = "Tümü";
+            this.Tumu1ToolStripMenuItem.Click += new System.EventHandler(this.Tumu1ToolStripMenuItem_Click);
+            // 
+            // adanZyeSıralamaToolStripMenuItem
+            // 
+            this.adanZyeSıralamaToolStripMenuItem.Name = "adanZyeSıralamaToolStripMenuItem";
+            this.adanZyeSıralamaToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
+            this.adanZyeSıralamaToolStripMenuItem.Text = "A\'dan Z\'ye Sıralama";
+            this.adanZyeSıralamaToolStripMenuItem.Click += new System.EventHandler(this.adanZyeSıralamaToolStripMenuItem_Click);
+            // 
+            // zdenAyaSıralamaToolStripMenuItem
+            // 
+            this.zdenAyaSıralamaToolStripMenuItem.Name = "zdenAyaSıralamaToolStripMenuItem";
+            this.zdenAyaSıralamaToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
+            this.zdenAyaSıralamaToolStripMenuItem.Text = "Z\'den A\'ya Sıralama";
+            this.zdenAyaSıralamaToolStripMenuItem.Click += new System.EventHandler(this.zdenAyaSıralamaToolStripMenuItem_Click);
             // 
             // UnvanBazliPersonelListesiToolStripMenuItem
             // 
@@ -133,6 +162,7 @@
             this.UnvanBazliPersonelListesiToolStripMenuItem.Checked = true;
             this.UnvanBazliPersonelListesiToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.UnvanBazliPersonelListesiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Tumu2ToolStripMenuItem,
             this.TesisSefiKoordinatorToolStripMenuItem,
             this.ISGSorumlusuToolStripMenuItem,
             this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem,
@@ -156,47 +186,61 @@
             this.UnvanBazliPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(283, 23);
             this.UnvanBazliPersonelListesiToolStripMenuItem.Text = "UNVAN BAZLI PERSONEL LİSTESİ";
             // 
+            // Tumu2ToolStripMenuItem
+            // 
+            this.Tumu2ToolStripMenuItem.Name = "Tumu2ToolStripMenuItem";
+            this.Tumu2ToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
+            this.Tumu2ToolStripMenuItem.Text = "Tümü";
+            this.Tumu2ToolStripMenuItem.Click += new System.EventHandler(this.Tumu2ToolStripMenuItem_Click);
+            // 
             // TesisSefiKoordinatorToolStripMenuItem
             // 
             this.TesisSefiKoordinatorToolStripMenuItem.Name = "TesisSefiKoordinatorToolStripMenuItem";
             this.TesisSefiKoordinatorToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.TesisSefiKoordinatorToolStripMenuItem.Text = "Tesis Şefi – Koordinatör";
+            this.TesisSefiKoordinatorToolStripMenuItem.Click += new System.EventHandler(this.TesisSefiKoordinatorToolStripMenuItem_Click);
             // 
             // ISGSorumlusuToolStripMenuItem
             // 
             this.ISGSorumlusuToolStripMenuItem.Name = "ISGSorumlusuToolStripMenuItem";
             this.ISGSorumlusuToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.ISGSorumlusuToolStripMenuItem.Text = "İSG Sorumlusu";
+            this.ISGSorumlusuToolStripMenuItem.Click += new System.EventHandler(this.ISGSorumlusuToolStripMenuItem_Click);
             // 
             // DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem
             // 
             this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem.Name = "DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem";
             this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem.Text = "Deneyimli Bakım – Onarım İşletme Mühendisi";
+            this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem.Click += new System.EventHandler(this.DeneyimliBakimOnarimİsletmeMühendisiToolStripMenuItem_Click);
             // 
             // AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem
             // 
             this.AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem.Name = "AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem";
             this.AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem.Text = "Atölye / Ünite Sorumlu Mühendis + Laboratuvar Sorumlu Mühendis";
+            this.AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem.Click += new System.EventHandler(this.AtolyeUniteSorumluMuhendisLaboratuvarSorumluMuhendisToolStripMenuItem_Click);
             // 
             // SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem
             // 
             this.SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem.Name = "SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem";
             this.SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem.Text = "Saha Mühendisi/Bölge Scada Sorumlusu";
+            this.SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem.Click += new System.EventHandler(this.SahaMuhendisiBolgeScadaSorumlusuToolStripMenuItem_Click);
             // 
             // LaboratuvarAnalizGorevlisiToolStripMenuItem
             // 
             this.LaboratuvarAnalizGorevlisiToolStripMenuItem.Name = "LaboratuvarAnalizGorevlisiToolStripMenuItem";
             this.LaboratuvarAnalizGorevlisiToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.LaboratuvarAnalizGorevlisiToolStripMenuItem.Text = "Laboratuvar Analiz Görevlisi";
+            this.LaboratuvarAnalizGorevlisiToolStripMenuItem.Click += new System.EventHandler(this.LaboratuvarAnalizGorevlisiToolStripMenuItem_Click);
             // 
             // BakimOnarimUstabaslariFormenToolStripMenuItem
             // 
             this.BakimOnarimUstabaslariFormenToolStripMenuItem.Name = "BakimOnarimUstabaslariFormenToolStripMenuItem";
             this.BakimOnarimUstabaslariFormenToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.BakimOnarimUstabaslariFormenToolStripMenuItem.Text = "Bakım Onarım Ustabaşları/Formen";
+            this.BakimOnarimUstabaslariFormenToolStripMenuItem.Click += new System.EventHandler(this.BakimOnarimUstabaslariFormenToolStripMenuItem_Click);
             // 
             // BolgeScadaVeSistemBakimVeKalibrasyonOperatorleriTeknikRaporlamaSorumlusuBakimOnarimUstalariCamurKojenIslBakimOperatorleriToolStripMenuItem
             // 
@@ -205,60 +249,70 @@
             this.BolgeScadaVeSistemBakimVeKalibrasyonOperatorleriTeknikRaporlamaSorumlusuBakimOnarimUstalariCamurKojenIslBakimOperatorleriToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.BolgeScadaVeSistemBakimVeKalibrasyonOperatorleriTeknikRaporlamaSorumlusuBakimOnarimUstalariCamurKojenIslBakimOperatorleriToolStripMenuItem.Text = "Bölge Scada Ve Sistem Bakım Ve Kalibrasyon Operatörleri / Teknik Raporlama Soruml" +
     "usu/ Bakım Onarım Ustaları/Çamur/Kojen İşl./Bakım Operatörleri";
+            this.BolgeScadaVeSistemBakimVeKalibrasyonOperatorleriTeknikRaporlamaSorumlusuBakimOnarimUstalariCamurKojenIslBakimOperatorleriToolStripMenuItem.Click += new System.EventHandler(this.BolgeScadaVeSistemBakimVeKalibrasyonOperatorleriTeknikRaporlamaSorumlusuBakimOnarimUstalariCamurKojenIslBakimOperatorleriToolStripMenuItem_Click);
             // 
             // NumuneAlmaAnalizKalibrasyonToolStripMenuItem
             // 
             this.NumuneAlmaAnalizKalibrasyonToolStripMenuItem.Name = "NumuneAlmaAnalizKalibrasyonToolStripMenuItem";
             this.NumuneAlmaAnalizKalibrasyonToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.NumuneAlmaAnalizKalibrasyonToolStripMenuItem.Text = "Numune Alma Analiz Kalibrasyon";
+            this.NumuneAlmaAnalizKalibrasyonToolStripMenuItem.Click += new System.EventHandler(this.NumuneAlmaAnalizKalibrasyonToolStripMenuItem_Click);
             // 
             // IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem
             // 
             this.IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem.Name = "IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem";
             this.IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem.Text = "İşletme Bakım Onarım Operatörleri / İşçileri/ İdari Raporlama Sorumlusu";
+            this.IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem.Click += new System.EventHandler(this.IsletmeBakimOnarimOperatorleriIscileriIdariRaporlamaSorumlusuToolStripMenuItem_Click);
             // 
             // IdariIslerVeInsanKaynaklariToolStripMenuItem
             // 
             this.IdariIslerVeInsanKaynaklariToolStripMenuItem.Name = "IdariIslerVeInsanKaynaklariToolStripMenuItem";
             this.IdariIslerVeInsanKaynaklariToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.IdariIslerVeInsanKaynaklariToolStripMenuItem.Text = "İdari İşler Ve İnsan Kaynakları";
+            this.IdariIslerVeInsanKaynaklariToolStripMenuItem.Click += new System.EventHandler(this.IdariIslerVeInsanKaynaklariToolStripMenuItem_Click);
             // 
             // TerfiMerkeziOperatorleriToolStripMenuItem
             // 
             this.TerfiMerkeziOperatorleriToolStripMenuItem.Name = "TerfiMerkeziOperatorleriToolStripMenuItem";
             this.TerfiMerkeziOperatorleriToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.TerfiMerkeziOperatorleriToolStripMenuItem.Text = "Terfi Merkezi Operatörleri";
+            this.TerfiMerkeziOperatorleriToolStripMenuItem.Click += new System.EventHandler(this.TerfiMerkeziOperatorleriToolStripMenuItem_Click);
             // 
             // SoforAracOperatorleriToolStripMenuItem
             // 
             this.SoforAracOperatorleriToolStripMenuItem.Name = "SoforAracOperatorleriToolStripMenuItem";
             this.SoforAracOperatorleriToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.SoforAracOperatorleriToolStripMenuItem.Text = "Şoför / Araç Operatörleri";
+            this.SoforAracOperatorleriToolStripMenuItem.Click += new System.EventHandler(this.SoforAracOperatorleriToolStripMenuItem_Click);
             // 
             // GenelHizmetliPersoneliDuzIscilerToolStripMenuItem
             // 
             this.GenelHizmetliPersoneliDuzIscilerToolStripMenuItem.Name = "GenelHizmetliPersoneliDuzIscilerToolStripMenuItem";
             this.GenelHizmetliPersoneliDuzIscilerToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.GenelHizmetliPersoneliDuzIscilerToolStripMenuItem.Text = "Genel Hizmetli Personeli / Düz İşçiler";
+            this.GenelHizmetliPersoneliDuzIscilerToolStripMenuItem.Click += new System.EventHandler(this.GenelHizmetliPersoneliDuzIscilerToolStripMenuItem_Click);
             // 
             // KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem
             // 
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem.Name = "KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem";
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem.Text = "Köy / Mahalle Tesisleri Dönüştürücü Personeli";
+            this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem.Click += new System.EventHandler(this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem_Click);
             // 
             // KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem
             // 
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem.Name = "KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem";
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem.Text = "Köy / Mahalle Tesisleri İşletme Operatörleri";
+            this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem.Click += new System.EventHandler(this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem_Click);
             // 
             // engelliPersonelToolStripMenuItem
             // 
             this.engelliPersonelToolStripMenuItem.Name = "engelliPersonelToolStripMenuItem";
             this.engelliPersonelToolStripMenuItem.Size = new System.Drawing.Size(1129, 24);
             this.engelliPersonelToolStripMenuItem.Text = "Engelli Personel";
+            this.engelliPersonelToolStripMenuItem.Click += new System.EventHandler(this.engelliPersonelToolStripMenuItem_Click);
             // 
             // PanelContent
             // 
@@ -336,5 +390,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel PanelContent;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ToolStripMenuItem Tumu2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Tumu1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem adanZyeSıralamaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zdenAyaSıralamaToolStripMenuItem;
     }
 }
