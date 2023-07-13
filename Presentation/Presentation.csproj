@@ -75,16 +75,16 @@
     <Compile Include="Forms\GirisForm.Designer.cs">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PersonelListelemeForm.cs">
+    <Compile Include="Forms\Pages\PersonelListelemeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PersonelListelemeForm.Designer.cs">
+    <Compile Include="Forms\Pages\PersonelListelemeForm.Designer.cs">
       <DependentUpon>PersonelListelemeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PersonelSicilKartiForm.cs">
+    <Compile Include="Forms\Pages\PersonelSicilKartiForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PersonelSicilKartiForm.Designer.cs">
+    <Compile Include="Forms\Pages\PersonelSicilKartiForm.Designer.cs">
       <DependentUpon>PersonelSicilKartiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -95,10 +95,10 @@
     <EmbeddedResource Include="Forms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PersonelListelemeForm.resx">
+    <EmbeddedResource Include="Forms\Pages\PersonelListelemeForm.resx">
       <DependentUpon>PersonelListelemeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PersonelSicilKartiForm.resx">
+    <EmbeddedResource Include="Forms\Pages\PersonelSicilKartiForm.resx">
       <DependentUpon>PersonelSicilKartiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
