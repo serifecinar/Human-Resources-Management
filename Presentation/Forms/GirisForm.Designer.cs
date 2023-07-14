@@ -34,9 +34,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.sifre = new System.Windows.Forms.TextBox();
+            this.sifreTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.kullaniciadi = new System.Windows.Forms.TextBox();
+            this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -78,9 +78,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.sifre, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.sifreTextBox, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.kullaniciadi, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.kullaniciAdiTextBox, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.GirisButton, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -134,15 +134,15 @@
             this.label3.Text = "İNSAN KAYNAKLARI YÖNETİMİ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // sifre
+            // sifreTextBox
             // 
-            this.sifre.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.sifre.Location = new System.Drawing.Point(649, 431);
-            this.sifre.Name = "sifre";
-            this.sifre.Size = new System.Drawing.Size(200, 26);
-            this.sifre.TabIndex = 1;
-            this.sifre.UseSystemPasswordChar = true;
+            this.sifreTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.sifreTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifreTextBox.Location = new System.Drawing.Point(649, 431);
+            this.sifreTextBox.Name = "sifreTextBox";
+            this.sifreTextBox.Size = new System.Drawing.Size(200, 26);
+            this.sifreTextBox.TabIndex = 1;
+            this.sifreTextBox.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -155,14 +155,14 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "KULLANICI ADI";
             // 
-            // kullaniciadi
+            // kullaniciAdiTextBox
             // 
-            this.kullaniciadi.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.kullaniciadi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.kullaniciadi.Location = new System.Drawing.Point(649, 395);
-            this.kullaniciadi.Name = "kullaniciadi";
-            this.kullaniciadi.Size = new System.Drawing.Size(200, 26);
-            this.kullaniciadi.TabIndex = 0;
+            this.kullaniciAdiTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.kullaniciAdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.kullaniciAdiTextBox.Location = new System.Drawing.Point(649, 395);
+            this.kullaniciAdiTextBox.Name = "kullaniciAdiTextBox";
+            this.kullaniciAdiTextBox.Size = new System.Drawing.Size(200, 26);
+            this.kullaniciAdiTextBox.TabIndex = 0;
             // 
             // panel2
             // 
@@ -234,8 +234,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox sifre;
-        private System.Windows.Forms.TextBox kullaniciadi;
+        private System.Windows.Forms.TextBox sifreTextBox;
+        private System.Windows.Forms.TextBox kullaniciAdiTextBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel6;

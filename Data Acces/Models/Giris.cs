@@ -16,6 +16,5 @@ namespace Data_Acces.Models
         public string GirisBirimi{ get; set; }
         public string GirisGörevi { get; set; }
         public string GirisYetki { get; set; }
-
     }
 }

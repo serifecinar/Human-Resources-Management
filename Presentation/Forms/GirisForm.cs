@@ -7,40 +7,43 @@ namespace Presentation
 {
     public partial class GirisForm : Form
     {
-        //PersonelListelemeForm form2 = new PersonelListelemeForm();
         IKYGenelForm IKYGenelForm = new IKYGenelForm();
-
-        //GenelService genelService = new GenelService();
         GirisService girisService = new GirisService();
+
+        Giris giris = new Giris();
+
         public GirisForm()
         {
             InitializeComponent();
         }
 
-        //private void button1_Click(object sender, EventArgs e)
         private void GirisButton_Click(object sender, EventArgs e)
         {
-            //if (kullaniciadi.Text='');
-            //{
+            var kullanicilar = girisService.GetAll();
 
-            ///var genelData = genelService.GetAll();
-            //    dataGridView1.DataSource = genelData;
-            //    dataGridView1.Refresh();
+            var result = kullanicilar.Find(k => k.GirisKullaniciAdi == kullaniciAdiTextBox.Text);
 
-            //Genel yeniGenel = new Genel
-            //{
-            //    TCKimlikNo = "41641021818"
-            //};
+            if (result != null)
+            {
+                if (result.GirisSifre == sifreTextBox.Text)
+                {
+                    IKYGenelForm.TopLevel = false;
+                    panel1.Controls.Clear();
+                    panel1.Controls.Add(IKYGenelForm);
+                    IKYGenelForm.Show();
 
-            //genelService.Add(yeniGenel);
+                    MessageBox.Show("Giriş Başarılı");
+                }
+                else
+                {
+                    MessageBox.Show("Giriş Başarısız", "Başarısız!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bu kullanıcı adı kayıtlı değil");
+            }
 
-
-
-            IKYGenelForm.TopLevel = false;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(IKYGenelForm);
-            IKYGenelForm.Show();
-            
         }
     }
 }

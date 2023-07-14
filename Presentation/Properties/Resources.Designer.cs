@@ -59,5 +59,15 @@ namespace Presentation.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap _34338d26023e5515f6cc8969aa027bca_w200 {
+            get {
+                object obj = ResourceManager.GetObject("34338d26023e5515f6cc8969aa027bca_w200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using Business.Services;
 using Presentation.Utils;
 using System;
+using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Core.Common.CommandTrees;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -14,6 +16,8 @@ namespace Presentation
         DataTable genelData = new DataTable();
         public PersonelListelemeForm()
         {
+            CheckForIllegalCrossThreadCalls = false;
+
             InitializeComponent();
         }
 
@@ -38,18 +42,25 @@ namespace Presentation
 
         private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
-            genelData = DtToList.ToDataTable(genelService.GetAll());
-            PersonelListesiAdvancedDataGridView.DataSource = genelData;
-            PersonelListesiAdvancedDataGridView.Refresh();
-            PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[6].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[7].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[8].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[9].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[12].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[13].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[14].Visible = false;
+
+            var bgw = new BackgroundWorker();
+
+            bgw.DoWork += delegate
+            {
+                genelData = DtToList.ToDataTable(genelService.GetAll());
+                PersonelListesiAdvancedDataGridView.DataSource = genelData;
+                PersonelListesiAdvancedDataGridView.Refresh();
+                PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[6].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[7].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[8].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[9].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[12].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[13].Visible = false;
+                PersonelListesiAdvancedDataGridView.Columns[14].Visible = false;
+            };
+            bgw.RunWorkerAsync();
         }
 
         private void PersonelListesiAdvancedDataGridView_FilterStringChanged(object sender, Zuby.ADGV.AdvancedDataGridView.FilterEventArgs e)
@@ -172,6 +183,11 @@ namespace Presentation
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
