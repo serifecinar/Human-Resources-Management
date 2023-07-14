@@ -1,6 +1,7 @@
 ﻿using Business.Services;
 using Data_Acces.Models;
 using DataAcces;
+using Presentation.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -244,7 +245,7 @@ namespace Presentation
 
         private void PersonelListesiButton_Click(object sender, EventArgs e)
         {
-
+            PageChange.Change(PanelContent, this, new PersonelListelemeForm());
         }
     }
 }

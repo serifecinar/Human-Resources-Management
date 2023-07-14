@@ -281,6 +281,8 @@
             this.SokakTextBox = new System.Windows.Forms.TextBox();
             this.MahalleTextBox = new System.Windows.Forms.TextBox();
             this.PersonelListesiButton = new System.Windows.Forms.Button();
+            this.PanelContent = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -297,15 +299,18 @@
             this.IletisimTabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.PanelContent.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkRed;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(-1, -7);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1296, 46);
+            this.panel1.Size = new System.Drawing.Size(1287, 52);
             this.panel1.TabIndex = 5;
             // 
             // label4
@@ -328,11 +333,13 @@
             this.SicilKartiTabControl.Controls.Add(this.NakilTabPage);
             this.SicilKartiTabControl.Controls.Add(this.PerformansTabPage);
             this.SicilKartiTabControl.Controls.Add(this.IletisimTabPage);
+            this.SicilKartiTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SicilKartiTabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SicilKartiTabControl.Location = new System.Drawing.Point(135, 45);
+            this.SicilKartiTabControl.Location = new System.Drawing.Point(150, 61);
+            this.SicilKartiTabControl.Margin = new System.Windows.Forms.Padding(150, 3, 150, 3);
             this.SicilKartiTabControl.Name = "SicilKartiTabControl";
             this.SicilKartiTabControl.SelectedIndex = 0;
-            this.SicilKartiTabControl.Size = new System.Drawing.Size(986, 507);
+            this.SicilKartiTabControl.Size = new System.Drawing.Size(993, 492);
             this.SicilKartiTabControl.TabIndex = 8;
             // 
             // GenelTabPage
@@ -363,7 +370,7 @@
             this.GenelTabPage.Location = new System.Drawing.Point(4, 25);
             this.GenelTabPage.Name = "GenelTabPage";
             this.GenelTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.GenelTabPage.Size = new System.Drawing.Size(978, 478);
+            this.GenelTabPage.Size = new System.Drawing.Size(985, 463);
             this.GenelTabPage.TabIndex = 0;
             this.GenelTabPage.Text = "GENEL";
             this.GenelTabPage.UseVisualStyleBackColor = true;
@@ -381,7 +388,7 @@
             "KADIKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "KÜÇÜKSU ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
-            this.comboBox1.Location = new System.Drawing.Point(724, 15);
+            this.comboBox1.Location = new System.Drawing.Point(786, 226);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(178, 28);
             this.comboBox1.TabIndex = 23;
@@ -410,7 +417,7 @@
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.label9, 2, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.PKTextBox, 3, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.ToplamKatsayiTextBox, 5, 0);
-            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(0, 403);
+            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(8, 391);
             this.PersonelSicilKartiTableLayoutPanel.Name = "PersonelSicilKartiTableLayoutPanel";
             this.PersonelSicilKartiTableLayoutPanel.RowCount = 1;
             this.PersonelSicilKartiTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -3479,24 +3486,50 @@
             // PersonelListesiButton
             // 
             this.PersonelListesiButton.BackColor = System.Drawing.Color.DarkRed;
+            this.PersonelListesiButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelListesiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PersonelListesiButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PersonelListesiButton.Location = new System.Drawing.Point(511, 558);
+            this.PersonelListesiButton.Location = new System.Drawing.Point(500, 566);
+            this.PersonelListesiButton.Margin = new System.Windows.Forms.Padding(500, 10, 500, 10);
             this.PersonelListesiButton.Name = "PersonelListesiButton";
-            this.PersonelListesiButton.Size = new System.Drawing.Size(248, 47);
+            this.PersonelListesiButton.Size = new System.Drawing.Size(293, 43);
             this.PersonelListesiButton.TabIndex = 14;
             this.PersonelListesiButton.Text = "PERSONEL LİSTESİ";
             this.PersonelListesiButton.UseVisualStyleBackColor = false;
             this.PersonelListesiButton.Click += new System.EventHandler(this.PersonelListesiButton_Click);
+            // 
+            // PanelContent
+            // 
+            this.PanelContent.Controls.Add(this.tableLayoutPanel1);
+            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContent.Location = new System.Drawing.Point(0, 0);
+            this.PanelContent.Name = "PanelContent";
+            this.PanelContent.Size = new System.Drawing.Size(1293, 619);
+            this.PanelContent.TabIndex = 15;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.PersonelListesiButton, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.SicilKartiTabControl, 0, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.369951F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.45234F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.01616F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 619);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // PersonelSicilKartiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1293, 619);
-            this.Controls.Add(this.PersonelListesiButton);
-            this.Controls.Add(this.SicilKartiTabControl);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.PanelContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelSicilKartiForm";
             this.Text = "PERSONEL SİCİL KARTI";
@@ -3527,6 +3560,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.PanelContent.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3785,5 +3820,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox SeflikTextBox;
         private System.Windows.Forms.Button PersonelListesiButton;
+        private System.Windows.Forms.Panel PanelContent;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
