@@ -43,10 +43,10 @@ namespace Presentation
         private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
 
-            var bgw = new BackgroundWorker();
+            //var bgw = new BackgroundWorker();
 
-            bgw.DoWork += delegate
-            {
+            //bgw.DoWork += delegate
+            //{
                 genelData = DtToList.ToDataTable(genelService.GetAll());
                 PersonelListesiAdvancedDataGridView.DataSource = genelData;
                 PersonelListesiAdvancedDataGridView.Refresh();
@@ -59,8 +59,8 @@ namespace Presentation
                 PersonelListesiAdvancedDataGridView.Columns[12].Visible = false;
                 PersonelListesiAdvancedDataGridView.Columns[13].Visible = false;
                 PersonelListesiAdvancedDataGridView.Columns[14].Visible = false;
-            };
-            bgw.RunWorkerAsync();
+            //};
+            //bgw.RunWorkerAsync();
         }
 
         private void PersonelListesiAdvancedDataGridView_FilterStringChanged(object sender, Zuby.ADGV.AdvancedDataGridView.FilterEventArgs e)

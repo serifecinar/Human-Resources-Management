@@ -22,11 +22,8 @@ namespace Business.Services
 
         public void Update(Genel thing) => genelRepository.Update(thing);
 
-        public Genel GetByPersonelId(int personelId)
-        {
-            return genelRepository.GetByPersonelId(personelId); 
-        } 
-
+        public Genel GetByPersonelId(int personelId) => genelRepository.GetByPersonelId(personelId); 
+       
         public List<Genel> GetAll() => genelRepository.GetAll().ToList();
     }
 }

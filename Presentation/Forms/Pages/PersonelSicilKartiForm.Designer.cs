@@ -280,7 +280,6 @@
             this.KapiNo1TextBox = new System.Windows.Forms.TextBox();
             this.SokakTextBox = new System.Windows.Forms.TextBox();
             this.MahalleTextBox = new System.Windows.Forms.TextBox();
-            this.PersonelListesiButton = new System.Windows.Forms.Button();
             this.PanelContent = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
@@ -339,7 +338,7 @@
             this.SicilKartiTabControl.Margin = new System.Windows.Forms.Padding(150, 3, 150, 3);
             this.SicilKartiTabControl.Name = "SicilKartiTabControl";
             this.SicilKartiTabControl.SelectedIndex = 0;
-            this.SicilKartiTabControl.Size = new System.Drawing.Size(993, 492);
+            this.SicilKartiTabControl.Size = new System.Drawing.Size(993, 530);
             this.SicilKartiTabControl.TabIndex = 8;
             // 
             // GenelTabPage
@@ -370,7 +369,7 @@
             this.GenelTabPage.Location = new System.Drawing.Point(4, 25);
             this.GenelTabPage.Name = "GenelTabPage";
             this.GenelTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.GenelTabPage.Size = new System.Drawing.Size(985, 463);
+            this.GenelTabPage.Size = new System.Drawing.Size(985, 501);
             this.GenelTabPage.TabIndex = 0;
             this.GenelTabPage.Text = "GENEL";
             this.GenelTabPage.UseVisualStyleBackColor = true;
@@ -417,7 +416,7 @@
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.label9, 2, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.PKTextBox, 3, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.ToplamKatsayiTextBox, 5, 0);
-            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(8, 391);
+            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(4, 420);
             this.PersonelSicilKartiTableLayoutPanel.Name = "PersonelSicilKartiTableLayoutPanel";
             this.PersonelSicilKartiTableLayoutPanel.RowCount = 1;
             this.PersonelSicilKartiTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -728,7 +727,7 @@
             this.NufusAileTabPage.Location = new System.Drawing.Point(4, 25);
             this.NufusAileTabPage.Name = "NufusAileTabPage";
             this.NufusAileTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.NufusAileTabPage.Size = new System.Drawing.Size(978, 478);
+            this.NufusAileTabPage.Size = new System.Drawing.Size(985, 463);
             this.NufusAileTabPage.TabIndex = 1;
             this.NufusAileTabPage.Text = "NÜFUS-AİLE";
             this.NufusAileTabPage.UseVisualStyleBackColor = true;
@@ -1470,7 +1469,7 @@
             this.TahsilTabPage.Location = new System.Drawing.Point(4, 25);
             this.TahsilTabPage.Name = "TahsilTabPage";
             this.TahsilTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TahsilTabPage.Size = new System.Drawing.Size(978, 478);
+            this.TahsilTabPage.Size = new System.Drawing.Size(985, 501);
             this.TahsilTabPage.TabIndex = 2;
             this.TahsilTabPage.Text = "TAHSİL";
             this.TahsilTabPage.UseVisualStyleBackColor = true;
@@ -1522,7 +1521,7 @@
             this.TahsilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
             this.TahsilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
             this.TahsilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.85714F));
-            this.TahsilTableLayoutPanel.Size = new System.Drawing.Size(972, 472);
+            this.TahsilTableLayoutPanel.Size = new System.Drawing.Size(979, 495);
             this.TahsilTableLayoutPanel.TabIndex = 40;
             // 
             // TahsilAdi1TextBox
@@ -1533,7 +1532,7 @@
             this.TahsilAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TahsilAdi1TextBox.Location = new System.Drawing.Point(85, 82);
+            this.TahsilAdi1TextBox.Location = new System.Drawing.Point(87, 87);
             this.TahsilAdi1TextBox.Name = "TahsilAdi1TextBox";
             this.TahsilAdi1TextBox.Size = new System.Drawing.Size(221, 19);
             this.TahsilAdi1TextBox.TabIndex = 38;
@@ -1543,7 +1542,7 @@
             this.label40.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label40.Location = new System.Drawing.Point(151, 34);
+            this.label40.Location = new System.Drawing.Point(153, 37);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(89, 16);
             this.label40.TabIndex = 39;
@@ -1554,7 +1553,7 @@
             this.label41.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label41.Location = new System.Drawing.Point(404, 34);
+            this.label41.Location = new System.Drawing.Point(408, 37);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(75, 16);
             this.label41.TabIndex = 39;
@@ -1565,7 +1564,7 @@
             this.label42.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label42.Location = new System.Drawing.Point(644, 34);
+            this.label42.Location = new System.Drawing.Point(650, 37);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(88, 16);
             this.label42.TabIndex = 39;
@@ -1576,7 +1575,7 @@
             this.label43.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label43.Location = new System.Drawing.Point(817, 34);
+            this.label43.Location = new System.Drawing.Point(824, 37);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(148, 16);
             this.label43.TabIndex = 39;
@@ -1590,7 +1589,7 @@
             this.TahsilAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TahsilAdi2TextBox.Location = new System.Drawing.Point(85, 166);
+            this.TahsilAdi2TextBox.Location = new System.Drawing.Point(87, 175);
             this.TahsilAdi2TextBox.Name = "TahsilAdi2TextBox";
             this.TahsilAdi2TextBox.Size = new System.Drawing.Size(221, 19);
             this.TahsilAdi2TextBox.TabIndex = 38;
@@ -1603,7 +1602,7 @@
             this.TahsilAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TahsilAdi3TextBox.Location = new System.Drawing.Point(85, 250);
+            this.TahsilAdi3TextBox.Location = new System.Drawing.Point(87, 263);
             this.TahsilAdi3TextBox.Name = "TahsilAdi3TextBox";
             this.TahsilAdi3TextBox.Size = new System.Drawing.Size(221, 19);
             this.TahsilAdi3TextBox.TabIndex = 38;
@@ -1616,7 +1615,7 @@
             this.TahsilAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TahsilAdi4TextBox.Location = new System.Drawing.Point(85, 334);
+            this.TahsilAdi4TextBox.Location = new System.Drawing.Point(87, 351);
             this.TahsilAdi4TextBox.Name = "TahsilAdi4TextBox";
             this.TahsilAdi4TextBox.Size = new System.Drawing.Size(221, 19);
             this.TahsilAdi4TextBox.TabIndex = 38;
@@ -1629,7 +1628,7 @@
             this.TahsilAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TahsilAdi5TextBox.Location = new System.Drawing.Point(85, 419);
+            this.TahsilAdi5TextBox.Location = new System.Drawing.Point(87, 440);
             this.TahsilAdi5TextBox.Name = "TahsilAdi5TextBox";
             this.TahsilAdi5TextBox.Size = new System.Drawing.Size(221, 19);
             this.TahsilAdi5TextBox.TabIndex = 38;
@@ -1639,11 +1638,11 @@
             this.OkulAdi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OkulAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OkulAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OkulAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.OkulAdi1TextBox.Location = new System.Drawing.Point(338, 82);
+            this.OkulAdi1TextBox.Location = new System.Drawing.Point(342, 90);
             this.OkulAdi1TextBox.Name = "OkulAdi1TextBox";
-            this.OkulAdi1TextBox.Size = new System.Drawing.Size(207, 19);
+            this.OkulAdi1TextBox.Size = new System.Drawing.Size(207, 13);
             this.OkulAdi1TextBox.TabIndex = 38;
             // 
             // OkulAdi2TextBox
@@ -1651,11 +1650,11 @@
             this.OkulAdi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OkulAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OkulAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OkulAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.OkulAdi2TextBox.Location = new System.Drawing.Point(338, 166);
+            this.OkulAdi2TextBox.Location = new System.Drawing.Point(342, 178);
             this.OkulAdi2TextBox.Name = "OkulAdi2TextBox";
-            this.OkulAdi2TextBox.Size = new System.Drawing.Size(207, 19);
+            this.OkulAdi2TextBox.Size = new System.Drawing.Size(207, 13);
             this.OkulAdi2TextBox.TabIndex = 38;
             // 
             // OkulAdi3TextBox
@@ -1663,11 +1662,11 @@
             this.OkulAdi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OkulAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OkulAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OkulAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.OkulAdi3TextBox.Location = new System.Drawing.Point(338, 250);
+            this.OkulAdi3TextBox.Location = new System.Drawing.Point(342, 266);
             this.OkulAdi3TextBox.Name = "OkulAdi3TextBox";
-            this.OkulAdi3TextBox.Size = new System.Drawing.Size(207, 19);
+            this.OkulAdi3TextBox.Size = new System.Drawing.Size(207, 13);
             this.OkulAdi3TextBox.TabIndex = 38;
             // 
             // OkulAdi4TextBox
@@ -1675,11 +1674,11 @@
             this.OkulAdi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OkulAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OkulAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OkulAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.OkulAdi4TextBox.Location = new System.Drawing.Point(338, 334);
+            this.OkulAdi4TextBox.Location = new System.Drawing.Point(342, 354);
             this.OkulAdi4TextBox.Name = "OkulAdi4TextBox";
-            this.OkulAdi4TextBox.Size = new System.Drawing.Size(207, 19);
+            this.OkulAdi4TextBox.Size = new System.Drawing.Size(207, 13);
             this.OkulAdi4TextBox.TabIndex = 38;
             // 
             // OkulAdi5TextBox
@@ -1687,11 +1686,11 @@
             this.OkulAdi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.OkulAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OkulAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OkulAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.OkulAdi5TextBox.Location = new System.Drawing.Point(338, 419);
+            this.OkulAdi5TextBox.Location = new System.Drawing.Point(342, 443);
             this.OkulAdi5TextBox.Name = "OkulAdi5TextBox";
-            this.OkulAdi5TextBox.Size = new System.Drawing.Size(207, 19);
+            this.OkulAdi5TextBox.Size = new System.Drawing.Size(207, 13);
             this.OkulAdi5TextBox.TabIndex = 38;
             // 
             // BolumAdi1TextBox
@@ -1699,11 +1698,11 @@
             this.BolumAdi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BolumAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BolumAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BolumAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BolumAdi1TextBox.Location = new System.Drawing.Point(584, 82);
+            this.BolumAdi1TextBox.Location = new System.Drawing.Point(590, 90);
             this.BolumAdi1TextBox.Name = "BolumAdi1TextBox";
-            this.BolumAdi1TextBox.Size = new System.Drawing.Size(207, 19);
+            this.BolumAdi1TextBox.Size = new System.Drawing.Size(207, 13);
             this.BolumAdi1TextBox.TabIndex = 38;
             // 
             // BolumAdi2TextBox
@@ -1711,11 +1710,11 @@
             this.BolumAdi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BolumAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BolumAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BolumAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BolumAdi2TextBox.Location = new System.Drawing.Point(584, 166);
+            this.BolumAdi2TextBox.Location = new System.Drawing.Point(590, 178);
             this.BolumAdi2TextBox.Name = "BolumAdi2TextBox";
-            this.BolumAdi2TextBox.Size = new System.Drawing.Size(207, 19);
+            this.BolumAdi2TextBox.Size = new System.Drawing.Size(207, 13);
             this.BolumAdi2TextBox.TabIndex = 38;
             // 
             // BolumAdi3TextBox
@@ -1723,11 +1722,11 @@
             this.BolumAdi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BolumAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BolumAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BolumAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BolumAdi3TextBox.Location = new System.Drawing.Point(584, 250);
+            this.BolumAdi3TextBox.Location = new System.Drawing.Point(590, 266);
             this.BolumAdi3TextBox.Name = "BolumAdi3TextBox";
-            this.BolumAdi3TextBox.Size = new System.Drawing.Size(207, 19);
+            this.BolumAdi3TextBox.Size = new System.Drawing.Size(207, 13);
             this.BolumAdi3TextBox.TabIndex = 38;
             // 
             // BolumAdi4TextBox
@@ -1735,11 +1734,11 @@
             this.BolumAdi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BolumAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BolumAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BolumAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BolumAdi4TextBox.Location = new System.Drawing.Point(584, 334);
+            this.BolumAdi4TextBox.Location = new System.Drawing.Point(590, 354);
             this.BolumAdi4TextBox.Name = "BolumAdi4TextBox";
-            this.BolumAdi4TextBox.Size = new System.Drawing.Size(207, 19);
+            this.BolumAdi4TextBox.Size = new System.Drawing.Size(207, 13);
             this.BolumAdi4TextBox.TabIndex = 38;
             // 
             // BolumAdi5TextBox
@@ -1747,11 +1746,11 @@
             this.BolumAdi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BolumAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BolumAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BolumAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BolumAdi5TextBox.Location = new System.Drawing.Point(584, 419);
+            this.BolumAdi5TextBox.Location = new System.Drawing.Point(590, 443);
             this.BolumAdi5TextBox.Name = "BolumAdi5TextBox";
-            this.BolumAdi5TextBox.Size = new System.Drawing.Size(207, 19);
+            this.BolumAdi5TextBox.Size = new System.Drawing.Size(207, 13);
             this.BolumAdi5TextBox.TabIndex = 38;
             // 
             // MezuniyetTarihi1TextBox
@@ -1761,7 +1760,7 @@
             this.MezuniyetTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MezuniyetTarihi1TextBox.Location = new System.Drawing.Point(819, 82);
+            this.MezuniyetTarihi1TextBox.Location = new System.Drawing.Point(826, 87);
             this.MezuniyetTarihi1TextBox.Name = "MezuniyetTarihi1TextBox";
             this.MezuniyetTarihi1TextBox.Size = new System.Drawing.Size(144, 19);
             this.MezuniyetTarihi1TextBox.TabIndex = 38;
@@ -1773,7 +1772,7 @@
             this.MezuniyetTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MezuniyetTarihi2TextBox.Location = new System.Drawing.Point(819, 166);
+            this.MezuniyetTarihi2TextBox.Location = new System.Drawing.Point(826, 175);
             this.MezuniyetTarihi2TextBox.Name = "MezuniyetTarihi2TextBox";
             this.MezuniyetTarihi2TextBox.Size = new System.Drawing.Size(144, 19);
             this.MezuniyetTarihi2TextBox.TabIndex = 38;
@@ -1785,7 +1784,7 @@
             this.MezuniyetTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MezuniyetTarihi3TextBox.Location = new System.Drawing.Point(819, 250);
+            this.MezuniyetTarihi3TextBox.Location = new System.Drawing.Point(826, 263);
             this.MezuniyetTarihi3TextBox.Name = "MezuniyetTarihi3TextBox";
             this.MezuniyetTarihi3TextBox.Size = new System.Drawing.Size(144, 19);
             this.MezuniyetTarihi3TextBox.TabIndex = 38;
@@ -1797,7 +1796,7 @@
             this.MezuniyetTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MezuniyetTarihi4TextBox.Location = new System.Drawing.Point(819, 334);
+            this.MezuniyetTarihi4TextBox.Location = new System.Drawing.Point(826, 351);
             this.MezuniyetTarihi4TextBox.Name = "MezuniyetTarihi4TextBox";
             this.MezuniyetTarihi4TextBox.Size = new System.Drawing.Size(144, 19);
             this.MezuniyetTarihi4TextBox.TabIndex = 38;
@@ -1809,7 +1808,7 @@
             this.MezuniyetTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MezuniyetTarihi5TextBox.Location = new System.Drawing.Point(819, 419);
+            this.MezuniyetTarihi5TextBox.Location = new System.Drawing.Point(826, 440);
             this.MezuniyetTarihi5TextBox.Name = "MezuniyetTarihi5TextBox";
             this.MezuniyetTarihi5TextBox.Size = new System.Drawing.Size(144, 19);
             this.MezuniyetTarihi5TextBox.TabIndex = 38;
@@ -1819,7 +1818,7 @@
             this.label44.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label44.Location = new System.Drawing.Point(27, 84);
+            this.label44.Location = new System.Drawing.Point(27, 89);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(19, 16);
             this.label44.TabIndex = 39;
@@ -1830,7 +1829,7 @@
             this.label45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label45.Location = new System.Drawing.Point(27, 168);
+            this.label45.Location = new System.Drawing.Point(27, 177);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(19, 16);
             this.label45.TabIndex = 39;
@@ -1841,7 +1840,7 @@
             this.label46.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label46.Location = new System.Drawing.Point(27, 252);
+            this.label46.Location = new System.Drawing.Point(27, 265);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(19, 16);
             this.label46.TabIndex = 39;
@@ -1852,7 +1851,7 @@
             this.label47.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label47.Location = new System.Drawing.Point(27, 336);
+            this.label47.Location = new System.Drawing.Point(27, 353);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(19, 16);
             this.label47.TabIndex = 39;
@@ -1863,7 +1862,7 @@
             this.label48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label48.Location = new System.Drawing.Point(27, 421);
+            this.label48.Location = new System.Drawing.Point(27, 442);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(19, 16);
             this.label48.TabIndex = 39;
@@ -1875,7 +1874,7 @@
             this.SertifikaTabPage.Location = new System.Drawing.Point(4, 25);
             this.SertifikaTabPage.Name = "SertifikaTabPage";
             this.SertifikaTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.SertifikaTabPage.Size = new System.Drawing.Size(978, 478);
+            this.SertifikaTabPage.Size = new System.Drawing.Size(985, 463);
             this.SertifikaTabPage.TabIndex = 3;
             this.SertifikaTabPage.Text = "SERTİFİKA";
             this.SertifikaTabPage.UseVisualStyleBackColor = true;
@@ -1919,7 +1918,7 @@
             this.SertifikaTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.SertifikaTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.SertifikaTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.SertifikaTableLayoutPanel.Size = new System.Drawing.Size(972, 472);
+            this.SertifikaTableLayoutPanel.Size = new System.Drawing.Size(979, 457);
             this.SertifikaTableLayoutPanel.TabIndex = 0;
             // 
             // label49
@@ -1927,7 +1926,7 @@
             this.label49.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label49.Location = new System.Drawing.Point(22, 62);
+            this.label49.Location = new System.Drawing.Point(22, 59);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(19, 16);
             this.label49.TabIndex = 41;
@@ -1938,7 +1937,7 @@
             this.label50.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label50.Location = new System.Drawing.Point(22, 15);
+            this.label50.Location = new System.Drawing.Point(22, 14);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(19, 16);
             this.label50.TabIndex = 41;
@@ -1949,7 +1948,7 @@
             this.label51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label51.Location = new System.Drawing.Point(22, 109);
+            this.label51.Location = new System.Drawing.Point(22, 104);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(19, 16);
             this.label51.TabIndex = 41;
@@ -1960,7 +1959,7 @@
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label52.Location = new System.Drawing.Point(22, 156);
+            this.label52.Location = new System.Drawing.Point(22, 149);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(19, 16);
             this.label52.TabIndex = 41;
@@ -1971,7 +1970,7 @@
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label53.Location = new System.Drawing.Point(22, 203);
+            this.label53.Location = new System.Drawing.Point(22, 194);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(19, 16);
             this.label53.TabIndex = 41;
@@ -1982,7 +1981,7 @@
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label54.Location = new System.Drawing.Point(22, 250);
+            this.label54.Location = new System.Drawing.Point(22, 239);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(19, 16);
             this.label54.TabIndex = 41;
@@ -1993,7 +1992,7 @@
             this.label55.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label55.Location = new System.Drawing.Point(22, 297);
+            this.label55.Location = new System.Drawing.Point(22, 284);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(19, 16);
             this.label55.TabIndex = 41;
@@ -2004,7 +2003,7 @@
             this.label56.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label56.Location = new System.Drawing.Point(22, 344);
+            this.label56.Location = new System.Drawing.Point(22, 329);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(19, 16);
             this.label56.TabIndex = 41;
@@ -2015,7 +2014,7 @@
             this.label57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label57.Location = new System.Drawing.Point(22, 391);
+            this.label57.Location = new System.Drawing.Point(22, 374);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(19, 16);
             this.label57.TabIndex = 41;
@@ -2026,7 +2025,7 @@
             this.label58.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label58.Location = new System.Drawing.Point(18, 439);
+            this.label58.Location = new System.Drawing.Point(18, 423);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(27, 16);
             this.label58.TabIndex = 41;
@@ -2040,7 +2039,7 @@
             this.Sertifika1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika1TextBox.Location = new System.Drawing.Point(67, 14);
+            this.Sertifika1TextBox.Location = new System.Drawing.Point(67, 13);
             this.Sertifika1TextBox.Name = "Sertifika1TextBox";
             this.Sertifika1TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika1TextBox.TabIndex = 40;
@@ -2053,7 +2052,7 @@
             this.Sertifika2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika2TextBox.Location = new System.Drawing.Point(67, 61);
+            this.Sertifika2TextBox.Location = new System.Drawing.Point(67, 58);
             this.Sertifika2TextBox.Name = "Sertifika2TextBox";
             this.Sertifika2TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika2TextBox.TabIndex = 40;
@@ -2066,7 +2065,7 @@
             this.Sertifika3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika3TextBox.Location = new System.Drawing.Point(67, 108);
+            this.Sertifika3TextBox.Location = new System.Drawing.Point(67, 103);
             this.Sertifika3TextBox.Name = "Sertifika3TextBox";
             this.Sertifika3TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika3TextBox.TabIndex = 40;
@@ -2079,7 +2078,7 @@
             this.Sertifika4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika4TextBox.Location = new System.Drawing.Point(67, 155);
+            this.Sertifika4TextBox.Location = new System.Drawing.Point(67, 148);
             this.Sertifika4TextBox.Name = "Sertifika4TextBox";
             this.Sertifika4TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika4TextBox.TabIndex = 40;
@@ -2092,7 +2091,7 @@
             this.Sertifika5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika5TextBox.Location = new System.Drawing.Point(67, 202);
+            this.Sertifika5TextBox.Location = new System.Drawing.Point(67, 193);
             this.Sertifika5TextBox.Name = "Sertifika5TextBox";
             this.Sertifika5TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika5TextBox.TabIndex = 40;
@@ -2105,7 +2104,7 @@
             this.Sertifika6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika6TextBox.Location = new System.Drawing.Point(67, 249);
+            this.Sertifika6TextBox.Location = new System.Drawing.Point(67, 238);
             this.Sertifika6TextBox.Name = "Sertifika6TextBox";
             this.Sertifika6TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika6TextBox.TabIndex = 40;
@@ -2118,7 +2117,7 @@
             this.Sertifika7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika7TextBox.Location = new System.Drawing.Point(67, 296);
+            this.Sertifika7TextBox.Location = new System.Drawing.Point(67, 283);
             this.Sertifika7TextBox.Name = "Sertifika7TextBox";
             this.Sertifika7TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika7TextBox.TabIndex = 40;
@@ -2131,7 +2130,7 @@
             this.Sertifika8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika8TextBox.Location = new System.Drawing.Point(67, 343);
+            this.Sertifika8TextBox.Location = new System.Drawing.Point(67, 328);
             this.Sertifika8TextBox.Name = "Sertifika8TextBox";
             this.Sertifika8TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika8TextBox.TabIndex = 40;
@@ -2144,7 +2143,7 @@
             this.Sertifika9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika9TextBox.Location = new System.Drawing.Point(67, 390);
+            this.Sertifika9TextBox.Location = new System.Drawing.Point(67, 373);
             this.Sertifika9TextBox.Name = "Sertifika9TextBox";
             this.Sertifika9TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika9TextBox.TabIndex = 40;
@@ -2157,7 +2156,7 @@
             this.Sertifika10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Sertifika10TextBox.Location = new System.Drawing.Point(67, 438);
+            this.Sertifika10TextBox.Location = new System.Drawing.Point(67, 421);
             this.Sertifika10TextBox.Name = "Sertifika10TextBox";
             this.Sertifika10TextBox.Size = new System.Drawing.Size(878, 19);
             this.Sertifika10TextBox.TabIndex = 40;
@@ -2169,7 +2168,7 @@
             this.NakilTabPage.Location = new System.Drawing.Point(4, 25);
             this.NakilTabPage.Name = "NakilTabPage";
             this.NakilTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.NakilTabPage.Size = new System.Drawing.Size(978, 478);
+            this.NakilTabPage.Size = new System.Drawing.Size(985, 463);
             this.NakilTabPage.TabIndex = 4;
             this.NakilTabPage.Text = "NAKİL";
             this.NakilTabPage.UseVisualStyleBackColor = true;
@@ -2275,7 +2274,7 @@
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
-            this.NakilTableLayoutPanel.Size = new System.Drawing.Size(972, 472);
+            this.NakilTableLayoutPanel.Size = new System.Drawing.Size(979, 457);
             this.NakilTableLayoutPanel.TabIndex = 0;
             // 
             // label59
@@ -2283,7 +2282,7 @@
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label59.Location = new System.Drawing.Point(51, 5);
+            this.label59.Location = new System.Drawing.Point(51, 4);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(91, 32);
             this.label59.TabIndex = 40;
@@ -2295,7 +2294,7 @@
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label60.Location = new System.Drawing.Point(162, 5);
+            this.label60.Location = new System.Drawing.Point(163, 4);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(64, 32);
             this.label60.TabIndex = 40;
@@ -2307,7 +2306,7 @@
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(294, 13);
+            this.label61.Location = new System.Drawing.Point(295, 12);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(61, 16);
             this.label61.TabIndex = 40;
@@ -2318,7 +2317,7 @@
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label62.Location = new System.Drawing.Point(482, 13);
+            this.label62.Location = new System.Drawing.Point(485, 12);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(48, 16);
             this.label62.TabIndex = 40;
@@ -2329,7 +2328,7 @@
             this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label63.Location = new System.Drawing.Point(677, 13);
+            this.label63.Location = new System.Drawing.Point(681, 12);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(60, 16);
             this.label63.TabIndex = 40;
@@ -2340,7 +2339,7 @@
             this.label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label65.Location = new System.Drawing.Point(14, 97);
+            this.label65.Location = new System.Drawing.Point(14, 92);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(19, 16);
             this.label65.TabIndex = 42;
@@ -2351,7 +2350,7 @@
             this.label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label66.Location = new System.Drawing.Point(14, 183);
+            this.label66.Location = new System.Drawing.Point(14, 174);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(19, 16);
             this.label66.TabIndex = 42;
@@ -2362,7 +2361,7 @@
             this.label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label67.Location = new System.Drawing.Point(14, 140);
+            this.label67.Location = new System.Drawing.Point(14, 133);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(19, 16);
             this.label67.TabIndex = 42;
@@ -2373,7 +2372,7 @@
             this.label68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label68.Location = new System.Drawing.Point(14, 226);
+            this.label68.Location = new System.Drawing.Point(14, 215);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(19, 16);
             this.label68.TabIndex = 42;
@@ -2384,7 +2383,7 @@
             this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label69.Location = new System.Drawing.Point(14, 269);
+            this.label69.Location = new System.Drawing.Point(14, 256);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(19, 16);
             this.label69.TabIndex = 42;
@@ -2395,7 +2394,7 @@
             this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label70.Location = new System.Drawing.Point(14, 312);
+            this.label70.Location = new System.Drawing.Point(14, 297);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(19, 16);
             this.label70.TabIndex = 42;
@@ -2406,7 +2405,7 @@
             this.label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label71.Location = new System.Drawing.Point(14, 355);
+            this.label71.Location = new System.Drawing.Point(14, 338);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(19, 16);
             this.label71.TabIndex = 42;
@@ -2417,7 +2416,7 @@
             this.label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label72.Location = new System.Drawing.Point(14, 398);
+            this.label72.Location = new System.Drawing.Point(14, 379);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(19, 16);
             this.label72.TabIndex = 42;
@@ -2428,7 +2427,7 @@
             this.label73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label73.Location = new System.Drawing.Point(10, 442);
+            this.label73.Location = new System.Drawing.Point(10, 424);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(27, 16);
             this.label73.TabIndex = 42;
@@ -2439,7 +2438,7 @@
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label64.Location = new System.Drawing.Point(14, 55);
+            this.label64.Location = new System.Drawing.Point(14, 52);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(19, 16);
             this.label64.TabIndex = 42;
@@ -2453,7 +2452,7 @@
             this.BaslangicTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi1TextBox.Location = new System.Drawing.Point(57, 54);
+            this.BaslangicTarihi1TextBox.Location = new System.Drawing.Point(58, 51);
             this.BaslangicTarihi1TextBox.Name = "BaslangicTarihi1TextBox";
             this.BaslangicTarihi1TextBox.Size = new System.Drawing.Size(78, 19);
             this.BaslangicTarihi1TextBox.TabIndex = 43;
@@ -2466,7 +2465,7 @@
             this.BaslangicTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi2TextBox.Location = new System.Drawing.Point(54, 96);
+            this.BaslangicTarihi2TextBox.Location = new System.Drawing.Point(55, 91);
             this.BaslangicTarihi2TextBox.Name = "BaslangicTarihi2TextBox";
             this.BaslangicTarihi2TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi2TextBox.TabIndex = 43;
@@ -2479,7 +2478,7 @@
             this.BaslangicTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi3TextBox.Location = new System.Drawing.Point(56, 139);
+            this.BaslangicTarihi3TextBox.Location = new System.Drawing.Point(56, 132);
             this.BaslangicTarihi3TextBox.Name = "BaslangicTarihi3TextBox";
             this.BaslangicTarihi3TextBox.Size = new System.Drawing.Size(81, 19);
             this.BaslangicTarihi3TextBox.TabIndex = 43;
@@ -2492,7 +2491,7 @@
             this.BaslangicTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi4TextBox.Location = new System.Drawing.Point(54, 182);
+            this.BaslangicTarihi4TextBox.Location = new System.Drawing.Point(55, 173);
             this.BaslangicTarihi4TextBox.Name = "BaslangicTarihi4TextBox";
             this.BaslangicTarihi4TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi4TextBox.TabIndex = 43;
@@ -2505,7 +2504,7 @@
             this.BaslangicTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi5TextBox.Location = new System.Drawing.Point(54, 225);
+            this.BaslangicTarihi5TextBox.Location = new System.Drawing.Point(55, 214);
             this.BaslangicTarihi5TextBox.Name = "BaslangicTarihi5TextBox";
             this.BaslangicTarihi5TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi5TextBox.TabIndex = 43;
@@ -2518,7 +2517,7 @@
             this.BaslangicTarihi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi6TextBox.Location = new System.Drawing.Point(54, 268);
+            this.BaslangicTarihi6TextBox.Location = new System.Drawing.Point(55, 255);
             this.BaslangicTarihi6TextBox.Name = "BaslangicTarihi6TextBox";
             this.BaslangicTarihi6TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi6TextBox.TabIndex = 43;
@@ -2531,7 +2530,7 @@
             this.BaslangicTarihi7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi7TextBox.Location = new System.Drawing.Point(54, 311);
+            this.BaslangicTarihi7TextBox.Location = new System.Drawing.Point(55, 296);
             this.BaslangicTarihi7TextBox.Name = "BaslangicTarihi7TextBox";
             this.BaslangicTarihi7TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi7TextBox.TabIndex = 43;
@@ -2544,7 +2543,7 @@
             this.BaslangicTarihi8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi8TextBox.Location = new System.Drawing.Point(54, 354);
+            this.BaslangicTarihi8TextBox.Location = new System.Drawing.Point(55, 337);
             this.BaslangicTarihi8TextBox.Name = "BaslangicTarihi8TextBox";
             this.BaslangicTarihi8TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi8TextBox.TabIndex = 43;
@@ -2557,7 +2556,7 @@
             this.BaslangicTarihi9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi9TextBox.Location = new System.Drawing.Point(54, 397);
+            this.BaslangicTarihi9TextBox.Location = new System.Drawing.Point(55, 378);
             this.BaslangicTarihi9TextBox.Name = "BaslangicTarihi9TextBox";
             this.BaslangicTarihi9TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi9TextBox.TabIndex = 43;
@@ -2570,7 +2569,7 @@
             this.BaslangicTarihi10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BaslangicTarihi10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BaslangicTarihi10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi10TextBox.Location = new System.Drawing.Point(54, 440);
+            this.BaslangicTarihi10TextBox.Location = new System.Drawing.Point(55, 423);
             this.BaslangicTarihi10TextBox.Name = "BaslangicTarihi10TextBox";
             this.BaslangicTarihi10TextBox.Size = new System.Drawing.Size(84, 19);
             this.BaslangicTarihi10TextBox.TabIndex = 43;
@@ -2583,7 +2582,7 @@
             this.AyrilisTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi1TextBox.Location = new System.Drawing.Point(151, 54);
+            this.AyrilisTarihi1TextBox.Location = new System.Drawing.Point(152, 51);
             this.AyrilisTarihi1TextBox.Name = "AyrilisTarihi1TextBox";
             this.AyrilisTarihi1TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi1TextBox.TabIndex = 43;
@@ -2596,7 +2595,7 @@
             this.AyrilisTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi2TextBox.Location = new System.Drawing.Point(151, 96);
+            this.AyrilisTarihi2TextBox.Location = new System.Drawing.Point(152, 91);
             this.AyrilisTarihi2TextBox.Name = "AyrilisTarihi2TextBox";
             this.AyrilisTarihi2TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi2TextBox.TabIndex = 43;
@@ -2609,7 +2608,7 @@
             this.AyrilisTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi3TextBox.Location = new System.Drawing.Point(151, 139);
+            this.AyrilisTarihi3TextBox.Location = new System.Drawing.Point(152, 132);
             this.AyrilisTarihi3TextBox.Name = "AyrilisTarihi3TextBox";
             this.AyrilisTarihi3TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi3TextBox.TabIndex = 43;
@@ -2622,7 +2621,7 @@
             this.AyrilisTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi5TextBox.Location = new System.Drawing.Point(151, 225);
+            this.AyrilisTarihi5TextBox.Location = new System.Drawing.Point(152, 214);
             this.AyrilisTarihi5TextBox.Name = "AyrilisTarihi5TextBox";
             this.AyrilisTarihi5TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi5TextBox.TabIndex = 43;
@@ -2635,7 +2634,7 @@
             this.AyrilisTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi4TextBox.Location = new System.Drawing.Point(151, 182);
+            this.AyrilisTarihi4TextBox.Location = new System.Drawing.Point(152, 173);
             this.AyrilisTarihi4TextBox.Name = "AyrilisTarihi4TextBox";
             this.AyrilisTarihi4TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi4TextBox.TabIndex = 43;
@@ -2648,7 +2647,7 @@
             this.AyrilisTarihi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi6TextBox.Location = new System.Drawing.Point(151, 268);
+            this.AyrilisTarihi6TextBox.Location = new System.Drawing.Point(152, 255);
             this.AyrilisTarihi6TextBox.Name = "AyrilisTarihi6TextBox";
             this.AyrilisTarihi6TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi6TextBox.TabIndex = 43;
@@ -2661,7 +2660,7 @@
             this.AyrilisTarihi7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi7TextBox.Location = new System.Drawing.Point(151, 311);
+            this.AyrilisTarihi7TextBox.Location = new System.Drawing.Point(152, 296);
             this.AyrilisTarihi7TextBox.Name = "AyrilisTarihi7TextBox";
             this.AyrilisTarihi7TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi7TextBox.TabIndex = 43;
@@ -2674,7 +2673,7 @@
             this.AyrilisTarihi8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi8TextBox.Location = new System.Drawing.Point(151, 354);
+            this.AyrilisTarihi8TextBox.Location = new System.Drawing.Point(152, 337);
             this.AyrilisTarihi8TextBox.Name = "AyrilisTarihi8TextBox";
             this.AyrilisTarihi8TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi8TextBox.TabIndex = 43;
@@ -2687,7 +2686,7 @@
             this.AyrilisTarihi9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi9TextBox.Location = new System.Drawing.Point(151, 397);
+            this.AyrilisTarihi9TextBox.Location = new System.Drawing.Point(152, 378);
             this.AyrilisTarihi9TextBox.Name = "AyrilisTarihi9TextBox";
             this.AyrilisTarihi9TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi9TextBox.TabIndex = 43;
@@ -2700,7 +2699,7 @@
             this.AyrilisTarihi10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AyrilisTarihi10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AyrilisTarihi10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi10TextBox.Location = new System.Drawing.Point(151, 440);
+            this.AyrilisTarihi10TextBox.Location = new System.Drawing.Point(152, 423);
             this.AyrilisTarihi10TextBox.Name = "AyrilisTarihi10TextBox";
             this.AyrilisTarihi10TextBox.Size = new System.Drawing.Size(86, 19);
             this.AyrilisTarihi10TextBox.TabIndex = 43;
@@ -2710,7 +2709,7 @@
             this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label74.Location = new System.Drawing.Point(849, 13);
+            this.label74.Location = new System.Drawing.Point(855, 12);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(80, 16);
             this.label74.TabIndex = 40;
@@ -2724,7 +2723,7 @@
             this.Kurum1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum1TextBox.Location = new System.Drawing.Point(247, 54);
+            this.Kurum1TextBox.Location = new System.Drawing.Point(248, 51);
             this.Kurum1TextBox.Name = "Kurum1TextBox";
             this.Kurum1TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum1TextBox.TabIndex = 43;
@@ -2737,7 +2736,7 @@
             this.Kurum2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum2TextBox.Location = new System.Drawing.Point(247, 96);
+            this.Kurum2TextBox.Location = new System.Drawing.Point(248, 91);
             this.Kurum2TextBox.Name = "Kurum2TextBox";
             this.Kurum2TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum2TextBox.TabIndex = 43;
@@ -2750,7 +2749,7 @@
             this.Kurum3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum3TextBox.Location = new System.Drawing.Point(247, 139);
+            this.Kurum3TextBox.Location = new System.Drawing.Point(248, 132);
             this.Kurum3TextBox.Name = "Kurum3TextBox";
             this.Kurum3TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum3TextBox.TabIndex = 43;
@@ -2763,7 +2762,7 @@
             this.Kurum4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum4TextBox.Location = new System.Drawing.Point(247, 182);
+            this.Kurum4TextBox.Location = new System.Drawing.Point(248, 173);
             this.Kurum4TextBox.Name = "Kurum4TextBox";
             this.Kurum4TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum4TextBox.TabIndex = 43;
@@ -2776,7 +2775,7 @@
             this.Kurum5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum5TextBox.Location = new System.Drawing.Point(247, 225);
+            this.Kurum5TextBox.Location = new System.Drawing.Point(248, 214);
             this.Kurum5TextBox.Name = "Kurum5TextBox";
             this.Kurum5TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum5TextBox.TabIndex = 43;
@@ -2789,7 +2788,7 @@
             this.Kurum6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum6TextBox.Location = new System.Drawing.Point(247, 268);
+            this.Kurum6TextBox.Location = new System.Drawing.Point(248, 255);
             this.Kurum6TextBox.Name = "Kurum6TextBox";
             this.Kurum6TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum6TextBox.TabIndex = 43;
@@ -2802,7 +2801,7 @@
             this.Kurum7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum7TextBox.Location = new System.Drawing.Point(247, 311);
+            this.Kurum7TextBox.Location = new System.Drawing.Point(248, 296);
             this.Kurum7TextBox.Name = "Kurum7TextBox";
             this.Kurum7TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum7TextBox.TabIndex = 43;
@@ -2815,7 +2814,7 @@
             this.Kurum8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum8TextBox.Location = new System.Drawing.Point(247, 354);
+            this.Kurum8TextBox.Location = new System.Drawing.Point(248, 337);
             this.Kurum8TextBox.Name = "Kurum8TextBox";
             this.Kurum8TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum8TextBox.TabIndex = 43;
@@ -2828,7 +2827,7 @@
             this.Kurum9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum9TextBox.Location = new System.Drawing.Point(247, 397);
+            this.Kurum9TextBox.Location = new System.Drawing.Point(248, 378);
             this.Kurum9TextBox.Name = "Kurum9TextBox";
             this.Kurum9TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum9TextBox.TabIndex = 43;
@@ -2841,7 +2840,7 @@
             this.Kurum10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum10TextBox.Location = new System.Drawing.Point(247, 440);
+            this.Kurum10TextBox.Location = new System.Drawing.Point(248, 423);
             this.Kurum10TextBox.Name = "Kurum10TextBox";
             this.Kurum10TextBox.Size = new System.Drawing.Size(155, 19);
             this.Kurum10TextBox.TabIndex = 43;
@@ -2854,7 +2853,7 @@
             this.Birim1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim1TextBox.Location = new System.Drawing.Point(410, 54);
+            this.Birim1TextBox.Location = new System.Drawing.Point(413, 51);
             this.Birim1TextBox.Name = "Birim1TextBox";
             this.Birim1TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim1TextBox.TabIndex = 43;
@@ -2867,7 +2866,7 @@
             this.Birim2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim2TextBox.Location = new System.Drawing.Point(410, 96);
+            this.Birim2TextBox.Location = new System.Drawing.Point(413, 91);
             this.Birim2TextBox.Name = "Birim2TextBox";
             this.Birim2TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim2TextBox.TabIndex = 43;
@@ -2880,7 +2879,7 @@
             this.Birim3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim3TextBox.Location = new System.Drawing.Point(410, 139);
+            this.Birim3TextBox.Location = new System.Drawing.Point(413, 132);
             this.Birim3TextBox.Name = "Birim3TextBox";
             this.Birim3TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim3TextBox.TabIndex = 43;
@@ -2893,7 +2892,7 @@
             this.Birim4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim4TextBox.Location = new System.Drawing.Point(410, 182);
+            this.Birim4TextBox.Location = new System.Drawing.Point(413, 173);
             this.Birim4TextBox.Name = "Birim4TextBox";
             this.Birim4TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim4TextBox.TabIndex = 43;
@@ -2906,7 +2905,7 @@
             this.Birim5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim5TextBox.Location = new System.Drawing.Point(410, 225);
+            this.Birim5TextBox.Location = new System.Drawing.Point(413, 214);
             this.Birim5TextBox.Name = "Birim5TextBox";
             this.Birim5TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim5TextBox.TabIndex = 43;
@@ -2919,7 +2918,7 @@
             this.Birim6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim6TextBox.Location = new System.Drawing.Point(410, 268);
+            this.Birim6TextBox.Location = new System.Drawing.Point(413, 255);
             this.Birim6TextBox.Name = "Birim6TextBox";
             this.Birim6TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim6TextBox.TabIndex = 43;
@@ -2932,7 +2931,7 @@
             this.Birim7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim7TextBox.Location = new System.Drawing.Point(410, 311);
+            this.Birim7TextBox.Location = new System.Drawing.Point(413, 296);
             this.Birim7TextBox.Name = "Birim7TextBox";
             this.Birim7TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim7TextBox.TabIndex = 43;
@@ -2945,7 +2944,7 @@
             this.Birim8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim8TextBox.Location = new System.Drawing.Point(410, 354);
+            this.Birim8TextBox.Location = new System.Drawing.Point(413, 337);
             this.Birim8TextBox.Name = "Birim8TextBox";
             this.Birim8TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim8TextBox.TabIndex = 43;
@@ -2958,7 +2957,7 @@
             this.Birim9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim9TextBox.Location = new System.Drawing.Point(410, 397);
+            this.Birim9TextBox.Location = new System.Drawing.Point(413, 378);
             this.Birim9TextBox.Name = "Birim9TextBox";
             this.Birim9TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim9TextBox.TabIndex = 43;
@@ -2971,7 +2970,7 @@
             this.Birim10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim10TextBox.Location = new System.Drawing.Point(410, 440);
+            this.Birim10TextBox.Location = new System.Drawing.Point(413, 423);
             this.Birim10TextBox.Name = "Birim10TextBox";
             this.Birim10TextBox.Size = new System.Drawing.Size(192, 19);
             this.Birim10TextBox.TabIndex = 43;
@@ -2984,7 +2983,7 @@
             this.Gorev1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev1TextBox.Location = new System.Drawing.Point(611, 54);
+            this.Gorev1TextBox.Location = new System.Drawing.Point(615, 51);
             this.Gorev1TextBox.Name = "Gorev1TextBox";
             this.Gorev1TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev1TextBox.TabIndex = 43;
@@ -2997,7 +2996,7 @@
             this.Gorev2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev2TextBox.Location = new System.Drawing.Point(611, 96);
+            this.Gorev2TextBox.Location = new System.Drawing.Point(615, 91);
             this.Gorev2TextBox.Name = "Gorev2TextBox";
             this.Gorev2TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev2TextBox.TabIndex = 43;
@@ -3010,7 +3009,7 @@
             this.Gorev3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev3TextBox.Location = new System.Drawing.Point(611, 139);
+            this.Gorev3TextBox.Location = new System.Drawing.Point(615, 132);
             this.Gorev3TextBox.Name = "Gorev3TextBox";
             this.Gorev3TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev3TextBox.TabIndex = 43;
@@ -3023,7 +3022,7 @@
             this.Gorev4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev4TextBox.Location = new System.Drawing.Point(611, 182);
+            this.Gorev4TextBox.Location = new System.Drawing.Point(615, 173);
             this.Gorev4TextBox.Name = "Gorev4TextBox";
             this.Gorev4TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev4TextBox.TabIndex = 43;
@@ -3036,7 +3035,7 @@
             this.Gorev5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev5TextBox.Location = new System.Drawing.Point(611, 225);
+            this.Gorev5TextBox.Location = new System.Drawing.Point(615, 214);
             this.Gorev5TextBox.Name = "Gorev5TextBox";
             this.Gorev5TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev5TextBox.TabIndex = 43;
@@ -3049,7 +3048,7 @@
             this.Gorev6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev6TextBox.Location = new System.Drawing.Point(611, 268);
+            this.Gorev6TextBox.Location = new System.Drawing.Point(615, 255);
             this.Gorev6TextBox.Name = "Gorev6TextBox";
             this.Gorev6TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev6TextBox.TabIndex = 43;
@@ -3062,7 +3061,7 @@
             this.Gorev7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev7TextBox.Location = new System.Drawing.Point(611, 311);
+            this.Gorev7TextBox.Location = new System.Drawing.Point(615, 296);
             this.Gorev7TextBox.Name = "Gorev7TextBox";
             this.Gorev7TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev7TextBox.TabIndex = 43;
@@ -3075,7 +3074,7 @@
             this.Gorev8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev8TextBox.Location = new System.Drawing.Point(611, 354);
+            this.Gorev8TextBox.Location = new System.Drawing.Point(615, 337);
             this.Gorev8TextBox.Name = "Gorev8TextBox";
             this.Gorev8TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev8TextBox.TabIndex = 43;
@@ -3088,7 +3087,7 @@
             this.Gorev9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev9TextBox.Location = new System.Drawing.Point(611, 397);
+            this.Gorev9TextBox.Location = new System.Drawing.Point(615, 378);
             this.Gorev9TextBox.Name = "Gorev9TextBox";
             this.Gorev9TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev9TextBox.TabIndex = 43;
@@ -3101,7 +3100,7 @@
             this.Gorev10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev10TextBox.Location = new System.Drawing.Point(611, 440);
+            this.Gorev10TextBox.Location = new System.Drawing.Point(615, 423);
             this.Gorev10TextBox.Name = "Gorev10TextBox";
             this.Gorev10TextBox.Size = new System.Drawing.Size(192, 19);
             this.Gorev10TextBox.TabIndex = 43;
@@ -3114,7 +3113,7 @@
             this.Aciklama1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama1TextBox.Location = new System.Drawing.Point(810, 54);
+            this.Aciklama1TextBox.Location = new System.Drawing.Point(816, 51);
             this.Aciklama1TextBox.Name = "Aciklama1TextBox";
             this.Aciklama1TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama1TextBox.TabIndex = 43;
@@ -3127,7 +3126,7 @@
             this.Aciklama2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama2TextBox.Location = new System.Drawing.Point(810, 96);
+            this.Aciklama2TextBox.Location = new System.Drawing.Point(816, 91);
             this.Aciklama2TextBox.Name = "Aciklama2TextBox";
             this.Aciklama2TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama2TextBox.TabIndex = 43;
@@ -3140,7 +3139,7 @@
             this.Aciklama3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama3TextBox.Location = new System.Drawing.Point(810, 139);
+            this.Aciklama3TextBox.Location = new System.Drawing.Point(816, 132);
             this.Aciklama3TextBox.Name = "Aciklama3TextBox";
             this.Aciklama3TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama3TextBox.TabIndex = 43;
@@ -3153,7 +3152,7 @@
             this.Aciklama4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama4TextBox.Location = new System.Drawing.Point(810, 182);
+            this.Aciklama4TextBox.Location = new System.Drawing.Point(816, 173);
             this.Aciklama4TextBox.Name = "Aciklama4TextBox";
             this.Aciklama4TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama4TextBox.TabIndex = 43;
@@ -3166,7 +3165,7 @@
             this.Aciklama5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama5TextBox.Location = new System.Drawing.Point(810, 225);
+            this.Aciklama5TextBox.Location = new System.Drawing.Point(816, 214);
             this.Aciklama5TextBox.Name = "Aciklama5TextBox";
             this.Aciklama5TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama5TextBox.TabIndex = 43;
@@ -3179,7 +3178,7 @@
             this.Aciklama6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama6TextBox.Location = new System.Drawing.Point(810, 268);
+            this.Aciklama6TextBox.Location = new System.Drawing.Point(816, 255);
             this.Aciklama6TextBox.Name = "Aciklama6TextBox";
             this.Aciklama6TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama6TextBox.TabIndex = 43;
@@ -3192,7 +3191,7 @@
             this.Aciklama7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama7TextBox.Location = new System.Drawing.Point(810, 311);
+            this.Aciklama7TextBox.Location = new System.Drawing.Point(816, 296);
             this.Aciklama7TextBox.Name = "Aciklama7TextBox";
             this.Aciklama7TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama7TextBox.TabIndex = 43;
@@ -3205,7 +3204,7 @@
             this.Aciklama8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama8TextBox.Location = new System.Drawing.Point(810, 354);
+            this.Aciklama8TextBox.Location = new System.Drawing.Point(816, 337);
             this.Aciklama8TextBox.Name = "Aciklama8TextBox";
             this.Aciklama8TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama8TextBox.TabIndex = 43;
@@ -3218,7 +3217,7 @@
             this.Aciklama9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama9TextBox.Location = new System.Drawing.Point(810, 397);
+            this.Aciklama9TextBox.Location = new System.Drawing.Point(816, 378);
             this.Aciklama9TextBox.Name = "Aciklama9TextBox";
             this.Aciklama9TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama9TextBox.TabIndex = 43;
@@ -3231,7 +3230,7 @@
             this.Aciklama10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama10TextBox.Location = new System.Drawing.Point(810, 440);
+            this.Aciklama10TextBox.Location = new System.Drawing.Point(816, 423);
             this.Aciklama10TextBox.Name = "Aciklama10TextBox";
             this.Aciklama10TextBox.Size = new System.Drawing.Size(158, 19);
             this.Aciklama10TextBox.TabIndex = 43;
@@ -3241,7 +3240,7 @@
             this.PerformansTabPage.Location = new System.Drawing.Point(4, 25);
             this.PerformansTabPage.Name = "PerformansTabPage";
             this.PerformansTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.PerformansTabPage.Size = new System.Drawing.Size(978, 478);
+            this.PerformansTabPage.Size = new System.Drawing.Size(985, 463);
             this.PerformansTabPage.TabIndex = 6;
             this.PerformansTabPage.Text = "PERFORMANS";
             this.PerformansTabPage.UseVisualStyleBackColor = true;
@@ -3253,7 +3252,7 @@
             this.IletisimTabPage.Location = new System.Drawing.Point(4, 25);
             this.IletisimTabPage.Name = "IletisimTabPage";
             this.IletisimTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.IletisimTabPage.Size = new System.Drawing.Size(978, 478);
+            this.IletisimTabPage.Size = new System.Drawing.Size(985, 463);
             this.IletisimTabPage.TabIndex = 5;
             this.IletisimTabPage.Text = "İLETİŞİM";
             this.IletisimTabPage.UseVisualStyleBackColor = true;
@@ -3483,21 +3482,6 @@
             this.MahalleTextBox.Size = new System.Drawing.Size(291, 19);
             this.MahalleTextBox.TabIndex = 38;
             // 
-            // PersonelListesiButton
-            // 
-            this.PersonelListesiButton.BackColor = System.Drawing.Color.DarkRed;
-            this.PersonelListesiButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PersonelListesiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelListesiButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PersonelListesiButton.Location = new System.Drawing.Point(500, 566);
-            this.PersonelListesiButton.Margin = new System.Windows.Forms.Padding(500, 10, 500, 10);
-            this.PersonelListesiButton.Name = "PersonelListesiButton";
-            this.PersonelListesiButton.Size = new System.Drawing.Size(293, 43);
-            this.PersonelListesiButton.TabIndex = 14;
-            this.PersonelListesiButton.Text = "PERSONEL LİSTESİ";
-            this.PersonelListesiButton.UseVisualStyleBackColor = false;
-            this.PersonelListesiButton.Click += new System.EventHandler(this.PersonelListesiButton_Click);
-            // 
             // PanelContent
             // 
             this.PanelContent.Controls.Add(this.tableLayoutPanel1);
@@ -3511,7 +3495,6 @@
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.PersonelListesiButton, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.SicilKartiTabControl, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -3519,8 +3502,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.369951F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80.45234F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.01616F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 86.59128F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.038772F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 619);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
@@ -3819,7 +3802,6 @@
         private System.Windows.Forms.TextBox IseGirisTarihiTextBox;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox SeflikTextBox;
-        private System.Windows.Forms.Button PersonelListesiButton;
         private System.Windows.Forms.Panel PanelContent;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }

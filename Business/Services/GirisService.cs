@@ -25,10 +25,9 @@ namespace Business.Services
 
             return genelData.ToList();
         }
-        public void Delete(Giris thing)
-        {
-            girisRepository.Delete(thing);
-        }
+            
+        public void Delete(Giris thing) => girisRepository.Delete(thing);
+
         public Giris GetById(int id)
         {
            return girisRepository.GetById(id);
