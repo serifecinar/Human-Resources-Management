@@ -1,5 +1,6 @@
 ﻿using Business.Services;
 using Data_Acces.Models;
+using Presentation.Forms.Pages;
 using System;
 using System.Windows.Forms;
 
@@ -9,6 +10,8 @@ namespace Presentation
     {
         IKYGenelForm IKYGenelForm = new IKYGenelForm();
         GirisService girisService = new GirisService();
+
+        GenelService genelService=new GenelService();
 
         Giris giris = new Giris();
 
@@ -20,6 +23,7 @@ namespace Presentation
         private void GirisButton_Click(object sender, EventArgs e)
         {
             var kullanicilar = girisService.GetAll();
+            var genel = new Genel();    
 
             var result = kullanicilar.Find(k => k.GirisKullaniciAdi == kullaniciAdiTextBox.Text);
 
@@ -27,12 +31,13 @@ namespace Presentation
             {
                 if (result.GirisSifre == sifreTextBox.Text)
                 {
+
                     IKYGenelForm.TopLevel = false;
                     panel1.Controls.Clear();
                     panel1.Controls.Add(IKYGenelForm);
                     IKYGenelForm.Show();
 
-                    MessageBox.Show("Giriş Başarılı");
+                    //MessageBox.Show("Giriş Başarılı");
                 }
                 else
                 {
@@ -44,6 +49,10 @@ namespace Presentation
                 MessageBox.Show("Bu kullanıcı adı kayıtlı değil");
             }
 
+            if (result.GirisYetki=="Tuzla")
+            {
+
+            }
         }
     }
 }

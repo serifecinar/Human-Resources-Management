@@ -30,7 +30,6 @@ namespace Presentation
         Nakil nakil = new Nakil();
         Iletisim iletisim = new Iletisim();
 
-        private object convert;
 
         public PersonelSicilKartiForm(int personelId)
         {

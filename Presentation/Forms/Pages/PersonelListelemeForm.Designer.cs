@@ -55,11 +55,9 @@
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.engelliPersonelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PanelContent = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.PanelContent.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -314,15 +312,6 @@
             this.engelliPersonelToolStripMenuItem.Text = "Engelli Personel";
             this.engelliPersonelToolStripMenuItem.Click += new System.EventHandler(this.engelliPersonelToolStripMenuItem_Click);
             // 
-            // PanelContent
-            // 
-            this.PanelContent.Controls.Add(this.tableLayoutPanel1);
-            this.PanelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContent.Location = new System.Drawing.Point(0, 0);
-            this.PanelContent.Name = "PanelContent";
-            this.PanelContent.Size = new System.Drawing.Size(1293, 619);
-            this.PanelContent.TabIndex = 17;
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
@@ -349,7 +338,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1293, 619);
-            this.Controls.Add(this.PanelContent);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelListelemeForm";
             this.Text = "PERSONEL LİSTELEME";
@@ -358,7 +347,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.PanelContent.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -389,7 +377,6 @@
         private System.Windows.Forms.ToolStripMenuItem engelliPersonelToolStripMenuItem;
         private Zuby.ADGV.AdvancedDataGridView PersonelListesiAdvancedDataGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel PanelContent;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ToolStripMenuItem Tumu2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Tumu1ToolStripMenuItem;

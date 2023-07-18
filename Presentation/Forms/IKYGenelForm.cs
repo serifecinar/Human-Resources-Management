@@ -9,9 +9,9 @@ namespace Presentation
 {
     public partial class IKYGenelForm : Form
     {
-        PersonelListelemeForm personelListelemeForm = new PersonelListelemeForm();
-
         GenelService genelService = new GenelService();
+
+
         public IKYGenelForm()
         {
             InitializeComponent();
@@ -19,12 +19,12 @@ namespace Presentation
 
         private void AnasayfaButton_Click(object sender, EventArgs e)
         {
-            PageChange.Change(PanelContent, this, new AnaMenuForm());
+            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
         }
 
         private void IKYGenelForm_Load(object sender, EventArgs e)
         {
-            PageChange.Change(PanelContent, this, new AnaMenuForm());
+            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
         }
 
         private void IKYGenelForm_Activated(object sender, EventArgs e)
@@ -35,6 +35,11 @@ namespace Presentation
         private void IKYGenelForm_Shown(object sender, EventArgs e)
         {
             AnasayfaButton.Visible = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PanelContent, this, FormMemory.personelListelemeForm);
         }
     }
 }
