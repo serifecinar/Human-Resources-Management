@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.PersonelListesiAdvancedDataGridView = new Zuby.ADGV.AdvancedDataGridView();
-            this.SicilKartiGosterButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.AlfabetikPersonelListesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Tumu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,10 +54,18 @@
             this.KoyMahalleTesisleriDonusturucuPersoneliToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.KoyMahalleTesisleriIsletmeOperatorleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.engelliPersonelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.PersonelListelemeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.YardimButton = new System.Windows.Forms.Button();
+            this.GuncelleButton = new System.Windows.Forms.Button();
+            this.NakilButton = new System.Windows.Forms.Button();
+            this.YeniKayitButton = new System.Windows.Forms.Button();
+            this.DetayButton = new System.Windows.Forms.Button();
+            this.PersonelSicilKartiPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.PersonelListelemeTableLayoutPanel.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +77,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1287, 68);
+            this.label1.Size = new System.Drawing.Size(1271, 72);
             this.label1.TabIndex = 4;
             this.label1.Text = "PERSONEL LİSTELEME";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -81,31 +88,17 @@
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
-            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 98);
+            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 103);
             this.PersonelListesiAdvancedDataGridView.MultiSelect = false;
             this.PersonelListesiAdvancedDataGridView.Name = "PersonelListesiAdvancedDataGridView";
             this.PersonelListesiAdvancedDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PersonelListesiAdvancedDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1287, 448);
+            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1271, 472);
             this.PersonelListesiAdvancedDataGridView.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.PersonelListesiAdvancedDataGridView.TabIndex = 18;
             this.PersonelListesiAdvancedDataGridView.SortStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.SortEventArgs>(this.PersonelListesiAdvancedDataGridView_SortStringChanged);
             this.PersonelListesiAdvancedDataGridView.FilterStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.FilterEventArgs>(this.PersonelListesiAdvancedDataGridView_FilterStringChanged);
-            // 
-            // SicilKartiGosterButton
-            // 
-            this.SicilKartiGosterButton.BackColor = System.Drawing.Color.DarkRed;
-            this.SicilKartiGosterButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SicilKartiGosterButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SicilKartiGosterButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SicilKartiGosterButton.Location = new System.Drawing.Point(500, 559);
-            this.SicilKartiGosterButton.Margin = new System.Windows.Forms.Padding(500, 10, 500, 10);
-            this.SicilKartiGosterButton.Name = "SicilKartiGosterButton";
-            this.SicilKartiGosterButton.Size = new System.Drawing.Size(293, 50);
-            this.SicilKartiGosterButton.TabIndex = 13;
-            this.SicilKartiGosterButton.Text = "SİCİL KARTI GÖSTER";
-            this.SicilKartiGosterButton.UseVisualStyleBackColor = false;
-            this.SicilKartiGosterButton.Click += new System.EventHandler(this.SicilKartiGosterButton_Click);
+            this.PersonelListesiAdvancedDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PersonelListesiAdvancedDataGridView_CellClick);
             // 
             // menuStrip1
             // 
@@ -114,9 +107,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AlfabetikPersonelListesiToolStripMenuItem,
             this.UnvanBazliPersonelListesiToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 68);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 72);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1293, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1277, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -130,7 +123,7 @@
             this.AlfabetikPersonelListesiToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AlfabetikPersonelListesiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
             this.AlfabetikPersonelListesiToolStripMenuItem.Name = "AlfabetikPersonelListesiToolStripMenuItem";
-            this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(264, 23);
+            this.AlfabetikPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(264, 24);
             this.AlfabetikPersonelListesiToolStripMenuItem.Text = "ALFABETİK PERSONEL LİSTESİ";
             // 
             // Tumu1ToolStripMenuItem
@@ -181,7 +174,7 @@
             this.UnvanBazliPersonelListesiToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.UnvanBazliPersonelListesiToolStripMenuItem.ForeColor = System.Drawing.Color.DarkRed;
             this.UnvanBazliPersonelListesiToolStripMenuItem.Name = "UnvanBazliPersonelListesiToolStripMenuItem";
-            this.UnvanBazliPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(283, 23);
+            this.UnvanBazliPersonelListesiToolStripMenuItem.Size = new System.Drawing.Size(283, 24);
             this.UnvanBazliPersonelListesiToolStripMenuItem.Text = "UNVAN BAZLI PERSONEL LİSTESİ";
             // 
             // Tumu2ToolStripMenuItem
@@ -312,33 +305,143 @@
             this.engelliPersonelToolStripMenuItem.Text = "Engelli Personel";
             this.engelliPersonelToolStripMenuItem.Click += new System.EventHandler(this.engelliPersonelToolStripMenuItem_Click);
             // 
-            // tableLayoutPanel1
+            // PersonelListelemeTableLayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.SicilKartiGosterButton, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.PersonelListesiAdvancedDataGridView, 0, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.361874F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.3441F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1293, 619);
-            this.tableLayoutPanel1.TabIndex = 19;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.PersonelListelemeTableLayoutPanel.ColumnCount = 1;
+            this.PersonelListelemeTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.PersonelListelemeTableLayoutPanel.Controls.Add(this.tableLayoutPanel2, 0, 3);
+            this.PersonelListelemeTableLayoutPanel.Controls.Add(this.label1, 0, 0);
+            this.PersonelListelemeTableLayoutPanel.Controls.Add(this.menuStrip1, 0, 1);
+            this.PersonelListelemeTableLayoutPanel.Controls.Add(this.PersonelListesiAdvancedDataGridView, 0, 2);
+            this.PersonelListelemeTableLayoutPanel.Location = new System.Drawing.Point(12, 9);
+            this.PersonelListelemeTableLayoutPanel.Name = "PersonelListelemeTableLayoutPanel";
+            this.PersonelListelemeTableLayoutPanel.RowCount = 4;
+            this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
+            this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.361874F));
+            this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.05936F));
+            this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.71994F));
+            this.PersonelListelemeTableLayoutPanel.Size = new System.Drawing.Size(1277, 657);
+            this.PersonelListelemeTableLayoutPanel.TabIndex = 19;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 11;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 301F));
+            this.tableLayoutPanel2.Controls.Add(this.YardimButton, 9, 0);
+            this.tableLayoutPanel2.Controls.Add(this.GuncelleButton, 7, 0);
+            this.tableLayoutPanel2.Controls.Add(this.NakilButton, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.YeniKayitButton, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.DetayButton, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 581);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1271, 73);
+            this.tableLayoutPanel2.TabIndex = 10;
+            // 
+            // YardimButton
+            // 
+            this.YardimButton.BackColor = System.Drawing.Color.DarkRed;
+            this.YardimButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YardimButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.YardimButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.YardimButton.Location = new System.Drawing.Point(847, 15);
+            this.YardimButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.YardimButton.Name = "YardimButton";
+            this.YardimButton.Size = new System.Drawing.Size(120, 43);
+            this.YardimButton.TabIndex = 0;
+            this.YardimButton.TabStop = false;
+            this.YardimButton.Text = "YARDIM";
+            this.YardimButton.UseVisualStyleBackColor = false;
+            // 
+            // GuncelleButton
+            // 
+            this.GuncelleButton.BackColor = System.Drawing.Color.DarkRed;
+            this.GuncelleButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GuncelleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GuncelleButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.GuncelleButton.Location = new System.Drawing.Point(711, 15);
+            this.GuncelleButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.GuncelleButton.Name = "GuncelleButton";
+            this.GuncelleButton.Size = new System.Drawing.Size(120, 43);
+            this.GuncelleButton.TabIndex = 0;
+            this.GuncelleButton.TabStop = false;
+            this.GuncelleButton.Text = "GÜNCELLE";
+            this.GuncelleButton.UseVisualStyleBackColor = false;
+            // 
+            // NakilButton
+            // 
+            this.NakilButton.BackColor = System.Drawing.Color.DarkRed;
+            this.NakilButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.NakilButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.NakilButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.NakilButton.Location = new System.Drawing.Point(575, 15);
+            this.NakilButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.NakilButton.Name = "NakilButton";
+            this.NakilButton.Size = new System.Drawing.Size(120, 43);
+            this.NakilButton.TabIndex = 0;
+            this.NakilButton.TabStop = false;
+            this.NakilButton.Text = "NAKİL";
+            this.NakilButton.UseVisualStyleBackColor = false;
+            // 
+            // YeniKayitButton
+            // 
+            this.YeniKayitButton.BackColor = System.Drawing.Color.DarkRed;
+            this.YeniKayitButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YeniKayitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.YeniKayitButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.YeniKayitButton.Location = new System.Drawing.Point(439, 15);
+            this.YeniKayitButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.YeniKayitButton.Name = "YeniKayitButton";
+            this.YeniKayitButton.Size = new System.Drawing.Size(120, 43);
+            this.YeniKayitButton.TabIndex = 0;
+            this.YeniKayitButton.TabStop = false;
+            this.YeniKayitButton.Text = "YENİ KAYIT";
+            this.YeniKayitButton.UseVisualStyleBackColor = false;
+            // 
+            // DetayButton
+            // 
+            this.DetayButton.BackColor = System.Drawing.Color.DarkRed;
+            this.DetayButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DetayButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DetayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DetayButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.DetayButton.Location = new System.Drawing.Point(303, 15);
+            this.DetayButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.DetayButton.Name = "DetayButton";
+            this.DetayButton.Size = new System.Drawing.Size(120, 43);
+            this.DetayButton.TabIndex = 0;
+            this.DetayButton.TabStop = false;
+            this.DetayButton.Text = "DETAY";
+            this.DetayButton.UseVisualStyleBackColor = false;
+            this.DetayButton.Click += new System.EventHandler(this.DetayButton_Click);
+            // 
+            // PersonelSicilKartiPanel
+            // 
+            this.PersonelSicilKartiPanel.Location = new System.Drawing.Point(141, 12);
+            this.PersonelSicilKartiPanel.Name = "PersonelSicilKartiPanel";
+            this.PersonelSicilKartiPanel.Size = new System.Drawing.Size(1277, 657);
+            this.PersonelSicilKartiPanel.TabIndex = 20;
             // 
             // PersonelListelemeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1293, 619);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1390, 715);
+            this.Controls.Add(this.PersonelListelemeTableLayoutPanel);
+            this.Controls.Add(this.PersonelSicilKartiPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelListelemeForm";
             this.Text = "PERSONEL LİSTELEME";
@@ -347,14 +450,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.PersonelListesiAdvancedDataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.PersonelListelemeTableLayoutPanel.ResumeLayout(false);
+            this.PersonelListelemeTableLayoutPanel.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button SicilKartiGosterButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem AlfabetikPersonelListesiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem UnvanBazliPersonelListesiToolStripMenuItem;
@@ -377,10 +480,17 @@
         private System.Windows.Forms.ToolStripMenuItem engelliPersonelToolStripMenuItem;
         private Zuby.ADGV.AdvancedDataGridView PersonelListesiAdvancedDataGridView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel PersonelListelemeTableLayoutPanel;
         private System.Windows.Forms.ToolStripMenuItem Tumu2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Tumu1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adanZyeSıralamaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zdenAyaSıralamaToolStripMenuItem;
+        private System.Windows.Forms.Panel PersonelSicilKartiPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button YardimButton;
+        private System.Windows.Forms.Button GuncelleButton;
+        private System.Windows.Forms.Button NakilButton;
+        private System.Windows.Forms.Button YeniKayitButton;
+        private System.Windows.Forms.Button DetayButton;
     }
 }

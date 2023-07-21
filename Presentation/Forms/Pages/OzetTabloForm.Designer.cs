@@ -45,16 +45,17 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.CinsiyetLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.KadinSayisiLabel = new System.Windows.Forms.Label();
+            this.ErkekSayisiLabel = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.EgitimLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.CinsiyetOraniLabel = new System.Windows.Forms.Label();
             this.EgitimChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.EgitimLabel = new System.Windows.Forms.Label();
+            this.YasChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.YasLabel = new System.Windows.Forms.Label();
             this.GenelTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.UnvanTabloTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -94,12 +95,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.CinsiyetChart)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YasChart)).BeginInit();
             this.GenelTableLayoutPanel.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.UnvanTabloTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // CinsiyetChart
@@ -112,7 +113,7 @@
             chartArea1.Name = "ChartArea1";
             this.CinsiyetChart.ChartAreas.Add(chartArea1);
             this.CinsiyetChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CinsiyetChart.Location = new System.Drawing.Point(200, 28);
+            this.CinsiyetChart.Location = new System.Drawing.Point(200, 25);
             this.CinsiyetChart.Name = "CinsiyetChart";
             this.CinsiyetChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
@@ -121,10 +122,9 @@
             series1.Name = "Series1";
             series1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             this.CinsiyetChart.Series.Add(series1);
-            this.CinsiyetChart.Size = new System.Drawing.Size(191, 144);
+            this.CinsiyetChart.Size = new System.Drawing.Size(191, 125);
             this.CinsiyetChart.TabIndex = 0;
             this.CinsiyetChart.Visible = false;
-            this.CinsiyetChart.Click += new System.EventHandler(this.chart1_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -133,9 +133,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.CinsiyetLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.chart2, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.EgitimChart, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.EgitimLabel, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.EgitimChart, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.YasChart, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.YasLabel, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(675, 3);
@@ -149,9 +149,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(599, 595);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(599, 594);
             this.tableLayoutPanel1.TabIndex = 1;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // CinsiyetLabel
             // 
@@ -174,11 +173,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Controls.Add(this.CinsiyetChart, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label20, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label21, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.KadinSayisiLabel, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.ErkekSayisiLabel, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.pictureBox2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.CinsiyetChart, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox1, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.CinsiyetOraniLabel, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 38);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -188,44 +188,33 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(593, 153);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
-            // label20
+            // KadinSayisiLabel
             // 
-            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.SystemColors.Window;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label20.ForeColor = System.Drawing.Color.DarkRed;
-            this.label20.Location = new System.Drawing.Point(140, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(54, 24);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "% 50";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.KadinSayisiLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.KadinSayisiLabel.AutoSize = true;
+            this.KadinSayisiLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.KadinSayisiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KadinSayisiLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.KadinSayisiLabel.Location = new System.Drawing.Point(177, 0);
+            this.KadinSayisiLabel.Name = "KadinSayisiLabel";
+            this.KadinSayisiLabel.Size = new System.Drawing.Size(17, 22);
+            this.KadinSayisiLabel.TabIndex = 3;
+            this.KadinSayisiLabel.Text = "-";
+            this.KadinSayisiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label21
+            // ErkekSayisiLabel
             // 
-            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.SystemColors.Window;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label21.ForeColor = System.Drawing.Color.DarkRed;
-            this.label21.Location = new System.Drawing.Point(397, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(54, 24);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "% 50";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(397, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(97, 126);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.ErkekSayisiLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.ErkekSayisiLabel.AutoSize = true;
+            this.ErkekSayisiLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.ErkekSayisiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ErkekSayisiLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.ErkekSayisiLabel.Location = new System.Drawing.Point(397, 0);
+            this.ErkekSayisiLabel.Name = "ErkekSayisiLabel";
+            this.ErkekSayisiLabel.Size = new System.Drawing.Size(17, 22);
+            this.ErkekSayisiLabel.TabIndex = 3;
+            this.ErkekSayisiLabel.Text = "-";
+            this.ErkekSayisiLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBox2
             // 
@@ -233,25 +222,50 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(104, 37);
+            this.pictureBox2.Location = new System.Drawing.Point(104, 25);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 126);
+            this.pictureBox2.Size = new System.Drawing.Size(90, 125);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // chart2
+            // pictureBox1
             // 
-            this.chart2.BackColor = System.Drawing.SystemColors.Window;
-            this.chart2.BorderlineColor = System.Drawing.Color.Transparent;
-            this.chart2.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            this.chart2.BorderSkin.PageColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(397, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(97, 125);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // CinsiyetOraniLabel
+            // 
+            this.CinsiyetOraniLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CinsiyetOraniLabel.AutoSize = true;
+            this.CinsiyetOraniLabel.BackColor = System.Drawing.SystemColors.Window;
+            this.CinsiyetOraniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CinsiyetOraniLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.CinsiyetOraniLabel.Location = new System.Drawing.Point(287, 0);
+            this.CinsiyetOraniLabel.Name = "CinsiyetOraniLabel";
+            this.CinsiyetOraniLabel.Size = new System.Drawing.Size(17, 22);
+            this.CinsiyetOraniLabel.TabIndex = 3;
+            this.CinsiyetOraniLabel.Text = "-";
+            this.CinsiyetOraniLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // EgitimChart
+            // 
+            this.EgitimChart.BackColor = System.Drawing.SystemColors.Window;
+            this.EgitimChart.BorderlineColor = System.Drawing.Color.Transparent;
+            this.EgitimChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.EgitimChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
             chartArea2.BackColor = System.Drawing.Color.Transparent;
             chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            this.chart2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart2.Location = new System.Drawing.Point(3, 436);
-            this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            this.EgitimChart.ChartAreas.Add(chartArea2);
+            this.EgitimChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EgitimChart.Location = new System.Drawing.Point(3, 436);
+            this.EgitimChart.Name = "EgitimChart";
+            this.EgitimChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series2.ChartArea = "ChartArea1";
             series2.Name = "Series2";
@@ -264,13 +278,13 @@
             series5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series5.ChartArea = "ChartArea1";
             series5.Name = "Series5";
-            this.chart2.Series.Add(series2);
-            this.chart2.Series.Add(series3);
-            this.chart2.Series.Add(series4);
-            this.chart2.Series.Add(series5);
-            this.chart2.Size = new System.Drawing.Size(593, 156);
-            this.chart2.TabIndex = 7;
-            this.chart2.Visible = false;
+            this.EgitimChart.Series.Add(series2);
+            this.EgitimChart.Series.Add(series3);
+            this.EgitimChart.Series.Add(series4);
+            this.EgitimChart.Series.Add(series5);
+            this.EgitimChart.Size = new System.Drawing.Size(593, 155);
+            this.EgitimChart.TabIndex = 7;
+            this.EgitimChart.Visible = false;
             // 
             // EgitimLabel
             // 
@@ -286,19 +300,19 @@
             this.EgitimLabel.Text = "EĞİTİM";
             this.EgitimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // EgitimChart
+            // YasChart
             // 
-            this.EgitimChart.BackColor = System.Drawing.SystemColors.Window;
-            this.EgitimChart.BorderlineColor = System.Drawing.Color.Transparent;
-            this.EgitimChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            this.EgitimChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
+            this.YasChart.BackColor = System.Drawing.SystemColors.Window;
+            this.YasChart.BorderlineColor = System.Drawing.Color.Transparent;
+            this.YasChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.YasChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
             chartArea3.BackColor = System.Drawing.Color.Transparent;
             chartArea3.Name = "ChartArea1";
-            this.EgitimChart.ChartAreas.Add(chartArea3);
-            this.EgitimChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EgitimChart.Location = new System.Drawing.Point(3, 237);
-            this.EgitimChart.Name = "EgitimChart";
-            this.EgitimChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            this.YasChart.ChartAreas.Add(chartArea3);
+            this.YasChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.YasChart.Location = new System.Drawing.Point(3, 237);
+            this.YasChart.Name = "YasChart";
+            this.YasChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series6.BorderColor = System.Drawing.SystemColors.Window;
             series6.ChartArea = "ChartArea1";
@@ -312,14 +326,13 @@
             series9.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series9.ChartArea = "ChartArea1";
             series9.Name = "Series5";
-            this.EgitimChart.Series.Add(series6);
-            this.EgitimChart.Series.Add(series7);
-            this.EgitimChart.Series.Add(series8);
-            this.EgitimChart.Series.Add(series9);
-            this.EgitimChart.Size = new System.Drawing.Size(593, 153);
-            this.EgitimChart.TabIndex = 5;
-            this.EgitimChart.Visible = false;
-            this.EgitimChart.Click += new System.EventHandler(this.EgitimChart_Click);
+            this.YasChart.Series.Add(series6);
+            this.YasChart.Series.Add(series7);
+            this.YasChart.Series.Add(series8);
+            this.YasChart.Series.Add(series9);
+            this.YasChart.Size = new System.Drawing.Size(593, 153);
+            this.YasChart.TabIndex = 5;
+            this.YasChart.Visible = false;
             // 
             // YasLabel
             // 
@@ -342,84 +355,84 @@
             this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 52.70164F));
             this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 47.29836F));
             this.GenelTableLayoutPanel.Controls.Add(this.tableLayoutPanel1, 1, 0);
-            this.GenelTableLayoutPanel.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.GenelTableLayoutPanel.Controls.Add(this.UnvanTabloTableLayoutPanel, 0, 0);
             this.GenelTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GenelTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.GenelTableLayoutPanel.Name = "GenelTableLayoutPanel";
             this.GenelTableLayoutPanel.RowCount = 2;
             this.GenelTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.GenelTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.GenelTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
             this.GenelTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.GenelTableLayoutPanel.Size = new System.Drawing.Size(1277, 657);
             this.GenelTableLayoutPanel.TabIndex = 2;
             // 
-            // tableLayoutPanel4
+            // UnvanTabloTableLayoutPanel
             // 
-            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.tableLayoutPanel4.BackColor = System.Drawing.SystemColors.Window;
-            this.tableLayoutPanel4.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.65967F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.34033F));
-            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label3, 0, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label5, 0, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label6, 0, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label7, 0, 7);
-            this.tableLayoutPanel4.Controls.Add(this.label8, 0, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label9, 0, 9);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 0, 10);
-            this.tableLayoutPanel4.Controls.Add(this.label11, 0, 11);
-            this.tableLayoutPanel4.Controls.Add(this.label12, 0, 12);
-            this.tableLayoutPanel4.Controls.Add(this.label13, 0, 13);
-            this.tableLayoutPanel4.Controls.Add(this.label14, 0, 14);
-            this.tableLayoutPanel4.Controls.Add(this.label15, 0, 15);
-            this.tableLayoutPanel4.Controls.Add(this.label16, 0, 16);
-            this.tableLayoutPanel4.Controls.Add(this.label17, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label18, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label22, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.label23, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.label24, 1, 3);
-            this.tableLayoutPanel4.Controls.Add(this.label25, 1, 4);
-            this.tableLayoutPanel4.Controls.Add(this.label26, 1, 5);
-            this.tableLayoutPanel4.Controls.Add(this.label27, 1, 6);
-            this.tableLayoutPanel4.Controls.Add(this.label28, 1, 7);
-            this.tableLayoutPanel4.Controls.Add(this.label29, 1, 8);
-            this.tableLayoutPanel4.Controls.Add(this.label30, 1, 9);
-            this.tableLayoutPanel4.Controls.Add(this.label31, 1, 10);
-            this.tableLayoutPanel4.Controls.Add(this.label32, 1, 11);
-            this.tableLayoutPanel4.Controls.Add(this.label33, 1, 12);
-            this.tableLayoutPanel4.Controls.Add(this.label34, 1, 13);
-            this.tableLayoutPanel4.Controls.Add(this.label35, 1, 14);
-            this.tableLayoutPanel4.Controls.Add(this.label36, 1, 15);
-            this.tableLayoutPanel4.Controls.Add(this.label37, 1, 16);
-            this.tableLayoutPanel4.Controls.Add(this.label19, 0, 17);
-            this.tableLayoutPanel4.Controls.Add(this.label38, 1, 17);
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 18;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(666, 593);
-            this.tableLayoutPanel4.TabIndex = 2;
+            this.UnvanTabloTableLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.UnvanTabloTableLayoutPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.UnvanTabloTableLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.UnvanTabloTableLayoutPanel.ColumnCount = 2;
+            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.65967F));
+            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.34033F));
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label2, 0, 2);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label3, 0, 3);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label4, 0, 4);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label5, 0, 5);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label6, 0, 6);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label7, 0, 7);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label8, 0, 8);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label9, 0, 9);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label10, 0, 10);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label11, 0, 11);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label12, 0, 12);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label13, 0, 13);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label14, 0, 14);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label15, 0, 15);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label16, 0, 16);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label17, 0, 0);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label18, 1, 0);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label1, 0, 1);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label22, 1, 1);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label23, 1, 2);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label24, 1, 3);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label25, 1, 4);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label26, 1, 5);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label27, 1, 6);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label28, 1, 7);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label29, 1, 8);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label30, 1, 9);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label31, 1, 10);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label32, 1, 11);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label33, 1, 12);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label34, 1, 13);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label35, 1, 14);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label36, 1, 15);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label37, 1, 16);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label19, 0, 17);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label38, 1, 17);
+            this.UnvanTabloTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
+            this.UnvanTabloTableLayoutPanel.Name = "UnvanTabloTableLayoutPanel";
+            this.UnvanTabloTableLayoutPanel.RowCount = 18;
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.882352F));
+            this.UnvanTabloTableLayoutPanel.Size = new System.Drawing.Size(666, 593);
+            this.UnvanTabloTableLayoutPanel.TabIndex = 2;
             // 
             // label2
             // 
@@ -645,7 +658,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Tesis Şefi – Koordinatör";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label22
             // 
@@ -886,23 +898,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1277, 657);
             this.Controls.Add(this.GenelTableLayoutPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OzetTabloForm";
             this.Text = "OzetTabloForm";
+            this.Load += new System.EventHandler(this.OzetTabloForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CinsiyetChart)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.YasChart)).EndInit();
             this.GenelTableLayoutPanel.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
+            this.UnvanTabloTableLayoutPanel.ResumeLayout(false);
+            this.UnvanTabloTableLayoutPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -914,12 +928,12 @@
         private System.Windows.Forms.Label CinsiyetLabel;
         private System.Windows.Forms.Label YasLabel;
         private System.Windows.Forms.Label EgitimLabel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart EgitimChart;
+        private System.Windows.Forms.DataVisualization.Charting.Chart YasChart;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TableLayoutPanel GenelTableLayoutPanel;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel UnvanTabloTableLayoutPanel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -939,8 +953,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
@@ -959,5 +971,8 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label KadinSayisiLabel;
+        private System.Windows.Forms.Label ErkekSayisiLabel;
+        private System.Windows.Forms.Label CinsiyetOraniLabel;
     }
 }

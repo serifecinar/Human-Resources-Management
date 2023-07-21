@@ -1,6 +1,7 @@
 ﻿using Business.Services;
 using Data_Acces.Models;
 using Presentation.Forms.Pages;
+using Presentation.Utils;
 using System;
 using System.Windows.Forms;
 
@@ -8,12 +9,8 @@ namespace Presentation
 {
     public partial class GirisForm : Form
     {
-        IKYGenelForm IKYGenelForm = new IKYGenelForm();
         GirisService girisService = new GirisService();
-
         GenelService genelService=new GenelService();
-
-        Giris giris = new Giris();
 
         public GirisForm()
         {
@@ -31,13 +28,7 @@ namespace Presentation
             {
                 if (result.GirisSifre == sifreTextBox.Text)
                 {
-
-                    IKYGenelForm.TopLevel = false;
-                    panel1.Controls.Clear();
-                    panel1.Controls.Add(IKYGenelForm);
-                    IKYGenelForm.Show();
-
-                    //MessageBox.Show("Giriş Başarılı");
+                    PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
                 }
                 else
                 {
@@ -53,6 +44,41 @@ namespace Presentation
             {
 
             }
+        }
+        private void GirisForm_load(object sender, EventArgs e)
+        {
+            // Enter tuşuna basıldığında KeyPress olayını dinlemek için event handler ekliyoruz.
+            this.KeyPress += GirisForm_KeyPress;
+        }
+
+        private void GirisForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Eğer Enter tuşuna basıldıysa ve eğer hedef buton etkin değilse,
+            // butonu etkin hale getiriyoruz.
+            if (e.KeyChar == (char)Keys.Enter && !GirisButton.Enabled)
+            {
+                GirisButton.Enabled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PanelContent, this, FormMemory.personelListelemeForm);
+        }
+
+        private void SicilKartiButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GirisForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

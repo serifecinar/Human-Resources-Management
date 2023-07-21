@@ -64,12 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\IKYGenelForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\IKYGenelForm.Designer.cs">
-      <DependentUpon>IKYGenelForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\GirisForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,9 +93,6 @@
     <Compile Include="Utils\DtToList.cs" />
     <Compile Include="Utils\FormMemory.cs" />
     <Compile Include="Utils\PageChange.cs" />
-    <EmbeddedResource Include="Forms\IKYGenelForm.resx">
-      <DependentUpon>IKYGenelForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,12 +1,5 @@
-﻿using Presentation.Utils;
+﻿using Business.Helper;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentation.Forms.Pages
@@ -18,34 +11,17 @@ namespace Presentation.Forms.Pages
             InitializeComponent();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
+        private void OzetTabloForm_Load(object sender, EventArgs e)
         {
-
+            CinsiyetAtamalari();
         }
 
-        private void EgitimChart_Click(object sender, EventArgs e)
+        public void CinsiyetAtamalari()
         {
+            KadinSayisiLabel.Text = NufusHesaplamalariHelper.KadinSayisi.ToString();
+            ErkekSayisiLabel.Text = NufusHesaplamalariHelper.ErkekSayisi.ToString();
 
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PersonelListelemeButton_Click(object sender, EventArgs e)
-        {
-            //PageChange.Change(IKYGenelForm.AnaPanel, this, FormMemory.personelListelemeForm);
+            CinsiyetOraniLabel.Text = $"%{NufusHesaplamalariHelper.KadinOrani} - %{NufusHesaplamalariHelper.ErkekOrani}";
         }
     }
 }

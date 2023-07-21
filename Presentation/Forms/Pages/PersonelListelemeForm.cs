@@ -12,27 +12,12 @@ namespace Presentation
     public partial class PersonelListelemeForm : Form
     {
         GenelService genelService = new GenelService();
-
         DataTable genelData = new DataTable();
+        GirisForm girisForm = new GirisForm();
+
         public PersonelListelemeForm()
         {
-            CheckForIllegalCrossThreadCalls = false;
-
             InitializeComponent();
-        }
-
-        private void SicilKartiGosterButton_Click(object sender, EventArgs e)
-        {
-            if (PersonelListesiAdvancedDataGridView.SelectedRows != null)
-            {
-                int personelId = Convert.ToInt16(PersonelListesiAdvancedDataGridView.SelectedRows[0].Cells[1].Value);
-
-                PageChange.Change(PanelContent, this, new PersonelSicilKartiForm(personelId));
-            }
-            else
-            {
-                MessageBox.Show("Geçersiz seçim", "Lütfen bir personel seçiniz.", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void PersonelListelemeForm_Activated(object sender, EventArgs e)
@@ -182,14 +167,23 @@ namespace Presentation
             genelData.DefaultView.RowFilter = string.Empty;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void PersonelListesiAdvancedDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            int personelId = Convert.ToInt16(PersonelListesiAdvancedDataGridView.SelectedRows[0].Cells[1].Value);
         }
 
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        private void DetayButton_Click(object sender, EventArgs e)
         {
-
+            if (PersonelListesiAdvancedDataGridView.SelectedRows != null)
+            {
+                int personelId = Convert.ToInt16(PersonelListesiAdvancedDataGridView.SelectedRows[0].Cells[1].Value);
+                PersonelListelemeTableLayoutPanel.Visible = false;
+                PageChange.Change(PersonelSicilKartiPanel, this, new PersonelSicilKartiForm(personelId));
+            }
+            else
+            {
+                MessageBox.Show("Geçersiz seçim", "Lütfen bir personel seçiniz.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
