@@ -44,18 +44,5 @@ namespace DataAcces
         public string CocukHakkinda4 { get; set; }
         public string CocukHakkinda5 { get; set; }
         public string CocukHakkinda6 { get; set; }
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

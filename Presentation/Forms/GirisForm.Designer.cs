@@ -131,6 +131,7 @@
             this.sifreTextBox.Size = new System.Drawing.Size(200, 26);
             this.sifreTextBox.TabIndex = 1;
             this.sifreTextBox.UseSystemPasswordChar = true;
+            this.sifreTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sifreTextBox_KeyDown);
             // 
             // label1
             // 

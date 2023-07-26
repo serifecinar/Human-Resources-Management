@@ -19,8 +19,13 @@ namespace Presentation
 
         private void GirisButton_Click(object sender, EventArgs e)
         {
+            GirisYap();
+        }
+
+        private void GirisYap()
+        {
             var kullanicilar = girisService.GetAll();
-            var genel = new Genel();    
+            var genel = new Genel();
 
             var result = kullanicilar.Find(k => k.GirisKullaniciAdi == kullaniciAdiTextBox.Text);
 
@@ -40,26 +45,12 @@ namespace Presentation
                 MessageBox.Show("Bu kullanıcı adı kayıtlı değil");
             }
 
-            if (result.GirisYetki=="Tuzla")
+            if (result.GirisYetki == "Tuzla")
             {
 
             }
         }
-        private void GirisForm_load(object sender, EventArgs e)
-        {
-            // Enter tuşuna basıldığında KeyPress olayını dinlemek için event handler ekliyoruz.
-            this.KeyPress += GirisForm_KeyPress;
-        }
 
-        private void GirisForm_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Eğer Enter tuşuna basıldıysa ve eğer hedef buton etkin değilse,
-            // butonu etkin hale getiriyoruz.
-            if (e.KeyChar == (char)Keys.Enter && !GirisButton.Enabled)
-            {
-                GirisButton.Enabled = true;
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -79,6 +70,14 @@ namespace Presentation
         private void GirisForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void sifreTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue == (char)Keys.Enter)
+            {
+                GirisYap();
+            }
         }
     }
 }
