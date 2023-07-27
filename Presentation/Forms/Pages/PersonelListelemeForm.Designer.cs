@@ -66,6 +66,7 @@
             this.menuStrip1.SuspendLayout();
             this.PersonelListelemeTableLayoutPanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            this.PersonelSicilKartiPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -77,7 +78,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1271, 72);
+            this.label1.Size = new System.Drawing.Size(1384, 79);
             this.label1.TabIndex = 4;
             this.label1.Text = "PERSONEL LİSTELEME";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +89,7 @@
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
-            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 103);
+            this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 113);
             this.PersonelListesiAdvancedDataGridView.MultiSelect = false;
             this.PersonelListesiAdvancedDataGridView.Name = "PersonelListesiAdvancedDataGridView";
             this.PersonelListesiAdvancedDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -107,9 +108,9 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AlfabetikPersonelListesiToolStripMenuItem,
             this.UnvanBazliPersonelListesiToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 72);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 79);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1277, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1390, 28);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -313,14 +314,15 @@
             this.PersonelListelemeTableLayoutPanel.Controls.Add(this.label1, 0, 0);
             this.PersonelListelemeTableLayoutPanel.Controls.Add(this.menuStrip1, 0, 1);
             this.PersonelListelemeTableLayoutPanel.Controls.Add(this.PersonelListesiAdvancedDataGridView, 0, 2);
-            this.PersonelListelemeTableLayoutPanel.Location = new System.Drawing.Point(12, 9);
+            this.PersonelListelemeTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PersonelListelemeTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.PersonelListelemeTableLayoutPanel.Name = "PersonelListelemeTableLayoutPanel";
             this.PersonelListelemeTableLayoutPanel.RowCount = 4;
             this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.361874F));
             this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 73.05936F));
             this.PersonelListelemeTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.71994F));
-            this.PersonelListelemeTableLayoutPanel.Size = new System.Drawing.Size(1277, 657);
+            this.PersonelListelemeTableLayoutPanel.Size = new System.Drawing.Size(1390, 715);
             this.PersonelListelemeTableLayoutPanel.TabIndex = 19;
             // 
             // tableLayoutPanel2
@@ -343,11 +345,11 @@
             this.tableLayoutPanel2.Controls.Add(this.YeniKayitButton, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.DetayButton, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 581);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 634);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1271, 73);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1384, 78);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // YardimButton
@@ -356,10 +358,10 @@
             this.YardimButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.YardimButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.YardimButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.YardimButton.Location = new System.Drawing.Point(847, 15);
+            this.YardimButton.Location = new System.Drawing.Point(935, 15);
             this.YardimButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.YardimButton.Name = "YardimButton";
-            this.YardimButton.Size = new System.Drawing.Size(120, 43);
+            this.YardimButton.Size = new System.Drawing.Size(142, 48);
             this.YardimButton.TabIndex = 0;
             this.YardimButton.TabStop = false;
             this.YardimButton.Text = "YARDIM";
@@ -371,10 +373,10 @@
             this.GuncelleButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GuncelleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.GuncelleButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.GuncelleButton.Location = new System.Drawing.Point(711, 15);
+            this.GuncelleButton.Location = new System.Drawing.Point(777, 15);
             this.GuncelleButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.GuncelleButton.Name = "GuncelleButton";
-            this.GuncelleButton.Size = new System.Drawing.Size(120, 43);
+            this.GuncelleButton.Size = new System.Drawing.Size(142, 48);
             this.GuncelleButton.TabIndex = 0;
             this.GuncelleButton.TabStop = false;
             this.GuncelleButton.Text = "GÜNCELLE";
@@ -386,10 +388,10 @@
             this.NakilButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NakilButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.NakilButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.NakilButton.Location = new System.Drawing.Point(575, 15);
+            this.NakilButton.Location = new System.Drawing.Point(619, 15);
             this.NakilButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.NakilButton.Name = "NakilButton";
-            this.NakilButton.Size = new System.Drawing.Size(120, 43);
+            this.NakilButton.Size = new System.Drawing.Size(142, 48);
             this.NakilButton.TabIndex = 0;
             this.NakilButton.TabStop = false;
             this.NakilButton.Text = "NAKİL";
@@ -401,10 +403,10 @@
             this.YeniKayitButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.YeniKayitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.YeniKayitButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.YeniKayitButton.Location = new System.Drawing.Point(439, 15);
+            this.YeniKayitButton.Location = new System.Drawing.Point(461, 15);
             this.YeniKayitButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.YeniKayitButton.Name = "YeniKayitButton";
-            this.YeniKayitButton.Size = new System.Drawing.Size(120, 43);
+            this.YeniKayitButton.Size = new System.Drawing.Size(142, 48);
             this.YeniKayitButton.TabIndex = 0;
             this.YeniKayitButton.TabStop = false;
             this.YeniKayitButton.Text = "YENİ KAYIT";
@@ -420,7 +422,7 @@
             this.DetayButton.Location = new System.Drawing.Point(303, 15);
             this.DetayButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.DetayButton.Name = "DetayButton";
-            this.DetayButton.Size = new System.Drawing.Size(120, 43);
+            this.DetayButton.Size = new System.Drawing.Size(142, 48);
             this.DetayButton.TabIndex = 0;
             this.DetayButton.TabStop = false;
             this.DetayButton.Text = "DETAY";
@@ -429,9 +431,11 @@
             // 
             // PersonelSicilKartiPanel
             // 
-            this.PersonelSicilKartiPanel.Location = new System.Drawing.Point(141, 12);
+            this.PersonelSicilKartiPanel.Controls.Add(this.PersonelListelemeTableLayoutPanel);
+            this.PersonelSicilKartiPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PersonelSicilKartiPanel.Location = new System.Drawing.Point(0, 0);
             this.PersonelSicilKartiPanel.Name = "PersonelSicilKartiPanel";
-            this.PersonelSicilKartiPanel.Size = new System.Drawing.Size(1277, 657);
+            this.PersonelSicilKartiPanel.Size = new System.Drawing.Size(1390, 715);
             this.PersonelSicilKartiPanel.TabIndex = 20;
             // 
             // PersonelListelemeForm
@@ -440,7 +444,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1390, 715);
-            this.Controls.Add(this.PersonelListelemeTableLayoutPanel);
             this.Controls.Add(this.PersonelSicilKartiPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PersonelListelemeForm";
@@ -453,6 +456,7 @@
             this.PersonelListelemeTableLayoutPanel.ResumeLayout(false);
             this.PersonelListelemeTableLayoutPanel.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.PersonelSicilKartiPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

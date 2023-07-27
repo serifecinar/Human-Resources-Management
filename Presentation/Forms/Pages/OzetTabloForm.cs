@@ -1,5 +1,6 @@
 ﻿using Business.Helper;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -47,10 +48,10 @@ namespace Presentation.Forms.Pages
 
             CinsiyetOraniLabel.Text = $"%{NufusHesaplamalariHelper.KadinOrani} - %{NufusHesaplamalariHelper.ErkekOrani}";
 
-            CreateDoughnutChart();
+            CinsiyetChartOlustur();
         }
 
-        private void CreateDoughnutChart()
+        private void CinsiyetChartOlustur()
         {
             // Kadın ve erkek sayıları
             int kadinSayisi = NufusHesaplamalariHelper.KadinSayisi;
@@ -77,7 +78,21 @@ namespace Presentation.Forms.Pages
             CinsiyetChart.Series["Cinsiyetler"]["PieStartAngle"] = "180"; // Başlangıç açısı (0-360 arasında değer alır)
         }
 
-        public void YasAtamalari() => label20.Text = YasHesaplamalariHelper.YasHesap().ToString();
+        public void YasChartOlustur()
+        {
+            // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
+            List<int> yaslar = YasHesaplamalariHelper.YasHesap();
+
+            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.CalculateFrequencies(yaslar);         
+            YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
+            YasChart.Series["Yaslar"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
+            YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
+        }
+
+        public void YasAtamalari()
+        {
+            YasChartOlustur();
+        }
 
     }
 }

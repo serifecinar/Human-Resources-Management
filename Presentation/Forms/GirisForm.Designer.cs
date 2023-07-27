@@ -51,7 +51,6 @@
             this.AnasayfaButton = new System.Windows.Forms.Button();
             this.PersonelListelemeButton = new System.Windows.Forms.Button();
             this.SicilKartiButton = new System.Windows.Forms.Button();
-            this.PersonelIdLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.PanelContent.SuspendLayout();
@@ -262,7 +261,6 @@
             this.tableLayoutPanel2.Controls.Add(this.AnasayfaButton, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.PersonelListelemeButton, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.SicilKartiButton, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.PersonelIdLabel, 0, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -331,17 +329,6 @@
             this.SicilKartiButton.UseVisualStyleBackColor = false;
             this.SicilKartiButton.Click += new System.EventHandler(this.SicilKartiButton_Click);
             // 
-            // PersonelIdLabel
-            // 
-            this.PersonelIdLabel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.PersonelIdLabel.AutoSize = true;
-            this.PersonelIdLabel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.PersonelIdLabel.Location = new System.Drawing.Point(88, 486);
-            this.PersonelIdLabel.Name = "PersonelIdLabel";
-            this.PersonelIdLabel.Size = new System.Drawing.Size(35, 13);
-            this.PersonelIdLabel.TabIndex = 2;
-            this.PersonelIdLabel.Text = "label5";
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
@@ -397,7 +384,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -430,7 +416,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        public System.Windows.Forms.Label PersonelIdLabel;
         public System.Windows.Forms.Panel PanelContent;
     }
 }

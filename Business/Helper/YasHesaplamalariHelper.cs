@@ -1,21 +1,43 @@
 ﻿using Business.Services;
-using DataAcces;
 using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace Business.Helper
 {
     public static class YasHesaplamalariHelper
     {
-        public readonly static NufusService nufusService = new NufusService();
-
-        public static int YasHesap()
+        public static List<int> YasHesap()
         {
-            var resNufus = nufusService.GetAll();
+            var nufusService = new NufusService();
 
+            int suankiYil = DateTime.Now.Year;
 
-            return resNufus.Count();
+            var nufusData = nufusService.GetAll();
 
+            List<int> yaslar = new List<int>();
+
+            foreach (var item in nufusData)
+            {
+                int personelYasi = item.DogumTarihi.Value.Year;
+
+                yaslar.Add(suankiYil - personelYasi);               
+            }
+
+            return yaslar;
+        }
+
+        // Frekans değerlerini hesaplamak için yardımcı fonksiyon
+        public static Dictionary<int, int> CalculateFrequencies(List<int> data)
+        {
+            Dictionary<int, int> frequencies = new Dictionary<int, int>();
+            foreach (int value in data)
+            {
+                if (frequencies.ContainsKey(value))
+                    frequencies[value]++;
+                else
+                    frequencies[value] = 1;
+            }
+            return frequencies;
         }
     }
 }
