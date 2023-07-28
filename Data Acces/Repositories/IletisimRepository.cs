@@ -28,7 +28,7 @@ namespace DataAcces.Repositories
             return context.Set<Iletisim>().Find(id);
         }
 
-        public Iletisim GetByPersonelId(object personelId)
+        public Iletisim GetByPersonelId(int personelId)
         {
             return context.Set<Iletisim>().Find(personelId);
         }

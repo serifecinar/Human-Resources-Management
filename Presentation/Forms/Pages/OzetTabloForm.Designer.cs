@@ -29,15 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OzetTabloForm));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.CinsiyetLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -47,7 +44,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CinsiyetOraniLabel = new System.Windows.Forms.Label();
             this.CinsiyetChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.EgitimChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.EgitimLabel = new System.Windows.Forms.Label();
             this.YasChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.YasLabel = new System.Windows.Forms.Label();
@@ -91,15 +87,16 @@
             this.PersonelSayisiUnvanToplamLabel = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.PersonelSayisiUnvan17Label = new System.Windows.Forms.Label();
+            this.EgitimChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CinsiyetChart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.YasChart)).BeginInit();
             this.GenelTableLayoutPanel.SuspendLayout();
             this.UnvanTabloTableLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -107,14 +104,14 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.EgitimChart, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.CinsiyetLabel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.EgitimChart, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.EgitimLabel, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.YasChart, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.YasLabel, 0, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(651, 3);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(596, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
@@ -125,7 +122,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(623, 621);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(678, 621);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // CinsiyetLabel
@@ -137,7 +134,7 @@
             this.CinsiyetLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.CinsiyetLabel.Location = new System.Drawing.Point(3, 0);
             this.CinsiyetLabel.Name = "CinsiyetLabel";
-            this.CinsiyetLabel.Size = new System.Drawing.Size(617, 35);
+            this.CinsiyetLabel.Size = new System.Drawing.Size(672, 35);
             this.CinsiyetLabel.TabIndex = 1;
             this.CinsiyetLabel.Text = "CİNSİYET";
             this.CinsiyetLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,7 +158,7 @@
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.45783F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85.54217F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(617, 162);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(672, 162);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // KadinSayisiLabel
@@ -171,7 +168,7 @@
             this.KadinSayisiLabel.BackColor = System.Drawing.SystemColors.Window;
             this.KadinSayisiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.KadinSayisiLabel.ForeColor = System.Drawing.Color.Orange;
-            this.KadinSayisiLabel.Location = new System.Drawing.Point(185, 0);
+            this.KadinSayisiLabel.Location = new System.Drawing.Point(204, 0);
             this.KadinSayisiLabel.Name = "KadinSayisiLabel";
             this.KadinSayisiLabel.Size = new System.Drawing.Size(17, 23);
             this.KadinSayisiLabel.TabIndex = 3;
@@ -185,7 +182,7 @@
             this.ErkekSayisiLabel.BackColor = System.Drawing.SystemColors.Window;
             this.ErkekSayisiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ErkekSayisiLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.ErkekSayisiLabel.Location = new System.Drawing.Point(413, 0);
+            this.ErkekSayisiLabel.Location = new System.Drawing.Point(451, 0);
             this.ErkekSayisiLabel.Name = "ErkekSayisiLabel";
             this.ErkekSayisiLabel.Size = new System.Drawing.Size(17, 23);
             this.ErkekSayisiLabel.TabIndex = 3;
@@ -198,7 +195,7 @@
             this.pictureBox2.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(112, 30);
+            this.pictureBox2.Location = new System.Drawing.Point(131, 30);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(90, 125);
             this.pictureBox2.TabIndex = 1;
@@ -209,7 +206,7 @@
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Window;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(413, 26);
+            this.pictureBox1.Location = new System.Drawing.Point(451, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(97, 125);
             this.pictureBox1.TabIndex = 1;
@@ -222,7 +219,7 @@
             this.CinsiyetOraniLabel.BackColor = System.Drawing.SystemColors.Window;
             this.CinsiyetOraniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CinsiyetOraniLabel.ForeColor = System.Drawing.Color.Black;
-            this.CinsiyetOraniLabel.Location = new System.Drawing.Point(299, 0);
+            this.CinsiyetOraniLabel.Location = new System.Drawing.Point(327, 0);
             this.CinsiyetOraniLabel.Name = "CinsiyetOraniLabel";
             this.CinsiyetOraniLabel.Size = new System.Drawing.Size(17, 23);
             this.CinsiyetOraniLabel.TabIndex = 3;
@@ -231,54 +228,22 @@
             // 
             // CinsiyetChart
             // 
-            chartArea1.BorderColor = System.Drawing.Color.WhiteSmoke;
-            chartArea1.Name = "ChartArea1";
-            this.CinsiyetChart.ChartAreas.Add(chartArea1);
-            this.CinsiyetChart.Location = new System.Drawing.Point(208, 26);
+            chartArea2.BorderColor = System.Drawing.Color.WhiteSmoke;
+            chartArea2.Name = "ChartArea1";
+            this.CinsiyetChart.ChartAreas.Add(chartArea2);
+            this.CinsiyetChart.Location = new System.Drawing.Point(227, 26);
             this.CinsiyetChart.Name = "CinsiyetChart";
             this.CinsiyetChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series1.ChartArea = "ChartArea1";
-            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            series1.IsVisibleInLegend = false;
-            series1.LabelForeColor = System.Drawing.Color.WhiteSmoke;
-            series1.Name = "Cinsiyetler";
-            this.CinsiyetChart.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            series2.IsVisibleInLegend = false;
+            series2.LabelForeColor = System.Drawing.Color.WhiteSmoke;
+            series2.Name = "Cinsiyetler";
+            series2.SmartLabelStyle.CalloutLineColor = System.Drawing.Color.White;
+            this.CinsiyetChart.Series.Add(series2);
             this.CinsiyetChart.Size = new System.Drawing.Size(191, 125);
             this.CinsiyetChart.TabIndex = 4;
             this.CinsiyetChart.Text = "chart1";
-            // 
-            // EgitimChart
-            // 
-            this.EgitimChart.BackColor = System.Drawing.SystemColors.Window;
-            this.EgitimChart.BorderlineColor = System.Drawing.Color.Transparent;
-            this.EgitimChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
-            this.EgitimChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
-            chartArea2.BackColor = System.Drawing.Color.Transparent;
-            chartArea2.Name = "ChartArea1";
-            this.EgitimChart.ChartAreas.Add(chartArea2);
-            this.EgitimChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EgitimChart.Location = new System.Drawing.Point(3, 454);
-            this.EgitimChart.Name = "EgitimChart";
-            this.EgitimChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series2.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
-            series2.ChartArea = "ChartArea1";
-            series2.Name = "Series2";
-            series3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
-            series3.ChartArea = "ChartArea1";
-            series3.Name = "Series3";
-            series4.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
-            series4.ChartArea = "ChartArea1";
-            series4.Name = "Series4";
-            series5.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
-            series5.ChartArea = "ChartArea1";
-            series5.Name = "Series5";
-            this.EgitimChart.Series.Add(series2);
-            this.EgitimChart.Series.Add(series3);
-            this.EgitimChart.Series.Add(series4);
-            this.EgitimChart.Series.Add(series5);
-            this.EgitimChart.Size = new System.Drawing.Size(617, 164);
-            this.EgitimChart.TabIndex = 7;
-            this.EgitimChart.Visible = false;
             // 
             // EgitimLabel
             // 
@@ -289,7 +254,7 @@
             this.EgitimLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.EgitimLabel.Location = new System.Drawing.Point(3, 416);
             this.EgitimLabel.Name = "EgitimLabel";
-            this.EgitimLabel.Size = new System.Drawing.Size(617, 35);
+            this.EgitimLabel.Size = new System.Drawing.Size(672, 35);
             this.EgitimLabel.TabIndex = 1;
             this.EgitimLabel.Text = "EĞİTİM";
             this.EgitimLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -307,11 +272,11 @@
             this.YasChart.Location = new System.Drawing.Point(3, 246);
             this.YasChart.Name = "YasChart";
             this.YasChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-            series6.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
-            series6.ChartArea = "ChartArea1";
-            series6.Name = "Yaslar";
-            this.YasChart.Series.Add(series6);
-            this.YasChart.Size = new System.Drawing.Size(617, 162);
+            series3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
+            series3.ChartArea = "ChartArea1";
+            series3.Name = "Yaslar";
+            this.YasChart.Series.Add(series3);
+            this.YasChart.Size = new System.Drawing.Size(672, 162);
             this.YasChart.TabIndex = 5;
             // 
             // YasLabel
@@ -323,7 +288,7 @@
             this.YasLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.YasLabel.Location = new System.Drawing.Point(3, 208);
             this.YasLabel.Name = "YasLabel";
-            this.YasLabel.Size = new System.Drawing.Size(617, 35);
+            this.YasLabel.Size = new System.Drawing.Size(672, 35);
             this.YasLabel.TabIndex = 1;
             this.YasLabel.Text = "YAŞ";
             this.YasLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -332,8 +297,8 @@
             // 
             this.GenelTableLayoutPanel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.GenelTableLayoutPanel.ColumnCount = 2;
-            this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.74393F));
-            this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.25607F));
+            this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.43696F));
+            this.GenelTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.56304F));
             this.GenelTableLayoutPanel.Controls.Add(this.tableLayoutPanel1, 1, 0);
             this.GenelTableLayoutPanel.Controls.Add(this.UnvanTabloTableLayoutPanel, 0, 0);
             this.GenelTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -351,8 +316,8 @@
             this.UnvanTabloTableLayoutPanel.BackColor = System.Drawing.SystemColors.Window;
             this.UnvanTabloTableLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.UnvanTabloTableLayoutPanel.ColumnCount = 2;
-            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.65967F));
-            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.34033F));
+            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85.36585F));
+            this.UnvanTabloTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.63415F));
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label2, 0, 2);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label3, 0, 3);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label4, 0, 4);
@@ -361,7 +326,6 @@
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label7, 0, 7);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label8, 0, 8);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label9, 0, 9);
-            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label10, 0, 10);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label11, 0, 11);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label12, 0, 12);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label13, 0, 13);
@@ -391,6 +355,7 @@
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.PersonelSayisiUnvanToplamLabel, 1, 18);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.label21, 0, 17);
             this.UnvanTabloTableLayoutPanel.Controls.Add(this.PersonelSayisiUnvan17Label, 1, 17);
+            this.UnvanTabloTableLayoutPanel.Controls.Add(this.label10, 0, 10);
             this.UnvanTabloTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UnvanTabloTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.UnvanTabloTableLayoutPanel.Name = "UnvanTabloTableLayoutPanel";
@@ -414,7 +379,7 @@
             this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555554F));
             this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555554F));
             this.UnvanTabloTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5.555554F));
-            this.UnvanTabloTableLayoutPanel.Size = new System.Drawing.Size(642, 621);
+            this.UnvanTabloTableLayoutPanel.Size = new System.Drawing.Size(587, 621);
             this.UnvanTabloTableLayoutPanel.TabIndex = 2;
             // 
             // label2
@@ -425,7 +390,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(4, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(509, 31);
+            this.label2.Size = new System.Drawing.Size(492, 31);
             this.label2.TabIndex = 2;
             this.label2.Text = "2. İSG Sorumlusu";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -438,7 +403,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(4, 101);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(509, 31);
+            this.label3.Size = new System.Drawing.Size(492, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "3. Deneyimli Bakım – Onarım İşletme Mühendisi";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -451,7 +416,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.Location = new System.Drawing.Point(4, 133);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(509, 31);
+            this.label4.Size = new System.Drawing.Size(492, 31);
             this.label4.TabIndex = 2;
             this.label4.Text = "4. Atölye / Ünite Sorumlu Mühendis + Laboratuvar Sorumlu Mühendis";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -528,6 +493,7 @@
             this.label10.Size = new System.Drawing.Size(452, 31);
             this.label10.TabIndex = 2;
             this.label10.Text = "10. İşletme Bakım Onarım Operatörleri / İşçileri/ İdari Raporlama Sorumlusu";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label11
             // 
@@ -610,7 +576,7 @@
             this.label17.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label17.Location = new System.Drawing.Point(4, 1);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(509, 35);
+            this.label17.Size = new System.Drawing.Size(492, 35);
             this.label17.TabIndex = 2;
             this.label17.Text = "UNVAN";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -622,9 +588,9 @@
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label18.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label18.Location = new System.Drawing.Point(520, 1);
+            this.label18.Location = new System.Drawing.Point(503, 1);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(118, 35);
+            this.label18.Size = new System.Drawing.Size(80, 35);
             this.label18.TabIndex = 2;
             this.label18.Text = "PERSONEL SAYISI";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -637,7 +603,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(4, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 31);
+            this.label1.Size = new System.Drawing.Size(492, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "1. Tesis Şefi – Koordinatör";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -648,9 +614,9 @@
             this.PersonelSayisiUnvan1Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan1Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan1Label.Location = new System.Drawing.Point(520, 37);
+            this.PersonelSayisiUnvan1Label.Location = new System.Drawing.Point(503, 37);
             this.PersonelSayisiUnvan1Label.Name = "PersonelSayisiUnvan1Label";
-            this.PersonelSayisiUnvan1Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan1Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan1Label.TabIndex = 3;
             this.PersonelSayisiUnvan1Label.Text = "-";
             this.PersonelSayisiUnvan1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -661,9 +627,9 @@
             this.PersonelSayisiUnvan2Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan2Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan2Label.Location = new System.Drawing.Point(520, 69);
+            this.PersonelSayisiUnvan2Label.Location = new System.Drawing.Point(503, 69);
             this.PersonelSayisiUnvan2Label.Name = "PersonelSayisiUnvan2Label";
-            this.PersonelSayisiUnvan2Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan2Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan2Label.TabIndex = 3;
             this.PersonelSayisiUnvan2Label.Text = "-";
             this.PersonelSayisiUnvan2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -674,9 +640,9 @@
             this.PersonelSayisiUnvan3Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan3Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan3Label.Location = new System.Drawing.Point(520, 101);
+            this.PersonelSayisiUnvan3Label.Location = new System.Drawing.Point(503, 101);
             this.PersonelSayisiUnvan3Label.Name = "PersonelSayisiUnvan3Label";
-            this.PersonelSayisiUnvan3Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan3Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan3Label.TabIndex = 3;
             this.PersonelSayisiUnvan3Label.Text = "-";
             this.PersonelSayisiUnvan3Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -687,9 +653,9 @@
             this.PersonelSayisiUnvan4Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan4Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan4Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan4Label.Location = new System.Drawing.Point(520, 133);
+            this.PersonelSayisiUnvan4Label.Location = new System.Drawing.Point(503, 133);
             this.PersonelSayisiUnvan4Label.Name = "PersonelSayisiUnvan4Label";
-            this.PersonelSayisiUnvan4Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan4Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan4Label.TabIndex = 3;
             this.PersonelSayisiUnvan4Label.Text = "-";
             this.PersonelSayisiUnvan4Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -700,9 +666,9 @@
             this.PersonelSayisiUnvan5Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan5Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan5Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan5Label.Location = new System.Drawing.Point(520, 165);
+            this.PersonelSayisiUnvan5Label.Location = new System.Drawing.Point(503, 165);
             this.PersonelSayisiUnvan5Label.Name = "PersonelSayisiUnvan5Label";
-            this.PersonelSayisiUnvan5Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan5Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan5Label.TabIndex = 3;
             this.PersonelSayisiUnvan5Label.Text = "-";
             this.PersonelSayisiUnvan5Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -713,9 +679,9 @@
             this.PersonelSayisiUnvan6Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan6Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan6Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan6Label.Location = new System.Drawing.Point(520, 197);
+            this.PersonelSayisiUnvan6Label.Location = new System.Drawing.Point(503, 197);
             this.PersonelSayisiUnvan6Label.Name = "PersonelSayisiUnvan6Label";
-            this.PersonelSayisiUnvan6Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan6Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan6Label.TabIndex = 3;
             this.PersonelSayisiUnvan6Label.Text = "-";
             this.PersonelSayisiUnvan6Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -726,9 +692,9 @@
             this.PersonelSayisiUnvan7Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan7Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan7Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan7Label.Location = new System.Drawing.Point(520, 229);
+            this.PersonelSayisiUnvan7Label.Location = new System.Drawing.Point(503, 229);
             this.PersonelSayisiUnvan7Label.Name = "PersonelSayisiUnvan7Label";
-            this.PersonelSayisiUnvan7Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan7Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan7Label.TabIndex = 3;
             this.PersonelSayisiUnvan7Label.Text = "-";
             this.PersonelSayisiUnvan7Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -739,9 +705,9 @@
             this.PersonelSayisiUnvan8Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan8Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan8Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan8Label.Location = new System.Drawing.Point(520, 261);
+            this.PersonelSayisiUnvan8Label.Location = new System.Drawing.Point(503, 261);
             this.PersonelSayisiUnvan8Label.Name = "PersonelSayisiUnvan8Label";
-            this.PersonelSayisiUnvan8Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan8Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan8Label.TabIndex = 3;
             this.PersonelSayisiUnvan8Label.Text = "-";
             this.PersonelSayisiUnvan8Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -752,9 +718,9 @@
             this.PersonelSayisiUnvan9Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan9Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan9Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan9Label.Location = new System.Drawing.Point(520, 293);
+            this.PersonelSayisiUnvan9Label.Location = new System.Drawing.Point(503, 293);
             this.PersonelSayisiUnvan9Label.Name = "PersonelSayisiUnvan9Label";
-            this.PersonelSayisiUnvan9Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan9Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan9Label.TabIndex = 3;
             this.PersonelSayisiUnvan9Label.Text = "-";
             this.PersonelSayisiUnvan9Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -765,9 +731,9 @@
             this.PersonelSayisiUnvan10Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan10Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan10Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan10Label.Location = new System.Drawing.Point(520, 325);
+            this.PersonelSayisiUnvan10Label.Location = new System.Drawing.Point(503, 325);
             this.PersonelSayisiUnvan10Label.Name = "PersonelSayisiUnvan10Label";
-            this.PersonelSayisiUnvan10Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan10Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan10Label.TabIndex = 3;
             this.PersonelSayisiUnvan10Label.Text = "-";
             this.PersonelSayisiUnvan10Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -778,9 +744,9 @@
             this.PersonelSayisiUnvan11Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan11Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan11Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan11Label.Location = new System.Drawing.Point(520, 357);
+            this.PersonelSayisiUnvan11Label.Location = new System.Drawing.Point(503, 357);
             this.PersonelSayisiUnvan11Label.Name = "PersonelSayisiUnvan11Label";
-            this.PersonelSayisiUnvan11Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan11Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan11Label.TabIndex = 3;
             this.PersonelSayisiUnvan11Label.Text = "-";
             this.PersonelSayisiUnvan11Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -791,9 +757,9 @@
             this.PersonelSayisiUnvan12Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan12Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan12Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan12Label.Location = new System.Drawing.Point(520, 389);
+            this.PersonelSayisiUnvan12Label.Location = new System.Drawing.Point(503, 389);
             this.PersonelSayisiUnvan12Label.Name = "PersonelSayisiUnvan12Label";
-            this.PersonelSayisiUnvan12Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan12Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan12Label.TabIndex = 3;
             this.PersonelSayisiUnvan12Label.Text = "-";
             this.PersonelSayisiUnvan12Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -804,9 +770,9 @@
             this.PersonelSayisiUnvan13Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan13Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan13Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan13Label.Location = new System.Drawing.Point(520, 421);
+            this.PersonelSayisiUnvan13Label.Location = new System.Drawing.Point(503, 421);
             this.PersonelSayisiUnvan13Label.Name = "PersonelSayisiUnvan13Label";
-            this.PersonelSayisiUnvan13Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan13Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan13Label.TabIndex = 3;
             this.PersonelSayisiUnvan13Label.Text = "-";
             this.PersonelSayisiUnvan13Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -817,9 +783,9 @@
             this.PersonelSayisiUnvan14Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan14Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan14Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan14Label.Location = new System.Drawing.Point(520, 453);
+            this.PersonelSayisiUnvan14Label.Location = new System.Drawing.Point(503, 453);
             this.PersonelSayisiUnvan14Label.Name = "PersonelSayisiUnvan14Label";
-            this.PersonelSayisiUnvan14Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan14Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan14Label.TabIndex = 3;
             this.PersonelSayisiUnvan14Label.Text = "-";
             this.PersonelSayisiUnvan14Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -830,9 +796,9 @@
             this.PersonelSayisiUnvan15Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan15Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan15Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan15Label.Location = new System.Drawing.Point(520, 485);
+            this.PersonelSayisiUnvan15Label.Location = new System.Drawing.Point(503, 485);
             this.PersonelSayisiUnvan15Label.Name = "PersonelSayisiUnvan15Label";
-            this.PersonelSayisiUnvan15Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan15Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan15Label.TabIndex = 3;
             this.PersonelSayisiUnvan15Label.Text = "-";
             this.PersonelSayisiUnvan15Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -843,9 +809,9 @@
             this.PersonelSayisiUnvan16Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan16Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan16Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan16Label.Location = new System.Drawing.Point(520, 517);
+            this.PersonelSayisiUnvan16Label.Location = new System.Drawing.Point(503, 517);
             this.PersonelSayisiUnvan16Label.Name = "PersonelSayisiUnvan16Label";
-            this.PersonelSayisiUnvan16Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan16Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan16Label.TabIndex = 3;
             this.PersonelSayisiUnvan16Label.Text = "-";
             this.PersonelSayisiUnvan16Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -869,9 +835,9 @@
             this.PersonelSayisiUnvanToplamLabel.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvanToplamLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvanToplamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvanToplamLabel.Location = new System.Drawing.Point(520, 581);
+            this.PersonelSayisiUnvanToplamLabel.Location = new System.Drawing.Point(503, 581);
             this.PersonelSayisiUnvanToplamLabel.Name = "PersonelSayisiUnvanToplamLabel";
-            this.PersonelSayisiUnvanToplamLabel.Size = new System.Drawing.Size(118, 39);
+            this.PersonelSayisiUnvanToplamLabel.Size = new System.Drawing.Size(80, 39);
             this.PersonelSayisiUnvanToplamLabel.TabIndex = 3;
             this.PersonelSayisiUnvanToplamLabel.Text = "-";
             this.PersonelSayisiUnvanToplamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -894,12 +860,32 @@
             this.PersonelSayisiUnvan17Label.BackColor = System.Drawing.SystemColors.Window;
             this.PersonelSayisiUnvan17Label.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelSayisiUnvan17Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PersonelSayisiUnvan17Label.Location = new System.Drawing.Point(520, 549);
+            this.PersonelSayisiUnvan17Label.Location = new System.Drawing.Point(503, 549);
             this.PersonelSayisiUnvan17Label.Name = "PersonelSayisiUnvan17Label";
-            this.PersonelSayisiUnvan17Label.Size = new System.Drawing.Size(118, 31);
+            this.PersonelSayisiUnvan17Label.Size = new System.Drawing.Size(80, 31);
             this.PersonelSayisiUnvan17Label.TabIndex = 3;
             this.PersonelSayisiUnvan17Label.Text = "-";
             this.PersonelSayisiUnvan17Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // EgitimChart
+            // 
+            this.EgitimChart.BackColor = System.Drawing.SystemColors.Window;
+            this.EgitimChart.BorderlineColor = System.Drawing.Color.Transparent;
+            this.EgitimChart.BorderSkin.BackColor = System.Drawing.Color.Transparent;
+            this.EgitimChart.BorderSkin.PageColor = System.Drawing.Color.Transparent;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.EgitimChart.ChartAreas.Add(chartArea1);
+            this.EgitimChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EgitimChart.Location = new System.Drawing.Point(3, 454);
+            this.EgitimChart.Name = "EgitimChart";
+            this.EgitimChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Egitimler";
+            this.EgitimChart.Series.Add(series1);
+            this.EgitimChart.Size = new System.Drawing.Size(672, 164);
+            this.EgitimChart.TabIndex = 9;
             // 
             // OzetTabloForm
             // 
@@ -920,11 +906,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CinsiyetChart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.YasChart)).EndInit();
             this.GenelTableLayoutPanel.ResumeLayout(false);
             this.UnvanTabloTableLayoutPanel.ResumeLayout(false);
             this.UnvanTabloTableLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EgitimChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -934,7 +920,6 @@
         private System.Windows.Forms.Label CinsiyetLabel;
         private System.Windows.Forms.Label YasLabel;
         private System.Windows.Forms.Label EgitimLabel;
-        private System.Windows.Forms.DataVisualization.Charting.Chart EgitimChart;
         private System.Windows.Forms.DataVisualization.Charting.Chart YasChart;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -983,5 +968,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart CinsiyetChart;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label PersonelSayisiUnvan17Label;
+        private System.Windows.Forms.DataVisualization.Charting.Chart EgitimChart;
     }
 }

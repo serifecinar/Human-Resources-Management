@@ -41,7 +41,7 @@ namespace DataAcces.Repositories
             context.SaveChanges();
         }
 
-        public Log GetByPersonelId(object personelId)
+        public Log GetByPersonelId(int personelId)
         {
             return context.Set<Log>().Find(personelId);
         }

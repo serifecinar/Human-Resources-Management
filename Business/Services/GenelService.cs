@@ -2,14 +2,16 @@
 using Data_Acces.Models;
 using Data_Acces.Repositories;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Business.Services
 {
     public class GenelService : IService<Genel>
     {
-        readonly IRepository<Genel> genelRepository = new GenelRepository();
+        GenelRepository genelRepository = new GenelRepository();
 
         public void Add(Genel thing)
         { 
@@ -25,5 +27,6 @@ namespace Business.Services
         public Genel GetByPersonelId(int personelId) => genelRepository.GetByPersonelId(personelId); 
        
         public List<Genel> GetAll() => genelRepository.GetAll().ToList();
+        public List<Genel> Get(Expression<Func<Genel, bool>> filter) => genelRepository.Get(filter).ToList();
     }
 }

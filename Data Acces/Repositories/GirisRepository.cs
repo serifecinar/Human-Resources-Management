@@ -32,7 +32,7 @@ namespace Data_Acces.Repositories
             return context.Set<Giris>().Find(id);
         }
 
-        public Giris GetByPersonelId(object personelId)
+        public Giris GetByPersonelId(int personelId)
         {
             return context.Set<Giris>().Find(personelId);
         }

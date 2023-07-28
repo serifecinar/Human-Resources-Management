@@ -18,6 +18,7 @@ namespace Presentation.Forms.Pages
             CinsiyetAtamalari();
             YasAtamalari();
             UnvanAtamalari();
+            EgitimAtamalari();
         }
 
         private void UnvanAtamalari()
@@ -49,6 +50,15 @@ namespace Presentation.Forms.Pages
             CinsiyetOraniLabel.Text = $"%{NufusHesaplamalariHelper.KadinOrani} - %{NufusHesaplamalariHelper.ErkekOrani}";
 
             CinsiyetChartOlustur();
+        }
+        public void YasAtamalari()
+        {
+            YasChartOlustur();
+        }
+
+        private void EgitimAtamalari()
+        {
+            EgitimChartOlustur();
         }
 
         private void CinsiyetChartOlustur()
@@ -83,16 +93,20 @@ namespace Presentation.Forms.Pages
             // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
             List<int> yaslar = YasHesaplamalariHelper.YasHesap();
 
-            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.CalculateFrequencies(yaslar);         
+            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.YasCalculateFrequencies(yaslar);         
             YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
             YasChart.Series["Yaslar"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
             YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
         }
 
-        public void YasAtamalari()
+        private void EgitimChartOlustur()
         {
-            YasChartOlustur();
-        }
+            List<string> egitimler = EgitimHesaplamalariHelper.EgitimHesap();
 
+            Dictionary<string, int> frekanslar = EgitimHesaplamalariHelper.EgitimCalculateFrequencies(egitimler);
+            EgitimChart.Series["Egitimler"].ChartType = SeriesChartType.Column;
+            EgitimChart.Series["Egitimler"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
+            EgitimChart.Series["Egitimler"].IsValueShownAsLabel = true;
+        }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using Data_Acces.Models;
 using DataAcces;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Data_Acces.Repositories
 {
@@ -23,12 +25,17 @@ namespace Data_Acces.Repositories
         {
             return context.Set<Genel>().ToList();
         }
+        
+        public IEnumerable<Genel> Get(Expression<Func<Genel, bool>> filter)
+        {
+            return context.Set<Genel>().Where(filter).ToList();
+        }
 
         public Genel GetById(object id)
         {
             return context.Set<Genel>().Find(id);
         }
-        public Genel GetByPersonelId(object personelId)
+        public Genel GetByPersonelId(int personelId)
         {
             return context.Set<Genel>().Find(personelId);
         }

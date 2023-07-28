@@ -27,7 +27,7 @@ namespace Business.Helper
         }
 
         // Frekans değerlerini hesaplamak için yardımcı fonksiyon
-        public static Dictionary<int, int> CalculateFrequencies(List<int> data)
+        public static Dictionary<int, int> YasCalculateFrequencies(List<int> data)
         {
             Dictionary<int, int> frequencies = new Dictionary<int, int>();
             foreach (int value in data)

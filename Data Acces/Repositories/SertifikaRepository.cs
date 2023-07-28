@@ -28,7 +28,7 @@ namespace DataAcces.Repositories
             return context.Set<Sertifika>().Find(id);
         }
 
-        public Sertifika GetByPersonelId(object personelId)
+        public Sertifika GetByPersonelId(int personelId)
         {
             return context.Set<Sertifika>().Find(personelId);
         }

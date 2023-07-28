@@ -1,8 +1,10 @@
-﻿using Business.Services;
+﻿using Business.Helper;
+using Business.Services;
 using Data_Acces.Models;
 using Presentation.Forms.Pages;
 using Presentation.Utils;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -34,6 +36,7 @@ namespace Presentation
                 if (result.GirisSifre == sifreTextBox.Text)
                 {
                     PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
+                    GirisYetkiHelper.VeriFiltrele();
                 }
                 else
                 {
@@ -43,11 +46,6 @@ namespace Presentation
             else
             {
                 MessageBox.Show("Bu kullanıcı adı kayıtlı değil");
-            }
-
-            if (result.GirisYetki == "Tuzla")
-            {
-
             }
         }
 

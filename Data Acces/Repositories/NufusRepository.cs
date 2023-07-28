@@ -32,7 +32,7 @@ namespace Data_Acces.Repositories
             return context.Set<Nufus>().Find(id);
         }
 
-        public Nufus GetByPersonelId(object personelId)
+        public Nufus GetByPersonelId(int personelId)
         {
             return context.Set<Nufus>().Find(personelId);
         }
