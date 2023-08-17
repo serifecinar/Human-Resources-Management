@@ -5,12 +5,11 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Data_Acces.Repositories
 {
-    public class GirisRepository:IRepository<Giris>
+    public class GirisRepository : IRepository<Giris>
     {
         private readonly Context context = new Context();
 
@@ -22,9 +21,11 @@ namespace Data_Acces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Giris> GetAll()
+        public IEnumerable<Giris> GetAll(Expression<Func<Giris, bool>> filter = null)
         {
-            return context.Set<Giris>().ToList();
+            return filter == null
+                ? context.Set<Giris>().ToList()
+                : context.Set<Giris>().Where(filter).ToList();
         }
 
         public Giris GetById(object id)

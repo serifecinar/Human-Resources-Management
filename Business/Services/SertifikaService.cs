@@ -6,6 +6,7 @@ using DataAcces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,9 +21,9 @@ namespace Business.Services
             sertifikaRepository.Insert(thing);
         }
 
-        public List<Sertifika> GetAll()
+        public List<Sertifika> GetAll(Expression<Func<Sertifika, bool>> filter = null)
         {
-            var sertifikaData = sertifikaRepository.GetAll();
+            var sertifikaData = sertifikaRepository.GetAll(filter);
 
             return sertifikaData.ToList();
         }

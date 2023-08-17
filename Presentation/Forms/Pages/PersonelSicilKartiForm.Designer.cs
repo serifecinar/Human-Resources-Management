@@ -281,6 +281,8 @@
             this.SokakTextBox = new System.Windows.Forms.TextBox();
             this.MahalleTextBox = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.KaydetButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -298,6 +300,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -375,7 +378,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.ForeColor = System.Drawing.Color.DarkRed;
@@ -386,14 +389,14 @@
             "KADIKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "KÜÇÜKSU ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
-            this.comboBox1.Location = new System.Drawing.Point(721, 284);
+            this.comboBox1.Location = new System.Drawing.Point(721, 269);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(193, 28);
             this.comboBox1.TabIndex = 23;
             // 
             // FotografPictureBox
             // 
-            this.FotografPictureBox.BackColor = System.Drawing.Color.White;
+            this.FotografPictureBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.FotografPictureBox.Location = new System.Drawing.Point(721, 16);
             this.FotografPictureBox.Name = "FotografPictureBox";
             this.FotografPictureBox.Size = new System.Drawing.Size(193, 229);
@@ -425,7 +428,7 @@
             // MKTextBox
             // 
             this.MKTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.MKTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.MKTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MKTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MKTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -470,7 +473,7 @@
             // PKTextBox
             // 
             this.PKTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.PKTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.PKTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PKTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PKTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -482,7 +485,7 @@
             // ToplamKatsayiTextBox
             // 
             this.ToplamKatsayiTextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.ToplamKatsayiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.ToplamKatsayiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ToplamKatsayiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ToplamKatsayiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ToplamKatsayiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -593,7 +596,7 @@
             // 
             // PozisyonuTextBox
             // 
-            this.PozisyonuTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.PozisyonuTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PozisyonuTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PozisyonuTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PozisyonuTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -604,7 +607,7 @@
             // 
             // GorevYeriTextBox
             // 
-            this.GorevYeriTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.GorevYeriTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.GorevYeriTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GorevYeriTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.GorevYeriTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -615,7 +618,7 @@
             // 
             // UnvaniTextBox
             // 
-            this.UnvaniTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.UnvaniTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UnvaniTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UnvaniTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.UnvaniTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -626,7 +629,7 @@
             // 
             // IseGirisTarihiTextBox
             // 
-            this.IseGirisTarihiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.IseGirisTarihiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.IseGirisTarihiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IseGirisTarihiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IseGirisTarihiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -637,7 +640,7 @@
             // 
             // SeflikTextBox
             // 
-            this.SeflikTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -648,7 +651,7 @@
             // 
             // MudurlukTextBox
             // 
-            this.MudurlukTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.MudurlukTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MudurlukTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MudurlukTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MudurlukTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -659,7 +662,7 @@
             // 
             // SoyadiTextBox
             // 
-            this.SoyadiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.SoyadiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SoyadiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SoyadiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SoyadiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -670,7 +673,7 @@
             // 
             // AdiTextBox
             // 
-            this.AdiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.AdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -681,7 +684,7 @@
             // 
             // SicilNoTextBox
             // 
-            this.SicilNoTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.SicilNoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SicilNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SicilNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SicilNoTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -692,7 +695,7 @@
             // 
             // TCKimlikNoTextBox
             // 
-            this.TCKimlikNoTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.TCKimlikNoTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TCKimlikNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TCKimlikNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TCKimlikNoTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3490,6 +3493,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.SicilKartiTabControl, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -3499,6 +3503,37 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.17656F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1277, 657);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.KaydetButton, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 579);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1271, 75);
+            this.tableLayoutPanel2.TabIndex = 9;
+            // 
+            // KaydetButton
+            // 
+            this.KaydetButton.BackColor = System.Drawing.Color.DarkRed;
+            this.KaydetButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.KaydetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KaydetButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.KaydetButton.Location = new System.Drawing.Point(563, 15);
+            this.KaydetButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.KaydetButton.Name = "KaydetButton";
+            this.KaydetButton.Size = new System.Drawing.Size(144, 45);
+            this.KaydetButton.TabIndex = 1;
+            this.KaydetButton.TabStop = false;
+            this.KaydetButton.Text = "KAYDET";
+            this.KaydetButton.UseVisualStyleBackColor = false;
+            this.KaydetButton.Click += new System.EventHandler(this.KaydetButton_Click);
             // 
             // PersonelSicilKartiForm
             // 
@@ -3537,6 +3572,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -3795,5 +3831,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox SeflikTextBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Button KaydetButton;
     }
 }

@@ -1,15 +1,8 @@
 ﻿using Business.Services;
 using Data_Acces.Models;
 using DataAcces;
-using Presentation.Utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -30,17 +23,24 @@ namespace Presentation
         Nakil nakil = new Nakil();
         Iletisim iletisim = new Iletisim();
 
+        int _personelId = 0;
 
-        public PersonelSicilKartiForm(int personelId)
+
+        public PersonelSicilKartiForm(int personelId = 0)
         {
+            _personelId = personelId;
+
             InitializeComponent();
 
-            genel = genelService.GetByPersonelId(personelId);
-            nufus = nufusService.GetByPersonelId(personelId);
-            tahsil = tahsilService.GetByPersonelId(personelId);
-            sertifika = sertifikaService.GetByPersonelId(personelId);
-            nakil = nakilService.GetByPersonelId(personelId);
-            iletisim = iletisimService.GetByPersonelId(personelId);
+            if (_personelId != 0)
+            {
+                genel = genelService.GetByPersonelId(personelId);
+                nufus = nufusService.GetByPersonelId(personelId);
+                tahsil = tahsilService.GetByPersonelId(personelId);
+                sertifika = sertifikaService.GetByPersonelId(personelId);
+                nakil = nakilService.GetByPersonelId(personelId);
+                iletisim = iletisimService.GetByPersonelId(personelId);
+            }
         }
 
 
@@ -50,6 +50,8 @@ namespace Presentation
 
             //bgw.DoWork += delegate
             //{
+            if (_personelId != 0)
+            {
                 //Genel 
                 TCKimlikNoTextBox.Text = genel.TCKimlikNo;
                 SicilNoTextBox.Text = Convert.ToString(genel.SicilNo);
@@ -242,7 +244,370 @@ namespace Presentation
                 IlTextBox.Text = iletisim.Il;
                 CepTelNo1TextBox.Text = iletisim.CepTelNo1;
                 CepTelNo2TextBox.Text = iletisim.CepTelNo2;
-            //};
+                //};
+            }
+        }
+
+        private void KaydetButton_Click(object sender, EventArgs e)
+        {
+            if (TCKimlikNoTextBox.Text != "")
+            {
+                var personelVarMi = genelService.Get(m => m.TCKimlikNo == TCKimlikNoTextBox.Text).FirstOrDefault();
+
+
+
+                if (personelVarMi != null)
+                {
+                    //Genel
+                    personelVarMi.PersonelId = personelVarMi.PersonelId;
+                    personelVarMi.TCKimlikNo = personelVarMi.TCKimlikNo;
+                    personelVarMi.SicilNo = Convert.ToInt32(SicilNoTextBox.Text);
+                    personelVarMi.Adi = AdiTextBox.Text;
+                    personelVarMi.Soyadi = SoyadiTextBox.Text;
+                    personelVarMi.IseGirisTarihi = Convert.ToDateTime(IseGirisTarihiTextBox.Text);
+                    personelVarMi.Mudurluk = MudurlukTextBox.Text;
+                    personelVarMi.Seflik = SeflikTextBox.Text;
+                    personelVarMi.GorevYeri = GorevYeriTextBox.Text;
+                    personelVarMi.Unvani = UnvaniTextBox.Text;
+                    personelVarMi.MK = Convert.ToDouble(MKTextBox.Text);
+                    personelVarMi.PK = Convert.ToDouble(PKTextBox.Text);
+                    personelVarMi.ToplamKatsayi = Convert.ToDouble(ToplamKatsayiTextBox.Text);
+
+                    //Nufus
+                    var personelNufus= nufusService.GetAll(m => m.PersonelId == personelVarMi.PersonelId).FirstOrDefault();
+                    personelNufus.Cinsiyet = CinsiyetTextBox.Text;
+                    personelNufus.AnneAdi = AnneAdiTextBox.Text;
+                    personelNufus.BabaAdi = BabaAdiTextBox.Text;
+                    personelNufus.DogumTarihi = Convert.ToDateTime(DogumTarihiTextBox.Text);
+                    personelNufus.DogumYeri = DogumYeriTextBox.Text;
+                    personelNufus.KanGrubu = KanGrubuTextBox.Text;
+                    personelNufus.MedeniHali = MedinHaliTextBox.Text;
+                    personelNufus.Askerlik = AskerlikTextBox.Text;
+                    personelNufus.NufusaKayitliOlduguIl = NufusaKayitliOlduguIlTextBox.Text;
+                    personelNufus.EsAdi = EsAdiTextBox.Text;
+                    personelNufus.EsMeslegi = EsMeslegiTextBox.Text;
+                    personelNufus.EsCalismaDurumu = EsCalismaDurumuTextBox.Text;
+                    personelNufus.EsCalistigiKurumAdi = EsCalistigiKurumAdiTextBox.Text;
+                    personelNufus.CocukSayisi = CocukSayisiTextBox.Text != "" ? Convert.ToInt16(CocukSayisiTextBox.Text)
+                        : 0;
+
+                    //1.Çocuk
+                    personelNufus.CocukAdi1 = CocukAdi1TextBox.Text;
+                    personelNufus.CocukCinsiyeti1=CocukCinsiyeti1TextBox.Text;
+                    personelNufus.CocukDogumTarihi1 = Convert.ToDateTime(CocukDogumTarihi1TextBox.Text);
+                    personelNufus.CocukHakkinda1 = CocukHakkinda1TextBox.Text;
+
+                    //2.Çocuk
+                    personelNufus.CocukAdi2 = CocukAdi2TextBox.Text;
+                    personelNufus.CocukCinsiyeti2 = CocukCinsiyeti2TextBox.Text;
+                    personelNufus.CocukDogumTarihi2 = Convert.ToDateTime(CocukDogumTarihi2TextBox.Text);
+                    personelNufus.CocukHakkinda2 = CocukHakkinda2TextBox.Text;
+
+                    //3.Çocuk
+                    personelNufus.CocukAdi3 = CocukAdi3TextBox.Text;
+                    personelNufus.CocukCinsiyeti3 = CocukCinsiyeti3TextBox.Text;
+                    personelNufus.CocukDogumTarihi3 = Convert.ToDateTime(CocukDogumTarihi3TextBox.Text);
+                    personelNufus.CocukHakkinda3 = CocukHakkinda3TextBox.Text;
+
+                    //4.Çocuk
+                    personelNufus.CocukAdi4 = CocukAdi4TextBox.Text;
+                    personelNufus.CocukCinsiyeti4 = CocukCinsiyeti4TextBox.Text;
+                    personelNufus.CocukDogumTarihi4 = Convert.ToDateTime(CocukDogumTarihi4TextBox.Text);
+                    personelNufus.CocukHakkinda4 = CocukHakkinda4TextBox.Text;
+
+                    //5.Çocuk
+                    personelNufus.CocukAdi5 = CocukAdi5TextBox.Text;
+                    personelNufus.CocukCinsiyeti5 = CocukCinsiyeti5TextBox.Text;
+                    personelNufus.CocukDogumTarihi5 = Convert.ToDateTime(CocukDogumTarihi5TextBox.Text);
+                    personelNufus.CocukHakkinda5 = CocukHakkinda5TextBox.Text;
+
+                    //6.Çocuk
+                    personelNufus.CocukAdi6 = CocukAdi6TextBox.Text;
+                    personelNufus.CocukCinsiyeti6 = CocukCinsiyeti6TextBox.Text;
+                    personelNufus.CocukDogumTarihi6 = Convert.ToDateTime(CocukDogumTarihi6TextBox.Text);
+                    personelNufus.CocukHakkinda6 = CocukHakkinda6TextBox.Text;
+
+                    var personelTahsil= tahsilService.GetAll(m => m.PersonelId == personelVarMi.PersonelId).FirstOrDefault();
+                    //1. Tahsil 
+                    personelTahsil.TahsilAdi1 = TahsilAdi1TextBox.Text;
+                    personelTahsil.OkulAdi1=OkulAdi1TextBox.Text;
+                    personelTahsil.BolumAdi1 = BolumAdi1TextBox.Text;
+                    personelTahsil.MezuniyetTarihi1 = Convert.ToDateTime(MezuniyetTarihi1TextBox.Text);
+                    //2. Tahsil 
+                    personelTahsil.TahsilAdi2 = TahsilAdi2TextBox.Text;
+                    personelTahsil.OkulAdi2 = OkulAdi2TextBox.Text;
+                    personelTahsil.BolumAdi2 = BolumAdi2TextBox.Text;
+                    personelTahsil.MezuniyetTarihi2 = Convert.ToDateTime(MezuniyetTarihi2TextBox.Text);
+                    //3. Tahsil 
+                    personelTahsil.TahsilAdi3 = TahsilAdi3TextBox.Text;
+                    personelTahsil.OkulAdi3 = OkulAdi3TextBox.Text;
+                    personelTahsil.BolumAdi3 = BolumAdi3TextBox.Text;
+                    personelTahsil.MezuniyetTarihi3 = Convert.ToDateTime(MezuniyetTarihi3TextBox.Text);
+                    //4. Tahsil 
+                    personelTahsil.TahsilAdi4 = TahsilAdi4TextBox.Text;
+                    personelTahsil.OkulAdi4 = OkulAdi4TextBox.Text;
+                    personelTahsil.BolumAdi4 = BolumAdi4TextBox.Text;
+                    personelTahsil.MezuniyetTarihi4 = Convert.ToDateTime(MezuniyetTarihi4TextBox.Text);
+                    //5. Tahsil 
+                    personelTahsil.TahsilAdi5 = TahsilAdi5TextBox.Text;
+                    personelTahsil.OkulAdi5 = OkulAdi5TextBox.Text;
+                    personelTahsil.BolumAdi5 = BolumAdi5TextBox.Text;
+                    personelTahsil.MezuniyetTarihi5 = Convert.ToDateTime(MezuniyetTarihi5TextBox.Text);
+
+                    var personelNakil = nakilService.GetAll(m => m.PersonelId == personelVarMi.PersonelId).FirstOrDefault();
+                    //1.Nakil
+                    personelNakil.BaslangicTarihi1 = Convert.ToDateTime(BaslangicTarihi1TextBox.Text);
+                    personelNakil.AyrilisTarihi1 = Convert.ToDateTime(AyrilisTarihi1TextBox.Text);
+                    personelNakil.Kurum1 = Kurum1TextBox.Text;
+                    personelNakil.Birim1=Birim1TextBox.Text;    
+                    personelNakil.Gorev1=Gorev1TextBox.Text;
+                    personelNakil.Aciklama1 = Aciklama1TextBox.Text;
+                    //2.Nakil
+                    personelNakil.BaslangicTarihi2 = Convert.ToDateTime(BaslangicTarihi2TextBox.Text);
+                    personelNakil.AyrilisTarihi2 = Convert.ToDateTime(AyrilisTarihi2TextBox.Text);
+                    personelNakil.Kurum2 = Kurum2TextBox.Text;
+                    personelNakil.Birim2 = Birim2TextBox.Text;
+                    personelNakil.Gorev2 = Gorev2TextBox.Text;
+                    personelNakil.Aciklama2 = Aciklama2TextBox.Text;
+                    //3.Nakil
+                    personelNakil.BaslangicTarihi3 = Convert.ToDateTime(BaslangicTarihi3TextBox.Text);
+                    personelNakil.AyrilisTarihi3 = Convert.ToDateTime(AyrilisTarihi3TextBox.Text);
+                    personelNakil.Kurum3 = Kurum3TextBox.Text;
+                    personelNakil.Birim3 = Birim3TextBox.Text;
+                    personelNakil.Gorev3 = Gorev3TextBox.Text;
+                    personelNakil.Aciklama3 = Aciklama3TextBox.Text;
+                    //4.Nakil
+                    personelNakil.BaslangicTarihi4 = Convert.ToDateTime(BaslangicTarihi4TextBox.Text);
+                    personelNakil.AyrilisTarihi4 = Convert.ToDateTime(AyrilisTarihi4TextBox.Text);
+                    personelNakil.Kurum4 = Kurum4TextBox.Text;
+                    personelNakil.Birim4 = Birim4TextBox.Text;
+                    personelNakil.Gorev4 = Gorev4TextBox.Text;
+                    personelNakil.Aciklama4 = Aciklama4TextBox.Text;
+                    //5.Nakil
+                    personelNakil.BaslangicTarihi5 = Convert.ToDateTime(BaslangicTarihi5TextBox.Text);
+                    personelNakil.AyrilisTarihi5 = Convert.ToDateTime(AyrilisTarihi5TextBox.Text);
+                    personelNakil.Kurum5 = Kurum5TextBox.Text;
+                    personelNakil.Birim5 = Birim5TextBox.Text;
+                    personelNakil.Gorev5 = Gorev5TextBox.Text;
+                    personelNakil.Aciklama5 = Aciklama5TextBox.Text;
+                    //6.Nakil
+                    personelNakil.BaslangicTarihi6 = Convert.ToDateTime(BaslangicTarihi6TextBox.Text);
+                    personelNakil.AyrilisTarihi6 = Convert.ToDateTime(AyrilisTarihi6TextBox.Text);
+                    personelNakil.Kurum6 = Kurum6TextBox.Text;
+                    personelNakil.Birim6 = Birim6TextBox.Text;
+                    personelNakil.Gorev6 = Gorev6TextBox.Text;
+                    personelNakil.Aciklama6 = Aciklama6TextBox.Text;
+                    //7.Nakil
+                    personelNakil.BaslangicTarihi7 = Convert.ToDateTime(BaslangicTarihi7TextBox.Text);
+                    personelNakil.AyrilisTarihi7 = Convert.ToDateTime(AyrilisTarihi7TextBox.Text);
+                    personelNakil.Kurum7 = Kurum7TextBox.Text;
+                    personelNakil.Birim7 = Birim7TextBox.Text;
+                    personelNakil.Gorev7 = Gorev7TextBox.Text;
+                    personelNakil.Aciklama7 = Aciklama7TextBox.Text;
+                    //8.Nakil
+                    personelNakil.BaslangicTarihi8 = Convert.ToDateTime(BaslangicTarihi8TextBox.Text);
+                    personelNakil.AyrilisTarihi8 = Convert.ToDateTime(AyrilisTarihi8TextBox.Text);
+                    personelNakil.Kurum8 = Kurum8TextBox.Text;
+                    personelNakil.Birim8 = Birim8TextBox.Text;
+                    personelNakil.Gorev8 = Gorev8TextBox.Text;
+                    personelNakil.Aciklama8 = Aciklama8TextBox.Text;
+                    //9.Nakil
+                    personelNakil.BaslangicTarihi9 = Convert.ToDateTime(BaslangicTarihi9TextBox.Text);
+                    personelNakil.AyrilisTarihi9 = Convert.ToDateTime(AyrilisTarihi9TextBox.Text);
+                    personelNakil.Kurum9 = Kurum9TextBox.Text;
+                    personelNakil.Birim9 = Birim9TextBox.Text;
+                    personelNakil.Gorev9 = Gorev9TextBox.Text;
+                    personelNakil.Aciklama9 = Aciklama9TextBox.Text;
+                    //10.Nakil
+                    personelNakil.BaslangicTarihi10 = Convert.ToDateTime(BaslangicTarihi10TextBox.Text);
+                    personelNakil.AyrilisTarihi10 = Convert.ToDateTime(AyrilisTarihi10TextBox.Text);
+                    personelNakil.Kurum10 = Kurum10TextBox.Text;
+                    personelNakil.Birim10 = Birim10TextBox.Text;
+                    personelNakil.Gorev10 = Gorev10TextBox.Text;
+                    personelNakil.Aciklama10 = Aciklama10TextBox.Text;
+
+                    //Iletisim
+                    var personelIletisim = iletisimService.GetAll(m => m.PersonelId == personelVarMi.PersonelId).FirstOrDefault();
+                    personelIletisim.Mahalle = MahalleTextBox.Text;
+                    personelIletisim.Sokak = SokakTextBox.Text;
+                    personelIletisim.KapiNo1 = KapiNo1TextBox.Text;
+                    personelIletisim.KapiNo2= KapiNo2TextBox.Text;
+                    personelIletisim.Ilce = IlceTextBox.Text;
+                    personelIletisim.Il = IlTextBox.Text;
+                    personelIletisim.CepTelNo1=CepTelNo1TextBox.Text;
+                    personelIletisim.CepTelNo2 = CepTelNo2TextBox.Text;
+
+                    genelService.Update(personelVarMi);
+                    nufusService.Update(personelNufus);
+                    tahsilService.Update(personelTahsil);
+                    nakilService.Update(personelNakil);
+                    iletisimService.Update(personelIletisim);
+
+                    MessageBox.Show("Personel başarıyla güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                else
+                {
+                    Genel yeniGenel = new Genel
+                    {
+                        TCKimlikNo = TCKimlikNoTextBox.Text,
+                        SicilNo = Convert.ToInt32(SicilNoTextBox.Text),
+                        Adi = AdiTextBox.Text,
+                        Soyadi = SoyadiTextBox.Text,
+                        IseGirisTarihi = Convert.ToDateTime(IseGirisTarihiTextBox.Text),
+                        Mudurluk = MudurlukTextBox.Text,
+                        Seflik = SeflikTextBox.Text,
+                        GorevYeri = GorevYeriTextBox.Text,
+                        Unvani = UnvaniTextBox.Text,
+                        MK = Convert.ToDouble(MKTextBox.Text),
+                        PK = Convert.ToDouble(PKTextBox.Text),
+                        ToplamKatsayi = Convert.ToDouble(ToplamKatsayiTextBox.Text),
+                    };
+
+                    Nufus yeniNufus = new Nufus
+                    {
+                        Cinsiyet = CinsiyetTextBox.Text,
+                        AnneAdi = AnneAdiTextBox.Text,
+                        BabaAdi = BabaAdiTextBox.Text,
+                        DogumTarihi = Convert.ToDateTime(DogumTarihiTextBox.Text),
+                        DogumYeri = DogumYeriTextBox.Text,
+                        KanGrubu = KanGrubuTextBox.Text,
+                        MedeniHali = MedinHaliTextBox.Text,
+                        Askerlik=AskerlikTextBox.Text,
+                        NufusaKayitliOlduguIl=NufusaKayitliOlduguIlTextBox.Text,
+                        EsAdi=EsAdiTextBox.Text,
+                        EsMeslegi=EsMeslegiTextBox.Text,
+                        EsCalismaDurumu=EsCalismaDurumuTextBox.Text,
+                        EsCalistigiKurumAdi=EsCalistigiKurumAdiTextBox.Text,
+                        CocukSayisi=Convert.ToInt32(CocukSayisiTextBox.Text),
+                    };
+
+                    Tahsil yeniTahsil = new Tahsil
+                    {
+                        TahsilAdi1 = TahsilAdi1TextBox.Text,
+                        OkulAdi1 = OkulAdi1TextBox.Text,
+                        BolumAdi1 = BolumAdi1TextBox.Text,
+                        MezuniyetTarihi1 = Convert.ToDateTime(MezuniyetTarihi1TextBox.Text),
+
+                        TahsilAdi2 = TahsilAdi2TextBox.Text,
+                        OkulAdi2 = OkulAdi2TextBox.Text,
+                        BolumAdi2 = BolumAdi2TextBox.Text,
+                        MezuniyetTarihi2 = Convert.ToDateTime(MezuniyetTarihi2TextBox.Text),
+
+                        TahsilAdi3 = TahsilAdi3TextBox.Text,
+                        OkulAdi3 = OkulAdi3TextBox.Text,
+                        BolumAdi3 = BolumAdi3TextBox.Text,
+                        MezuniyetTarihi3 = Convert.ToDateTime(MezuniyetTarihi3TextBox.Text),
+
+                        TahsilAdi4 = TahsilAdi4TextBox.Text,
+                        OkulAdi4 = OkulAdi4TextBox.Text,
+                        BolumAdi4 = BolumAdi4TextBox.Text,
+                        MezuniyetTarihi4 = Convert.ToDateTime(MezuniyetTarihi4TextBox.Text),
+
+                        TahsilAdi5 = TahsilAdi5TextBox.Text,
+                        OkulAdi5 = OkulAdi5TextBox.Text,
+                        BolumAdi5 = BolumAdi5TextBox.Text,
+                        MezuniyetTarihi5 = Convert.ToDateTime(MezuniyetTarihi5TextBox.Text),
+                    };
+
+                    Nakil yeniNakil = new Nakil
+                    {
+                        BaslangicTarihi1 = Convert.ToDateTime(BaslangicTarihi1TextBox.Text),
+                        AyrilisTarihi1=Convert.ToDateTime(AyrilisTarihi1TextBox.Text),
+                        Kurum1=Kurum1TextBox.Text,
+                        Birim1=Birim1TextBox.Text,
+                        Gorev1=Gorev1TextBox.Text,
+                        Aciklama1=Aciklama1TextBox.Text,
+
+                        BaslangicTarihi2 = Convert.ToDateTime(BaslangicTarihi2TextBox.Text),
+                        AyrilisTarihi2 = Convert.ToDateTime(AyrilisTarihi2TextBox.Text),
+                        Kurum2 = Kurum2TextBox.Text,
+                        Birim2 = Birim2TextBox.Text,
+                        Gorev2 = Gorev2TextBox.Text,
+                        Aciklama2 = Aciklama2TextBox.Text,
+
+                        BaslangicTarihi3 = Convert.ToDateTime(BaslangicTarihi3TextBox.Text),
+                        AyrilisTarihi3 = Convert.ToDateTime(AyrilisTarihi3TextBox.Text),
+                        Kurum3 = Kurum3TextBox.Text,
+                        Birim3 = Birim3TextBox.Text,
+                        Gorev3 = Gorev3TextBox.Text,
+                        Aciklama3 = Aciklama3TextBox.Text,
+
+                        BaslangicTarihi4 = Convert.ToDateTime(BaslangicTarihi4TextBox.Text),
+                        AyrilisTarihi4 = Convert.ToDateTime(AyrilisTarihi4TextBox.Text),
+                        Kurum4 = Kurum4TextBox.Text,
+                        Birim4 = Birim4TextBox.Text,
+                        Gorev4 = Gorev4TextBox.Text,
+                        Aciklama4 = Aciklama4TextBox.Text,
+
+                        BaslangicTarihi5 = Convert.ToDateTime(BaslangicTarihi5TextBox.Text),
+                        AyrilisTarihi5 = Convert.ToDateTime(AyrilisTarihi5TextBox.Text),
+                        Kurum5 = Kurum5TextBox.Text,
+                        Birim5 = Birim5TextBox.Text,
+                        Gorev5 = Gorev5TextBox.Text,
+                        Aciklama5 = Aciklama5TextBox.Text,
+
+                        BaslangicTarihi6 = Convert.ToDateTime(BaslangicTarihi6TextBox.Text),
+                        AyrilisTarihi6 = Convert.ToDateTime(AyrilisTarihi6TextBox.Text),
+                        Kurum6 = Kurum6TextBox.Text,
+                        Birim6 = Birim6TextBox.Text,
+                        Gorev6 = Gorev6TextBox.Text,
+                        Aciklama6 = Aciklama6TextBox.Text,
+
+                        BaslangicTarihi7 = Convert.ToDateTime(BaslangicTarihi7TextBox.Text),
+                        AyrilisTarihi7 = Convert.ToDateTime(AyrilisTarihi7TextBox.Text),
+                        Kurum7 = Kurum7TextBox.Text,
+                        Birim7 = Birim7TextBox.Text,
+                        Gorev7 = Gorev7TextBox.Text,
+                        Aciklama7 = Aciklama7TextBox.Text,
+
+                        BaslangicTarihi8 = Convert.ToDateTime(BaslangicTarihi8TextBox.Text),
+                        AyrilisTarihi8 = Convert.ToDateTime(AyrilisTarihi8TextBox.Text),
+                        Kurum8 = Kurum8TextBox.Text,
+                        Birim8 = Birim8TextBox.Text,
+                        Gorev8 = Gorev8TextBox.Text,
+                        Aciklama8 = Aciklama8TextBox.Text,
+
+                        BaslangicTarihi9 = Convert.ToDateTime(BaslangicTarihi9TextBox.Text),
+                        AyrilisTarihi9 = Convert.ToDateTime(AyrilisTarihi9TextBox.Text),
+                        Kurum9 = Kurum9TextBox.Text,
+                        Birim9 = Birim9TextBox.Text,
+                        Gorev9 = Gorev9TextBox.Text,
+                        Aciklama9 = Aciklama9TextBox.Text,
+
+                        BaslangicTarihi10 = Convert.ToDateTime(BaslangicTarihi10TextBox.Text),
+                        AyrilisTarihi10 = Convert.ToDateTime(AyrilisTarihi10TextBox.Text),
+                        Kurum10 = Kurum10TextBox.Text,
+                        Birim10 = Birim10TextBox.Text,
+                        Gorev10 = Gorev10TextBox.Text,
+                        Aciklama10 = Aciklama10TextBox.Text,
+                    };
+
+                    Iletisim yeniIletisim = new Iletisim
+                    {
+                        Mahalle = MahalleTextBox.Text,
+                        Sokak = SokakTextBox.Text,
+                        KapiNo1 = KapiNo1TextBox.Text,
+                        KapiNo2 = KapiNo2TextBox.Text,
+                        Ilce = IlceTextBox.Text,
+                        Il = IlTextBox.Text,
+                        CepTelNo1 = CepTelNo1TextBox.Text,
+                        CepTelNo2=CepTelNo2TextBox.Text,
+                    };
+
+                    genelService.Add(yeniGenel);
+                    nufusService.Add(yeniNufus);
+                    tahsilService.Add(yeniTahsil);
+                    nakilService.Add(yeniNakil);
+                    iletisimService.Add(yeniIletisim);
+
+                    MessageBox.Show("Yeni personel başarıyla kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen düzenlemek istediğiniz personelin TC Kimlik numarası bilgisini giriniz.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

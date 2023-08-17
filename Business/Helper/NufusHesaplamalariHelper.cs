@@ -8,48 +8,42 @@ namespace Business.Helper
     {
         public readonly static NufusService nufusService = new NufusService();
 
-        public static int KadinSayisi
+        public static int KadinSayisi(string girisYetki = null)
         {
-            get
-            {
-                var resNufus = nufusService.GetAll();
+            var nufusData = girisYetki == "genel" ? nufusService.GetAll()
+               : girisYetki != "genel" ? nufusService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
+               : null;
 
-                return resNufus.Where(n => n.Cinsiyet == "KADIN").ToList().Count;
-            }
+            return nufusData != null ? nufusData.Where(m => m.Cinsiyet == "KADIN").ToList().Count
+                : 0;
         }
 
-        public static int ErkekSayisi
+        public static int ErkekSayisi(string girisYetki = null)
         {
-            get
-            {
-                var resNufus = nufusService.GetAll();
+            var nufusData = girisYetki == "genel" ? nufusService.GetAll()
+               : girisYetki != "genel" ? nufusService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
+               : null;
 
-                return resNufus.Where(n => n.Cinsiyet == "ERKEK").ToList().Count;
-            }
+            return nufusData != null ? nufusData.Where(m => m.Cinsiyet == "ERKEK").ToList().Count
+                : 0;
         }
 
-        public static int ToplamSayi
+        public static int ToplamSayi(string girisYetki = null)
         {
-            get
-            {
-                return KadinSayisi + ErkekSayisi;
-            }
+            return girisYetki != null ? KadinSayisi(girisYetki) + ErkekSayisi(girisYetki)
+                : 0;
         }
 
-        public static double KadinOrani
+        public static double KadinOrani(string girisYetki = null)
         {
-            get
-            {
-                return Math.Round(((double)KadinSayisi / (double)ToplamSayi) * 100, 2);
-            }
+            return girisYetki != null ? Math.Round(((double)KadinSayisi(girisYetki) / (double)ToplamSayi(girisYetki)) * 100, 2)
+            : 0;
         }
 
-        public static double ErkekOrani
+        public static double ErkekOrani(string girisYetki = null)
         {
-            get
-            {
-                return Math.Round(((double)ErkekSayisi / (double)ToplamSayi) * 100, 2);
-            }
+            return girisYetki != null ? Math.Round(((double)ErkekSayisi(girisYetki) / (double)ToplamSayi(girisYetki)) * 100, 2)
+            : 0;
         }
     }
 }

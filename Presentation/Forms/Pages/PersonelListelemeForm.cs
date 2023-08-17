@@ -1,10 +1,9 @@
-﻿using Business.Services;
+﻿using Business.Helper;
+using Business.Services;
+using Data_Acces.Models;
 using Presentation.Utils;
 using System;
-using System.ComponentModel;
 using System.Data;
-using System.Data.Entity.Core.Common.CommandTrees;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace Presentation
@@ -13,7 +12,6 @@ namespace Presentation
     {
         GenelService genelService = new GenelService();
         DataTable genelData = new DataTable();
-        GirisForm girisForm = new GirisForm();
 
         public PersonelListelemeForm()
         {
@@ -29,21 +27,21 @@ namespace Presentation
         {
 
             //var bgw = new BackgroundWorker();
-
             //bgw.DoWork += delegate
             //{
-                genelData = DtToList.ToDataTable(genelService.GetAll());
-                PersonelListesiAdvancedDataGridView.DataSource = genelData;
-                PersonelListesiAdvancedDataGridView.Refresh();
-                PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[6].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[7].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[8].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[9].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[12].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[13].Visible = false;
-                PersonelListesiAdvancedDataGridView.Columns[14].Visible = false;
+            
+            genelData = DtToList.ToDataTable(GirisYetkiHelper.VeriFiltrele(Statics.GirisYetki));                  
+            PersonelListesiAdvancedDataGridView.DataSource = genelData;
+            PersonelListesiAdvancedDataGridView.Refresh();
+            PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
+            PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[6].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[7].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[8].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[9].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[12].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[13].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[14].Visible = false;
             //};
             //bgw.RunWorkerAsync();
         }
@@ -184,6 +182,26 @@ namespace Presentation
             {
                 MessageBox.Show("Geçersiz seçim", "Lütfen bir personel seçiniz.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void YeniKayitButton_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PersonelSicilKartiPanel, this, new PersonelSicilKartiForm());
+        }
+
+        private void NakilButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void YardimButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IletisimButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Scada ve Otomasyon Şefliği ile irtibata geçiniz.\n\nDahili:\nŞerife ÇINAR - 6533");
         }
     }
 }

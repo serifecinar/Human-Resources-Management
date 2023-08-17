@@ -6,6 +6,7 @@ using DataAcces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,9 +21,9 @@ namespace Business.Services
             iletisimRepository.Insert(thing);
         }
 
-        public List<Iletisim> GetAll()
+        public List<Iletisim> GetAll(Expression<Func<Iletisim, bool>> filter = null)
         {
-            var iletisimData = iletisimRepository.GetAll();
+            var iletisimData = iletisimRepository.GetAll(filter);
 
             return iletisimData.ToList();
         }

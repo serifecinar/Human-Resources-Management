@@ -56,7 +56,7 @@
             this.engelliPersonelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PersonelListelemeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.YardimButton = new System.Windows.Forms.Button();
+            this.IletisimButton = new System.Windows.Forms.Button();
             this.GuncelleButton = new System.Windows.Forms.Button();
             this.NakilButton = new System.Windows.Forms.Button();
             this.YeniKayitButton = new System.Windows.Forms.Button();
@@ -87,6 +87,7 @@
             // 
             this.PersonelListesiAdvancedDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PersonelListesiAdvancedDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
             this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 113);
@@ -94,7 +95,7 @@
             this.PersonelListesiAdvancedDataGridView.Name = "PersonelListesiAdvancedDataGridView";
             this.PersonelListesiAdvancedDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.PersonelListesiAdvancedDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1271, 472);
+            this.PersonelListesiAdvancedDataGridView.Size = new System.Drawing.Size(1384, 515);
             this.PersonelListesiAdvancedDataGridView.SortStringChangedInvokeBeforeDatasourceUpdate = true;
             this.PersonelListesiAdvancedDataGridView.TabIndex = 18;
             this.PersonelListesiAdvancedDataGridView.SortStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.SortEventArgs>(this.PersonelListesiAdvancedDataGridView_SortStringChanged);
@@ -338,8 +339,8 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 301F));
-            this.tableLayoutPanel2.Controls.Add(this.YardimButton, 9, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 304F));
+            this.tableLayoutPanel2.Controls.Add(this.IletisimButton, 9, 0);
             this.tableLayoutPanel2.Controls.Add(this.GuncelleButton, 7, 0);
             this.tableLayoutPanel2.Controls.Add(this.NakilButton, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.YeniKayitButton, 3, 0);
@@ -352,20 +353,21 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1384, 78);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
-            // YardimButton
+            // IletisimButton
             // 
-            this.YardimButton.BackColor = System.Drawing.Color.DarkRed;
-            this.YardimButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.YardimButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.YardimButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.YardimButton.Location = new System.Drawing.Point(935, 15);
-            this.YardimButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
-            this.YardimButton.Name = "YardimButton";
-            this.YardimButton.Size = new System.Drawing.Size(142, 48);
-            this.YardimButton.TabIndex = 0;
-            this.YardimButton.TabStop = false;
-            this.YardimButton.Text = "YARDIM";
-            this.YardimButton.UseVisualStyleBackColor = false;
+            this.IletisimButton.BackColor = System.Drawing.Color.DarkRed;
+            this.IletisimButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IletisimButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IletisimButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.IletisimButton.Location = new System.Drawing.Point(935, 15);
+            this.IletisimButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
+            this.IletisimButton.Name = "IletisimButton";
+            this.IletisimButton.Size = new System.Drawing.Size(142, 48);
+            this.IletisimButton.TabIndex = 0;
+            this.IletisimButton.TabStop = false;
+            this.IletisimButton.Text = "İLETİŞİM";
+            this.IletisimButton.UseVisualStyleBackColor = false;
+            this.IletisimButton.Click += new System.EventHandler(this.IletisimButton_Click);
             // 
             // GuncelleButton
             // 
@@ -396,6 +398,7 @@
             this.NakilButton.TabStop = false;
             this.NakilButton.Text = "NAKİL";
             this.NakilButton.UseVisualStyleBackColor = false;
+            this.NakilButton.Click += new System.EventHandler(this.NakilButton_Click);
             // 
             // YeniKayitButton
             // 
@@ -411,6 +414,7 @@
             this.YeniKayitButton.TabStop = false;
             this.YeniKayitButton.Text = "YENİ KAYIT";
             this.YeniKayitButton.UseVisualStyleBackColor = false;
+            this.YeniKayitButton.Click += new System.EventHandler(this.YeniKayitButton_Click);
             // 
             // DetayButton
             // 
@@ -491,7 +495,7 @@
         private System.Windows.Forms.ToolStripMenuItem zdenAyaSıralamaToolStripMenuItem;
         private System.Windows.Forms.Panel PersonelSicilKartiPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button YardimButton;
+        private System.Windows.Forms.Button IletisimButton;
         private System.Windows.Forms.Button GuncelleButton;
         private System.Windows.Forms.Button NakilButton;
         private System.Windows.Forms.Button YeniKayitButton;

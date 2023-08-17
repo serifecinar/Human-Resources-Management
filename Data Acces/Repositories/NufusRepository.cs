@@ -1,12 +1,10 @@
-﻿using Data_Acces.Models;
-using DataAcces;
+﻿using DataAcces;
 using DataAcces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Data_Acces.Repositories
 {
@@ -22,9 +20,11 @@ namespace Data_Acces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Nufus> GetAll()
+        public IEnumerable<Nufus> GetAll(Expression<Func<Nufus, bool>> filter = null)
         {
-            return context.Set<Nufus>().ToList();
+            return filter == null
+                ? context.Set<Nufus>().ToList()
+                : context.Set<Nufus>().Where(filter).ToList();
         }
 
         public Nufus GetById(object id)

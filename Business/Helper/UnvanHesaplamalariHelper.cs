@@ -11,10 +11,14 @@ namespace Business.Helper
     {
         public readonly static GenelService genelService = new GenelService();
 
-        public static int UnvanHesaplama(string unvan)
+        public static int UnvanHesaplama(string unvan, string girisYetki = null)
         {
-                var resNufus = genelService.GetAll();
-                return resNufus.Where(n => n.Unvani == unvan).ToList().Count;
+
+            var genelData = girisYetki == "genel" ? genelService.GetAll()
+               : girisYetki != "genel" ? genelService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
+               : null;
+            return genelData != null ? genelData.Where(n => n.Unvani == unvan).ToList().Count
+               : 0;
         }
     }
 }

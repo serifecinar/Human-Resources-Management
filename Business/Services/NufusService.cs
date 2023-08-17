@@ -1,13 +1,11 @@
 ﻿using Business.Interfaces;
-using Data_Acces.Models;
 using Data_Acces.Repositories;
 using DataAcces;
 using DataAcces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Business.Services
 {
@@ -20,16 +18,18 @@ namespace Business.Services
             nufusRepository.Insert(thing);
         }
 
-        public List<Nufus> GetAll()
+        public List<Nufus> GetAll(Expression<Func<Nufus, bool>> filter = null)
         {
-            var nufusData = nufusRepository.GetAll();
+            var nufusData = nufusRepository.GetAll(filter);
 
             return nufusData.ToList();
         }
+
         public void Delete(Nufus thing)
         {
             nufusRepository.Delete(thing);
         }
+
         public Nufus GetById(int id)
         {
             return nufusRepository.GetById(id);
@@ -40,7 +40,7 @@ namespace Business.Services
             nufusRepository.Update(thing);
         }
 
-         public Nufus GetByPersonelId(int personelId)
+        public Nufus GetByPersonelId(int personelId)
         {
             return nufusRepository.GetByPersonelId(personelId);
         }

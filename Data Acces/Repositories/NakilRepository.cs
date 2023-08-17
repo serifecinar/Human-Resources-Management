@@ -4,8 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace DataAcces.Repositories
 {
@@ -21,9 +20,11 @@ namespace DataAcces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Nakil> GetAll()
+        public IEnumerable<Nakil> GetAll(Expression<Func<Nakil, bool>> filter = null)
         {
-            return context.Set<Nakil>().ToList();
+            return filter == null
+                ? context.Set<Nakil>().ToList()
+                : context.Set<Nakil>().Where(filter).ToList();
         }
 
         public Nakil GetById(object id)

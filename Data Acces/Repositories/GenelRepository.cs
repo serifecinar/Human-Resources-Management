@@ -18,14 +18,16 @@ namespace Data_Acces.Repositories
             var entity = context.Set<Genel>().Find(id);
             if (entity != null)
                 context.Set<Genel>().Remove(entity);
-                context.SaveChanges();
+            context.SaveChanges();
         }
 
-        public IEnumerable<Genel> GetAll()
+        public IEnumerable<Genel> GetAll(Expression<Func<Genel, bool>> filter = null)
         {
-            return context.Set<Genel>().ToList();
+            return filter == null
+                ? context.Set<Genel>().ToList()
+                : context.Set<Genel>().Where(filter).ToList();
         }
-        
+
         public IEnumerable<Genel> Get(Expression<Func<Genel, bool>> filter)
         {
             return context.Set<Genel>().Where(filter).ToList();
@@ -47,8 +49,8 @@ namespace Data_Acces.Repositories
 
         public void Update(Genel entity)
         {
-            context.Set<Genel>().Attach(entity);
-            context.Entry(entity).State = EntityState.Modified;
+            var updatedEntity = context.Entry(entity);
+            updatedEntity.State = EntityState.Modified;
             context.SaveChanges();
         }
     }

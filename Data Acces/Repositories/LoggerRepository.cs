@@ -1,8 +1,10 @@
 ﻿using Data_Acces.Models;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAcces.Repositories
 {
@@ -44,6 +46,11 @@ namespace DataAcces.Repositories
         public Log GetByPersonelId(int personelId)
         {
             return context.Set<Log>().Find(personelId);
+        }
+
+        public IEnumerable<Log> GetAll(Expression<Func<Log, bool>> filter = null)
+        {
+            throw new NotImplementedException();
         }
     }
 }

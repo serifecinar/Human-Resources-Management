@@ -9,10 +9,13 @@ namespace Business.Helper
 {
     public static class EgitimHesaplamalariHelper
     {
-        public static List<string> EgitimHesap()
+        public static List<string> EgitimHesap(string girisYetki = null)
         {
             var tahsilService = new TahsilService();
-            var tahsilData = tahsilService.GetAll();
+            var tahsilData = girisYetki == "genel" ? tahsilService.GetAll()
+            : girisYetki != "genel" ? tahsilService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
+            : null;
+
 
             List<string> egitimler = new List<string>();
 

@@ -5,12 +5,11 @@ using DataAcces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace Business.Services
 {
-    public class GirisService :IService<Giris>
+    public class GirisService : IService<Giris>
     {
         readonly IRepository<Giris> girisRepository = new GirisRepository();
 
@@ -19,18 +18,18 @@ namespace Business.Services
             girisRepository.Insert(thing);
         }
 
-        public List<Giris> GetAll()
+        public List<Giris> GetAll(Expression<Func<Giris, bool>> filter = null)
         {
-            var genelData = girisRepository.GetAll();
+            var genelData = girisRepository.GetAll(filter);
 
             return genelData.ToList();
         }
-            
+
         public void Delete(Giris thing) => girisRepository.Delete(thing);
 
         public Giris GetById(int id)
         {
-           return girisRepository.GetById(id);
+            return girisRepository.GetById(id);
         }
         public void Update(Giris thing)
         {

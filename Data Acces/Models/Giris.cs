@@ -13,7 +13,7 @@ namespace Data_Acces.Models
         public string GirisSifre { get; set; }
         public string GirisAdi { get; set; }
         public string GirisSoyadı { get; set; }
-        public string GirisBirimi{ get; set; }
+        public string Şeflik { get; set; }
         public string GirisGörevi { get; set; }
         public string GirisYetki { get; set; }
     }

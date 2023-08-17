@@ -1,11 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace DataAcces.Interfaces
 {
     public interface IRepository<T> where T : class
     {
         // Tüm kayıtları alır.
-        IEnumerable<T> GetAll();
+        IEnumerable<T> GetAll(Expression<Func<T, bool>> filter = null);
 
         // Belirli bir kaydı alır.
         T GetById(object id);

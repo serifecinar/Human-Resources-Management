@@ -10,6 +10,7 @@ namespace Data_Acces.Models
     {
         public int Id { get; set; }
         public int? PersonelId { get; set; }
+        public string Seflik { get; set; }
         public DateTime? BaslangicTarihi1 { get; set; }
         public DateTime? BaslangicTarihi2 { get; set; }
         public DateTime? BaslangicTarihi3 { get; set; }

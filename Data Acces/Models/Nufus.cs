@@ -6,6 +6,7 @@ namespace DataAcces
     {
         public int Id { get; set; }
         public int? PersonelId { get; set; }
+        public string Seflik { get; set; }
         public string Cinsiyet { get; set; }
         public string AnneAdi { get; set; }
         public string BabaAdi { get; set; }

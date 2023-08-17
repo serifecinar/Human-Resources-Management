@@ -1,8 +1,10 @@
 ﻿using Data_Acces.Models;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAcces.Repositories
 {
@@ -18,9 +20,11 @@ namespace DataAcces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Iletisim> GetAll()
+        public IEnumerable<Iletisim> GetAll(Expression<Func<Iletisim, bool>> filter = null)
         {
-            return context.Set<Iletisim>().ToList();
+            return filter == null
+                ? context.Set<Iletisim>().ToList()
+                : context.Set<Iletisim>().Where(filter).ToList();
         }
 
         public Iletisim GetById(object id)

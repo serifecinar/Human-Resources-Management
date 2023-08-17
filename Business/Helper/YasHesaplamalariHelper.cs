@@ -1,18 +1,23 @@
 ﻿using Business.Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Business.Helper
 {
     public static class YasHesaplamalariHelper
     {
-        public static List<int> YasHesap()
+        public static List<int> YasHesap(string girisYetki = null)
         {
             var nufusService = new NufusService();
 
             int suankiYil = DateTime.Now.Year;
 
-            var nufusData = nufusService.GetAll();
+            var nufusData = girisYetki == "genel" ? nufusService.GetAll()
+                : girisYetki != "genel" ? nufusService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
+                : null;
+
+
 
             List<int> yaslar = new List<int>();
 

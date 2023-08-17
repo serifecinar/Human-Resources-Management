@@ -1,8 +1,10 @@
 ﻿using Data_Acces.Models;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAcces.Repositories
 {
@@ -18,9 +20,11 @@ namespace DataAcces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Sertifika> GetAll()
+        public IEnumerable<Sertifika> GetAll(Expression<Func<Sertifika, bool>> filter = null)
         {
-            return context.Set<Sertifika>().ToList();
+            return filter == null
+                ? context.Set<Sertifika>().ToList()
+                : context.Set<Sertifika>().Where(filter).ToList();
         }
 
         public Sertifika GetById(object id)

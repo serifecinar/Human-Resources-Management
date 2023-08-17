@@ -1,10 +1,12 @@
 ﻿using Business.Interfaces;
+using Data_Acces.Models;
 using DataAcces;
 using DataAcces.Interfaces;
 using DataAcces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Business.Services
 {
@@ -17,9 +19,9 @@ namespace Business.Services
             loggerRepository.Insert(thing);
         }
 
-        public List<Log> GetAll()
+        public List<Log> GetAll(Expression<Func<Log, bool>> filter = null)
         {
-            var logs = loggerRepository.GetAll();
+            var logs = loggerRepository.GetAll(filter);
 
             return logs.ToList();
         }

@@ -35,8 +35,11 @@ namespace Presentation
             {
                 if (result.GirisSifre == sifreTextBox.Text)
                 {
+                    GirisYetkiHelper.VeriFiltrele(result.GirisYetki);
+
+                    Statics.GirisYetki = result.GirisYetki;
+
                     PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
-                    GirisYetkiHelper.VeriFiltrele();
                 }
                 else
                 {

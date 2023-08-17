@@ -10,6 +10,7 @@ namespace Data_Acces.Models
     {
         public int Id { get; set; }
         public int? PersonelId { get; set; }
+        public string Seflik { get; set; }
         public string Il { get; set; }
         public string Ilce { get; set; }
         public string Mahalle { get; set; }

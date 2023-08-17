@@ -1,4 +1,5 @@
 ﻿using Business.Helper;
+using Presentation.Utils;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -23,31 +24,31 @@ namespace Presentation.Forms.Pages
 
         private void UnvanAtamalari()
         {
-            PersonelSayisiUnvan1Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("TESİS ŞEFİ - KOORDİNATÖR").ToString();
-            PersonelSayisiUnvan2Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İSG SORUMLUSU").ToString();
-            PersonelSayisiUnvan3Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ").ToString();
-            PersonelSayisiUnvan4Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("ATÖLYE / ÜNİTE SORUMLU MÜHENDİS + LABORATUVAR SORUMLU MÜHENDİS").ToString();
-            PersonelSayisiUnvan5Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU").ToString();
-            PersonelSayisiUnvan6Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("LABORATUVAR ANALİZ GÖREVLİSİ").ToString();
-            PersonelSayisiUnvan7Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("BAKIM ONARIM USTABAŞLARI/FORMEN").ToString();
-            PersonelSayisiUnvan8Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUMLUSU/ BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ").ToString();
-            PersonelSayisiUnvan9Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("NUMUNE ALMA ANALİZ KALİBRASYON").ToString();
-            PersonelSayisiUnvan10Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ/ İDARİ RAPORLAMA SORUMLUSU").ToString();
-            PersonelSayisiUnvan11Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İDARİ İŞLER ve İNSAN KAYNAKLARI").ToString();
-            PersonelSayisiUnvan12Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("TERFİ MERKEZİ OPERATÖRLERİ").ToString();
-            PersonelSayisiUnvan13Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("ŞOFÖR / ARAÇ OPERATÖRLERİ").ToString();
-            PersonelSayisiUnvan14Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("GENEL HİZMETLİ PERSONELİ / DÜZ İŞÇİLER").ToString();
-            PersonelSayisiUnvan15Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ").ToString();
-            PersonelSayisiUnvan16Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ").ToString();
-            PersonelSayisiUnvanToplamLabel.Text = NufusHesaplamalariHelper.ToplamSayi.ToString();
+            PersonelSayisiUnvan1Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("TESİS ŞEFİ - KOORDİNATÖR", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan2Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İSG SORUMLUSU", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan3Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan4Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("ATÖLYE / ÜNİTE SORUMLU MÜHENDİS + LABORATUVAR SORUMLU MÜHENDİS", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan5Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan6Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("LABORATUVAR ANALİZ GÖREVLİSİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan7Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("BAKIM ONARIM USTABAŞLARI/FORMEN", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan8Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUMLUSU/ BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan9Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("NUMUNE ALMA ANALİZ KALİBRASYON", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan10Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ/ İDARİ RAPORLAMA SORUMLUSU", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan11Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("İDARİ İŞLER ve İNSAN KAYNAKLARI", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan12Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("TERFİ MERKEZİ OPERATÖRLERİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan13Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("ŞOFÖR / ARAÇ OPERATÖRLERİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan14Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("GENEL HİZMETLİ PERSONELİ / DÜZ İŞÇİLER", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan15Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvan16Label.Text = UnvanHesaplamalariHelper.UnvanHesaplama("KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ", Statics.GirisYetki).ToString();
+            PersonelSayisiUnvanToplamLabel.Text = NufusHesaplamalariHelper.ToplamSayi(Statics.GirisYetki).ToString();
         }
 
         public void CinsiyetAtamalari()
         {
-            KadinSayisiLabel.Text = NufusHesaplamalariHelper.KadinSayisi.ToString()+" Kadın";
-            ErkekSayisiLabel.Text = NufusHesaplamalariHelper.ErkekSayisi.ToString()+" Erkek";
+            KadinSayisiLabel.Text = NufusHesaplamalariHelper.KadinSayisi(Statics.GirisYetki).ToString() + " Kadın";
+            ErkekSayisiLabel.Text = NufusHesaplamalariHelper.ErkekSayisi(Statics.GirisYetki).ToString() + " Erkek";
 
-            CinsiyetOraniLabel.Text = $"%{NufusHesaplamalariHelper.KadinOrani} - %{NufusHesaplamalariHelper.ErkekOrani}";
+            CinsiyetOraniLabel.Text = $"%{NufusHesaplamalariHelper.KadinOrani(Statics.GirisYetki)} - %{NufusHesaplamalariHelper.ErkekOrani(Statics.GirisYetki)}";
 
             CinsiyetChartOlustur();
         }
@@ -64,8 +65,8 @@ namespace Presentation.Forms.Pages
         private void CinsiyetChartOlustur()
         {
             // Kadın ve erkek sayıları
-            int kadinSayisi = NufusHesaplamalariHelper.KadinSayisi;
-            int erkekSayisi = NufusHesaplamalariHelper.ErkekSayisi;
+            int kadinSayisi = NufusHesaplamalariHelper.KadinSayisi(Statics.GirisYetki);
+            int erkekSayisi = NufusHesaplamalariHelper.ErkekSayisi(Statics.GirisYetki);
 
             // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
             int[] dataPoints = { kadinSayisi, erkekSayisi };
@@ -91,9 +92,9 @@ namespace Presentation.Forms.Pages
         public void YasChartOlustur()
         {
             // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
-            List<int> yaslar = YasHesaplamalariHelper.YasHesap();
+            List<int> yaslar = YasHesaplamalariHelper.YasHesap(Statics.GirisYetki);
 
-            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.YasCalculateFrequencies(yaslar);         
+            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.YasCalculateFrequencies(yaslar);
             YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
             YasChart.Series["Yaslar"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
             YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
@@ -101,12 +102,17 @@ namespace Presentation.Forms.Pages
 
         private void EgitimChartOlustur()
         {
-            List<string> egitimler = EgitimHesaplamalariHelper.EgitimHesap();
+            List<string> egitimler = EgitimHesaplamalariHelper.EgitimHesap(Statics.GirisYetki);
 
             Dictionary<string, int> frekanslar = EgitimHesaplamalariHelper.EgitimCalculateFrequencies(egitimler);
             EgitimChart.Series["Egitimler"].ChartType = SeriesChartType.Column;
             EgitimChart.Series["Egitimler"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
             EgitimChart.Series["Egitimler"].IsValueShownAsLabel = true;
+        }
+
+        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

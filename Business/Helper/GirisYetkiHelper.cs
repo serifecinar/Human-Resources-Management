@@ -1,22 +1,20 @@
 ﻿using Business.Services;
 using Data_Acces.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Helper
 {
     public static class GirisYetkiHelper
     {
-        public static List<Genel> VeriFiltrele()
+        public static List<Genel> VeriFiltrele(string girisYetki)
         {
-            string yetki = "TUZLA";
-
             GenelService genelService = new GenelService();
+            GirisService girisService = new GirisService();
 
-            return genelService.Get(g => g.Seflik.Contains(yetki));
+            Giris giris = new Giris();
+
+            return girisYetki == "genel" ? genelService.GetAll()
+                : genelService.Get(g => g.Seflik.Contains(girisYetki));
 
             //g => g.Seflik == yetki
 

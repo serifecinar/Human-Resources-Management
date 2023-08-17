@@ -6,6 +6,7 @@ using DataAcces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,9 +21,9 @@ namespace Business.Services
             tahsilRepository.Insert(thing);
         }
 
-        public List<Tahsil> GetAll()
+        public List<Tahsil> GetAll(Expression<Func<Tahsil, bool>> filter = null)
         {
-            var tahsilData = tahsilRepository.GetAll();
+            var tahsilData = tahsilRepository.GetAll(filter);
 
             return tahsilData.ToList();
         }

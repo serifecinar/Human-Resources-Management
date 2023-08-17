@@ -1,8 +1,10 @@
 ﻿using Data_Acces.Models;
 using DataAcces.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace DataAcces.Repositories
 {
@@ -18,9 +20,11 @@ namespace DataAcces.Repositories
             context.SaveChanges();
         }
 
-        public IEnumerable<Tahsil> GetAll()
+        public IEnumerable<Tahsil> GetAll(Expression<Func<Tahsil, bool>> filter = null)
         {
-            return context.Set<Tahsil>().ToList();
+            return filter == null
+                 ? context.Set<Tahsil>().ToList()
+                 : context.Set<Tahsil>().Where(filter).ToList();
         }
 
         public Tahsil GetById(object id)

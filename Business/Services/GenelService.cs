@@ -1,7 +1,6 @@
 ﻿using Business.Interfaces;
 using Data_Acces.Models;
 using Data_Acces.Repositories;
-using DataAcces.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +13,7 @@ namespace Business.Services
         GenelRepository genelRepository = new GenelRepository();
 
         public void Add(Genel thing)
-        { 
+        {
             genelRepository.Insert(thing);
         }
 
@@ -24,9 +23,9 @@ namespace Business.Services
 
         public void Update(Genel thing) => genelRepository.Update(thing);
 
-        public Genel GetByPersonelId(int personelId) => genelRepository.GetByPersonelId(personelId); 
-       
-        public List<Genel> GetAll() => genelRepository.GetAll().ToList();
+        public Genel GetByPersonelId(int personelId) => genelRepository.GetByPersonelId(personelId);
+
+        public List<Genel> GetAll(Expression<Func<Genel, bool>> filter = null) => genelRepository.GetAll(filter).ToList();
         public List<Genel> Get(Expression<Func<Genel, bool>> filter) => genelRepository.Get(filter).ToList();
     }
 }
