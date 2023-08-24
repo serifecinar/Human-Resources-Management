@@ -2,6 +2,7 @@
 using Presentation.Utils;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -16,10 +17,13 @@ namespace Presentation.Forms.Pages
 
         private void OzetTabloForm_Load(object sender, EventArgs e)
         {
-            CinsiyetAtamalari();
-            YasAtamalari();
-            UnvanAtamalari();
-            EgitimAtamalari();
+            //if(Statics.GirisYetki != "")
+            //{
+                CinsiyetAtamalari();
+                YasAtamalari();
+                UnvanAtamalari();
+                EgitimAtamalari();
+            //}
         }
 
         private void UnvanAtamalari()
@@ -86,7 +90,7 @@ namespace Presentation.Forms.Pages
 
             // Eğer istenirse pasta dilimi rengini ve açısını değiştirebilirsiniz (isteğe bağlı)
             CinsiyetChart.Series["Cinsiyetler"]["DoughnutRadius"] = "75"; // Pasta dilimi iç yarıçapı (0-100 arasında değer alır)
-            CinsiyetChart.Series["Cinsiyetler"]["PieStartAngle"] = "180"; // Başlangıç açısı (0-360 arasında değer alır)
+            CinsiyetChart.Series["Cinsiyetler"]["PieStartAngle"] = "180"; // Başlangıç açısı (0-360 arasında değer alır)            
         }
 
         //public void YasChartOlustur()
@@ -105,8 +109,22 @@ namespace Presentation.Forms.Pages
             List<string> egitimler = EgitimHesaplamalariHelper.EgitimHesap(Statics.GirisYetki);
 
             Dictionary<string, int> frekanslar = EgitimHesaplamalariHelper.EgitimCalculateFrequencies(egitimler);
+
+            // İstenilen sıraya göre kategorileri oluşturun
+            List<string> siraliKategoriler = new List<string> { "İLKOKUL","İLKÖĞRETİM","LİSE","ÖNLİSANS","LİSANS ÖĞRENCİSİ","LİSANS","YÜKSEK LİSANS"};
+
+            // Sırayı gözeterek yeni bir sözlük oluşturun
+            Dictionary<string, int> siraliFrekanslar = new Dictionary<string, int>();
+            foreach (string kategori in siraliKategoriler)
+            {
+                if (frekanslar.ContainsKey(kategori))
+                {
+                    siraliFrekanslar.Add(kategori, frekanslar[kategori]);
+                }
+            }
+
             EgitimChart.Series["Egitimler"].ChartType = SeriesChartType.Column;
-            EgitimChart.Series["Egitimler"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
+            EgitimChart.Series["Egitimler"].Points.DataBindXY(siraliFrekanslar.Keys, siraliFrekanslar.Values);
             EgitimChart.Series["Egitimler"].IsValueShownAsLabel = true;
         }
 

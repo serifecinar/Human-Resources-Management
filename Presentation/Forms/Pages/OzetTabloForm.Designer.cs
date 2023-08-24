@@ -261,7 +261,8 @@
             this.CinsiyetChart.Name = "CinsiyetChart";
             this.CinsiyetChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series2.ChartArea = "ChartArea1";
-            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            series2.IsValueShownAsLabel = true;
             series2.IsVisibleInLegend = false;
             series2.LabelForeColor = System.Drawing.Color.WhiteSmoke;
             series2.Name = "Cinsiyetler";

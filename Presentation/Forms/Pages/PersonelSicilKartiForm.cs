@@ -355,6 +355,19 @@ namespace Presentation
                     personelTahsil.BolumAdi5 = BolumAdi5TextBox.Text;
                     personelTahsil.MezuniyetTarihi5 = TypeConversion.GetValidDate(MezuniyetTarihi5TextBox);
 
+                    //Sertifika
+                    var personelSertifika = sertifikaService.GetAll(m=>m.PersonelId==personelVarMi.PersonelId).FirstOrDefault();
+                    personelSertifika.SertifikaAdi1 = Sertifika1TextBox.Text;
+                    personelSertifika.SertifikaAdi2 = Sertifika2TextBox.Text;
+                    personelSertifika.SertifikaAdi3 = Sertifika3TextBox.Text;
+                    personelSertifika.SertifikaAdi4 = Sertifika4TextBox.Text;
+                    personelSertifika.SertifikaAdi5 = Sertifika5TextBox.Text;
+                    personelSertifika.SertifikaAdi6 = Sertifika6TextBox.Text;
+                    personelSertifika.SertifikaAdi7 = Sertifika7TextBox.Text;
+                    personelSertifika.SertifikaAdi8 = Sertifika8TextBox.Text;
+                    personelSertifika.SertifikaAdi9 = Sertifika9TextBox.Text;
+                    personelSertifika.SertifikaAdi10 = Sertifika10TextBox.Text;
+
                     var personelNakil = nakilService.GetAll(m => m.PersonelId == personelVarMi.PersonelId).FirstOrDefault();
                     //1.Nakil
                     personelNakil.BaslangicTarihi1 = TypeConversion.GetValidDate(BaslangicTarihi1DTP);
@@ -441,6 +454,7 @@ namespace Presentation
                     genelService.Update(personelVarMi);
                     nufusService.Update(personelNufus);
                     tahsilService.Update(personelTahsil);
+                    sertifikaService.Update(personelSertifika);
                     nakilService.Update(personelNakil);
                     iletisimService.Update(personelIletisim);
 
@@ -542,6 +556,20 @@ namespace Presentation
                         MezuniyetTarihi5 = TypeConversion.GetValidDate(MezuniyetTarihi5TextBox),
                     };
 
+                    Sertifika yeniSertifika = new Sertifika
+                    {
+                        SertifikaAdi1=Sertifika1TextBox.Text,
+                        SertifikaAdi2 = Sertifika2TextBox.Text,
+                        SertifikaAdi3 = Sertifika3TextBox.Text,
+                        SertifikaAdi4 = Sertifika4TextBox.Text,
+                        SertifikaAdi5 = Sertifika5TextBox.Text,
+                        SertifikaAdi6 = Sertifika6TextBox.Text,
+                        SertifikaAdi7 = Sertifika7TextBox.Text,
+                        SertifikaAdi8 = Sertifika8TextBox.Text,
+                        SertifikaAdi9 = Sertifika9TextBox.Text,
+                        SertifikaAdi10 = Sertifika10TextBox.Text,
+                    };
+
                     Nakil yeniNakil = new Nakil
                     {
                         BaslangicTarihi1 = TypeConversion.GetValidDate(BaslangicTarihi1DTP),
@@ -630,6 +658,7 @@ namespace Presentation
                     genelService.Add(yeniGenel);
                     nufusService.Add(yeniNufus);
                     tahsilService.Add(yeniTahsil);
+                    sertifikaService.Add(yeniSertifika);
                     nakilService.Add(yeniNakil);
                     iletisimService.Add(yeniIletisim);
 

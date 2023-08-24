@@ -21,5 +21,13 @@ namespace Presentation.Utils
                 activeForm.Size = panel.Size;
             }
         }
+        static public void Close(Panel panel, Form Main, TableLayoutPanel tableLayoutPanel)
+        {
+            panel.Controls.Clear();
+            panel.Controls.Add(tableLayoutPanel);
+            tableLayoutPanel.Show();
+
+
+        }
     }
 }

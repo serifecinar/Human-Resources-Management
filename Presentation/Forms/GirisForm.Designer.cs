@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GirisForm));
             this.GirisButton = new System.Windows.Forms.Button();
             this.PanelContent = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.GirisTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.sifreTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.kullaniciAdiTextBox = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,13 +50,18 @@
             this.PersonelListelemeButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.CikisButton = new System.Windows.Forms.Button();
             this.PanelContent.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.GirisTableLayoutPanel.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // GirisButton
@@ -76,35 +81,35 @@
             // PanelContent
             // 
             this.PanelContent.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PanelContent.Controls.Add(this.tableLayoutPanel1);
+            this.PanelContent.Controls.Add(this.GirisTableLayoutPanel);
             this.PanelContent.Location = new System.Drawing.Point(3, 159);
             this.PanelContent.Name = "PanelContent";
             this.PanelContent.Size = new System.Drawing.Size(1277, 657);
             this.PanelContent.TabIndex = 2;
             // 
-            // tableLayoutPanel1
+            // GirisTableLayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.51527F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48473F));
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.sifreTextBox, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.kullaniciAdiTextBox, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.GirisButton, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 257F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.73334F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.6F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1277, 657);
-            this.tableLayoutPanel1.TabIndex = 5;
+            this.GirisTableLayoutPanel.ColumnCount = 2;
+            this.GirisTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 46.51527F));
+            this.GirisTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.48473F));
+            this.GirisTableLayoutPanel.Controls.Add(this.label2, 0, 2);
+            this.GirisTableLayoutPanel.Controls.Add(this.sifreTextBox, 1, 2);
+            this.GirisTableLayoutPanel.Controls.Add(this.label1, 0, 1);
+            this.GirisTableLayoutPanel.Controls.Add(this.kullaniciAdiTextBox, 1, 1);
+            this.GirisTableLayoutPanel.Controls.Add(this.GirisButton, 1, 3);
+            this.GirisTableLayoutPanel.Controls.Add(this.tableLayoutPanel8, 0, 0);
+            this.GirisTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GirisTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.GirisTableLayoutPanel.Name = "GirisTableLayoutPanel";
+            this.GirisTableLayoutPanel.RowCount = 4;
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 257F));
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.73334F));
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.66667F));
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.6F));
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.GirisTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.GirisTableLayoutPanel.Size = new System.Drawing.Size(1277, 657);
+            this.GirisTableLayoutPanel.TabIndex = 5;
             // 
             // label2
             // 
@@ -148,20 +153,20 @@
             this.kullaniciAdiTextBox.Size = new System.Drawing.Size(200, 26);
             this.kullaniciAdiTextBox.TabIndex = 0;
             // 
-            // tableLayoutPanel5
+            // tableLayoutPanel8
             // 
-            this.tableLayoutPanel5.ColumnCount = 1;
-            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel5, 2);
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1277, 257);
-            this.tableLayoutPanel5.TabIndex = 4;
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.GirisTableLayoutPanel.SetColumnSpan(this.tableLayoutPanel8, 2);
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel8.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 1;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(1277, 257);
+            this.tableLayoutPanel8.TabIndex = 4;
             // 
             // pictureBox1
             // 
@@ -179,7 +184,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(345, 26);
+            this.label4.Location = new System.Drawing.Point(347, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(440, 25);
             this.label4.TabIndex = 3;
@@ -192,7 +197,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(188, 73);
+            this.label3.Location = new System.Drawing.Point(190, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(755, 55);
             this.label3.TabIndex = 4;
@@ -255,11 +260,11 @@
             // AnasayfaButton
             // 
             this.AnasayfaButton.BackColor = System.Drawing.Color.DarkRed;
-            this.AnasayfaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.AnasayfaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AnasayfaButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.AnasayfaButton.Location = new System.Drawing.Point(1134, 3);
+            this.AnasayfaButton.Location = new System.Drawing.Point(3, 3);
             this.AnasayfaButton.Name = "AnasayfaButton";
-            this.AnasayfaButton.Size = new System.Drawing.Size(140, 45);
+            this.AnasayfaButton.Size = new System.Drawing.Size(124, 42);
             this.AnasayfaButton.TabIndex = 0;
             this.AnasayfaButton.Text = "ANASAYFA";
             this.AnasayfaButton.UseVisualStyleBackColor = false;
@@ -268,11 +273,11 @@
             // PersonelListelemeButton
             // 
             this.PersonelListelemeButton.BackColor = System.Drawing.Color.DarkRed;
-            this.PersonelListelemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListelemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PersonelListelemeButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PersonelListelemeButton.Location = new System.Drawing.Point(1134, 54);
+            this.PersonelListelemeButton.Location = new System.Drawing.Point(3, 51);
             this.PersonelListelemeButton.Name = "PersonelListelemeButton";
-            this.PersonelListelemeButton.Size = new System.Drawing.Size(139, 48);
+            this.PersonelListelemeButton.Size = new System.Drawing.Size(124, 42);
             this.PersonelListelemeButton.TabIndex = 0;
             this.PersonelListelemeButton.Text = "PERSONEL LİSTELEME";
             this.PersonelListelemeButton.UseVisualStyleBackColor = false;
@@ -283,7 +288,7 @@
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.PanelContent, 0, 1);
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(51, 6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
@@ -295,12 +300,9 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.PersonelListelemeButton, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.AnasayfaButton, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
@@ -308,8 +310,53 @@
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.34343F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.65657F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1277, 150);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(1135, 144);
             this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.35004F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.64996F));
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel6, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1277, 150);
+            this.tableLayoutPanel2.TabIndex = 3;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel6.Controls.Add(this.AnasayfaButton, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.PersonelListelemeButton, 0, 1);
+            this.tableLayoutPanel6.Controls.Add(this.CikisButton, 0, 2);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(1144, 3);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(130, 144);
+            this.tableLayoutPanel6.TabIndex = 1;
+            // 
+            // CikisButton
+            // 
+            this.CikisButton.BackColor = System.Drawing.Color.DarkRed;
+            this.CikisButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CikisButton.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.CikisButton.Location = new System.Drawing.Point(3, 99);
+            this.CikisButton.Name = "CikisButton";
+            this.CikisButton.Size = new System.Drawing.Size(124, 42);
+            this.CikisButton.TabIndex = 0;
+            this.CikisButton.Text = "ÇIKIŞ";
+            this.CikisButton.UseVisualStyleBackColor = false;
+            this.CikisButton.Click += new System.EventHandler(this.CikisButton_Click);
             // 
             // GirisForm
             // 
@@ -324,14 +371,16 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İKY PROGRAMI";
             this.PanelContent.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
+            this.GirisTableLayoutPanel.ResumeLayout(false);
+            this.GirisTableLayoutPanel.PerformLayout();
+            this.tableLayoutPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -345,13 +394,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox sifreTextBox;
         private System.Windows.Forms.TextBox kullaniciAdiTextBox;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel GirisTableLayoutPanel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button AnasayfaButton;
         private System.Windows.Forms.Button PersonelListelemeButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel PanelContent;
         private System.Windows.Forms.Panel panel10;
@@ -359,5 +408,8 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Button CikisButton;
     }
 }

@@ -33,6 +33,10 @@
             this.SicilKartiTabControl = new System.Windows.Forms.TabControl();
             this.GenelTabPage = new System.Windows.Forms.TabPage();
             this.IseGirisTarihiDTP = new System.Windows.Forms.DateTimePicker();
+            this.PozisyonComboBox = new System.Windows.Forms.ComboBox();
+            this.UnvanComboBox = new System.Windows.Forms.ComboBox();
+            this.MudurlukComboBox = new System.Windows.Forms.ComboBox();
+            this.GorevYeriComboBox = new System.Windows.Forms.ComboBox();
             this.SeflikComboBox = new System.Windows.Forms.ComboBox();
             this.FotografPictureBox = new System.Windows.Forms.PictureBox();
             this.PersonelSicilKartiTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
@@ -53,11 +57,29 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SoyadiTextBox = new System.Windows.Forms.TextBox();
+            this.AdiSoyadiTextBox = new System.Windows.Forms.TextBox();
             this.AdiTextBox = new System.Windows.Forms.TextBox();
             this.SicilNoTextBox = new System.Windows.Forms.TextBox();
             this.TCKimlikNoTextBox = new System.Windows.Forms.TextBox();
             this.NufusAileTabPage = new System.Windows.Forms.TabPage();
+            this.NufusaKayitliOlduguIlTextBoxComboBox = new System.Windows.Forms.ComboBox();
+            this.MedenihaliComboBox = new System.Windows.Forms.ComboBox();
+            this.KanGrubuComboBox = new System.Windows.Forms.ComboBox();
+            this.CinsiyetComboBox = new System.Windows.Forms.ComboBox();
+            this.DogumTarihiDTP = new System.Windows.Forms.DateTimePicker();
             this.EşCocukGroupBox = new System.Windows.Forms.GroupBox();
+            this.CocukCinsiyeti6ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti5ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti4ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti3ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti2ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti1ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukDogumTarihi6DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi5DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi4DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi3DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi2DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi1DTP = new System.Windows.Forms.DateTimePicker();
             this.label36 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -260,28 +282,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.KaydetButton = new System.Windows.Forms.Button();
-            this.UnvanComboBox = new System.Windows.Forms.ComboBox();
-            this.MudurlukComboBox = new System.Windows.Forms.ComboBox();
-            this.GorevYeriComboBox = new System.Windows.Forms.ComboBox();
-            this.PozisyonComboBox = new System.Windows.Forms.ComboBox();
-            this.AdiSoyadiTextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi1DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukDogumTarihi2DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukDogumTarihi3DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukDogumTarihi4DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukDogumTarihi5DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukDogumTarihi6DTP = new System.Windows.Forms.DateTimePicker();
-            this.CocukCinsiyeti1ComboBox = new System.Windows.Forms.ComboBox();
-            this.CocukCinsiyeti2ComboBox = new System.Windows.Forms.ComboBox();
-            this.CocukCinsiyeti3ComboBox = new System.Windows.Forms.ComboBox();
-            this.CocukCinsiyeti4ComboBox = new System.Windows.Forms.ComboBox();
-            this.CocukCinsiyeti5ComboBox = new System.Windows.Forms.ComboBox();
-            this.CocukCinsiyeti6ComboBox = new System.Windows.Forms.ComboBox();
-            this.DogumTarihiDTP = new System.Windows.Forms.DateTimePicker();
-            this.CinsiyetComboBox = new System.Windows.Forms.ComboBox();
-            this.NufusaKayitliOlduguIlTextBoxComboBox = new System.Windows.Forms.ComboBox();
-            this.KanGrubuComboBox = new System.Windows.Forms.ComboBox();
-            this.MedenihaliComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -390,6 +390,102 @@
             this.IseGirisTarihiDTP.Size = new System.Drawing.Size(142, 26);
             this.IseGirisTarihiDTP.TabIndex = 45;
             this.IseGirisTarihiDTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // PozisyonComboBox
+            // 
+            this.PozisyonComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PozisyonComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PozisyonComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PozisyonComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.PozisyonComboBox.FormattingEnabled = true;
+            this.PozisyonComboBox.Items.AddRange(new object[] {
+            "ATÖLYE SORUMLU MÜHENDİS",
+            "ÜNİTE SORUMLU MÜHENDİS",
+            "LABORATUVAR SORUMLU MÜHENDİS",
+            "BAKIM ONARIM USTABAŞLARI",
+            "FORMEN",
+            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ",
+            "TEKNİK RAPORLAMA SORUMLUSU",
+            "BAKIM ONARIM USTALARI",
+            "ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
+            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
+            "GENEL HİZMETLİ PERSONELİ",
+            "DÜZ İŞÇİLER",
+            "İDARİ İŞLER ",
+            "İNSAN KAYNAKLARI",
+            "İSG SORUMLUSU",
+            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ",
+            "İDARİ RAPORLAMA SORUMLUSU",
+            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
+            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
+            "LABORATUVAR ANALİZ GÖREVLİSİ",
+            "NUMUNE ALMA ANALİZ KALİBRASYON",
+            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
+            "ŞOFÖR",
+            "ARAÇ OPERATÖRLERİ",
+            "TERFİ MERKEZİ OPERATÖRLERİ",
+            "TESİS ŞEFİ",
+            "KOORDİNATÖR"});
+            this.PozisyonComboBox.Location = new System.Drawing.Point(152, 362);
+            this.PozisyonComboBox.Name = "PozisyonComboBox";
+            this.PozisyonComboBox.Size = new System.Drawing.Size(812, 28);
+            this.PozisyonComboBox.TabIndex = 23;
+            // 
+            // UnvanComboBox
+            // 
+            this.UnvanComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.UnvanComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UnvanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.UnvanComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.UnvanComboBox.FormattingEnabled = true;
+            this.UnvanComboBox.Items.AddRange(new object[] {
+            "ATÖLYE / ÜNİTE SORUMLU MÜHENDİS + LABORATUVAR SORUMLU MÜHENDİS",
+            "BAKIM ONARIM USTABAŞLARI/FORMEN",
+            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUML" +
+                "USU/ BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
+            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
+            "GENEL HİZMETLİ PERSONELİ / DÜZ İŞÇİLER",
+            "İDARİ İŞLER ve İNSAN KAYNAKLARI",
+            "İSG SORUMLUSU",
+            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ/ İDARİ RAPORLAMA SORUMLUSU",
+            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
+            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
+            "LABORATUVAR ANALİZ GÖREVLİSİ",
+            "NUMUNE ALMA ANALİZ KALİBRASYON",
+            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
+            "ŞOFÖR / ARAÇ OPERATÖRLERİ",
+            "TERFİ MERKEZİ OPERATÖRLERİ",
+            "TESİS ŞEFİ - KOORDİNATÖR"});
+            this.UnvanComboBox.Location = new System.Drawing.Point(152, 327);
+            this.UnvanComboBox.Name = "UnvanComboBox";
+            this.UnvanComboBox.Size = new System.Drawing.Size(812, 28);
+            this.UnvanComboBox.TabIndex = 23;
+            // 
+            // MudurlukComboBox
+            // 
+            this.MudurlukComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MudurlukComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MudurlukComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MudurlukComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.MudurlukComboBox.FormattingEnabled = true;
+            this.MudurlukComboBox.Items.AddRange(new object[] {
+            "ASYA ATIKSU ARITMA ŞUBE MÜDÜRLÜĞÜ"});
+            this.MudurlukComboBox.Location = new System.Drawing.Point(153, 213);
+            this.MudurlukComboBox.Name = "MudurlukComboBox";
+            this.MudurlukComboBox.Size = new System.Drawing.Size(493, 28);
+            this.MudurlukComboBox.TabIndex = 23;
+            // 
+            // GorevYeriComboBox
+            // 
+            this.GorevYeriComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GorevYeriComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GorevYeriComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GorevYeriComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.GorevYeriComboBox.FormattingEnabled = true;
+            this.GorevYeriComboBox.Location = new System.Drawing.Point(153, 286);
+            this.GorevYeriComboBox.Name = "GorevYeriComboBox";
+            this.GorevYeriComboBox.Size = new System.Drawing.Size(493, 28);
+            this.GorevYeriComboBox.TabIndex = 23;
             // 
             // SeflikComboBox
             // 
@@ -620,6 +716,18 @@
             this.SoyadiTextBox.Size = new System.Drawing.Size(493, 22);
             this.SoyadiTextBox.TabIndex = 10;
             // 
+            // AdiSoyadiTextBox
+            // 
+            this.AdiSoyadiTextBox.BackColor = System.Drawing.Color.White;
+            this.AdiSoyadiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdiSoyadiTextBox.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.AdiSoyadiTextBox.ForeColor = System.Drawing.Color.Black;
+            this.AdiSoyadiTextBox.Location = new System.Drawing.Point(652, 279);
+            this.AdiSoyadiTextBox.Name = "AdiSoyadiTextBox";
+            this.AdiSoyadiTextBox.Size = new System.Drawing.Size(311, 24);
+            this.AdiSoyadiTextBox.TabIndex = 11;
+            this.AdiSoyadiTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // AdiTextBox
             // 
             this.AdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -683,6 +791,168 @@
             this.NufusAileTabPage.Text = "NÜFUS-AİLE";
             this.NufusAileTabPage.UseVisualStyleBackColor = true;
             // 
+            // NufusaKayitliOlduguIlTextBoxComboBox
+            // 
+            this.NufusaKayitliOlduguIlTextBoxComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.NufusaKayitliOlduguIlTextBoxComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.FormattingEnabled = true;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Items.AddRange(new object[] {
+            "1 - ADANA",
+            "2 - ADIYAMAN",
+            "3 - AFYONKARAHİSAR",
+            "4 - AĞRI",
+            "5 - AMASYA",
+            "6 - ANKARA",
+            "7 - ANTALYA",
+            "8 - ARTVİN",
+            "9 - AYDIN",
+            "10 - BALIKESİR",
+            "11 - BİLECİK",
+            "12 - BİNGÖL",
+            "13 - BİTLİS",
+            "14 - BOLU",
+            "15 - BURDUR",
+            "16 - BURSA",
+            "17 - ÇANAKKALE",
+            "18 - ÇANKIRI",
+            "19 - ÇORUM",
+            "20 - DENİZLİ",
+            "21 - DİYARBAKIR",
+            "22 - EDİRNE",
+            "23 - ELAZIĞ",
+            "24 - ERZİNCAN",
+            "25 - ERZURUM",
+            "26 - ESKİŞEHİR",
+            "27 - GAZİANTEP",
+            "28 - GİRESUN",
+            "29 - GÜMÜŞHANE",
+            "30 - HAKKARİ",
+            "31 - HATAY",
+            "32 - ISPARTA",
+            "33 - MERSİN",
+            "34 - İSTANBUL",
+            "35 - İZMİR",
+            "36 - KARS",
+            "37 - KASTAMONU",
+            "38 - KAYSERİ",
+            "39 - KIRKLARELİ",
+            "40 - KIRŞEHİR",
+            "41 - KOCAELİ (İZMİT)",
+            "42 - KONYA",
+            "43 - KÜTAHYA",
+            "44 - MALATYA",
+            "45 - MANİSA",
+            "46 - KAHRAMANMARAŞ",
+            "47 - MARDİN",
+            "48 - MUĞLA",
+            "49 - MUŞ",
+            "50 - NEVŞEHİR",
+            "51 - NİĞDE",
+            "52 - ORDU",
+            "53 - RİZE",
+            "54 - SAKARYA (ADAPAZARI)",
+            "55 - SAMSUN",
+            "56 - SİİRT",
+            "57 - SİNOP",
+            "58 - SİVAS",
+            "59 - TEKİRDAĞ",
+            "60 - TOKAT",
+            "61 - TRABZON",
+            "62 - TUNCELİ",
+            "63 - ŞANLIURFA",
+            "64 - UŞAK",
+            "65 - VAN",
+            "66 - YOZGAT",
+            "67 - ZONGULDAK",
+            "68 - AKSARAY",
+            "69 - BAYBURT",
+            "70 - KARAMAN",
+            "71 - KIRIKKALE",
+            "72 - BATMAN",
+            "73 - ŞIRNAK",
+            "74 - BARTIN",
+            "75 - ARDAHAN",
+            "76 - IĞDIR",
+            "77 - YALOVA",
+            "78 - KARABÜK",
+            "79 - KİLİS",
+            "80 - OSMANİYE",
+            "81 - DÜZCE"});
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Location = new System.Drawing.Point(628, 121);
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Name = "NufusaKayitliOlduguIlTextBoxComboBox";
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Size = new System.Drawing.Size(309, 24);
+            this.NufusaKayitliOlduguIlTextBoxComboBox.TabIndex = 48;
+            // 
+            // MedenihaliComboBox
+            // 
+            this.MedenihaliComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MedenihaliComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MedenihaliComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MedenihaliComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.MedenihaliComboBox.FormattingEnabled = true;
+            this.MedenihaliComboBox.Items.AddRange(new object[] {
+            "BEKAR",
+            "EVLİ",
+            "DUL",
+            "BOŞANMIŞ"});
+            this.MedenihaliComboBox.Location = new System.Drawing.Point(156, 150);
+            this.MedenihaliComboBox.Name = "MedenihaliComboBox";
+            this.MedenihaliComboBox.Size = new System.Drawing.Size(294, 24);
+            this.MedenihaliComboBox.TabIndex = 48;
+            // 
+            // KanGrubuComboBox
+            // 
+            this.KanGrubuComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.KanGrubuComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KanGrubuComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KanGrubuComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.KanGrubuComboBox.FormattingEnabled = true;
+            this.KanGrubuComboBox.Items.AddRange(new object[] {
+            "A +",
+            "A -",
+            "B +",
+            "B -",
+            "AB +",
+            "AB -",
+            "0 +",
+            "0 -"});
+            this.KanGrubuComboBox.Location = new System.Drawing.Point(155, 116);
+            this.KanGrubuComboBox.Name = "KanGrubuComboBox";
+            this.KanGrubuComboBox.Size = new System.Drawing.Size(294, 24);
+            this.KanGrubuComboBox.TabIndex = 48;
+            // 
+            // CinsiyetComboBox
+            // 
+            this.CinsiyetComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CinsiyetComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CinsiyetComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CinsiyetComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CinsiyetComboBox.FormattingEnabled = true;
+            this.CinsiyetComboBox.Items.AddRange(new object[] {
+            "KADIN",
+            "ERKEK"});
+            this.CinsiyetComboBox.Location = new System.Drawing.Point(154, 13);
+            this.CinsiyetComboBox.Name = "CinsiyetComboBox";
+            this.CinsiyetComboBox.Size = new System.Drawing.Size(294, 24);
+            this.CinsiyetComboBox.TabIndex = 48;
+            // 
+            // DogumTarihiDTP
+            // 
+            this.DogumTarihiDTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DogumTarihiDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DogumTarihiDTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.DogumTarihiDTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.DogumTarihiDTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.DogumTarihiDTP.CustomFormat = " ";
+            this.DogumTarihiDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DogumTarihiDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DogumTarihiDTP.Location = new System.Drawing.Point(155, 81);
+            this.DogumTarihiDTP.Name = "DogumTarihiDTP";
+            this.DogumTarihiDTP.Size = new System.Drawing.Size(142, 26);
+            this.DogumTarihiDTP.TabIndex = 46;
+            // 
             // EşCocukGroupBox
             // 
             this.EşCocukGroupBox.BackColor = System.Drawing.SystemColors.Window;
@@ -735,6 +1005,192 @@
             this.EşCocukGroupBox.Size = new System.Drawing.Size(951, 287);
             this.EşCocukGroupBox.TabIndex = 38;
             this.EşCocukGroupBox.TabStop = false;
+            // 
+            // CocukCinsiyeti6ComboBox
+            // 
+            this.CocukCinsiyeti6ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti6ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti6ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti6ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti6ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti6ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti6ComboBox.Location = new System.Drawing.Point(310, 257);
+            this.CocukCinsiyeti6ComboBox.Name = "CocukCinsiyeti6ComboBox";
+            this.CocukCinsiyeti6ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti6ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti5ComboBox
+            // 
+            this.CocukCinsiyeti5ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti5ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti5ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti5ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti5ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti5ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti5ComboBox.Location = new System.Drawing.Point(310, 232);
+            this.CocukCinsiyeti5ComboBox.Name = "CocukCinsiyeti5ComboBox";
+            this.CocukCinsiyeti5ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti5ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti4ComboBox
+            // 
+            this.CocukCinsiyeti4ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti4ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti4ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti4ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti4ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti4ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti4ComboBox.Location = new System.Drawing.Point(310, 207);
+            this.CocukCinsiyeti4ComboBox.Name = "CocukCinsiyeti4ComboBox";
+            this.CocukCinsiyeti4ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti4ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti3ComboBox
+            // 
+            this.CocukCinsiyeti3ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti3ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti3ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti3ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti3ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti3ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti3ComboBox.Location = new System.Drawing.Point(310, 182);
+            this.CocukCinsiyeti3ComboBox.Name = "CocukCinsiyeti3ComboBox";
+            this.CocukCinsiyeti3ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti3ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti2ComboBox
+            // 
+            this.CocukCinsiyeti2ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti2ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti2ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti2ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti2ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti2ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti2ComboBox.Location = new System.Drawing.Point(310, 157);
+            this.CocukCinsiyeti2ComboBox.Name = "CocukCinsiyeti2ComboBox";
+            this.CocukCinsiyeti2ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti2ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti1ComboBox
+            // 
+            this.CocukCinsiyeti1ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti1ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti1ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti1ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti1ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti1ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti1ComboBox.Location = new System.Drawing.Point(310, 132);
+            this.CocukCinsiyeti1ComboBox.Name = "CocukCinsiyeti1ComboBox";
+            this.CocukCinsiyeti1ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti1ComboBox.TabIndex = 47;
+            // 
+            // CocukDogumTarihi6DTP
+            // 
+            this.CocukDogumTarihi6DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi6DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi6DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi6DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi6DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi6DTP.CustomFormat = " ";
+            this.CocukDogumTarihi6DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi6DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi6DTP.Location = new System.Drawing.Point(403, 259);
+            this.CocukDogumTarihi6DTP.Name = "CocukDogumTarihi6DTP";
+            this.CocukDogumTarihi6DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi6DTP.TabIndex = 46;
+            this.CocukDogumTarihi6DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi5DTP
+            // 
+            this.CocukDogumTarihi5DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi5DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi5DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi5DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi5DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi5DTP.CustomFormat = " ";
+            this.CocukDogumTarihi5DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi5DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi5DTP.Location = new System.Drawing.Point(403, 234);
+            this.CocukDogumTarihi5DTP.Name = "CocukDogumTarihi5DTP";
+            this.CocukDogumTarihi5DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi5DTP.TabIndex = 46;
+            this.CocukDogumTarihi5DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi4DTP
+            // 
+            this.CocukDogumTarihi4DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi4DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi4DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi4DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi4DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi4DTP.CustomFormat = " ";
+            this.CocukDogumTarihi4DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi4DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi4DTP.Location = new System.Drawing.Point(403, 209);
+            this.CocukDogumTarihi4DTP.Name = "CocukDogumTarihi4DTP";
+            this.CocukDogumTarihi4DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi4DTP.TabIndex = 46;
+            this.CocukDogumTarihi4DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi3DTP
+            // 
+            this.CocukDogumTarihi3DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi3DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi3DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi3DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi3DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi3DTP.CustomFormat = " ";
+            this.CocukDogumTarihi3DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi3DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi3DTP.Location = new System.Drawing.Point(403, 184);
+            this.CocukDogumTarihi3DTP.Name = "CocukDogumTarihi3DTP";
+            this.CocukDogumTarihi3DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi3DTP.TabIndex = 46;
+            this.CocukDogumTarihi3DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi2DTP
+            // 
+            this.CocukDogumTarihi2DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi2DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi2DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi2DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi2DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi2DTP.CustomFormat = " ";
+            this.CocukDogumTarihi2DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi2DTP.Location = new System.Drawing.Point(403, 159);
+            this.CocukDogumTarihi2DTP.Name = "CocukDogumTarihi2DTP";
+            this.CocukDogumTarihi2DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi2DTP.TabIndex = 46;
+            this.CocukDogumTarihi2DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi1DTP
+            // 
+            this.CocukDogumTarihi1DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi1DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi1DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi1DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi1DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi1DTP.CustomFormat = " ";
+            this.CocukDogumTarihi1DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi1DTP.Location = new System.Drawing.Point(403, 134);
+            this.CocukDogumTarihi1DTP.Name = "CocukDogumTarihi1DTP";
+            this.CocukDogumTarihi1DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi1DTP.TabIndex = 46;
+            this.CocukDogumTarihi1DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
             // 
             // label36
             // 
@@ -3265,462 +3721,6 @@
             this.KaydetButton.Text = "KAYDET";
             this.KaydetButton.UseVisualStyleBackColor = false;
             this.KaydetButton.Click += new System.EventHandler(this.KaydetButton_Click);
-            // 
-            // UnvanComboBox
-            // 
-            this.UnvanComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.UnvanComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.UnvanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.UnvanComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.UnvanComboBox.FormattingEnabled = true;
-            this.UnvanComboBox.Items.AddRange(new object[] {
-            "ATÖLYE / ÜNİTE SORUMLU MÜHENDİS + LABORATUVAR SORUMLU MÜHENDİS",
-            "BAKIM ONARIM USTABAŞLARI/FORMEN",
-            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUML" +
-                "USU/ BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
-            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
-            "GENEL HİZMETLİ PERSONELİ / DÜZ İŞÇİLER",
-            "İDARİ İŞLER ve İNSAN KAYNAKLARI",
-            "İSG SORUMLUSU",
-            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ/ İDARİ RAPORLAMA SORUMLUSU",
-            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
-            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
-            "LABORATUVAR ANALİZ GÖREVLİSİ",
-            "NUMUNE ALMA ANALİZ KALİBRASYON",
-            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
-            "ŞOFÖR / ARAÇ OPERATÖRLERİ",
-            "TERFİ MERKEZİ OPERATÖRLERİ",
-            "TESİS ŞEFİ - KOORDİNATÖR"});
-            this.UnvanComboBox.Location = new System.Drawing.Point(152, 327);
-            this.UnvanComboBox.Name = "UnvanComboBox";
-            this.UnvanComboBox.Size = new System.Drawing.Size(812, 28);
-            this.UnvanComboBox.TabIndex = 23;
-            // 
-            // MudurlukComboBox
-            // 
-            this.MudurlukComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MudurlukComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MudurlukComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MudurlukComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MudurlukComboBox.FormattingEnabled = true;
-            this.MudurlukComboBox.Items.AddRange(new object[] {
-            "ASYA ATIKSU ARITMA ŞUBE MÜDÜRLÜĞÜ"});
-            this.MudurlukComboBox.Location = new System.Drawing.Point(153, 213);
-            this.MudurlukComboBox.Name = "MudurlukComboBox";
-            this.MudurlukComboBox.Size = new System.Drawing.Size(493, 28);
-            this.MudurlukComboBox.TabIndex = 23;
-            // 
-            // GorevYeriComboBox
-            // 
-            this.GorevYeriComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.GorevYeriComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.GorevYeriComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.GorevYeriComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.GorevYeriComboBox.FormattingEnabled = true;
-            this.GorevYeriComboBox.Location = new System.Drawing.Point(153, 286);
-            this.GorevYeriComboBox.Name = "GorevYeriComboBox";
-            this.GorevYeriComboBox.Size = new System.Drawing.Size(493, 28);
-            this.GorevYeriComboBox.TabIndex = 23;
-            // 
-            // PozisyonComboBox
-            // 
-            this.PozisyonComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PozisyonComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PozisyonComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PozisyonComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.PozisyonComboBox.FormattingEnabled = true;
-            this.PozisyonComboBox.Items.AddRange(new object[] {
-            "ATÖLYE SORUMLU MÜHENDİS",
-            "ÜNİTE SORUMLU MÜHENDİS",
-            "LABORATUVAR SORUMLU MÜHENDİS",
-            "BAKIM ONARIM USTABAŞLARI",
-            "FORMEN",
-            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ",
-            "TEKNİK RAPORLAMA SORUMLUSU",
-            "BAKIM ONARIM USTALARI",
-            "ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
-            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
-            "GENEL HİZMETLİ PERSONELİ",
-            "DÜZ İŞÇİLER",
-            "İDARİ İŞLER ",
-            "İNSAN KAYNAKLARI",
-            "İSG SORUMLUSU",
-            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ",
-            "İDARİ RAPORLAMA SORUMLUSU",
-            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
-            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
-            "LABORATUVAR ANALİZ GÖREVLİSİ",
-            "NUMUNE ALMA ANALİZ KALİBRASYON",
-            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
-            "ŞOFÖR",
-            "ARAÇ OPERATÖRLERİ",
-            "TERFİ MERKEZİ OPERATÖRLERİ",
-            "TESİS ŞEFİ",
-            "KOORDİNATÖR"});
-            this.PozisyonComboBox.Location = new System.Drawing.Point(152, 362);
-            this.PozisyonComboBox.Name = "PozisyonComboBox";
-            this.PozisyonComboBox.Size = new System.Drawing.Size(812, 28);
-            this.PozisyonComboBox.TabIndex = 23;
-            // 
-            // AdiSoyadiTextBox
-            // 
-            this.AdiSoyadiTextBox.BackColor = System.Drawing.Color.White;
-            this.AdiSoyadiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AdiSoyadiTextBox.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AdiSoyadiTextBox.ForeColor = System.Drawing.Color.Black;
-            this.AdiSoyadiTextBox.Location = new System.Drawing.Point(652, 279);
-            this.AdiSoyadiTextBox.Name = "AdiSoyadiTextBox";
-            this.AdiSoyadiTextBox.Size = new System.Drawing.Size(322, 24);
-            this.AdiSoyadiTextBox.TabIndex = 11;
-            this.AdiSoyadiTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // CocukDogumTarihi1DTP
-            // 
-            this.CocukDogumTarihi1DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi1DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi1DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi1DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi1DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi1DTP.CustomFormat = " ";
-            this.CocukDogumTarihi1DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi1DTP.Location = new System.Drawing.Point(403, 134);
-            this.CocukDogumTarihi1DTP.Name = "CocukDogumTarihi1DTP";
-            this.CocukDogumTarihi1DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi1DTP.TabIndex = 46;
-            this.CocukDogumTarihi1DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukDogumTarihi2DTP
-            // 
-            this.CocukDogumTarihi2DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi2DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi2DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi2DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi2DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi2DTP.CustomFormat = " ";
-            this.CocukDogumTarihi2DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi2DTP.Location = new System.Drawing.Point(403, 159);
-            this.CocukDogumTarihi2DTP.Name = "CocukDogumTarihi2DTP";
-            this.CocukDogumTarihi2DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi2DTP.TabIndex = 46;
-            this.CocukDogumTarihi2DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukDogumTarihi3DTP
-            // 
-            this.CocukDogumTarihi3DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi3DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi3DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi3DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi3DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi3DTP.CustomFormat = " ";
-            this.CocukDogumTarihi3DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi3DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi3DTP.Location = new System.Drawing.Point(403, 184);
-            this.CocukDogumTarihi3DTP.Name = "CocukDogumTarihi3DTP";
-            this.CocukDogumTarihi3DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi3DTP.TabIndex = 46;
-            this.CocukDogumTarihi3DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukDogumTarihi4DTP
-            // 
-            this.CocukDogumTarihi4DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi4DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi4DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi4DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi4DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi4DTP.CustomFormat = " ";
-            this.CocukDogumTarihi4DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi4DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi4DTP.Location = new System.Drawing.Point(403, 209);
-            this.CocukDogumTarihi4DTP.Name = "CocukDogumTarihi4DTP";
-            this.CocukDogumTarihi4DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi4DTP.TabIndex = 46;
-            this.CocukDogumTarihi4DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukDogumTarihi5DTP
-            // 
-            this.CocukDogumTarihi5DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi5DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi5DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi5DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi5DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi5DTP.CustomFormat = " ";
-            this.CocukDogumTarihi5DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi5DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi5DTP.Location = new System.Drawing.Point(403, 234);
-            this.CocukDogumTarihi5DTP.Name = "CocukDogumTarihi5DTP";
-            this.CocukDogumTarihi5DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi5DTP.TabIndex = 46;
-            this.CocukDogumTarihi5DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukDogumTarihi6DTP
-            // 
-            this.CocukDogumTarihi6DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.CocukDogumTarihi6DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi6DTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.CocukDogumTarihi6DTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.CocukDogumTarihi6DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.CocukDogumTarihi6DTP.CustomFormat = " ";
-            this.CocukDogumTarihi6DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi6DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.CocukDogumTarihi6DTP.Location = new System.Drawing.Point(403, 259);
-            this.CocukDogumTarihi6DTP.Name = "CocukDogumTarihi6DTP";
-            this.CocukDogumTarihi6DTP.Size = new System.Drawing.Size(114, 22);
-            this.CocukDogumTarihi6DTP.TabIndex = 46;
-            this.CocukDogumTarihi6DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
-            // 
-            // CocukCinsiyeti1ComboBox
-            // 
-            this.CocukCinsiyeti1ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti1ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti1ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti1ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti1ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti1ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti1ComboBox.Location = new System.Drawing.Point(310, 132);
-            this.CocukCinsiyeti1ComboBox.Name = "CocukCinsiyeti1ComboBox";
-            this.CocukCinsiyeti1ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti1ComboBox.TabIndex = 47;
-            // 
-            // CocukCinsiyeti2ComboBox
-            // 
-            this.CocukCinsiyeti2ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti2ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti2ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti2ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti2ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti2ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti2ComboBox.Location = new System.Drawing.Point(310, 157);
-            this.CocukCinsiyeti2ComboBox.Name = "CocukCinsiyeti2ComboBox";
-            this.CocukCinsiyeti2ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti2ComboBox.TabIndex = 47;
-            // 
-            // CocukCinsiyeti3ComboBox
-            // 
-            this.CocukCinsiyeti3ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti3ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti3ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti3ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti3ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti3ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti3ComboBox.Location = new System.Drawing.Point(310, 182);
-            this.CocukCinsiyeti3ComboBox.Name = "CocukCinsiyeti3ComboBox";
-            this.CocukCinsiyeti3ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti3ComboBox.TabIndex = 47;
-            // 
-            // CocukCinsiyeti4ComboBox
-            // 
-            this.CocukCinsiyeti4ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti4ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti4ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti4ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti4ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti4ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti4ComboBox.Location = new System.Drawing.Point(310, 207);
-            this.CocukCinsiyeti4ComboBox.Name = "CocukCinsiyeti4ComboBox";
-            this.CocukCinsiyeti4ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti4ComboBox.TabIndex = 47;
-            // 
-            // CocukCinsiyeti5ComboBox
-            // 
-            this.CocukCinsiyeti5ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti5ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti5ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti5ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti5ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti5ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti5ComboBox.Location = new System.Drawing.Point(310, 232);
-            this.CocukCinsiyeti5ComboBox.Name = "CocukCinsiyeti5ComboBox";
-            this.CocukCinsiyeti5ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti5ComboBox.TabIndex = 47;
-            // 
-            // CocukCinsiyeti6ComboBox
-            // 
-            this.CocukCinsiyeti6ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CocukCinsiyeti6ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CocukCinsiyeti6ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti6ComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti6ComboBox.FormattingEnabled = true;
-            this.CocukCinsiyeti6ComboBox.Items.AddRange(new object[] {
-            "KIZ",
-            "ERKEK"});
-            this.CocukCinsiyeti6ComboBox.Location = new System.Drawing.Point(310, 257);
-            this.CocukCinsiyeti6ComboBox.Name = "CocukCinsiyeti6ComboBox";
-            this.CocukCinsiyeti6ComboBox.Size = new System.Drawing.Size(87, 24);
-            this.CocukCinsiyeti6ComboBox.TabIndex = 47;
-            // 
-            // DogumTarihiDTP
-            // 
-            this.DogumTarihiDTP.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DogumTarihiDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DogumTarihiDTP.CalendarForeColor = System.Drawing.Color.Black;
-            this.DogumTarihiDTP.CalendarMonthBackground = System.Drawing.Color.White;
-            this.DogumTarihiDTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
-            this.DogumTarihiDTP.CustomFormat = " ";
-            this.DogumTarihiDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DogumTarihiDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DogumTarihiDTP.Location = new System.Drawing.Point(155, 81);
-            this.DogumTarihiDTP.Name = "DogumTarihiDTP";
-            this.DogumTarihiDTP.Size = new System.Drawing.Size(142, 26);
-            this.DogumTarihiDTP.TabIndex = 46;
-            // 
-            // CinsiyetComboBox
-            // 
-            this.CinsiyetComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.CinsiyetComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CinsiyetComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CinsiyetComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CinsiyetComboBox.FormattingEnabled = true;
-            this.CinsiyetComboBox.Items.AddRange(new object[] {
-            "KADIN",
-            "ERKEK"});
-            this.CinsiyetComboBox.Location = new System.Drawing.Point(154, 13);
-            this.CinsiyetComboBox.Name = "CinsiyetComboBox";
-            this.CinsiyetComboBox.Size = new System.Drawing.Size(294, 24);
-            this.CinsiyetComboBox.TabIndex = 48;
-            // 
-            // NufusaKayitliOlduguIlTextBoxComboBox
-            // 
-            this.NufusaKayitliOlduguIlTextBoxComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.NufusaKayitliOlduguIlTextBoxComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NufusaKayitliOlduguIlTextBoxComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.NufusaKayitliOlduguIlTextBoxComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.NufusaKayitliOlduguIlTextBoxComboBox.FormattingEnabled = true;
-            this.NufusaKayitliOlduguIlTextBoxComboBox.Items.AddRange(new object[] {
-            "1 - ADANA",
-            "2 - ADIYAMAN",
-            "3 - AFYONKARAHİSAR",
-            "4 - AĞRI",
-            "5 - AMASYA",
-            "6 - ANKARA",
-            "7 - ANTALYA",
-            "8 - ARTVİN",
-            "9 - AYDIN",
-            "10 - BALIKESİR",
-            "11 - BİLECİK",
-            "12 - BİNGÖL",
-            "13 - BİTLİS",
-            "14 - BOLU",
-            "15 - BURDUR",
-            "16 - BURSA",
-            "17 - ÇANAKKALE",
-            "18 - ÇANKIRI",
-            "19 - ÇORUM",
-            "20 - DENİZLİ",
-            "21 - DİYARBAKIR",
-            "22 - EDİRNE",
-            "23 - ELAZIĞ",
-            "24 - ERZİNCAN",
-            "25 - ERZURUM",
-            "26 - ESKİŞEHİR",
-            "27 - GAZİANTEP",
-            "28 - GİRESUN",
-            "29 - GÜMÜŞHANE",
-            "30 - HAKKARİ",
-            "31 - HATAY",
-            "32 - ISPARTA",
-            "33 - MERSİN",
-            "34 - İSTANBUL",
-            "35 - İZMİR",
-            "36 - KARS",
-            "37 - KASTAMONU",
-            "38 - KAYSERİ",
-            "39 - KIRKLARELİ",
-            "40 - KIRŞEHİR",
-            "41 - KOCAELİ (İZMİT)",
-            "42 - KONYA",
-            "43 - KÜTAHYA",
-            "44 - MALATYA",
-            "45 - MANİSA",
-            "46 - KAHRAMANMARAŞ",
-            "47 - MARDİN",
-            "48 - MUĞLA",
-            "49 - MUŞ",
-            "50 - NEVŞEHİR",
-            "51 - NİĞDE",
-            "52 - ORDU",
-            "53 - RİZE",
-            "54 - SAKARYA (ADAPAZARI)",
-            "55 - SAMSUN",
-            "56 - SİİRT",
-            "57 - SİNOP",
-            "58 - SİVAS",
-            "59 - TEKİRDAĞ",
-            "60 - TOKAT",
-            "61 - TRABZON",
-            "62 - TUNCELİ",
-            "63 - ŞANLIURFA",
-            "64 - UŞAK",
-            "65 - VAN",
-            "66 - YOZGAT",
-            "67 - ZONGULDAK",
-            "68 - AKSARAY",
-            "69 - BAYBURT",
-            "70 - KARAMAN",
-            "71 - KIRIKKALE",
-            "72 - BATMAN",
-            "73 - ŞIRNAK",
-            "74 - BARTIN",
-            "75 - ARDAHAN",
-            "76 - IĞDIR",
-            "77 - YALOVA",
-            "78 - KARABÜK",
-            "79 - KİLİS",
-            "80 - OSMANİYE",
-            "81 - DÜZCE"});
-            this.NufusaKayitliOlduguIlTextBoxComboBox.Location = new System.Drawing.Point(628, 121);
-            this.NufusaKayitliOlduguIlTextBoxComboBox.Name = "NufusaKayitliOlduguIlTextBoxComboBox";
-            this.NufusaKayitliOlduguIlTextBoxComboBox.Size = new System.Drawing.Size(309, 24);
-            this.NufusaKayitliOlduguIlTextBoxComboBox.TabIndex = 48;
-            // 
-            // KanGrubuComboBox
-            // 
-            this.KanGrubuComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.KanGrubuComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.KanGrubuComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.KanGrubuComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.KanGrubuComboBox.FormattingEnabled = true;
-            this.KanGrubuComboBox.Items.AddRange(new object[] {
-            "A +",
-            "A -",
-            "B +",
-            "B -",
-            "AB +",
-            "AB -",
-            "0 +",
-            "0 -"});
-            this.KanGrubuComboBox.Location = new System.Drawing.Point(155, 116);
-            this.KanGrubuComboBox.Name = "KanGrubuComboBox";
-            this.KanGrubuComboBox.Size = new System.Drawing.Size(294, 24);
-            this.KanGrubuComboBox.TabIndex = 48;
-            // 
-            // MedenihaliComboBox
-            // 
-            this.MedenihaliComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MedenihaliComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MedenihaliComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MedenihaliComboBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MedenihaliComboBox.FormattingEnabled = true;
-            this.MedenihaliComboBox.Items.AddRange(new object[] {
-            "BEKAR",
-            "EVLİ",
-            "DUL",
-            "BOŞANMIŞ"});
-            this.MedenihaliComboBox.Location = new System.Drawing.Point(156, 150);
-            this.MedenihaliComboBox.Name = "MedenihaliComboBox";
-            this.MedenihaliComboBox.Size = new System.Drawing.Size(294, 24);
-            this.MedenihaliComboBox.TabIndex = 48;
             // 
             // PersonelSicilKartiForm
             // 

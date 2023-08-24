@@ -16,6 +16,9 @@ namespace Presentation
         public GirisForm()
         {
             InitializeComponent();
+            AnasayfaButton.Visible = false;
+            PersonelListelemeButton.Visible = false;
+            CikisButton.Visible = false;
         }
 
         private void GirisButton_Click(object sender, EventArgs e)
@@ -39,7 +42,12 @@ namespace Presentation
 
                     Statics.GirisYetki = result.GirisYetki;
 
-                    PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
+                    AnasayfaButton.Visible = true;
+                    PersonelListelemeButton.Visible = true;
+                    CikisButton.Visible = true;
+
+                    PageChange.Change(PanelContent, this, new OzetTabloForm());
+
                 }
                 else
                 {
@@ -67,7 +75,18 @@ namespace Presentation
 
         private void AnasayfaButton_Click(object sender, EventArgs e)
         {
-            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
+            PageChange.Change(PanelContent, this, new OzetTabloForm());
+        }
+
+        private void CikisButton_Click(object sender, EventArgs e)
+        {
+            PageChange.Close(PanelContent, this, GirisTableLayoutPanel);
+            Statics.GirisYetki = "";
+            kullaniciAdiTextBox.Text = "";
+            sifreTextBox.Text = "";
+            AnasayfaButton.Visible = false;
+            PersonelListelemeButton.Visible = false;
+            CikisButton.Visible = false;
         }
     }
 }

@@ -18,11 +18,6 @@ namespace Presentation
             InitializeComponent();
         }
 
-        private void PersonelListelemeForm_Activated(object sender, EventArgs e)
-        {
-
-        }
-
         private void PersonelListelemeForm_Load(object sender, EventArgs e)
         {
 
@@ -32,9 +27,9 @@ namespace Presentation
             
             genelData = DtToList.ToDataTable(GirisYetkiHelper.VeriFiltrele(Statics.GirisYetki));                  
             PersonelListesiAdvancedDataGridView.DataSource = genelData;
-            PersonelListesiAdvancedDataGridView.Refresh();
-            PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
-            PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Refresh();
+            //PersonelListesiAdvancedDataGridView.Columns[0].Visible = false;
+            //PersonelListesiAdvancedDataGridView.Columns[1].Visible = false;
             //PersonelListesiAdvancedDataGridView.Columns[6].Visible = false;
             //PersonelListesiAdvancedDataGridView.Columns[7].Visible = false;
             //PersonelListesiAdvancedDataGridView.Columns[8].Visible = false;
@@ -187,11 +182,6 @@ namespace Presentation
         private void YeniKayitButton_Click(object sender, EventArgs e)
         {
             PageChange.Change(PersonelSicilKartiPanel, this, new PersonelSicilKartiForm());
-        }
-
-        private void NakilButton_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void IletisimButton_Click(object sender, EventArgs e)
