@@ -140,6 +140,11 @@
             this.EgitimChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series1.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            series1.IsValueShownAsLabel = true;
+            series1.LabelBackColor = System.Drawing.Color.DarkRed;
+            series1.LabelBorderColor = System.Drawing.Color.Maroon;
+            series1.LabelForeColor = System.Drawing.Color.White;
             series1.Name = "Egitimler";
             this.EgitimChart.Series.Add(series1);
             this.EgitimChart.Size = new System.Drawing.Size(673, 164);
@@ -295,6 +300,11 @@
             this.YasChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             series3.BackHatchStyle = System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle.Divot;
             series3.ChartArea = "ChartArea1";
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            series3.IsValueShownAsLabel = true;
+            series3.LabelBackColor = System.Drawing.Color.DarkRed;
+            series3.LabelBorderColor = System.Drawing.Color.Maroon;
+            series3.LabelForeColor = System.Drawing.Color.White;
             series3.Name = "Yaslar";
             this.YasChart.Series.Add(series3);
             this.YasChart.Size = new System.Drawing.Size(673, 162);

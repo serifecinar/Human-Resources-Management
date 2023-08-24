@@ -12,7 +12,6 @@ namespace Presentation
     public partial class GirisForm : Form
     {
         GirisService girisService = new GirisService();
-        GenelService genelService=new GenelService();
 
         public GirisForm()
         {
@@ -35,6 +34,7 @@ namespace Presentation
             {
                 if (result.GirisSifre == sifreTextBox.Text)
                 {
+
                     GirisYetkiHelper.VeriFiltrele(result.GirisYetki);
 
                     Statics.GirisYetki = result.GirisYetki;
@@ -52,33 +52,22 @@ namespace Presentation
             }
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            PageChange.Change(PanelContent, this, new PersonelListelemeForm());
-        }
-
-        private void SicilKartiButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GirisForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void sifreTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyValue == (char)Keys.Enter)
             {
                 GirisYap();
             }
+        }
+
+        private void PersonelListelemeButton_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PanelContent, this, new PersonelListelemeForm());
+        }
+
+        private void AnasayfaButton_Click(object sender, EventArgs e)
+        {
+            PageChange.Change(PanelContent, this, FormMemory.ozetTabloForm);
         }
     }
 }

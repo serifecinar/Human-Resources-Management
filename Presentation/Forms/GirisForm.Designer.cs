@@ -40,17 +40,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.AnasayfaButton = new System.Windows.Forms.Button();
             this.PersonelListelemeButton = new System.Windows.Forms.Button();
-            this.SicilKartiButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.PanelContent.SuspendLayout();
@@ -58,7 +55,6 @@
             this.tableLayoutPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
@@ -183,7 +179,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.DarkRed;
-            this.label4.Location = new System.Drawing.Point(418, 26);
+            this.label4.Location = new System.Drawing.Point(345, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(440, 25);
             this.label4.TabIndex = 3;
@@ -196,146 +192,99 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.DarkRed;
-            this.label3.Location = new System.Drawing.Point(261, 73);
+            this.label3.Location = new System.Drawing.Point(188, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(755, 55);
             this.label3.TabIndex = 4;
             this.label3.Text = "İNSAN KAYNAKLARI YÖNETİMİ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
-            // panel2
+            // panel1
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkRed;
-            this.panel2.Location = new System.Drawing.Point(1500, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(5, 840);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkRed;
-            this.panel4.Location = new System.Drawing.Point(1509, -1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 840);
-            this.panel4.TabIndex = 5;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.DarkRed;
-            this.panel6.Location = new System.Drawing.Point(1518, -1);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(5, 840);
-            this.panel6.TabIndex = 7;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.DarkRed;
-            this.panel8.Location = new System.Drawing.Point(1527, -1);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(5, 840);
-            this.panel8.TabIndex = 9;
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel6);
+            this.panel1.Controls.Add(this.panel8);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(50, 829);
+            this.panel1.TabIndex = 12;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.DarkRed;
-            this.panel10.Location = new System.Drawing.Point(1536, -1);
+            this.panel10.Location = new System.Drawing.Point(40, -6);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(5, 840);
-            this.panel10.TabIndex = 11;
+            this.panel10.TabIndex = 16;
             // 
-            // panel1
+            // panel6
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(211, 829);
-            this.panel1.TabIndex = 12;
+            this.panel6.BackColor = System.Drawing.Color.DarkRed;
+            this.panel6.Location = new System.Drawing.Point(22, -6);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(5, 840);
+            this.panel6.TabIndex = 14;
             // 
-            // tableLayoutPanel2
+            // panel8
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.button2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.AnasayfaButton, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.PersonelListelemeButton, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.SicilKartiButton, 0, 4);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33332F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 670F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(211, 829);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.panel8.BackColor = System.Drawing.Color.DarkRed;
+            this.panel8.Location = new System.Drawing.Point(31, -6);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(5, 840);
+            this.panel8.TabIndex = 15;
             // 
-            // button2
+            // panel2
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkRed;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(3, 52);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(205, 1);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "ANASAYFA";
-            this.button2.UseVisualStyleBackColor = false;
+            this.panel2.BackColor = System.Drawing.Color.DarkRed;
+            this.panel2.Location = new System.Drawing.Point(4, -6);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(5, 840);
+            this.panel2.TabIndex = 12;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.DarkRed;
+            this.panel4.Location = new System.Drawing.Point(13, -6);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 840);
+            this.panel4.TabIndex = 13;
             // 
             // AnasayfaButton
             // 
             this.AnasayfaButton.BackColor = System.Drawing.Color.DarkRed;
-            this.AnasayfaButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AnasayfaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.AnasayfaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AnasayfaButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.AnasayfaButton.Location = new System.Drawing.Point(3, 3);
+            this.AnasayfaButton.Location = new System.Drawing.Point(1134, 3);
             this.AnasayfaButton.Name = "AnasayfaButton";
-            this.AnasayfaButton.Size = new System.Drawing.Size(205, 43);
+            this.AnasayfaButton.Size = new System.Drawing.Size(140, 45);
             this.AnasayfaButton.TabIndex = 0;
             this.AnasayfaButton.Text = "ANASAYFA";
             this.AnasayfaButton.UseVisualStyleBackColor = false;
-            this.AnasayfaButton.Click += new System.EventHandler(this.button1_Click);
+            this.AnasayfaButton.Click += new System.EventHandler(this.AnasayfaButton_Click);
             // 
             // PersonelListelemeButton
             // 
             this.PersonelListelemeButton.BackColor = System.Drawing.Color.DarkRed;
-            this.PersonelListelemeButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PersonelListelemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PersonelListelemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PersonelListelemeButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.PersonelListelemeButton.Location = new System.Drawing.Point(3, 57);
+            this.PersonelListelemeButton.Location = new System.Drawing.Point(1134, 54);
             this.PersonelListelemeButton.Name = "PersonelListelemeButton";
-            this.PersonelListelemeButton.Size = new System.Drawing.Size(205, 43);
+            this.PersonelListelemeButton.Size = new System.Drawing.Size(139, 48);
             this.PersonelListelemeButton.TabIndex = 0;
             this.PersonelListelemeButton.Text = "PERSONEL LİSTELEME";
             this.PersonelListelemeButton.UseVisualStyleBackColor = false;
-            this.PersonelListelemeButton.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // SicilKartiButton
-            // 
-            this.SicilKartiButton.BackColor = System.Drawing.Color.DarkRed;
-            this.SicilKartiButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.SicilKartiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SicilKartiButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.SicilKartiButton.Location = new System.Drawing.Point(3, 111);
-            this.SicilKartiButton.Name = "SicilKartiButton";
-            this.SicilKartiButton.Size = new System.Drawing.Size(205, 43);
-            this.SicilKartiButton.TabIndex = 0;
-            this.SicilKartiButton.Text = "SİCİL KARTI";
-            this.SicilKartiButton.UseVisualStyleBackColor = false;
-            this.SicilKartiButton.Click += new System.EventHandler(this.SicilKartiButton_Click);
+            this.PersonelListelemeButton.Click += new System.EventHandler(this.PersonelListelemeButton_Click);
             // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.PanelContent, 0, 1);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(214, 3);
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(51, 6);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.99277F));
@@ -346,16 +295,19 @@
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tableLayoutPanel4.ColumnCount = 1;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 146F));
             this.tableLayoutPanel4.Controls.Add(this.label4, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.PersonelListelemeButton, 1, 1);
+            this.tableLayoutPanel4.Controls.Add(this.AnasayfaButton, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.34343F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.65656F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.65657F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1277, 150);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -364,26 +316,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1546, 829);
+            this.ClientSize = new System.Drawing.Size(1339, 829);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "GirisForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "İKY PROGRAMI";
-            this.Load += new System.EventHandler(this.GirisForm_Load);
             this.PanelContent.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -400,22 +345,19 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox sifreTextBox;
         private System.Windows.Forms.TextBox kullaniciAdiTextBox;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button AnasayfaButton;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button PersonelListelemeButton;
-        private System.Windows.Forms.Button SicilKartiButton;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Panel PanelContent;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

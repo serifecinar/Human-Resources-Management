@@ -57,7 +57,6 @@
             this.PersonelListelemeTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.IletisimButton = new System.Windows.Forms.Button();
-            this.GuncelleButton = new System.Windows.Forms.Button();
             this.NakilButton = new System.Windows.Forms.Button();
             this.YeniKayitButton = new System.Windows.Forms.Button();
             this.DetayButton = new System.Windows.Forms.Button();
@@ -87,7 +86,6 @@
             // 
             this.PersonelListesiAdvancedDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.PersonelListesiAdvancedDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PersonelListesiAdvancedDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PersonelListesiAdvancedDataGridView.FilterAndSortEnabled = true;
             this.PersonelListesiAdvancedDataGridView.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
             this.PersonelListesiAdvancedDataGridView.Location = new System.Drawing.Point(3, 113);
@@ -100,7 +98,6 @@
             this.PersonelListesiAdvancedDataGridView.TabIndex = 18;
             this.PersonelListesiAdvancedDataGridView.SortStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.SortEventArgs>(this.PersonelListesiAdvancedDataGridView_SortStringChanged);
             this.PersonelListesiAdvancedDataGridView.FilterStringChanged += new System.EventHandler<Zuby.ADGV.AdvancedDataGridView.FilterEventArgs>(this.PersonelListesiAdvancedDataGridView_FilterStringChanged);
-            this.PersonelListesiAdvancedDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PersonelListesiAdvancedDataGridView_CellClick);
             // 
             // menuStrip1
             // 
@@ -328,20 +325,17 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 11;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnCount = 9;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 304F));
-            this.tableLayoutPanel2.Controls.Add(this.IletisimButton, 9, 0);
-            this.tableLayoutPanel2.Controls.Add(this.GuncelleButton, 7, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Controls.Add(this.IletisimButton, 7, 0);
             this.tableLayoutPanel2.Controls.Add(this.NakilButton, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.YeniKayitButton, 3, 0);
             this.tableLayoutPanel2.Controls.Add(this.DetayButton, 1, 0);
@@ -359,30 +353,15 @@
             this.IletisimButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.IletisimButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IletisimButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.IletisimButton.Location = new System.Drawing.Point(935, 15);
+            this.IletisimButton.Location = new System.Drawing.Point(860, 15);
             this.IletisimButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.IletisimButton.Name = "IletisimButton";
-            this.IletisimButton.Size = new System.Drawing.Size(142, 48);
+            this.IletisimButton.Size = new System.Drawing.Size(144, 48);
             this.IletisimButton.TabIndex = 0;
             this.IletisimButton.TabStop = false;
             this.IletisimButton.Text = "İLETİŞİM";
             this.IletisimButton.UseVisualStyleBackColor = false;
             this.IletisimButton.Click += new System.EventHandler(this.IletisimButton_Click);
-            // 
-            // GuncelleButton
-            // 
-            this.GuncelleButton.BackColor = System.Drawing.Color.DarkRed;
-            this.GuncelleButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GuncelleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.GuncelleButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.GuncelleButton.Location = new System.Drawing.Point(777, 15);
-            this.GuncelleButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
-            this.GuncelleButton.Name = "GuncelleButton";
-            this.GuncelleButton.Size = new System.Drawing.Size(142, 48);
-            this.GuncelleButton.TabIndex = 0;
-            this.GuncelleButton.TabStop = false;
-            this.GuncelleButton.Text = "GÜNCELLE";
-            this.GuncelleButton.UseVisualStyleBackColor = false;
             // 
             // NakilButton
             // 
@@ -390,10 +369,10 @@
             this.NakilButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NakilButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.NakilButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.NakilButton.Location = new System.Drawing.Point(619, 15);
+            this.NakilButton.Location = new System.Drawing.Point(700, 15);
             this.NakilButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.NakilButton.Name = "NakilButton";
-            this.NakilButton.Size = new System.Drawing.Size(142, 48);
+            this.NakilButton.Size = new System.Drawing.Size(144, 48);
             this.NakilButton.TabIndex = 0;
             this.NakilButton.TabStop = false;
             this.NakilButton.Text = "NAKİL";
@@ -406,10 +385,10 @@
             this.YeniKayitButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.YeniKayitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.YeniKayitButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.YeniKayitButton.Location = new System.Drawing.Point(461, 15);
+            this.YeniKayitButton.Location = new System.Drawing.Point(540, 15);
             this.YeniKayitButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.YeniKayitButton.Name = "YeniKayitButton";
-            this.YeniKayitButton.Size = new System.Drawing.Size(142, 48);
+            this.YeniKayitButton.Size = new System.Drawing.Size(144, 48);
             this.YeniKayitButton.TabIndex = 0;
             this.YeniKayitButton.TabStop = false;
             this.YeniKayitButton.Text = "YENİ KAYIT";
@@ -423,10 +402,10 @@
             this.DetayButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DetayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DetayButton.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.DetayButton.Location = new System.Drawing.Point(303, 15);
+            this.DetayButton.Location = new System.Drawing.Point(380, 15);
             this.DetayButton.Margin = new System.Windows.Forms.Padding(3, 15, 3, 15);
             this.DetayButton.Name = "DetayButton";
-            this.DetayButton.Size = new System.Drawing.Size(142, 48);
+            this.DetayButton.Size = new System.Drawing.Size(144, 48);
             this.DetayButton.TabIndex = 0;
             this.DetayButton.TabStop = false;
             this.DetayButton.Text = "DETAY";
@@ -496,7 +475,6 @@
         private System.Windows.Forms.Panel PersonelSicilKartiPanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button IletisimButton;
-        private System.Windows.Forms.Button GuncelleButton;
         private System.Windows.Forms.Button NakilButton;
         private System.Windows.Forms.Button YeniKayitButton;
         private System.Windows.Forms.Button DetayButton;

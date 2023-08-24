@@ -89,16 +89,16 @@ namespace Presentation.Forms.Pages
             CinsiyetChart.Series["Cinsiyetler"]["PieStartAngle"] = "180"; // Başlangıç açısı (0-360 arasında değer alır)
         }
 
-        public void YasChartOlustur()
-        {
-            // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
-            List<int> yaslar = YasHesaplamalariHelper.YasHesap(Statics.GirisYetki);
+        //public void YasChartOlustur()
+        //{
+        //    // Chart kontrolüne veri serisi eklemek için bir dizi oluşturuyoruz
+        //    List<int?> yaslar = YasHesaplamalariHelper.YasHesap(Statics.GirisYetki);
 
-            Dictionary<int, int> frekanslar = YasHesaplamalariHelper.YasCalculateFrequencies(yaslar);
-            YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
-            YasChart.Series["Yaslar"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
-            YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
-        }
+        //    Dictionary<int?, int?> frekanslar = YasHesaplamalariHelper.YasCalculateFrequencies(yaslar);
+        //    YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
+        //    YasChart.Series["Yaslar"].Points.DataBindXY(frekanslar.Keys, frekanslar.Values);
+        //    YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
+        //}
 
         private void EgitimChartOlustur()
         {
@@ -114,5 +114,45 @@ namespace Presentation.Forms.Pages
         {
 
         }
+
+        public void YasChartOlustur()
+        {
+            List<int?> yaslar = YasHesaplamalariHelper.YasHesap(Statics.GirisYetki);
+
+            // Yaş verilerini belirli yaş aralıklarına gruplayan fonksiyonu kullan
+            Dictionary<int, int> grupluVeriler = GrupluYasHesapla(yaslar);
+
+            YasChart.Series["Yaslar"].ChartType = SeriesChartType.Column;
+            YasChart.Series["Yaslar"].Points.DataBindXY(grupluVeriler.Keys, grupluVeriler.Values);
+            YasChart.Series["Yaslar"].IsValueShownAsLabel = true;
+        }
+
+        private Dictionary<int, int> GrupluYasHesapla(List<int?> yaslar)
+        {
+            // Yaş aralıklarını ve grupların frekanslarını hesaplayan bir kod
+            // Örnek olarak, yaşları 10 yaş aralıklarına gruplayalım
+            int yasAraligi = 10;
+
+            Dictionary<int, int> frekanslar = new Dictionary<int, int>();
+
+            foreach (int? yas in yaslar)
+            {
+                if (yas.HasValue)
+                {
+                    int yasGrubu = (int)(yas / yasAraligi) * yasAraligi;
+                    if (frekanslar.ContainsKey(yasGrubu))
+                    {
+                        frekanslar[yasGrubu]++;
+                    }
+                    else
+                    {
+                        frekanslar[yasGrubu] = 1;
+                    }
+                }
+            }
+
+            return frekanslar;
+        }
+
     }
 }

@@ -10,11 +10,11 @@ namespace Presentation
 {
     public partial class PersonelListelemeForm : Form
     {
-        GenelService genelService = new GenelService();
         DataTable genelData = new DataTable();
 
         public PersonelListelemeForm()
         {
+
             InitializeComponent();
         }
 
@@ -190,11 +190,6 @@ namespace Presentation
         }
 
         private void NakilButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void YardimButton_Click(object sender, EventArgs e)
         {
 
         }

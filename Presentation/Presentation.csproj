@@ -94,6 +94,7 @@
     <Compile Include="Utils\FormMemory.cs" />
     <Compile Include="Utils\PageChange.cs" />
     <Compile Include="Utils\Statics.cs" />
+    <Compile Include="Utils\TypeConversion.cs" />
     <EmbeddedResource Include="Forms\GirisForm.resx">
       <DependentUpon>GirisForm.cs</DependentUpon>
     </EmbeddedResource>

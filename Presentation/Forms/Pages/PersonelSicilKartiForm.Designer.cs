@@ -32,7 +32,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.SicilKartiTabControl = new System.Windows.Forms.TabControl();
             this.GenelTabPage = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.IseGirisTarihiDTP = new System.Windows.Forms.DateTimePicker();
+            this.SeflikComboBox = new System.Windows.Forms.ComboBox();
             this.FotografPictureBox = new System.Windows.Forms.PictureBox();
             this.PersonelSicilKartiTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.MKTextBox = new System.Windows.Forms.TextBox();
@@ -51,12 +52,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.PozisyonuTextBox = new System.Windows.Forms.TextBox();
-            this.GorevYeriTextBox = new System.Windows.Forms.TextBox();
-            this.UnvaniTextBox = new System.Windows.Forms.TextBox();
-            this.IseGirisTarihiTextBox = new System.Windows.Forms.TextBox();
-            this.SeflikTextBox = new System.Windows.Forms.TextBox();
-            this.MudurlukTextBox = new System.Windows.Forms.TextBox();
             this.SoyadiTextBox = new System.Windows.Forms.TextBox();
             this.AdiTextBox = new System.Windows.Forms.TextBox();
             this.SicilNoTextBox = new System.Windows.Forms.TextBox();
@@ -70,7 +65,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -80,29 +74,17 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.CocukAdi6TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti6TextBox = new System.Windows.Forms.TextBox();
             this.CocukAdi5TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda6TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti5TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi6TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda5TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi5TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti4TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda4TextBox = new System.Windows.Forms.TextBox();
             this.CocukAdi4TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi4TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti3TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda3TextBox = new System.Windows.Forms.TextBox();
             this.CocukAdi3TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi3TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti2TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda2TextBox = new System.Windows.Forms.TextBox();
             this.CocukAdi2TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi2TextBox = new System.Windows.Forms.TextBox();
-            this.CocukCinsiyeti1TextBox = new System.Windows.Forms.TextBox();
             this.CocukHakkinda1TextBox = new System.Windows.Forms.TextBox();
             this.CocukAdi1TextBox = new System.Windows.Forms.TextBox();
-            this.CocukDogumTarihi1TextBox = new System.Windows.Forms.TextBox();
             this.EsCalistigiKurumAdiTextBox = new System.Windows.Forms.TextBox();
             this.EsCalismaDurumuTextBox = new System.Windows.Forms.TextBox();
             this.CocukSayisiTextBox = new System.Windows.Forms.TextBox();
@@ -118,15 +100,10 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.NufusaKayitliOlduguIlTextBox = new System.Windows.Forms.TextBox();
             this.DogumYeriTextBox = new System.Windows.Forms.TextBox();
-            this.DogumTarihiTextBox = new System.Windows.Forms.TextBox();
-            this.MedinHaliTextBox = new System.Windows.Forms.TextBox();
             this.BabaAdiTextBox = new System.Windows.Forms.TextBox();
-            this.KanGrubuTextBox = new System.Windows.Forms.TextBox();
             this.AskerlikTextBox = new System.Windows.Forms.TextBox();
             this.AnneAdiTextBox = new System.Windows.Forms.TextBox();
-            this.CinsiyetTextBox = new System.Windows.Forms.TextBox();
             this.TahsilTabPage = new System.Windows.Forms.TabPage();
             this.TahsilTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.TahsilAdi1TextBox = new System.Windows.Forms.TextBox();
@@ -197,26 +174,6 @@
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.BaslangicTarihi1TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi2TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi3TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi4TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi5TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi6TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi7TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi8TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi9TextBox = new System.Windows.Forms.TextBox();
-            this.BaslangicTarihi10TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi1TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi2TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi3TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi5TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi4TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi6TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi7TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi8TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi9TextBox = new System.Windows.Forms.TextBox();
-            this.AyrilisTarihi10TextBox = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.Kurum1TextBox = new System.Windows.Forms.TextBox();
             this.Kurum2TextBox = new System.Windows.Forms.TextBox();
@@ -258,6 +215,26 @@
             this.Aciklama8TextBox = new System.Windows.Forms.TextBox();
             this.Aciklama9TextBox = new System.Windows.Forms.TextBox();
             this.Aciklama10TextBox = new System.Windows.Forms.TextBox();
+            this.BaslangicTarihi1DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi2DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi3DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi4DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi5DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi6DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi7DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi8DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi9DTP = new System.Windows.Forms.DateTimePicker();
+            this.BaslangicTarihi10DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi1DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi2DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi3DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi4DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi5DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi6DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi7DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi8DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi9DTP = new System.Windows.Forms.DateTimePicker();
+            this.AyrilisTarihi10DTP = new System.Windows.Forms.DateTimePicker();
             this.PerformansTabPage = new System.Windows.Forms.TabPage();
             this.IletisimTabPage = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -283,6 +260,28 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.KaydetButton = new System.Windows.Forms.Button();
+            this.UnvanComboBox = new System.Windows.Forms.ComboBox();
+            this.MudurlukComboBox = new System.Windows.Forms.ComboBox();
+            this.GorevYeriComboBox = new System.Windows.Forms.ComboBox();
+            this.PozisyonComboBox = new System.Windows.Forms.ComboBox();
+            this.AdiSoyadiTextBox = new System.Windows.Forms.TextBox();
+            this.CocukDogumTarihi1DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi2DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi3DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi4DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi5DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukDogumTarihi6DTP = new System.Windows.Forms.DateTimePicker();
+            this.CocukCinsiyeti1ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti2ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti3ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti4ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti5ComboBox = new System.Windows.Forms.ComboBox();
+            this.CocukCinsiyeti6ComboBox = new System.Windows.Forms.ComboBox();
+            this.DogumTarihiDTP = new System.Windows.Forms.DateTimePicker();
+            this.CinsiyetComboBox = new System.Windows.Forms.ComboBox();
+            this.NufusaKayitliOlduguIlTextBoxComboBox = new System.Windows.Forms.ComboBox();
+            this.KanGrubuComboBox = new System.Windows.Forms.ComboBox();
+            this.MedenihaliComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SicilKartiTabControl.SuspendLayout();
             this.GenelTabPage.SuspendLayout();
@@ -345,7 +344,12 @@
             // 
             // GenelTabPage
             // 
-            this.GenelTabPage.Controls.Add(this.comboBox1);
+            this.GenelTabPage.Controls.Add(this.IseGirisTarihiDTP);
+            this.GenelTabPage.Controls.Add(this.PozisyonComboBox);
+            this.GenelTabPage.Controls.Add(this.UnvanComboBox);
+            this.GenelTabPage.Controls.Add(this.MudurlukComboBox);
+            this.GenelTabPage.Controls.Add(this.GorevYeriComboBox);
+            this.GenelTabPage.Controls.Add(this.SeflikComboBox);
             this.GenelTabPage.Controls.Add(this.FotografPictureBox);
             this.GenelTabPage.Controls.Add(this.PersonelSicilKartiTableLayoutPanel);
             this.GenelTabPage.Controls.Add(this.label7);
@@ -358,13 +362,8 @@
             this.GenelTabPage.Controls.Add(this.label3);
             this.GenelTabPage.Controls.Add(this.label2);
             this.GenelTabPage.Controls.Add(this.label1);
-            this.GenelTabPage.Controls.Add(this.PozisyonuTextBox);
-            this.GenelTabPage.Controls.Add(this.GorevYeriTextBox);
-            this.GenelTabPage.Controls.Add(this.UnvaniTextBox);
-            this.GenelTabPage.Controls.Add(this.IseGirisTarihiTextBox);
-            this.GenelTabPage.Controls.Add(this.SeflikTextBox);
-            this.GenelTabPage.Controls.Add(this.MudurlukTextBox);
             this.GenelTabPage.Controls.Add(this.SoyadiTextBox);
+            this.GenelTabPage.Controls.Add(this.AdiSoyadiTextBox);
             this.GenelTabPage.Controls.Add(this.AdiTextBox);
             this.GenelTabPage.Controls.Add(this.SicilNoTextBox);
             this.GenelTabPage.Controls.Add(this.TCKimlikNoTextBox);
@@ -376,30 +375,46 @@
             this.GenelTabPage.Text = "GENEL";
             this.GenelTabPage.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // IseGirisTarihiDTP
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.IseGirisTarihiDTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.IseGirisTarihiDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IseGirisTarihiDTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.IseGirisTarihiDTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.IseGirisTarihiDTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.IseGirisTarihiDTP.CustomFormat = " ";
+            this.IseGirisTarihiDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.IseGirisTarihiDTP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.IseGirisTarihiDTP.Location = new System.Drawing.Point(153, 181);
+            this.IseGirisTarihiDTP.Name = "IseGirisTarihiDTP";
+            this.IseGirisTarihiDTP.Size = new System.Drawing.Size(142, 26);
+            this.IseGirisTarihiDTP.TabIndex = 45;
+            this.IseGirisTarihiDTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // SeflikComboBox
+            // 
+            this.SeflikComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.SeflikComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SeflikComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.SeflikComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.SeflikComboBox.FormattingEnabled = true;
+            this.SeflikComboBox.Items.AddRange(new object[] {
             "TUZLA ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "PAŞAKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "KADIKÖY ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "KÜÇÜKSU ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ",
             "ŞİLE ATIKSU TESİSLERİ İŞLETME ŞEFLİĞİ"});
-            this.comboBox1.Location = new System.Drawing.Point(721, 269);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(193, 28);
-            this.comboBox1.TabIndex = 23;
+            this.SeflikComboBox.Location = new System.Drawing.Point(152, 247);
+            this.SeflikComboBox.Name = "SeflikComboBox";
+            this.SeflikComboBox.Size = new System.Drawing.Size(493, 28);
+            this.SeflikComboBox.TabIndex = 23;
             // 
             // FotografPictureBox
             // 
             this.FotografPictureBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.FotografPictureBox.Location = new System.Drawing.Point(721, 16);
+            this.FotografPictureBox.Location = new System.Drawing.Point(712, 36);
             this.FotografPictureBox.Name = "FotografPictureBox";
-            this.FotografPictureBox.Size = new System.Drawing.Size(193, 229);
+            this.FotografPictureBox.Size = new System.Drawing.Size(203, 237);
             this.FotografPictureBox.TabIndex = 21;
             this.FotografPictureBox.TabStop = false;
             // 
@@ -418,11 +433,11 @@
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.label9, 2, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.PKTextBox, 3, 0);
             this.PersonelSicilKartiTableLayoutPanel.Controls.Add(this.ToplamKatsayiTextBox, 5, 0);
-            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(4, 420);
+            this.PersonelSicilKartiTableLayoutPanel.Location = new System.Drawing.Point(3, 421);
             this.PersonelSicilKartiTableLayoutPanel.Name = "PersonelSicilKartiTableLayoutPanel";
             this.PersonelSicilKartiTableLayoutPanel.RowCount = 1;
             this.PersonelSicilKartiTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.PersonelSicilKartiTableLayoutPanel.Size = new System.Drawing.Size(978, 36);
+            this.PersonelSicilKartiTableLayoutPanel.Size = new System.Drawing.Size(963, 36);
             this.PersonelSicilKartiTableLayoutPanel.TabIndex = 20;
             // 
             // MKTextBox
@@ -432,7 +447,7 @@
             this.MKTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MKTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MKTextBox.Location = new System.Drawing.Point(165, 8);
+            this.MKTextBox.Location = new System.Drawing.Point(163, 8);
             this.MKTextBox.Name = "MKTextBox";
             this.MKTextBox.Size = new System.Drawing.Size(89, 19);
             this.MKTextBox.TabIndex = 8;
@@ -442,7 +457,7 @@
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(672, 10);
+            this.label10.Location = new System.Drawing.Point(662, 10);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(135, 16);
             this.label10.TabIndex = 14;
@@ -453,7 +468,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(131, 10);
+            this.label8.Location = new System.Drawing.Point(129, 10);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(28, 16);
             this.label8.TabIndex = 14;
@@ -464,7 +479,7 @@
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(457, 10);
+            this.label9.Location = new System.Drawing.Point(451, 10);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(26, 16);
             this.label9.TabIndex = 14;
@@ -477,7 +492,7 @@
             this.PKTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.PKTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.PKTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.PKTextBox.Location = new System.Drawing.Point(489, 8);
+            this.PKTextBox.Location = new System.Drawing.Point(483, 8);
             this.PKTextBox.Name = "PKTextBox";
             this.PKTextBox.Size = new System.Drawing.Size(89, 19);
             this.PKTextBox.TabIndex = 8;
@@ -489,7 +504,7 @@
             this.ToplamKatsayiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ToplamKatsayiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ToplamKatsayiTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.ToplamKatsayiTextBox.Location = new System.Drawing.Point(813, 8);
+            this.ToplamKatsayiTextBox.Location = new System.Drawing.Point(803, 8);
             this.ToplamKatsayiTextBox.Name = "ToplamKatsayiTextBox";
             this.ToplamKatsayiTextBox.Size = new System.Drawing.Size(89, 19);
             this.ToplamKatsayiTextBox.TabIndex = 8;
@@ -498,7 +513,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(42, 353);
+            this.label7.Location = new System.Drawing.Point(41, 374);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 16);
             this.label7.TabIndex = 14;
@@ -508,7 +523,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(70, 312);
+            this.label6.Location = new System.Drawing.Point(70, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 15;
@@ -518,7 +533,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(35, 277);
+            this.label12.Location = new System.Drawing.Point(35, 298);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 16);
             this.label12.TabIndex = 16;
@@ -528,7 +543,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(77, 238);
+            this.label11.Location = new System.Drawing.Point(77, 259);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 16);
             this.label11.TabIndex = 16;
@@ -538,7 +553,7 @@
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label84.Location = new System.Drawing.Point(5, 168);
+            this.label84.Location = new System.Drawing.Point(6, 189);
             this.label84.Name = "label84";
             this.label84.Size = new System.Drawing.Size(129, 16);
             this.label84.TabIndex = 16;
@@ -548,7 +563,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(43, 204);
+            this.label13.Location = new System.Drawing.Point(44, 225);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(91, 16);
             this.label13.TabIndex = 16;
@@ -558,7 +573,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(72, 120);
+            this.label5.Location = new System.Drawing.Point(72, 135);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 16);
             this.label5.TabIndex = 16;
@@ -568,7 +583,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(103, 85);
+            this.label3.Location = new System.Drawing.Point(103, 100);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 16);
             this.label3.TabIndex = 17;
@@ -578,7 +593,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(65, 49);
+            this.label2.Location = new System.Drawing.Point(65, 64);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 16);
             this.label2.TabIndex = 18;
@@ -588,77 +603,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(24, 16);
+            this.label1.Location = new System.Drawing.Point(24, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 16);
             this.label1.TabIndex = 19;
             this.label1.Text = "T.C. KİMLİK NO";
-            // 
-            // PozisyonuTextBox
-            // 
-            this.PozisyonuTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PozisyonuTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.PozisyonuTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.PozisyonuTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.PozisyonuTextBox.Location = new System.Drawing.Point(153, 352);
-            this.PozisyonuTextBox.Name = "PozisyonuTextBox";
-            this.PozisyonuTextBox.Size = new System.Drawing.Size(812, 19);
-            this.PozisyonuTextBox.TabIndex = 8;
-            // 
-            // GorevYeriTextBox
-            // 
-            this.GorevYeriTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.GorevYeriTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.GorevYeriTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.GorevYeriTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.GorevYeriTextBox.Location = new System.Drawing.Point(153, 274);
-            this.GorevYeriTextBox.Name = "GorevYeriTextBox";
-            this.GorevYeriTextBox.Size = new System.Drawing.Size(493, 19);
-            this.GorevYeriTextBox.TabIndex = 10;
-            // 
-            // UnvaniTextBox
-            // 
-            this.UnvaniTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.UnvaniTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UnvaniTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.UnvaniTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.UnvaniTextBox.Location = new System.Drawing.Point(152, 309);
-            this.UnvaniTextBox.Name = "UnvaniTextBox";
-            this.UnvaniTextBox.Size = new System.Drawing.Size(812, 19);
-            this.UnvaniTextBox.TabIndex = 9;
-            // 
-            // IseGirisTarihiTextBox
-            // 
-            this.IseGirisTarihiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.IseGirisTarihiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.IseGirisTarihiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.IseGirisTarihiTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.IseGirisTarihiTextBox.Location = new System.Drawing.Point(153, 165);
-            this.IseGirisTarihiTextBox.Name = "IseGirisTarihiTextBox";
-            this.IseGirisTarihiTextBox.Size = new System.Drawing.Size(493, 19);
-            this.IseGirisTarihiTextBox.TabIndex = 10;
-            // 
-            // SeflikTextBox
-            // 
-            this.SeflikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.SeflikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.SeflikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.SeflikTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.SeflikTextBox.Location = new System.Drawing.Point(152, 235);
-            this.SeflikTextBox.Name = "SeflikTextBox";
-            this.SeflikTextBox.Size = new System.Drawing.Size(493, 19);
-            this.SeflikTextBox.TabIndex = 10;
-            // 
-            // MudurlukTextBox
-            // 
-            this.MudurlukTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MudurlukTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MudurlukTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MudurlukTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MudurlukTextBox.Location = new System.Drawing.Point(152, 201);
-            this.MudurlukTextBox.Name = "MudurlukTextBox";
-            this.MudurlukTextBox.Size = new System.Drawing.Size(493, 19);
-            this.MudurlukTextBox.TabIndex = 10;
             // 
             // SoyadiTextBox
             // 
@@ -666,7 +615,7 @@
             this.SoyadiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SoyadiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SoyadiTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.SoyadiTextBox.Location = new System.Drawing.Point(152, 117);
+            this.SoyadiTextBox.Location = new System.Drawing.Point(152, 132);
             this.SoyadiTextBox.Name = "SoyadiTextBox";
             this.SoyadiTextBox.Size = new System.Drawing.Size(493, 22);
             this.SoyadiTextBox.TabIndex = 10;
@@ -677,7 +626,7 @@
             this.AdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AdiTextBox.Location = new System.Drawing.Point(152, 82);
+            this.AdiTextBox.Location = new System.Drawing.Point(152, 97);
             this.AdiTextBox.Name = "AdiTextBox";
             this.AdiTextBox.Size = new System.Drawing.Size(493, 22);
             this.AdiTextBox.TabIndex = 11;
@@ -688,7 +637,7 @@
             this.SicilNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SicilNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SicilNoTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.SicilNoTextBox.Location = new System.Drawing.Point(152, 47);
+            this.SicilNoTextBox.Location = new System.Drawing.Point(152, 62);
             this.SicilNoTextBox.Name = "SicilNoTextBox";
             this.SicilNoTextBox.Size = new System.Drawing.Size(493, 22);
             this.SicilNoTextBox.TabIndex = 12;
@@ -699,13 +648,18 @@
             this.TCKimlikNoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TCKimlikNoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TCKimlikNoTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.TCKimlikNoTextBox.Location = new System.Drawing.Point(153, 14);
+            this.TCKimlikNoTextBox.Location = new System.Drawing.Point(153, 29);
             this.TCKimlikNoTextBox.Name = "TCKimlikNoTextBox";
             this.TCKimlikNoTextBox.Size = new System.Drawing.Size(493, 22);
             this.TCKimlikNoTextBox.TabIndex = 13;
             // 
             // NufusAileTabPage
             // 
+            this.NufusAileTabPage.Controls.Add(this.NufusaKayitliOlduguIlTextBoxComboBox);
+            this.NufusAileTabPage.Controls.Add(this.MedenihaliComboBox);
+            this.NufusAileTabPage.Controls.Add(this.KanGrubuComboBox);
+            this.NufusAileTabPage.Controls.Add(this.CinsiyetComboBox);
+            this.NufusAileTabPage.Controls.Add(this.DogumTarihiDTP);
             this.NufusAileTabPage.Controls.Add(this.EşCocukGroupBox);
             this.NufusAileTabPage.Controls.Add(this.label23);
             this.NufusAileTabPage.Controls.Add(this.label17);
@@ -717,15 +671,10 @@
             this.NufusAileTabPage.Controls.Add(this.label21);
             this.NufusAileTabPage.Controls.Add(this.label24);
             this.NufusAileTabPage.Controls.Add(this.label22);
-            this.NufusAileTabPage.Controls.Add(this.NufusaKayitliOlduguIlTextBox);
             this.NufusAileTabPage.Controls.Add(this.DogumYeriTextBox);
-            this.NufusAileTabPage.Controls.Add(this.DogumTarihiTextBox);
-            this.NufusAileTabPage.Controls.Add(this.MedinHaliTextBox);
             this.NufusAileTabPage.Controls.Add(this.BabaAdiTextBox);
-            this.NufusAileTabPage.Controls.Add(this.KanGrubuTextBox);
             this.NufusAileTabPage.Controls.Add(this.AskerlikTextBox);
             this.NufusAileTabPage.Controls.Add(this.AnneAdiTextBox);
-            this.NufusAileTabPage.Controls.Add(this.CinsiyetTextBox);
             this.NufusAileTabPage.Location = new System.Drawing.Point(4, 25);
             this.NufusAileTabPage.Name = "NufusAileTabPage";
             this.NufusAileTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -737,6 +686,18 @@
             // EşCocukGroupBox
             // 
             this.EşCocukGroupBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti6ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti5ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti4ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti3ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti2ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti1ComboBox);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi6DTP);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi5DTP);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi4DTP);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi3DTP);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi2DTP);
+            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi1DTP);
             this.EşCocukGroupBox.Controls.Add(this.label36);
             this.EşCocukGroupBox.Controls.Add(this.label31);
             this.EşCocukGroupBox.Controls.Add(this.label30);
@@ -744,7 +705,6 @@
             this.EşCocukGroupBox.Controls.Add(this.label15);
             this.EşCocukGroupBox.Controls.Add(this.label14);
             this.EşCocukGroupBox.Controls.Add(this.label37);
-            this.EşCocukGroupBox.Controls.Add(this.label35);
             this.EşCocukGroupBox.Controls.Add(this.label34);
             this.EşCocukGroupBox.Controls.Add(this.label33);
             this.EşCocukGroupBox.Controls.Add(this.label32);
@@ -754,29 +714,17 @@
             this.EşCocukGroupBox.Controls.Add(this.label28);
             this.EşCocukGroupBox.Controls.Add(this.label27);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi6TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti6TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi5TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda6TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti5TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi6TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda5TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi5TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti4TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda4TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi4TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi4TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti3TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda3TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi3TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi3TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti2TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda2TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi2TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi2TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukCinsiyeti1TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukHakkinda1TextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukAdi1TextBox);
-            this.EşCocukGroupBox.Controls.Add(this.CocukDogumTarihi1TextBox);
             this.EşCocukGroupBox.Controls.Add(this.EsCalistigiKurumAdiTextBox);
             this.EşCocukGroupBox.Controls.Add(this.EsCalismaDurumuTextBox);
             this.EşCocukGroupBox.Controls.Add(this.CocukSayisiTextBox);
@@ -852,27 +800,17 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label37.Location = new System.Drawing.Point(655, 118);
+            this.label37.Location = new System.Drawing.Point(656, 118);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(137, 16);
             this.label37.TabIndex = 33;
             this.label37.Text = "ÇOCUK HAKKINDA";
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label35.Location = new System.Drawing.Point(400, 118);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(117, 16);
-            this.label35.TabIndex = 33;
-            this.label35.Text = "DOĞUM TARİHİ";
-            // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label34.Location = new System.Drawing.Point(400, 118);
+            this.label34.Location = new System.Drawing.Point(403, 118);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(117, 16);
             this.label34.TabIndex = 33;
@@ -950,7 +888,7 @@
             // 
             // CocukAdi6TextBox
             // 
-            this.CocukAdi6TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -959,20 +897,9 @@
             this.CocukAdi6TextBox.Size = new System.Drawing.Size(258, 19);
             this.CocukAdi6TextBox.TabIndex = 24;
             // 
-            // CocukCinsiyeti6TextBox
-            // 
-            this.CocukCinsiyeti6TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti6TextBox.Location = new System.Drawing.Point(310, 262);
-            this.CocukCinsiyeti6TextBox.Name = "CocukCinsiyeti6TextBox";
-            this.CocukCinsiyeti6TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti6TextBox.TabIndex = 24;
-            // 
             // CocukAdi5TextBox
             // 
-            this.CocukAdi5TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -983,7 +910,7 @@
             // 
             // CocukHakkinda6TextBox
             // 
-            this.CocukHakkinda6TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda6TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -992,31 +919,9 @@
             this.CocukHakkinda6TextBox.Size = new System.Drawing.Size(408, 19);
             this.CocukHakkinda6TextBox.TabIndex = 24;
             // 
-            // CocukCinsiyeti5TextBox
-            // 
-            this.CocukCinsiyeti5TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti5TextBox.Location = new System.Drawing.Point(310, 237);
-            this.CocukCinsiyeti5TextBox.Name = "CocukCinsiyeti5TextBox";
-            this.CocukCinsiyeti5TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti5TextBox.TabIndex = 24;
-            // 
-            // CocukDogumTarihi6TextBox
-            // 
-            this.CocukDogumTarihi6TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi6TextBox.Location = new System.Drawing.Point(403, 262);
-            this.CocukDogumTarihi6TextBox.Name = "CocukDogumTarihi6TextBox";
-            this.CocukDogumTarihi6TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi6TextBox.TabIndex = 24;
-            // 
             // CocukHakkinda5TextBox
             // 
-            this.CocukHakkinda5TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1025,31 +930,9 @@
             this.CocukHakkinda5TextBox.Size = new System.Drawing.Size(408, 19);
             this.CocukHakkinda5TextBox.TabIndex = 24;
             // 
-            // CocukDogumTarihi5TextBox
-            // 
-            this.CocukDogumTarihi5TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi5TextBox.Location = new System.Drawing.Point(403, 237);
-            this.CocukDogumTarihi5TextBox.Name = "CocukDogumTarihi5TextBox";
-            this.CocukDogumTarihi5TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi5TextBox.TabIndex = 24;
-            // 
-            // CocukCinsiyeti4TextBox
-            // 
-            this.CocukCinsiyeti4TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti4TextBox.Location = new System.Drawing.Point(310, 212);
-            this.CocukCinsiyeti4TextBox.Name = "CocukCinsiyeti4TextBox";
-            this.CocukCinsiyeti4TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti4TextBox.TabIndex = 24;
-            // 
             // CocukHakkinda4TextBox
             // 
-            this.CocukHakkinda4TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1060,7 +943,7 @@
             // 
             // CocukAdi4TextBox
             // 
-            this.CocukAdi4TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1069,31 +952,9 @@
             this.CocukAdi4TextBox.Size = new System.Drawing.Size(258, 19);
             this.CocukAdi4TextBox.TabIndex = 24;
             // 
-            // CocukDogumTarihi4TextBox
-            // 
-            this.CocukDogumTarihi4TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi4TextBox.Location = new System.Drawing.Point(403, 212);
-            this.CocukDogumTarihi4TextBox.Name = "CocukDogumTarihi4TextBox";
-            this.CocukDogumTarihi4TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi4TextBox.TabIndex = 24;
-            // 
-            // CocukCinsiyeti3TextBox
-            // 
-            this.CocukCinsiyeti3TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti3TextBox.Location = new System.Drawing.Point(310, 187);
-            this.CocukCinsiyeti3TextBox.Name = "CocukCinsiyeti3TextBox";
-            this.CocukCinsiyeti3TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti3TextBox.TabIndex = 24;
-            // 
             // CocukHakkinda3TextBox
             // 
-            this.CocukHakkinda3TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1104,7 +965,7 @@
             // 
             // CocukAdi3TextBox
             // 
-            this.CocukAdi3TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1113,31 +974,9 @@
             this.CocukAdi3TextBox.Size = new System.Drawing.Size(258, 19);
             this.CocukAdi3TextBox.TabIndex = 24;
             // 
-            // CocukDogumTarihi3TextBox
-            // 
-            this.CocukDogumTarihi3TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi3TextBox.Location = new System.Drawing.Point(403, 187);
-            this.CocukDogumTarihi3TextBox.Name = "CocukDogumTarihi3TextBox";
-            this.CocukDogumTarihi3TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi3TextBox.TabIndex = 24;
-            // 
-            // CocukCinsiyeti2TextBox
-            // 
-            this.CocukCinsiyeti2TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti2TextBox.Location = new System.Drawing.Point(310, 162);
-            this.CocukCinsiyeti2TextBox.Name = "CocukCinsiyeti2TextBox";
-            this.CocukCinsiyeti2TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti2TextBox.TabIndex = 24;
-            // 
             // CocukHakkinda2TextBox
             // 
-            this.CocukHakkinda2TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1148,7 +987,7 @@
             // 
             // CocukAdi2TextBox
             // 
-            this.CocukAdi2TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1157,31 +996,9 @@
             this.CocukAdi2TextBox.Size = new System.Drawing.Size(258, 19);
             this.CocukAdi2TextBox.TabIndex = 24;
             // 
-            // CocukDogumTarihi2TextBox
-            // 
-            this.CocukDogumTarihi2TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi2TextBox.Location = new System.Drawing.Point(403, 162);
-            this.CocukDogumTarihi2TextBox.Name = "CocukDogumTarihi2TextBox";
-            this.CocukDogumTarihi2TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi2TextBox.TabIndex = 24;
-            // 
-            // CocukCinsiyeti1TextBox
-            // 
-            this.CocukCinsiyeti1TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukCinsiyeti1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukCinsiyeti1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukCinsiyeti1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukCinsiyeti1TextBox.Location = new System.Drawing.Point(310, 137);
-            this.CocukCinsiyeti1TextBox.Name = "CocukCinsiyeti1TextBox";
-            this.CocukCinsiyeti1TextBox.Size = new System.Drawing.Size(87, 19);
-            this.CocukCinsiyeti1TextBox.TabIndex = 24;
-            // 
             // CocukHakkinda1TextBox
             // 
-            this.CocukHakkinda1TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukHakkinda1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukHakkinda1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukHakkinda1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukHakkinda1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1192,7 +1009,7 @@
             // 
             // CocukAdi1TextBox
             // 
-            this.CocukAdi1TextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1201,20 +1018,9 @@
             this.CocukAdi1TextBox.Size = new System.Drawing.Size(258, 19);
             this.CocukAdi1TextBox.TabIndex = 24;
             // 
-            // CocukDogumTarihi1TextBox
-            // 
-            this.CocukDogumTarihi1TextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CocukDogumTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CocukDogumTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CocukDogumTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CocukDogumTarihi1TextBox.Location = new System.Drawing.Point(403, 137);
-            this.CocukDogumTarihi1TextBox.Name = "CocukDogumTarihi1TextBox";
-            this.CocukDogumTarihi1TextBox.Size = new System.Drawing.Size(114, 19);
-            this.CocukDogumTarihi1TextBox.TabIndex = 24;
-            // 
             // EsCalistigiKurumAdiTextBox
             // 
-            this.EsCalistigiKurumAdiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EsCalistigiKurumAdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EsCalistigiKurumAdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EsCalistigiKurumAdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EsCalistigiKurumAdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1225,7 +1031,7 @@
             // 
             // EsCalismaDurumuTextBox
             // 
-            this.EsCalismaDurumuTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EsCalismaDurumuTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EsCalismaDurumuTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EsCalismaDurumuTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EsCalismaDurumuTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1236,7 +1042,7 @@
             // 
             // CocukSayisiTextBox
             // 
-            this.CocukSayisiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.CocukSayisiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CocukSayisiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CocukSayisiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CocukSayisiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1247,7 +1053,7 @@
             // 
             // EsMeslegiTextBox
             // 
-            this.EsMeslegiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EsMeslegiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EsMeslegiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EsMeslegiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EsMeslegiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1258,7 +1064,7 @@
             // 
             // EsAdiTextBox
             // 
-            this.EsAdiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.EsAdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EsAdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EsAdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EsAdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1367,20 +1173,9 @@
             this.label22.TabIndex = 37;
             this.label22.Text = "CİNSİYET";
             // 
-            // NufusaKayitliOlduguIlTextBox
-            // 
-            this.NufusaKayitliOlduguIlTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.NufusaKayitliOlduguIlTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.NufusaKayitliOlduguIlTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.NufusaKayitliOlduguIlTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.NufusaKayitliOlduguIlTextBox.Location = new System.Drawing.Point(628, 121);
-            this.NufusaKayitliOlduguIlTextBox.Name = "NufusaKayitliOlduguIlTextBox";
-            this.NufusaKayitliOlduguIlTextBox.Size = new System.Drawing.Size(308, 19);
-            this.NufusaKayitliOlduguIlTextBox.TabIndex = 24;
-            // 
             // DogumYeriTextBox
             // 
-            this.DogumYeriTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.DogumYeriTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.DogumYeriTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DogumYeriTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DogumYeriTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1389,31 +1184,9 @@
             this.DogumYeriTextBox.Size = new System.Drawing.Size(308, 19);
             this.DogumYeriTextBox.TabIndex = 23;
             // 
-            // DogumTarihiTextBox
-            // 
-            this.DogumTarihiTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.DogumTarihiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DogumTarihiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.DogumTarihiTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.DogumTarihiTextBox.Location = new System.Drawing.Point(154, 86);
-            this.DogumTarihiTextBox.Name = "DogumTarihiTextBox";
-            this.DogumTarihiTextBox.Size = new System.Drawing.Size(292, 19);
-            this.DogumTarihiTextBox.TabIndex = 22;
-            // 
-            // MedinHaliTextBox
-            // 
-            this.MedinHaliTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.MedinHaliTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MedinHaliTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MedinHaliTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.MedinHaliTextBox.Location = new System.Drawing.Point(153, 155);
-            this.MedinHaliTextBox.Name = "MedinHaliTextBox";
-            this.MedinHaliTextBox.Size = new System.Drawing.Size(292, 19);
-            this.MedinHaliTextBox.TabIndex = 26;
-            // 
             // BabaAdiTextBox
             // 
-            this.BabaAdiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.BabaAdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BabaAdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BabaAdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BabaAdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1422,20 +1195,9 @@
             this.BabaAdiTextBox.Size = new System.Drawing.Size(308, 19);
             this.BabaAdiTextBox.TabIndex = 26;
             // 
-            // KanGrubuTextBox
-            // 
-            this.KanGrubuTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.KanGrubuTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.KanGrubuTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.KanGrubuTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.KanGrubuTextBox.Location = new System.Drawing.Point(155, 121);
-            this.KanGrubuTextBox.Name = "KanGrubuTextBox";
-            this.KanGrubuTextBox.Size = new System.Drawing.Size(292, 19);
-            this.KanGrubuTextBox.TabIndex = 27;
-            // 
             // AskerlikTextBox
             // 
-            this.AskerlikTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.AskerlikTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AskerlikTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AskerlikTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AskerlikTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1446,7 +1208,7 @@
             // 
             // AnneAdiTextBox
             // 
-            this.AnneAdiTextBox.BackColor = System.Drawing.SystemColors.Window;
+            this.AnneAdiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.AnneAdiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.AnneAdiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.AnneAdiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1454,17 +1216,6 @@
             this.AnneAdiTextBox.Name = "AnneAdiTextBox";
             this.AnneAdiTextBox.Size = new System.Drawing.Size(292, 19);
             this.AnneAdiTextBox.TabIndex = 27;
-            // 
-            // CinsiyetTextBox
-            // 
-            this.CinsiyetTextBox.BackColor = System.Drawing.SystemColors.Window;
-            this.CinsiyetTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CinsiyetTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CinsiyetTextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.CinsiyetTextBox.Location = new System.Drawing.Point(155, 18);
-            this.CinsiyetTextBox.Name = "CinsiyetTextBox";
-            this.CinsiyetTextBox.Size = new System.Drawing.Size(291, 19);
-            this.CinsiyetTextBox.TabIndex = 28;
             // 
             // TahsilTabPage
             // 
@@ -1531,7 +1282,7 @@
             // 
             this.TahsilAdi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TahsilAdi1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.TahsilAdi1TextBox.BackColor = System.Drawing.Color.White;
+            this.TahsilAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TahsilAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1588,7 +1339,7 @@
             // 
             this.TahsilAdi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TahsilAdi2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.TahsilAdi2TextBox.BackColor = System.Drawing.Color.White;
+            this.TahsilAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TahsilAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1601,7 +1352,7 @@
             // 
             this.TahsilAdi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TahsilAdi3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.TahsilAdi3TextBox.BackColor = System.Drawing.Color.White;
+            this.TahsilAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TahsilAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1614,7 +1365,7 @@
             // 
             this.TahsilAdi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TahsilAdi4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.TahsilAdi4TextBox.BackColor = System.Drawing.Color.White;
+            this.TahsilAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TahsilAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1627,7 +1378,7 @@
             // 
             this.TahsilAdi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TahsilAdi5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.TahsilAdi5TextBox.BackColor = System.Drawing.Color.White;
+            this.TahsilAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.TahsilAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.TahsilAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TahsilAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1639,7 +1390,7 @@
             // OkulAdi1TextBox
             // 
             this.OkulAdi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OkulAdi1TextBox.BackColor = System.Drawing.Color.White;
+            this.OkulAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OkulAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1651,7 +1402,7 @@
             // OkulAdi2TextBox
             // 
             this.OkulAdi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OkulAdi2TextBox.BackColor = System.Drawing.Color.White;
+            this.OkulAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OkulAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1663,7 +1414,7 @@
             // OkulAdi3TextBox
             // 
             this.OkulAdi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OkulAdi3TextBox.BackColor = System.Drawing.Color.White;
+            this.OkulAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OkulAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1675,7 +1426,7 @@
             // OkulAdi4TextBox
             // 
             this.OkulAdi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OkulAdi4TextBox.BackColor = System.Drawing.Color.White;
+            this.OkulAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OkulAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1687,7 +1438,7 @@
             // OkulAdi5TextBox
             // 
             this.OkulAdi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.OkulAdi5TextBox.BackColor = System.Drawing.Color.White;
+            this.OkulAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.OkulAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.OkulAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OkulAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1699,7 +1450,7 @@
             // BolumAdi1TextBox
             // 
             this.BolumAdi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BolumAdi1TextBox.BackColor = System.Drawing.Color.White;
+            this.BolumAdi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BolumAdi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1711,7 +1462,7 @@
             // BolumAdi2TextBox
             // 
             this.BolumAdi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BolumAdi2TextBox.BackColor = System.Drawing.Color.White;
+            this.BolumAdi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BolumAdi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1723,7 +1474,7 @@
             // BolumAdi3TextBox
             // 
             this.BolumAdi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BolumAdi3TextBox.BackColor = System.Drawing.Color.White;
+            this.BolumAdi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BolumAdi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1735,7 +1486,7 @@
             // BolumAdi4TextBox
             // 
             this.BolumAdi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BolumAdi4TextBox.BackColor = System.Drawing.Color.White;
+            this.BolumAdi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BolumAdi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1747,7 +1498,7 @@
             // BolumAdi5TextBox
             // 
             this.BolumAdi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BolumAdi5TextBox.BackColor = System.Drawing.Color.White;
+            this.BolumAdi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BolumAdi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.BolumAdi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BolumAdi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1759,7 +1510,7 @@
             // MezuniyetTarihi1TextBox
             // 
             this.MezuniyetTarihi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MezuniyetTarihi1TextBox.BackColor = System.Drawing.Color.White;
+            this.MezuniyetTarihi1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MezuniyetTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1771,7 +1522,7 @@
             // MezuniyetTarihi2TextBox
             // 
             this.MezuniyetTarihi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MezuniyetTarihi2TextBox.BackColor = System.Drawing.Color.White;
+            this.MezuniyetTarihi2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MezuniyetTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1783,7 +1534,7 @@
             // MezuniyetTarihi3TextBox
             // 
             this.MezuniyetTarihi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MezuniyetTarihi3TextBox.BackColor = System.Drawing.Color.White;
+            this.MezuniyetTarihi3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MezuniyetTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1795,7 +1546,7 @@
             // MezuniyetTarihi4TextBox
             // 
             this.MezuniyetTarihi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MezuniyetTarihi4TextBox.BackColor = System.Drawing.Color.White;
+            this.MezuniyetTarihi4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MezuniyetTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -1807,7 +1558,7 @@
             // MezuniyetTarihi5TextBox
             // 
             this.MezuniyetTarihi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MezuniyetTarihi5TextBox.BackColor = System.Drawing.Color.White;
+            this.MezuniyetTarihi5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MezuniyetTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MezuniyetTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MezuniyetTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2038,7 +1789,7 @@
             // 
             this.Sertifika1TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika1TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2051,7 +1802,7 @@
             // 
             this.Sertifika2TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika2TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2064,7 +1815,7 @@
             // 
             this.Sertifika3TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika3TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika3TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2077,7 +1828,7 @@
             // 
             this.Sertifika4TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika4TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika4TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2090,7 +1841,7 @@
             // 
             this.Sertifika5TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika5TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika5TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2103,7 +1854,7 @@
             // 
             this.Sertifika6TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika6TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika6TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2116,7 +1867,7 @@
             // 
             this.Sertifika7TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika7TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika7TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika7TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2129,7 +1880,7 @@
             // 
             this.Sertifika8TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika8TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika8TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika8TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2142,7 +1893,7 @@
             // 
             this.Sertifika9TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika9TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika9TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika9TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2155,7 +1906,7 @@
             // 
             this.Sertifika10TextBox.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.Sertifika10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Sertifika10TextBox.BackColor = System.Drawing.Color.White;
+            this.Sertifika10TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Sertifika10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Sertifika10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Sertifika10TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -2180,13 +1931,13 @@
             // 
             this.NakilTableLayoutPanel.BackColor = System.Drawing.Color.Transparent;
             this.NakilTableLayoutPanel.ColumnCount = 7;
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.972565F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.03086F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.20233F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.63237F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.91907F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.57613F));
-            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 4.037553F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.94331F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.94331F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.02786F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.15876F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.82829F));
+            this.NakilTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.06091F));
             this.NakilTableLayoutPanel.Controls.Add(this.label59, 1, 0);
             this.NakilTableLayoutPanel.Controls.Add(this.label60, 2, 0);
             this.NakilTableLayoutPanel.Controls.Add(this.label61, 3, 0);
@@ -2202,26 +1953,6 @@
             this.NakilTableLayoutPanel.Controls.Add(this.label72, 0, 9);
             this.NakilTableLayoutPanel.Controls.Add(this.label73, 0, 10);
             this.NakilTableLayoutPanel.Controls.Add(this.label64, 0, 1);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi1TextBox, 1, 1);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi2TextBox, 1, 2);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi3TextBox, 1, 3);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi4TextBox, 1, 4);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi5TextBox, 1, 5);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi6TextBox, 1, 6);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi7TextBox, 1, 7);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi8TextBox, 1, 8);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi9TextBox, 1, 9);
-            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi10TextBox, 1, 10);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi1TextBox, 2, 1);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi2TextBox, 2, 2);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi3TextBox, 2, 3);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi5TextBox, 2, 5);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi4TextBox, 2, 4);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi6TextBox, 2, 6);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi7TextBox, 2, 7);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi8TextBox, 2, 8);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi9TextBox, 2, 9);
-            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi10TextBox, 2, 10);
             this.NakilTableLayoutPanel.Controls.Add(this.label74, 6, 0);
             this.NakilTableLayoutPanel.Controls.Add(this.Kurum1TextBox, 3, 1);
             this.NakilTableLayoutPanel.Controls.Add(this.Kurum2TextBox, 3, 2);
@@ -2263,13 +1994,33 @@
             this.NakilTableLayoutPanel.Controls.Add(this.Aciklama8TextBox, 6, 8);
             this.NakilTableLayoutPanel.Controls.Add(this.Aciklama9TextBox, 6, 9);
             this.NakilTableLayoutPanel.Controls.Add(this.Aciklama10TextBox, 6, 10);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi1DTP, 1, 1);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi2DTP, 1, 2);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi3DTP, 1, 3);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi4DTP, 1, 4);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi5DTP, 1, 5);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi6DTP, 1, 6);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi7DTP, 1, 7);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi8DTP, 1, 8);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi9DTP, 1, 9);
+            this.NakilTableLayoutPanel.Controls.Add(this.BaslangicTarihi10DTP, 1, 10);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi1DTP, 2, 1);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi2DTP, 2, 2);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi3DTP, 2, 3);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi4DTP, 2, 4);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi5DTP, 2, 5);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi6DTP, 2, 6);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi7DTP, 2, 7);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi8DTP, 2, 8);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi9DTP, 2, 9);
+            this.NakilTableLayoutPanel.Controls.Add(this.AyrilisTarihi10DTP, 2, 10);
             this.NakilTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.NakilTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.NakilTableLayoutPanel.Name = "NakilTableLayoutPanel";
             this.NakilTableLayoutPanel.RowCount = 11;
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.720033F));
-            this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.1454F));
+            this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.145399F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
             this.NakilTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.126064F));
@@ -2286,9 +2037,9 @@
             this.label59.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label59.Location = new System.Drawing.Point(54, 5);
+            this.label59.Location = new System.Drawing.Point(50, 5);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(81, 32);
+            this.label59.Size = new System.Drawing.Size(91, 32);
             this.label59.TabIndex = 40;
             this.label59.Text = "BAŞLANGIÇ TARİHİ";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -2298,7 +2049,7 @@
             this.label60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label60.Location = new System.Drawing.Point(160, 5);
+            this.label60.Location = new System.Drawing.Point(178, 5);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(64, 32);
             this.label60.TabIndex = 40;
@@ -2310,7 +2061,7 @@
             this.label61.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label61.Location = new System.Drawing.Point(290, 13);
+            this.label61.Location = new System.Drawing.Point(314, 13);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(61, 16);
             this.label61.TabIndex = 40;
@@ -2321,7 +2072,7 @@
             this.label62.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label62.Location = new System.Drawing.Point(477, 13);
+            this.label62.Location = new System.Drawing.Point(495, 13);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(48, 16);
             this.label62.TabIndex = 40;
@@ -2332,7 +2083,7 @@
             this.label63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label63.Location = new System.Drawing.Point(671, 13);
+            this.label63.Location = new System.Drawing.Point(681, 13);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(60, 16);
             this.label63.TabIndex = 40;
@@ -2343,7 +2094,7 @@
             this.label65.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label65.Location = new System.Drawing.Point(14, 97);
+            this.label65.Location = new System.Drawing.Point(9, 97);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(19, 16);
             this.label65.TabIndex = 42;
@@ -2354,7 +2105,7 @@
             this.label66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label66.Location = new System.Drawing.Point(14, 183);
+            this.label66.Location = new System.Drawing.Point(9, 183);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(19, 16);
             this.label66.TabIndex = 42;
@@ -2365,7 +2116,7 @@
             this.label67.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label67.Location = new System.Drawing.Point(14, 140);
+            this.label67.Location = new System.Drawing.Point(9, 140);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(19, 16);
             this.label67.TabIndex = 42;
@@ -2376,7 +2127,7 @@
             this.label68.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label68.Location = new System.Drawing.Point(14, 226);
+            this.label68.Location = new System.Drawing.Point(9, 226);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(19, 16);
             this.label68.TabIndex = 42;
@@ -2387,7 +2138,7 @@
             this.label69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label69.Location = new System.Drawing.Point(14, 269);
+            this.label69.Location = new System.Drawing.Point(9, 269);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(19, 16);
             this.label69.TabIndex = 42;
@@ -2398,7 +2149,7 @@
             this.label70.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label70.Location = new System.Drawing.Point(14, 312);
+            this.label70.Location = new System.Drawing.Point(9, 312);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(19, 16);
             this.label70.TabIndex = 42;
@@ -2409,7 +2160,7 @@
             this.label71.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label71.Location = new System.Drawing.Point(14, 355);
+            this.label71.Location = new System.Drawing.Point(9, 355);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(19, 16);
             this.label71.TabIndex = 42;
@@ -2420,7 +2171,7 @@
             this.label72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label72.Location = new System.Drawing.Point(14, 398);
+            this.label72.Location = new System.Drawing.Point(9, 398);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(19, 16);
             this.label72.TabIndex = 42;
@@ -2431,7 +2182,7 @@
             this.label73.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label73.Location = new System.Drawing.Point(10, 443);
+            this.label73.Location = new System.Drawing.Point(5, 443);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(27, 16);
             this.label73.TabIndex = 42;
@@ -2442,278 +2193,18 @@
             this.label64.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label64.Location = new System.Drawing.Point(14, 55);
+            this.label64.Location = new System.Drawing.Point(9, 55);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(19, 16);
             this.label64.TabIndex = 42;
             this.label64.Text = "1.";
-            // 
-            // BaslangicTarihi1TextBox
-            // 
-            this.BaslangicTarihi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi1TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi1TextBox.Location = new System.Drawing.Point(56, 54);
-            this.BaslangicTarihi1TextBox.Name = "BaslangicTarihi1TextBox";
-            this.BaslangicTarihi1TextBox.Size = new System.Drawing.Size(78, 19);
-            this.BaslangicTarihi1TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi2TextBox
-            // 
-            this.BaslangicTarihi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi2TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi2TextBox.Location = new System.Drawing.Point(53, 96);
-            this.BaslangicTarihi2TextBox.Name = "BaslangicTarihi2TextBox";
-            this.BaslangicTarihi2TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi2TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi3TextBox
-            // 
-            this.BaslangicTarihi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi3TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi3TextBox.Location = new System.Drawing.Point(54, 139);
-            this.BaslangicTarihi3TextBox.Name = "BaslangicTarihi3TextBox";
-            this.BaslangicTarihi3TextBox.Size = new System.Drawing.Size(81, 19);
-            this.BaslangicTarihi3TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi4TextBox
-            // 
-            this.BaslangicTarihi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi4TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi4TextBox.Location = new System.Drawing.Point(53, 182);
-            this.BaslangicTarihi4TextBox.Name = "BaslangicTarihi4TextBox";
-            this.BaslangicTarihi4TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi4TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi5TextBox
-            // 
-            this.BaslangicTarihi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi5TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi5TextBox.Location = new System.Drawing.Point(53, 225);
-            this.BaslangicTarihi5TextBox.Name = "BaslangicTarihi5TextBox";
-            this.BaslangicTarihi5TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi5TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi6TextBox
-            // 
-            this.BaslangicTarihi6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi6TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi6TextBox.Location = new System.Drawing.Point(53, 268);
-            this.BaslangicTarihi6TextBox.Name = "BaslangicTarihi6TextBox";
-            this.BaslangicTarihi6TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi6TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi7TextBox
-            // 
-            this.BaslangicTarihi7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi7TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi7TextBox.Location = new System.Drawing.Point(53, 311);
-            this.BaslangicTarihi7TextBox.Name = "BaslangicTarihi7TextBox";
-            this.BaslangicTarihi7TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi7TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi8TextBox
-            // 
-            this.BaslangicTarihi8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi8TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi8TextBox.Location = new System.Drawing.Point(53, 354);
-            this.BaslangicTarihi8TextBox.Name = "BaslangicTarihi8TextBox";
-            this.BaslangicTarihi8TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi8TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi9TextBox
-            // 
-            this.BaslangicTarihi9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi9TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi9TextBox.Location = new System.Drawing.Point(53, 397);
-            this.BaslangicTarihi9TextBox.Name = "BaslangicTarihi9TextBox";
-            this.BaslangicTarihi9TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi9TextBox.TabIndex = 43;
-            // 
-            // BaslangicTarihi10TextBox
-            // 
-            this.BaslangicTarihi10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.BaslangicTarihi10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.BaslangicTarihi10TextBox.BackColor = System.Drawing.Color.White;
-            this.BaslangicTarihi10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.BaslangicTarihi10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BaslangicTarihi10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.BaslangicTarihi10TextBox.Location = new System.Drawing.Point(53, 441);
-            this.BaslangicTarihi10TextBox.Name = "BaslangicTarihi10TextBox";
-            this.BaslangicTarihi10TextBox.Size = new System.Drawing.Size(84, 19);
-            this.BaslangicTarihi10TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi1TextBox
-            // 
-            this.AyrilisTarihi1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi1TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi1TextBox.Location = new System.Drawing.Point(149, 54);
-            this.AyrilisTarihi1TextBox.Name = "AyrilisTarihi1TextBox";
-            this.AyrilisTarihi1TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi1TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi2TextBox
-            // 
-            this.AyrilisTarihi2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi2TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi2TextBox.Location = new System.Drawing.Point(149, 96);
-            this.AyrilisTarihi2TextBox.Name = "AyrilisTarihi2TextBox";
-            this.AyrilisTarihi2TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi2TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi3TextBox
-            // 
-            this.AyrilisTarihi3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi3TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi3TextBox.Location = new System.Drawing.Point(149, 139);
-            this.AyrilisTarihi3TextBox.Name = "AyrilisTarihi3TextBox";
-            this.AyrilisTarihi3TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi3TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi5TextBox
-            // 
-            this.AyrilisTarihi5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi5TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi5TextBox.Location = new System.Drawing.Point(149, 225);
-            this.AyrilisTarihi5TextBox.Name = "AyrilisTarihi5TextBox";
-            this.AyrilisTarihi5TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi5TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi4TextBox
-            // 
-            this.AyrilisTarihi4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi4TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi4TextBox.Location = new System.Drawing.Point(149, 182);
-            this.AyrilisTarihi4TextBox.Name = "AyrilisTarihi4TextBox";
-            this.AyrilisTarihi4TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi4TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi6TextBox
-            // 
-            this.AyrilisTarihi6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi6TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi6TextBox.Location = new System.Drawing.Point(149, 268);
-            this.AyrilisTarihi6TextBox.Name = "AyrilisTarihi6TextBox";
-            this.AyrilisTarihi6TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi6TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi7TextBox
-            // 
-            this.AyrilisTarihi7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi7TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi7TextBox.Location = new System.Drawing.Point(149, 311);
-            this.AyrilisTarihi7TextBox.Name = "AyrilisTarihi7TextBox";
-            this.AyrilisTarihi7TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi7TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi8TextBox
-            // 
-            this.AyrilisTarihi8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi8TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi8TextBox.Location = new System.Drawing.Point(149, 354);
-            this.AyrilisTarihi8TextBox.Name = "AyrilisTarihi8TextBox";
-            this.AyrilisTarihi8TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi8TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi9TextBox
-            // 
-            this.AyrilisTarihi9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi9TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi9TextBox.Location = new System.Drawing.Point(149, 397);
-            this.AyrilisTarihi9TextBox.Name = "AyrilisTarihi9TextBox";
-            this.AyrilisTarihi9TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi9TextBox.TabIndex = 43;
-            // 
-            // AyrilisTarihi10TextBox
-            // 
-            this.AyrilisTarihi10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AyrilisTarihi10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.AyrilisTarihi10TextBox.BackColor = System.Drawing.Color.White;
-            this.AyrilisTarihi10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AyrilisTarihi10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.AyrilisTarihi10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.AyrilisTarihi10TextBox.Location = new System.Drawing.Point(149, 441);
-            this.AyrilisTarihi10TextBox.Name = "AyrilisTarihi10TextBox";
-            this.AyrilisTarihi10TextBox.Size = new System.Drawing.Size(86, 19);
-            this.AyrilisTarihi10TextBox.TabIndex = 43;
             // 
             // label74
             // 
             this.label74.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label74.Location = new System.Drawing.Point(841, 13);
+            this.label74.Location = new System.Drawing.Point(844, 13);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(80, 16);
             this.label74.TabIndex = 40;
@@ -2723,521 +2214,761 @@
             // 
             this.Kurum1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum1TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum1TextBox.Location = new System.Drawing.Point(244, 54);
+            this.Kurum1TextBox.Location = new System.Drawing.Point(272, 54);
             this.Kurum1TextBox.Name = "Kurum1TextBox";
-            this.Kurum1TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum1TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum1TextBox.TabIndex = 43;
             // 
             // Kurum2TextBox
             // 
             this.Kurum2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum2TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum2TextBox.Location = new System.Drawing.Point(244, 96);
+            this.Kurum2TextBox.Location = new System.Drawing.Point(272, 96);
             this.Kurum2TextBox.Name = "Kurum2TextBox";
-            this.Kurum2TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum2TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum2TextBox.TabIndex = 43;
             // 
             // Kurum3TextBox
             // 
             this.Kurum3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum3TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum3TextBox.Location = new System.Drawing.Point(244, 139);
+            this.Kurum3TextBox.Location = new System.Drawing.Point(272, 139);
             this.Kurum3TextBox.Name = "Kurum3TextBox";
-            this.Kurum3TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum3TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum3TextBox.TabIndex = 43;
             // 
             // Kurum4TextBox
             // 
             this.Kurum4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum4TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum4TextBox.Location = new System.Drawing.Point(244, 182);
+            this.Kurum4TextBox.Location = new System.Drawing.Point(272, 182);
             this.Kurum4TextBox.Name = "Kurum4TextBox";
-            this.Kurum4TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum4TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum4TextBox.TabIndex = 43;
             // 
             // Kurum5TextBox
             // 
             this.Kurum5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum5TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum5TextBox.Location = new System.Drawing.Point(244, 225);
+            this.Kurum5TextBox.Location = new System.Drawing.Point(272, 225);
             this.Kurum5TextBox.Name = "Kurum5TextBox";
-            this.Kurum5TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum5TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum5TextBox.TabIndex = 43;
             // 
             // Kurum6TextBox
             // 
             this.Kurum6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum6TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum6TextBox.Location = new System.Drawing.Point(244, 268);
+            this.Kurum6TextBox.Location = new System.Drawing.Point(272, 268);
             this.Kurum6TextBox.Name = "Kurum6TextBox";
-            this.Kurum6TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum6TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum6TextBox.TabIndex = 43;
             // 
             // Kurum7TextBox
             // 
             this.Kurum7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum7TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum7TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum7TextBox.Location = new System.Drawing.Point(244, 311);
+            this.Kurum7TextBox.Location = new System.Drawing.Point(272, 311);
             this.Kurum7TextBox.Name = "Kurum7TextBox";
-            this.Kurum7TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum7TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum7TextBox.TabIndex = 43;
             // 
             // Kurum8TextBox
             // 
             this.Kurum8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum8TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum8TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum8TextBox.Location = new System.Drawing.Point(244, 354);
+            this.Kurum8TextBox.Location = new System.Drawing.Point(272, 354);
             this.Kurum8TextBox.Name = "Kurum8TextBox";
-            this.Kurum8TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum8TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum8TextBox.TabIndex = 43;
             // 
             // Kurum9TextBox
             // 
             this.Kurum9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum9TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum9TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum9TextBox.Location = new System.Drawing.Point(244, 397);
+            this.Kurum9TextBox.Location = new System.Drawing.Point(272, 397);
             this.Kurum9TextBox.Name = "Kurum9TextBox";
-            this.Kurum9TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum9TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum9TextBox.TabIndex = 43;
             // 
             // Kurum10TextBox
             // 
             this.Kurum10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Kurum10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Kurum10TextBox.BackColor = System.Drawing.Color.White;
+            this.Kurum10TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Kurum10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Kurum10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Kurum10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Kurum10TextBox.Location = new System.Drawing.Point(244, 441);
+            this.Kurum10TextBox.Location = new System.Drawing.Point(272, 441);
             this.Kurum10TextBox.Name = "Kurum10TextBox";
-            this.Kurum10TextBox.Size = new System.Drawing.Size(154, 19);
+            this.Kurum10TextBox.Size = new System.Drawing.Size(146, 19);
             this.Kurum10TextBox.TabIndex = 43;
             // 
             // Birim1TextBox
             // 
             this.Birim1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim1TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim1TextBox.Location = new System.Drawing.Point(405, 54);
+            this.Birim1TextBox.Location = new System.Drawing.Point(425, 54);
             this.Birim1TextBox.Name = "Birim1TextBox";
-            this.Birim1TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim1TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim1TextBox.TabIndex = 43;
             // 
             // Birim2TextBox
             // 
             this.Birim2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim2TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim2TextBox.Location = new System.Drawing.Point(405, 96);
+            this.Birim2TextBox.Location = new System.Drawing.Point(425, 96);
             this.Birim2TextBox.Name = "Birim2TextBox";
-            this.Birim2TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim2TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim2TextBox.TabIndex = 43;
             // 
             // Birim3TextBox
             // 
             this.Birim3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim3TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim3TextBox.Location = new System.Drawing.Point(405, 139);
+            this.Birim3TextBox.Location = new System.Drawing.Point(425, 139);
             this.Birim3TextBox.Name = "Birim3TextBox";
-            this.Birim3TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim3TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim3TextBox.TabIndex = 43;
             // 
             // Birim4TextBox
             // 
             this.Birim4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim4TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim4TextBox.Location = new System.Drawing.Point(405, 182);
+            this.Birim4TextBox.Location = new System.Drawing.Point(425, 182);
             this.Birim4TextBox.Name = "Birim4TextBox";
-            this.Birim4TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim4TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim4TextBox.TabIndex = 43;
             // 
             // Birim5TextBox
             // 
             this.Birim5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim5TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim5TextBox.Location = new System.Drawing.Point(405, 225);
+            this.Birim5TextBox.Location = new System.Drawing.Point(425, 225);
             this.Birim5TextBox.Name = "Birim5TextBox";
-            this.Birim5TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim5TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim5TextBox.TabIndex = 43;
             // 
             // Birim6TextBox
             // 
             this.Birim6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim6TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim6TextBox.Location = new System.Drawing.Point(405, 268);
+            this.Birim6TextBox.Location = new System.Drawing.Point(425, 268);
             this.Birim6TextBox.Name = "Birim6TextBox";
-            this.Birim6TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim6TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim6TextBox.TabIndex = 43;
             // 
             // Birim7TextBox
             // 
             this.Birim7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim7TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim7TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim7TextBox.Location = new System.Drawing.Point(405, 311);
+            this.Birim7TextBox.Location = new System.Drawing.Point(425, 311);
             this.Birim7TextBox.Name = "Birim7TextBox";
-            this.Birim7TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim7TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim7TextBox.TabIndex = 43;
             // 
             // Birim8TextBox
             // 
             this.Birim8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim8TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim8TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim8TextBox.Location = new System.Drawing.Point(405, 354);
+            this.Birim8TextBox.Location = new System.Drawing.Point(425, 354);
             this.Birim8TextBox.Name = "Birim8TextBox";
-            this.Birim8TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim8TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim8TextBox.TabIndex = 43;
             // 
             // Birim9TextBox
             // 
             this.Birim9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim9TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim9TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim9TextBox.Location = new System.Drawing.Point(405, 397);
+            this.Birim9TextBox.Location = new System.Drawing.Point(425, 397);
             this.Birim9TextBox.Name = "Birim9TextBox";
-            this.Birim9TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim9TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim9TextBox.TabIndex = 43;
             // 
             // Birim10TextBox
             // 
             this.Birim10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Birim10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Birim10TextBox.BackColor = System.Drawing.Color.White;
+            this.Birim10TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Birim10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Birim10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Birim10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Birim10TextBox.Location = new System.Drawing.Point(405, 441);
+            this.Birim10TextBox.Location = new System.Drawing.Point(425, 441);
             this.Birim10TextBox.Name = "Birim10TextBox";
-            this.Birim10TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Birim10TextBox.Size = new System.Drawing.Size(188, 19);
             this.Birim10TextBox.TabIndex = 43;
             // 
             // Gorev1TextBox
             // 
             this.Gorev1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev1TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev1TextBox.Location = new System.Drawing.Point(605, 54);
+            this.Gorev1TextBox.Location = new System.Drawing.Point(619, 54);
             this.Gorev1TextBox.Name = "Gorev1TextBox";
-            this.Gorev1TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev1TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev1TextBox.TabIndex = 43;
             // 
             // Gorev2TextBox
             // 
             this.Gorev2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev2TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev2TextBox.Location = new System.Drawing.Point(605, 96);
+            this.Gorev2TextBox.Location = new System.Drawing.Point(619, 96);
             this.Gorev2TextBox.Name = "Gorev2TextBox";
-            this.Gorev2TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev2TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev2TextBox.TabIndex = 43;
             // 
             // Gorev3TextBox
             // 
             this.Gorev3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev3TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev3TextBox.Location = new System.Drawing.Point(605, 139);
+            this.Gorev3TextBox.Location = new System.Drawing.Point(619, 139);
             this.Gorev3TextBox.Name = "Gorev3TextBox";
-            this.Gorev3TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev3TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev3TextBox.TabIndex = 43;
             // 
             // Gorev4TextBox
             // 
             this.Gorev4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev4TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev4TextBox.Location = new System.Drawing.Point(605, 182);
+            this.Gorev4TextBox.Location = new System.Drawing.Point(619, 182);
             this.Gorev4TextBox.Name = "Gorev4TextBox";
-            this.Gorev4TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev4TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev4TextBox.TabIndex = 43;
             // 
             // Gorev5TextBox
             // 
             this.Gorev5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev5TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev5TextBox.Location = new System.Drawing.Point(605, 225);
+            this.Gorev5TextBox.Location = new System.Drawing.Point(619, 225);
             this.Gorev5TextBox.Name = "Gorev5TextBox";
-            this.Gorev5TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev5TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev5TextBox.TabIndex = 43;
             // 
             // Gorev6TextBox
             // 
             this.Gorev6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev6TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev6TextBox.Location = new System.Drawing.Point(605, 268);
+            this.Gorev6TextBox.Location = new System.Drawing.Point(619, 268);
             this.Gorev6TextBox.Name = "Gorev6TextBox";
-            this.Gorev6TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev6TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev6TextBox.TabIndex = 43;
             // 
             // Gorev7TextBox
             // 
             this.Gorev7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev7TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev7TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev7TextBox.Location = new System.Drawing.Point(605, 311);
+            this.Gorev7TextBox.Location = new System.Drawing.Point(619, 311);
             this.Gorev7TextBox.Name = "Gorev7TextBox";
-            this.Gorev7TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev7TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev7TextBox.TabIndex = 43;
             // 
             // Gorev8TextBox
             // 
             this.Gorev8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev8TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev8TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev8TextBox.Location = new System.Drawing.Point(605, 354);
+            this.Gorev8TextBox.Location = new System.Drawing.Point(619, 354);
             this.Gorev8TextBox.Name = "Gorev8TextBox";
-            this.Gorev8TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev8TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev8TextBox.TabIndex = 43;
             // 
             // Gorev9TextBox
             // 
             this.Gorev9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev9TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev9TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev9TextBox.Location = new System.Drawing.Point(605, 397);
+            this.Gorev9TextBox.Location = new System.Drawing.Point(619, 397);
             this.Gorev9TextBox.Name = "Gorev9TextBox";
-            this.Gorev9TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev9TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev9TextBox.TabIndex = 43;
             // 
             // Gorev10TextBox
             // 
             this.Gorev10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Gorev10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Gorev10TextBox.BackColor = System.Drawing.Color.White;
+            this.Gorev10TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Gorev10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Gorev10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Gorev10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Gorev10TextBox.Location = new System.Drawing.Point(605, 441);
+            this.Gorev10TextBox.Location = new System.Drawing.Point(619, 441);
             this.Gorev10TextBox.Name = "Gorev10TextBox";
-            this.Gorev10TextBox.Size = new System.Drawing.Size(192, 19);
+            this.Gorev10TextBox.Size = new System.Drawing.Size(184, 19);
             this.Gorev10TextBox.TabIndex = 43;
             // 
             // Aciklama1TextBox
             // 
             this.Aciklama1TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama1TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama1TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama1TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama1TextBox.Location = new System.Drawing.Point(803, 54);
+            this.Aciklama1TextBox.Location = new System.Drawing.Point(809, 54);
             this.Aciklama1TextBox.Name = "Aciklama1TextBox";
-            this.Aciklama1TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama1TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama1TextBox.TabIndex = 43;
             // 
             // Aciklama2TextBox
             // 
             this.Aciklama2TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama2TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama2TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama2TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama2TextBox.Location = new System.Drawing.Point(803, 96);
+            this.Aciklama2TextBox.Location = new System.Drawing.Point(809, 96);
             this.Aciklama2TextBox.Name = "Aciklama2TextBox";
-            this.Aciklama2TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama2TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama2TextBox.TabIndex = 43;
             // 
             // Aciklama3TextBox
             // 
             this.Aciklama3TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama3TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama3TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama3TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama3TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama3TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama3TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama3TextBox.Location = new System.Drawing.Point(803, 139);
+            this.Aciklama3TextBox.Location = new System.Drawing.Point(809, 139);
             this.Aciklama3TextBox.Name = "Aciklama3TextBox";
-            this.Aciklama3TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama3TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama3TextBox.TabIndex = 43;
             // 
             // Aciklama4TextBox
             // 
             this.Aciklama4TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama4TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama4TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama4TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama4TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama4TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama4TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama4TextBox.Location = new System.Drawing.Point(803, 182);
+            this.Aciklama4TextBox.Location = new System.Drawing.Point(809, 182);
             this.Aciklama4TextBox.Name = "Aciklama4TextBox";
-            this.Aciklama4TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama4TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama4TextBox.TabIndex = 43;
             // 
             // Aciklama5TextBox
             // 
             this.Aciklama5TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama5TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama5TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama5TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama5TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama5TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama5TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama5TextBox.Location = new System.Drawing.Point(803, 225);
+            this.Aciklama5TextBox.Location = new System.Drawing.Point(809, 225);
             this.Aciklama5TextBox.Name = "Aciklama5TextBox";
-            this.Aciklama5TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama5TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama5TextBox.TabIndex = 43;
             // 
             // Aciklama6TextBox
             // 
             this.Aciklama6TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama6TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama6TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama6TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama6TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama6TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama6TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama6TextBox.Location = new System.Drawing.Point(803, 268);
+            this.Aciklama6TextBox.Location = new System.Drawing.Point(809, 268);
             this.Aciklama6TextBox.Name = "Aciklama6TextBox";
-            this.Aciklama6TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama6TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama6TextBox.TabIndex = 43;
             // 
             // Aciklama7TextBox
             // 
             this.Aciklama7TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama7TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama7TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama7TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama7TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama7TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama7TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama7TextBox.Location = new System.Drawing.Point(803, 311);
+            this.Aciklama7TextBox.Location = new System.Drawing.Point(809, 311);
             this.Aciklama7TextBox.Name = "Aciklama7TextBox";
-            this.Aciklama7TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama7TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama7TextBox.TabIndex = 43;
             // 
             // Aciklama8TextBox
             // 
             this.Aciklama8TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama8TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama8TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama8TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama8TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama8TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama8TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama8TextBox.Location = new System.Drawing.Point(803, 354);
+            this.Aciklama8TextBox.Location = new System.Drawing.Point(809, 354);
             this.Aciklama8TextBox.Name = "Aciklama8TextBox";
-            this.Aciklama8TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama8TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama8TextBox.TabIndex = 43;
             // 
             // Aciklama9TextBox
             // 
             this.Aciklama9TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama9TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama9TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama9TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama9TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama9TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama9TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama9TextBox.Location = new System.Drawing.Point(803, 397);
+            this.Aciklama9TextBox.Location = new System.Drawing.Point(809, 397);
             this.Aciklama9TextBox.Name = "Aciklama9TextBox";
-            this.Aciklama9TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama9TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama9TextBox.TabIndex = 43;
             // 
             // Aciklama10TextBox
             // 
             this.Aciklama10TextBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Aciklama10TextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllUrl;
-            this.Aciklama10TextBox.BackColor = System.Drawing.Color.White;
+            this.Aciklama10TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Aciklama10TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Aciklama10TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Aciklama10TextBox.ForeColor = System.Drawing.Color.DarkRed;
-            this.Aciklama10TextBox.Location = new System.Drawing.Point(803, 441);
+            this.Aciklama10TextBox.Location = new System.Drawing.Point(809, 441);
             this.Aciklama10TextBox.Name = "Aciklama10TextBox";
-            this.Aciklama10TextBox.Size = new System.Drawing.Size(157, 19);
+            this.Aciklama10TextBox.Size = new System.Drawing.Size(151, 19);
             this.Aciklama10TextBox.TabIndex = 43;
+            // 
+            // BaslangicTarihi1DTP
+            // 
+            this.BaslangicTarihi1DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi1DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi1DTP.CustomFormat = " ";
+            this.BaslangicTarihi1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi1DTP.Location = new System.Drawing.Point(42, 52);
+            this.BaslangicTarihi1DTP.Name = "BaslangicTarihi1DTP";
+            this.BaslangicTarihi1DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi1DTP.TabIndex = 44;
+            this.BaslangicTarihi1DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi2DTP
+            // 
+            this.BaslangicTarihi2DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi2DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi2DTP.CustomFormat = " ";
+            this.BaslangicTarihi2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi2DTP.Location = new System.Drawing.Point(42, 94);
+            this.BaslangicTarihi2DTP.Name = "BaslangicTarihi2DTP";
+            this.BaslangicTarihi2DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi2DTP.TabIndex = 44;
+            this.BaslangicTarihi2DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi3DTP
+            // 
+            this.BaslangicTarihi3DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi3DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi3DTP.CustomFormat = " ";
+            this.BaslangicTarihi3DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi3DTP.Location = new System.Drawing.Point(42, 137);
+            this.BaslangicTarihi3DTP.Name = "BaslangicTarihi3DTP";
+            this.BaslangicTarihi3DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi3DTP.TabIndex = 44;
+            this.BaslangicTarihi3DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi4DTP
+            // 
+            this.BaslangicTarihi4DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi4DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi4DTP.CustomFormat = " ";
+            this.BaslangicTarihi4DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi4DTP.Location = new System.Drawing.Point(42, 180);
+            this.BaslangicTarihi4DTP.Name = "BaslangicTarihi4DTP";
+            this.BaslangicTarihi4DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi4DTP.TabIndex = 44;
+            this.BaslangicTarihi4DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi5DTP
+            // 
+            this.BaslangicTarihi5DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi5DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi5DTP.CustomFormat = " ";
+            this.BaslangicTarihi5DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi5DTP.Location = new System.Drawing.Point(42, 223);
+            this.BaslangicTarihi5DTP.Name = "BaslangicTarihi5DTP";
+            this.BaslangicTarihi5DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi5DTP.TabIndex = 44;
+            this.BaslangicTarihi5DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi6DTP
+            // 
+            this.BaslangicTarihi6DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi6DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi6DTP.CustomFormat = " ";
+            this.BaslangicTarihi6DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi6DTP.Location = new System.Drawing.Point(42, 266);
+            this.BaslangicTarihi6DTP.Name = "BaslangicTarihi6DTP";
+            this.BaslangicTarihi6DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi6DTP.TabIndex = 44;
+            this.BaslangicTarihi6DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi7DTP
+            // 
+            this.BaslangicTarihi7DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi7DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi7DTP.CustomFormat = " ";
+            this.BaslangicTarihi7DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi7DTP.Location = new System.Drawing.Point(42, 309);
+            this.BaslangicTarihi7DTP.Name = "BaslangicTarihi7DTP";
+            this.BaslangicTarihi7DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi7DTP.TabIndex = 44;
+            this.BaslangicTarihi7DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi8DTP
+            // 
+            this.BaslangicTarihi8DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi8DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi8DTP.CustomFormat = " ";
+            this.BaslangicTarihi8DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi8DTP.Location = new System.Drawing.Point(42, 352);
+            this.BaslangicTarihi8DTP.Name = "BaslangicTarihi8DTP";
+            this.BaslangicTarihi8DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi8DTP.TabIndex = 44;
+            this.BaslangicTarihi8DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi9DTP
+            // 
+            this.BaslangicTarihi9DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi9DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi9DTP.CustomFormat = " ";
+            this.BaslangicTarihi9DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi9DTP.Location = new System.Drawing.Point(42, 395);
+            this.BaslangicTarihi9DTP.Name = "BaslangicTarihi9DTP";
+            this.BaslangicTarihi9DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi9DTP.TabIndex = 44;
+            this.BaslangicTarihi9DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // BaslangicTarihi10DTP
+            // 
+            this.BaslangicTarihi10DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BaslangicTarihi10DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.BaslangicTarihi10DTP.CustomFormat = " ";
+            this.BaslangicTarihi10DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BaslangicTarihi10DTP.Location = new System.Drawing.Point(42, 440);
+            this.BaslangicTarihi10DTP.Name = "BaslangicTarihi10DTP";
+            this.BaslangicTarihi10DTP.Size = new System.Drawing.Size(107, 22);
+            this.BaslangicTarihi10DTP.TabIndex = 44;
+            this.BaslangicTarihi10DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi1DTP
+            // 
+            this.AyrilisTarihi1DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi1DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi1DTP.CustomFormat = " ";
+            this.AyrilisTarihi1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi1DTP.Location = new System.Drawing.Point(157, 52);
+            this.AyrilisTarihi1DTP.Name = "AyrilisTarihi1DTP";
+            this.AyrilisTarihi1DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi1DTP.TabIndex = 44;
+            this.AyrilisTarihi1DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi2DTP
+            // 
+            this.AyrilisTarihi2DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi2DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi2DTP.CustomFormat = " ";
+            this.AyrilisTarihi2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi2DTP.Location = new System.Drawing.Point(157, 94);
+            this.AyrilisTarihi2DTP.Name = "AyrilisTarihi2DTP";
+            this.AyrilisTarihi2DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi2DTP.TabIndex = 44;
+            this.AyrilisTarihi2DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi3DTP
+            // 
+            this.AyrilisTarihi3DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi3DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi3DTP.CustomFormat = " ";
+            this.AyrilisTarihi3DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi3DTP.Location = new System.Drawing.Point(157, 137);
+            this.AyrilisTarihi3DTP.Name = "AyrilisTarihi3DTP";
+            this.AyrilisTarihi3DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi3DTP.TabIndex = 44;
+            this.AyrilisTarihi3DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi4DTP
+            // 
+            this.AyrilisTarihi4DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi4DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi4DTP.CustomFormat = " ";
+            this.AyrilisTarihi4DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi4DTP.Location = new System.Drawing.Point(157, 180);
+            this.AyrilisTarihi4DTP.Name = "AyrilisTarihi4DTP";
+            this.AyrilisTarihi4DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi4DTP.TabIndex = 44;
+            this.AyrilisTarihi4DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi5DTP
+            // 
+            this.AyrilisTarihi5DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi5DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi5DTP.CustomFormat = " ";
+            this.AyrilisTarihi5DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi5DTP.Location = new System.Drawing.Point(157, 223);
+            this.AyrilisTarihi5DTP.Name = "AyrilisTarihi5DTP";
+            this.AyrilisTarihi5DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi5DTP.TabIndex = 44;
+            this.AyrilisTarihi5DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi6DTP
+            // 
+            this.AyrilisTarihi6DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi6DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi6DTP.CustomFormat = " ";
+            this.AyrilisTarihi6DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi6DTP.Location = new System.Drawing.Point(157, 266);
+            this.AyrilisTarihi6DTP.Name = "AyrilisTarihi6DTP";
+            this.AyrilisTarihi6DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi6DTP.TabIndex = 44;
+            this.AyrilisTarihi6DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi7DTP
+            // 
+            this.AyrilisTarihi7DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi7DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi7DTP.CustomFormat = " ";
+            this.AyrilisTarihi7DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi7DTP.Location = new System.Drawing.Point(157, 309);
+            this.AyrilisTarihi7DTP.Name = "AyrilisTarihi7DTP";
+            this.AyrilisTarihi7DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi7DTP.TabIndex = 44;
+            this.AyrilisTarihi7DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi8DTP
+            // 
+            this.AyrilisTarihi8DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi8DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi8DTP.CustomFormat = " ";
+            this.AyrilisTarihi8DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi8DTP.Location = new System.Drawing.Point(157, 352);
+            this.AyrilisTarihi8DTP.Name = "AyrilisTarihi8DTP";
+            this.AyrilisTarihi8DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi8DTP.TabIndex = 44;
+            this.AyrilisTarihi8DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi9DTP
+            // 
+            this.AyrilisTarihi9DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi9DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi9DTP.CustomFormat = " ";
+            this.AyrilisTarihi9DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi9DTP.Location = new System.Drawing.Point(157, 395);
+            this.AyrilisTarihi9DTP.Name = "AyrilisTarihi9DTP";
+            this.AyrilisTarihi9DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi9DTP.TabIndex = 44;
+            this.AyrilisTarihi9DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // AyrilisTarihi10DTP
+            // 
+            this.AyrilisTarihi10DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AyrilisTarihi10DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.AyrilisTarihi10DTP.CustomFormat = " ";
+            this.AyrilisTarihi10DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.AyrilisTarihi10DTP.Location = new System.Drawing.Point(157, 440);
+            this.AyrilisTarihi10DTP.Name = "AyrilisTarihi10DTP";
+            this.AyrilisTarihi10DTP.Size = new System.Drawing.Size(107, 22);
+            this.AyrilisTarihi10DTP.TabIndex = 44;
+            this.AyrilisTarihi10DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
             // 
             // PerformansTabPage
             // 
@@ -3278,7 +3009,7 @@
             // 
             // EMailAdresiTextBox
             // 
-            this.EMailAdresiTextBox.BackColor = System.Drawing.Color.White;
+            this.EMailAdresiTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.EMailAdresiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.EMailAdresiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.EMailAdresiTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3299,7 +3030,7 @@
             // 
             // CepTelNo2TextBox
             // 
-            this.CepTelNo2TextBox.BackColor = System.Drawing.Color.White;
+            this.CepTelNo2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CepTelNo2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CepTelNo2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CepTelNo2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3310,7 +3041,7 @@
             // 
             // CepTelNo1TextBox
             // 
-            this.CepTelNo1TextBox.BackColor = System.Drawing.Color.White;
+            this.CepTelNo1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.CepTelNo1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.CepTelNo1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CepTelNo1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3422,7 +3153,7 @@
             // 
             // KapiNo2TextBox
             // 
-            this.KapiNo2TextBox.BackColor = System.Drawing.Color.White;
+            this.KapiNo2TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.KapiNo2TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.KapiNo2TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.KapiNo2TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3433,7 +3164,7 @@
             // 
             // IlTextBox
             // 
-            this.IlTextBox.BackColor = System.Drawing.Color.White;
+            this.IlTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.IlTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IlTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IlTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3444,7 +3175,7 @@
             // 
             // IlceTextBox
             // 
-            this.IlceTextBox.BackColor = System.Drawing.Color.White;
+            this.IlceTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.IlceTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IlceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.IlceTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3455,7 +3186,7 @@
             // 
             // KapiNo1TextBox
             // 
-            this.KapiNo1TextBox.BackColor = System.Drawing.Color.White;
+            this.KapiNo1TextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.KapiNo1TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.KapiNo1TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.KapiNo1TextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3466,7 +3197,7 @@
             // 
             // SokakTextBox
             // 
-            this.SokakTextBox.BackColor = System.Drawing.Color.White;
+            this.SokakTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SokakTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.SokakTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.SokakTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3477,7 +3208,7 @@
             // 
             // MahalleTextBox
             // 
-            this.MahalleTextBox.BackColor = System.Drawing.Color.White;
+            this.MahalleTextBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.MahalleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MahalleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MahalleTextBox.ForeColor = System.Drawing.Color.DarkRed;
@@ -3535,6 +3266,462 @@
             this.KaydetButton.UseVisualStyleBackColor = false;
             this.KaydetButton.Click += new System.EventHandler(this.KaydetButton_Click);
             // 
+            // UnvanComboBox
+            // 
+            this.UnvanComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.UnvanComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.UnvanComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.UnvanComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.UnvanComboBox.FormattingEnabled = true;
+            this.UnvanComboBox.Items.AddRange(new object[] {
+            "ATÖLYE / ÜNİTE SORUMLU MÜHENDİS + LABORATUVAR SORUMLU MÜHENDİS",
+            "BAKIM ONARIM USTABAŞLARI/FORMEN",
+            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ / TEKNİK RAPORLAMA SORUML" +
+                "USU/ BAKIM ONARIM USTALARI/ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
+            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
+            "GENEL HİZMETLİ PERSONELİ / DÜZ İŞÇİLER",
+            "İDARİ İŞLER ve İNSAN KAYNAKLARI",
+            "İSG SORUMLUSU",
+            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ/ İDARİ RAPORLAMA SORUMLUSU",
+            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
+            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
+            "LABORATUVAR ANALİZ GÖREVLİSİ",
+            "NUMUNE ALMA ANALİZ KALİBRASYON",
+            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
+            "ŞOFÖR / ARAÇ OPERATÖRLERİ",
+            "TERFİ MERKEZİ OPERATÖRLERİ",
+            "TESİS ŞEFİ - KOORDİNATÖR"});
+            this.UnvanComboBox.Location = new System.Drawing.Point(152, 327);
+            this.UnvanComboBox.Name = "UnvanComboBox";
+            this.UnvanComboBox.Size = new System.Drawing.Size(812, 28);
+            this.UnvanComboBox.TabIndex = 23;
+            // 
+            // MudurlukComboBox
+            // 
+            this.MudurlukComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MudurlukComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MudurlukComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MudurlukComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.MudurlukComboBox.FormattingEnabled = true;
+            this.MudurlukComboBox.Items.AddRange(new object[] {
+            "ASYA ATIKSU ARITMA ŞUBE MÜDÜRLÜĞÜ"});
+            this.MudurlukComboBox.Location = new System.Drawing.Point(153, 213);
+            this.MudurlukComboBox.Name = "MudurlukComboBox";
+            this.MudurlukComboBox.Size = new System.Drawing.Size(493, 28);
+            this.MudurlukComboBox.TabIndex = 23;
+            // 
+            // GorevYeriComboBox
+            // 
+            this.GorevYeriComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.GorevYeriComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GorevYeriComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.GorevYeriComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.GorevYeriComboBox.FormattingEnabled = true;
+            this.GorevYeriComboBox.Location = new System.Drawing.Point(153, 286);
+            this.GorevYeriComboBox.Name = "GorevYeriComboBox";
+            this.GorevYeriComboBox.Size = new System.Drawing.Size(493, 28);
+            this.GorevYeriComboBox.TabIndex = 23;
+            // 
+            // PozisyonComboBox
+            // 
+            this.PozisyonComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PozisyonComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PozisyonComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.PozisyonComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.PozisyonComboBox.FormattingEnabled = true;
+            this.PozisyonComboBox.Items.AddRange(new object[] {
+            "ATÖLYE SORUMLU MÜHENDİS",
+            "ÜNİTE SORUMLU MÜHENDİS",
+            "LABORATUVAR SORUMLU MÜHENDİS",
+            "BAKIM ONARIM USTABAŞLARI",
+            "FORMEN",
+            "BÖLGE SCADA ve SİSTEM BAKIM ve KALİBRASYON OPERATÖRLERİ",
+            "TEKNİK RAPORLAMA SORUMLUSU",
+            "BAKIM ONARIM USTALARI",
+            "ÇAMUR/KOJEN İŞL./BAKIM OPERATÖRLERİ",
+            "DENEYİMLİ BAKIM – ONARIM İŞLETME MÜHENDİSİ",
+            "GENEL HİZMETLİ PERSONELİ",
+            "DÜZ İŞÇİLER",
+            "İDARİ İŞLER ",
+            "İNSAN KAYNAKLARI",
+            "İSG SORUMLUSU",
+            "İŞLETME BAKIM ONARIM OPERATÖRLERİ / İŞÇİLERİ",
+            "İDARİ RAPORLAMA SORUMLUSU",
+            "KÖY / MAHALLE TESİSLERİ DÖNÜŞTÜRÜCÜ PERSONELİ",
+            "KÖY / MAHALLE TESİSLERİ İŞLETME OPERATÖRLERİ",
+            "LABORATUVAR ANALİZ GÖREVLİSİ",
+            "NUMUNE ALMA ANALİZ KALİBRASYON",
+            "SAHA MÜHENDİSİ/BÖLGE SCADA SORUMLUSU",
+            "ŞOFÖR",
+            "ARAÇ OPERATÖRLERİ",
+            "TERFİ MERKEZİ OPERATÖRLERİ",
+            "TESİS ŞEFİ",
+            "KOORDİNATÖR"});
+            this.PozisyonComboBox.Location = new System.Drawing.Point(152, 362);
+            this.PozisyonComboBox.Name = "PozisyonComboBox";
+            this.PozisyonComboBox.Size = new System.Drawing.Size(812, 28);
+            this.PozisyonComboBox.TabIndex = 23;
+            // 
+            // AdiSoyadiTextBox
+            // 
+            this.AdiSoyadiTextBox.BackColor = System.Drawing.Color.White;
+            this.AdiSoyadiTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AdiSoyadiTextBox.Font = new System.Drawing.Font("Georgia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.AdiSoyadiTextBox.ForeColor = System.Drawing.Color.Black;
+            this.AdiSoyadiTextBox.Location = new System.Drawing.Point(652, 279);
+            this.AdiSoyadiTextBox.Name = "AdiSoyadiTextBox";
+            this.AdiSoyadiTextBox.Size = new System.Drawing.Size(322, 24);
+            this.AdiSoyadiTextBox.TabIndex = 11;
+            this.AdiSoyadiTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // CocukDogumTarihi1DTP
+            // 
+            this.CocukDogumTarihi1DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi1DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi1DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi1DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi1DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi1DTP.CustomFormat = " ";
+            this.CocukDogumTarihi1DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi1DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi1DTP.Location = new System.Drawing.Point(403, 134);
+            this.CocukDogumTarihi1DTP.Name = "CocukDogumTarihi1DTP";
+            this.CocukDogumTarihi1DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi1DTP.TabIndex = 46;
+            this.CocukDogumTarihi1DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi2DTP
+            // 
+            this.CocukDogumTarihi2DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi2DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi2DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi2DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi2DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi2DTP.CustomFormat = " ";
+            this.CocukDogumTarihi2DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi2DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi2DTP.Location = new System.Drawing.Point(403, 159);
+            this.CocukDogumTarihi2DTP.Name = "CocukDogumTarihi2DTP";
+            this.CocukDogumTarihi2DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi2DTP.TabIndex = 46;
+            this.CocukDogumTarihi2DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi3DTP
+            // 
+            this.CocukDogumTarihi3DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi3DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi3DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi3DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi3DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi3DTP.CustomFormat = " ";
+            this.CocukDogumTarihi3DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi3DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi3DTP.Location = new System.Drawing.Point(403, 184);
+            this.CocukDogumTarihi3DTP.Name = "CocukDogumTarihi3DTP";
+            this.CocukDogumTarihi3DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi3DTP.TabIndex = 46;
+            this.CocukDogumTarihi3DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi4DTP
+            // 
+            this.CocukDogumTarihi4DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi4DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi4DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi4DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi4DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi4DTP.CustomFormat = " ";
+            this.CocukDogumTarihi4DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi4DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi4DTP.Location = new System.Drawing.Point(403, 209);
+            this.CocukDogumTarihi4DTP.Name = "CocukDogumTarihi4DTP";
+            this.CocukDogumTarihi4DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi4DTP.TabIndex = 46;
+            this.CocukDogumTarihi4DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi5DTP
+            // 
+            this.CocukDogumTarihi5DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi5DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi5DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi5DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi5DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi5DTP.CustomFormat = " ";
+            this.CocukDogumTarihi5DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi5DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi5DTP.Location = new System.Drawing.Point(403, 234);
+            this.CocukDogumTarihi5DTP.Name = "CocukDogumTarihi5DTP";
+            this.CocukDogumTarihi5DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi5DTP.TabIndex = 46;
+            this.CocukDogumTarihi5DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukDogumTarihi6DTP
+            // 
+            this.CocukDogumTarihi6DTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CocukDogumTarihi6DTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi6DTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.CocukDogumTarihi6DTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.CocukDogumTarihi6DTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.CocukDogumTarihi6DTP.CustomFormat = " ";
+            this.CocukDogumTarihi6DTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukDogumTarihi6DTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.CocukDogumTarihi6DTP.Location = new System.Drawing.Point(403, 259);
+            this.CocukDogumTarihi6DTP.Name = "CocukDogumTarihi6DTP";
+            this.CocukDogumTarihi6DTP.Size = new System.Drawing.Size(114, 22);
+            this.CocukDogumTarihi6DTP.TabIndex = 46;
+            this.CocukDogumTarihi6DTP.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DateTimePickerChanged);
+            // 
+            // CocukCinsiyeti1ComboBox
+            // 
+            this.CocukCinsiyeti1ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti1ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti1ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti1ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti1ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti1ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti1ComboBox.Location = new System.Drawing.Point(310, 132);
+            this.CocukCinsiyeti1ComboBox.Name = "CocukCinsiyeti1ComboBox";
+            this.CocukCinsiyeti1ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti1ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti2ComboBox
+            // 
+            this.CocukCinsiyeti2ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti2ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti2ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti2ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti2ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti2ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti2ComboBox.Location = new System.Drawing.Point(310, 157);
+            this.CocukCinsiyeti2ComboBox.Name = "CocukCinsiyeti2ComboBox";
+            this.CocukCinsiyeti2ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti2ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti3ComboBox
+            // 
+            this.CocukCinsiyeti3ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti3ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti3ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti3ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti3ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti3ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti3ComboBox.Location = new System.Drawing.Point(310, 182);
+            this.CocukCinsiyeti3ComboBox.Name = "CocukCinsiyeti3ComboBox";
+            this.CocukCinsiyeti3ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti3ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti4ComboBox
+            // 
+            this.CocukCinsiyeti4ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti4ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti4ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti4ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti4ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti4ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti4ComboBox.Location = new System.Drawing.Point(310, 207);
+            this.CocukCinsiyeti4ComboBox.Name = "CocukCinsiyeti4ComboBox";
+            this.CocukCinsiyeti4ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti4ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti5ComboBox
+            // 
+            this.CocukCinsiyeti5ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti5ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti5ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti5ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti5ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti5ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti5ComboBox.Location = new System.Drawing.Point(310, 232);
+            this.CocukCinsiyeti5ComboBox.Name = "CocukCinsiyeti5ComboBox";
+            this.CocukCinsiyeti5ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti5ComboBox.TabIndex = 47;
+            // 
+            // CocukCinsiyeti6ComboBox
+            // 
+            this.CocukCinsiyeti6ComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CocukCinsiyeti6ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CocukCinsiyeti6ComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CocukCinsiyeti6ComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CocukCinsiyeti6ComboBox.FormattingEnabled = true;
+            this.CocukCinsiyeti6ComboBox.Items.AddRange(new object[] {
+            "KIZ",
+            "ERKEK"});
+            this.CocukCinsiyeti6ComboBox.Location = new System.Drawing.Point(310, 257);
+            this.CocukCinsiyeti6ComboBox.Name = "CocukCinsiyeti6ComboBox";
+            this.CocukCinsiyeti6ComboBox.Size = new System.Drawing.Size(87, 24);
+            this.CocukCinsiyeti6ComboBox.TabIndex = 47;
+            // 
+            // DogumTarihiDTP
+            // 
+            this.DogumTarihiDTP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DogumTarihiDTP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DogumTarihiDTP.CalendarForeColor = System.Drawing.Color.Black;
+            this.DogumTarihiDTP.CalendarMonthBackground = System.Drawing.Color.White;
+            this.DogumTarihiDTP.CalendarTrailingForeColor = System.Drawing.SystemColors.Highlight;
+            this.DogumTarihiDTP.CustomFormat = " ";
+            this.DogumTarihiDTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.DogumTarihiDTP.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DogumTarihiDTP.Location = new System.Drawing.Point(155, 81);
+            this.DogumTarihiDTP.Name = "DogumTarihiDTP";
+            this.DogumTarihiDTP.Size = new System.Drawing.Size(142, 26);
+            this.DogumTarihiDTP.TabIndex = 46;
+            // 
+            // CinsiyetComboBox
+            // 
+            this.CinsiyetComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.CinsiyetComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CinsiyetComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CinsiyetComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.CinsiyetComboBox.FormattingEnabled = true;
+            this.CinsiyetComboBox.Items.AddRange(new object[] {
+            "KADIN",
+            "ERKEK"});
+            this.CinsiyetComboBox.Location = new System.Drawing.Point(154, 13);
+            this.CinsiyetComboBox.Name = "CinsiyetComboBox";
+            this.CinsiyetComboBox.Size = new System.Drawing.Size(294, 24);
+            this.CinsiyetComboBox.TabIndex = 48;
+            // 
+            // NufusaKayitliOlduguIlTextBoxComboBox
+            // 
+            this.NufusaKayitliOlduguIlTextBoxComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.NufusaKayitliOlduguIlTextBoxComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.FormattingEnabled = true;
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Items.AddRange(new object[] {
+            "1 - ADANA",
+            "2 - ADIYAMAN",
+            "3 - AFYONKARAHİSAR",
+            "4 - AĞRI",
+            "5 - AMASYA",
+            "6 - ANKARA",
+            "7 - ANTALYA",
+            "8 - ARTVİN",
+            "9 - AYDIN",
+            "10 - BALIKESİR",
+            "11 - BİLECİK",
+            "12 - BİNGÖL",
+            "13 - BİTLİS",
+            "14 - BOLU",
+            "15 - BURDUR",
+            "16 - BURSA",
+            "17 - ÇANAKKALE",
+            "18 - ÇANKIRI",
+            "19 - ÇORUM",
+            "20 - DENİZLİ",
+            "21 - DİYARBAKIR",
+            "22 - EDİRNE",
+            "23 - ELAZIĞ",
+            "24 - ERZİNCAN",
+            "25 - ERZURUM",
+            "26 - ESKİŞEHİR",
+            "27 - GAZİANTEP",
+            "28 - GİRESUN",
+            "29 - GÜMÜŞHANE",
+            "30 - HAKKARİ",
+            "31 - HATAY",
+            "32 - ISPARTA",
+            "33 - MERSİN",
+            "34 - İSTANBUL",
+            "35 - İZMİR",
+            "36 - KARS",
+            "37 - KASTAMONU",
+            "38 - KAYSERİ",
+            "39 - KIRKLARELİ",
+            "40 - KIRŞEHİR",
+            "41 - KOCAELİ (İZMİT)",
+            "42 - KONYA",
+            "43 - KÜTAHYA",
+            "44 - MALATYA",
+            "45 - MANİSA",
+            "46 - KAHRAMANMARAŞ",
+            "47 - MARDİN",
+            "48 - MUĞLA",
+            "49 - MUŞ",
+            "50 - NEVŞEHİR",
+            "51 - NİĞDE",
+            "52 - ORDU",
+            "53 - RİZE",
+            "54 - SAKARYA (ADAPAZARI)",
+            "55 - SAMSUN",
+            "56 - SİİRT",
+            "57 - SİNOP",
+            "58 - SİVAS",
+            "59 - TEKİRDAĞ",
+            "60 - TOKAT",
+            "61 - TRABZON",
+            "62 - TUNCELİ",
+            "63 - ŞANLIURFA",
+            "64 - UŞAK",
+            "65 - VAN",
+            "66 - YOZGAT",
+            "67 - ZONGULDAK",
+            "68 - AKSARAY",
+            "69 - BAYBURT",
+            "70 - KARAMAN",
+            "71 - KIRIKKALE",
+            "72 - BATMAN",
+            "73 - ŞIRNAK",
+            "74 - BARTIN",
+            "75 - ARDAHAN",
+            "76 - IĞDIR",
+            "77 - YALOVA",
+            "78 - KARABÜK",
+            "79 - KİLİS",
+            "80 - OSMANİYE",
+            "81 - DÜZCE"});
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Location = new System.Drawing.Point(628, 121);
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Name = "NufusaKayitliOlduguIlTextBoxComboBox";
+            this.NufusaKayitliOlduguIlTextBoxComboBox.Size = new System.Drawing.Size(309, 24);
+            this.NufusaKayitliOlduguIlTextBoxComboBox.TabIndex = 48;
+            // 
+            // KanGrubuComboBox
+            // 
+            this.KanGrubuComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.KanGrubuComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.KanGrubuComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.KanGrubuComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.KanGrubuComboBox.FormattingEnabled = true;
+            this.KanGrubuComboBox.Items.AddRange(new object[] {
+            "A +",
+            "A -",
+            "B +",
+            "B -",
+            "AB +",
+            "AB -",
+            "0 +",
+            "0 -"});
+            this.KanGrubuComboBox.Location = new System.Drawing.Point(155, 116);
+            this.KanGrubuComboBox.Name = "KanGrubuComboBox";
+            this.KanGrubuComboBox.Size = new System.Drawing.Size(294, 24);
+            this.KanGrubuComboBox.TabIndex = 48;
+            // 
+            // MedenihaliComboBox
+            // 
+            this.MedenihaliComboBox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.MedenihaliComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MedenihaliComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MedenihaliComboBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.MedenihaliComboBox.FormattingEnabled = true;
+            this.MedenihaliComboBox.Items.AddRange(new object[] {
+            "BEKAR",
+            "EVLİ",
+            "DUL",
+            "BOŞANMIŞ"});
+            this.MedenihaliComboBox.Location = new System.Drawing.Point(156, 150);
+            this.MedenihaliComboBox.Name = "MedenihaliComboBox";
+            this.MedenihaliComboBox.Size = new System.Drawing.Size(294, 24);
+            this.MedenihaliComboBox.TabIndex = 48;
+            // 
             // PersonelSicilKartiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3589,8 +3776,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PozisyonuTextBox;
-        private System.Windows.Forms.TextBox UnvaniTextBox;
         private System.Windows.Forms.TextBox SoyadiTextBox;
         private System.Windows.Forms.TextBox AdiTextBox;
         private System.Windows.Forms.TextBox SicilNoTextBox;
@@ -3604,22 +3789,17 @@
         private System.Windows.Forms.TextBox ToplamKatsayiTextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox GorevYeriTextBox;
         private System.Windows.Forms.PictureBox FotografPictureBox;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox MudurlukTextBox;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox NufusaKayitliOlduguIlTextBox;
         private System.Windows.Forms.TextBox DogumYeriTextBox;
-        private System.Windows.Forms.TextBox DogumTarihiTextBox;
         private System.Windows.Forms.TextBox BabaAdiTextBox;
         private System.Windows.Forms.TextBox AnneAdiTextBox;
-        private System.Windows.Forms.TextBox CinsiyetTextBox;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
@@ -3630,11 +3810,8 @@
         private System.Windows.Forms.TextBox CocukSayisiTextBox;
         private System.Windows.Forms.TextBox EsMeslegiTextBox;
         private System.Windows.Forms.TextBox EsAdiTextBox;
-        private System.Windows.Forms.TextBox MedinHaliTextBox;
-        private System.Windows.Forms.TextBox KanGrubuTextBox;
         private System.Windows.Forms.TextBox AskerlikTextBox;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox CocukDogumTarihi1TextBox;
         private System.Windows.Forms.GroupBox EşCocukGroupBox;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label31;
@@ -3642,31 +3819,19 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox CocukAdi6TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti6TextBox;
         private System.Windows.Forms.TextBox CocukAdi5TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda6TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti5TextBox;
-        private System.Windows.Forms.TextBox CocukDogumTarihi6TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda5TextBox;
-        private System.Windows.Forms.TextBox CocukDogumTarihi5TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti4TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda4TextBox;
         private System.Windows.Forms.TextBox CocukAdi4TextBox;
-        private System.Windows.Forms.TextBox CocukDogumTarihi4TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti3TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda3TextBox;
         private System.Windows.Forms.TextBox CocukAdi3TextBox;
-        private System.Windows.Forms.TextBox CocukDogumTarihi3TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti2TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda2TextBox;
         private System.Windows.Forms.TextBox CocukAdi2TextBox;
-        private System.Windows.Forms.TextBox CocukDogumTarihi2TextBox;
-        private System.Windows.Forms.TextBox CocukCinsiyeti1TextBox;
         private System.Windows.Forms.TextBox CocukHakkinda1TextBox;
         private System.Windows.Forms.TextBox CocukAdi1TextBox;
         private System.Windows.Forms.Label label39;
@@ -3743,26 +3908,6 @@
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TextBox BaslangicTarihi1TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi2TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi3TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi4TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi5TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi6TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi7TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi8TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi9TextBox;
-        private System.Windows.Forms.TextBox BaslangicTarihi10TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi1TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi2TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi3TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi5TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi4TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi6TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi7TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi8TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi9TextBox;
-        private System.Windows.Forms.TextBox AyrilisTarihi10TextBox;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.TextBox Kurum1TextBox;
         private System.Windows.Forms.TextBox Kurum2TextBox;
@@ -3827,11 +3972,52 @@
         private System.Windows.Forms.TabPage PerformansTabPage;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox IseGirisTarihiTextBox;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox SeflikTextBox;
+        private System.Windows.Forms.ComboBox SeflikComboBox;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button KaydetButton;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi1DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi2DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi3DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi4DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi5DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi6DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi7DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi8DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi9DTP;
+        private System.Windows.Forms.DateTimePicker BaslangicTarihi10DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi1DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi2DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi3DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi4DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi5DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi6DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi7DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi8DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi9DTP;
+        private System.Windows.Forms.DateTimePicker AyrilisTarihi10DTP;
+        private System.Windows.Forms.DateTimePicker IseGirisTarihiDTP;
+        private System.Windows.Forms.ComboBox UnvanComboBox;
+        private System.Windows.Forms.ComboBox PozisyonComboBox;
+        private System.Windows.Forms.ComboBox MudurlukComboBox;
+        private System.Windows.Forms.ComboBox GorevYeriComboBox;
+        private System.Windows.Forms.TextBox AdiSoyadiTextBox;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi6DTP;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi5DTP;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi4DTP;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi3DTP;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi2DTP;
+        private System.Windows.Forms.DateTimePicker CocukDogumTarihi1DTP;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti6ComboBox;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti5ComboBox;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti4ComboBox;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti3ComboBox;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti2ComboBox;
+        private System.Windows.Forms.ComboBox CocukCinsiyeti1ComboBox;
+        private System.Windows.Forms.DateTimePicker DogumTarihiDTP;
+        private System.Windows.Forms.ComboBox CinsiyetComboBox;
+        private System.Windows.Forms.ComboBox NufusaKayitliOlduguIlTextBoxComboBox;
+        private System.Windows.Forms.ComboBox MedenihaliComboBox;
+        private System.Windows.Forms.ComboBox KanGrubuComboBox;
     }
 }

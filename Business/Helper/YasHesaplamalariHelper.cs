@@ -7,7 +7,7 @@ namespace Business.Helper
 {
     public static class YasHesaplamalariHelper
     {
-        public static List<int> YasHesap(string girisYetki = null)
+        public static List<int?> YasHesap(string girisYetki = null)
         {
             var nufusService = new NufusService();
 
@@ -17,13 +17,11 @@ namespace Business.Helper
                 : girisYetki != "genel" ? nufusService.GetAll(m => m.Seflik.Contains(girisYetki)).ToList()
                 : null;
 
-
-
-            List<int> yaslar = new List<int>();
+            List<int?> yaslar = new List<int?>();
 
             foreach (var item in nufusData)
             {
-                int personelYasi = item.DogumTarihi.Value.Year;
+                int? personelYasi = item.DogumTarihi?.Year;
 
                 yaslar.Add(suankiYil - personelYasi);               
             }
@@ -32,13 +30,15 @@ namespace Business.Helper
         }
 
         // Frekans değerlerini hesaplamak için yardımcı fonksiyon
-        public static Dictionary<int, int> YasCalculateFrequencies(List<int> data)
+        public static Dictionary<int?, int?> YasCalculateFrequencies(List<int?> data)
         {
-            Dictionary<int, int> frequencies = new Dictionary<int, int>();
-            foreach (int value in data)
+            Dictionary<int?, int?> frequencies = new Dictionary<int?, int?>();
+            foreach (int? value in data)
             {
-                if (frequencies.ContainsKey(value))
+                if (value != null && frequencies.ContainsKey(value))
                     frequencies[value]++;
+                else if (value == null)
+                    continue;
                 else
                     frequencies[value] = 1;
             }

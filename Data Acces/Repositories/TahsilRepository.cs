@@ -49,6 +49,5 @@ namespace DataAcces.Repositories
             context.Entry(entity).State = EntityState.Modified;
             context.SaveChanges();
         }
-
     }
 }
